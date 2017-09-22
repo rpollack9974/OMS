@@ -1,0 +1,11 @@
+def mahler_coefs(f,maxn):
+    z = f.variables()[0]
+    v = [f.substitute(z=i) for i in range(maxn)]
+    ans = []
+    for j in range(maxn):
+    	ans.append(sum(i=0,m,(-1)**(m-i)*binom(m,i)*v[i])
+    return ans
+    
+    	
+    
+    

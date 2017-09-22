@@ -1,0 +1,41 @@
+def write_to_file(filename,line):
+	"""
+	Writes the string line to the file ``filename``.
+
+	Input:
+
+	-	``filename`` -- string
+	-	``line`` -- string
+	"""
+	f = open(filename,'a')
+	f.write(line)
+	f.close()
+
+def MT_special():
+	v=[0 for a in range(p^2)]
+	vals = [a for a in range(0,(p^2-1)/2) if gcd(a,p)==1 and a>29399 ]
+	t=cputime()
+	for a in vals:
+		print a,(p^2-1)/2
+		gam = Matrix(2,2,[1,a,0,p^2])
+		ans=phi.eval(gam)
+		ans=ans.coef(0) % (p^4)
+		v[a]=ans
+		print cputime(t)
+		write_to_file("p331N3.txt",str([a,ans])+str(",")+"\n")
+	return v
+
+def MT_on_one_units():
+	RR.<T>=PolynomialRing(ZZ)
+	gampower=1
+	oneTpower=1
+	ans=0
+	for j in range(0,p):
+		print j
+		D = Matrix(2,2,[1,gampower,0,p^2])
+		val = phi.eval(D).coef(0)%(p^4)
+		ans+=val*oneTpower
+		gampower*=(1+p)
+		gampower=gampower%(p^2)
+		oneTpower*=1+T
+	return ans

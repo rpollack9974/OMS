@@ -1,0 +1,149 @@
+##  A -- a matrix
+##  t -- a list with length equal to the number of columns of A
+##
+##  Returns whether or not t is in the span of the rows of A modulo mod
+def in_span(A,t,p,n):
+	mod = p^n
+	B = A.insert_row(A.nrows(),t)
+	M = MatrixSpace(Integers(mod),A.nrows(),A.ncols())
+	B = M(B)
+	B,E,r = row_reduce_mod_pn(B,p,n)
+#	B = (B.echelon_form())%(mod)
+#	B = (B.echelon_form())%(mod)  ## This is a silly trick to force it to clear out multiples of mod
+	
+	
+	return r < A.rank() + 1
+
+##  A -- a matrix
+##  t -- a list with length equal to the number of columns of A
+##
+##  Returns a vector expressing t as a linear combination of the rows of A modulo mod -- (in_span(A,t,mod) should be true)
+def linear_combo(A,t,p,n):
+	mod = p^n	
+	print "In linear_combo with",A,t,mod
+	B = A.insert_row(A.nrows(),t)%(mod)
+	M = MatrixSpace(Integers(mod),B.nrows(),B.ncols())
+	B = M(B)
+	z1,z2 = B.echelon_form(transformation=True)
+	w1,w2 = (z1%(mod)).echelon_form(transformation=True)
+
+	rel = ((w2*z2)%(mod)).row(-1)  ## This is the bottom row which expresses the relation
+
+	assert (Matrix(rel)*B)%mod == 0, "relation not holding in linear_combo"
+
+	c = inverse_mod(rel[len(rel)-1],mod)
+	rel = (c * rel)%mod
+	rel = (-rel)%mod
+
+	rel = Sequence(rel)
+	rel.pop()
+
+
+	return rel
+
+def form_basis(N,p,k,M,chi,d,sign):
+	Phis = []
+	v = []
+
+	total = 0
+	while total < d:
+		done = false
+		while not done:
+			Phi = random_ordinary_OMS(N,p,k,M,chi)
+			if sign == 1:
+				Phi = Phi.plus_part()
+			else:
+				Phi = Phi.minus_part()
+#			Phi = Phi.scale(p^(-Phi.valuation()))
+#			Phi = Phi.change_precision(MM)
+			v = v + [Phi.vector_of_total_measures()]
+			Phis = Phis + [Phi];
+			B = (Matrix(v).echelon_form()%(p^M)).echelon_form()%(p^M)
+			print B
+			last = B[B.nrows()-1]
+			last = Sequence(last)
+			last.reverse()
+			last = vector(last)
+			if last != 0:
+				a = last.leading_coefficient()
+			else:
+				a = 0
+			if a % p != 0:
+				print "Keeping it"
+				total = total + 1
+				done = True
+			else:
+				print "Failed"
+				done = False
+				Phis.pop()
+				v.pop()
+
+	return Phis
+
+	
+
+## Phis -- a list of OMSs which generate the ordinary subspace
+##
+## Computes the matrix of the q-th Hecke operator acting on the span of these OMSs
+def hecke_matrix(Phis,q):
+	p = Phis[0].p()
+	M = Phis[0].num_moments()
+	A = Matrix([Phis[r].vector_of_total_measures() for r in range(len(Phis))])
+	mod = p^M	
+
+	Tq = []
+	for r in range(len(Phis)):
+		print r
+		t = Phis[r].hecke(q).vector_of_total_measures()
+		Tq = Tq + [linear_combo(A,t,mod)]
+		
+	return Matrix(Tq)
+		
+
+def dimension_of_ordinary_subspace(N,p,k,chi,sign):
+	r = k % (p-1)
+	if r < 2:
+		r = r + p-1
+	M = ModularSymbols(chi,r,sign,GF(p))
+	
+	hecke_poly = M.hecke_polynomial(p)
+	R = hecke_poly.parent()
+	x = R.gen()
+	return hecke_poly.degree() - hecke_poly.ord(x)
+
+		
+def row_reduce_mod_pn(B,p,n):
+	A = copy(B)
+	rows = A.nrows()
+	cols = A.ncols()
+	M = MatrixSpace(Integers(p^n),rows,cols)
+	A = M(A)
+	curr_col = 0
+	curr_row = 0
+	E = Matrix(Integers(p^n),rows,rows,1)
+	while (curr_row < rows) and (curr_col < cols):
+		print (curr_row,curr_col)
+		v = [A[r][curr_col] for r in range(curr_row,rows)]
+		print v
+		vals = [ZZ(v[j]).valuation(p)  for j in range(len(v))]
+		print vals
+		if min(vals) == 0:
+			least_ind = curr_row
+			while vals[least_ind-curr_row] > 0:
+				least_ind = least_ind + 1
+			print "least_ind = ",least_ind
+			A.swap_rows(curr_row,least_ind)
+			for r in range(rows):
+				if r != curr_row:
+					print A[curr_row,curr_col]
+					c = -A[r,curr_col]/A[curr_row,curr_col]
+					A.add_multiple_of_row(r,curr_row,c)
+					F = Matrix(Integers(p^n),rows,rows,1)
+					F[r,curr_row] = c
+					E = F * E
+			curr_row = curr_row + 1
+		curr_col = curr_col + 1
+		print A
+	return A,E,curr_row
+	
+		

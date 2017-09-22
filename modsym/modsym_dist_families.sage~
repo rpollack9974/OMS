@@ -1,0 +1,63 @@
+class modsym_dist_fam(modsym):
+	def ms(self):
+		"""demotes to a regular modular symbol"""
+		return modsym(self.level,self.data,self.manin)
+
+	def num_moments(self):
+		return self.data[0].num_moments()
+
+	def p(self):
+		return self.data[0].p
+
+	def deg(self):
+		return self.data[0].deg
+
+	## This function returns a number between 0 and p-2 which represents which 	
+	## disc in weight the family is supported on -- the integer i corresponds to the
+	## disc with characters with finite order part omega^i
+	def disc(self):
+		return self.data[0].disc()
+
+	def change_deg(self,new_deg):
+		v=[self.data[r].change_deg(new_deg) for r in range(self.ngens())]
+		return modsym_dist_fam(self.level,v,self.manin)
+
+	def specialize(self,k):
+		v=[]
+		for j in range(0,len(self.data)):
+			v=v+[self.data[j].specialize(k)]
+		return modsym_dist_aws(self.level,v,self.manin)
+	
+	def valuation(self):
+		#print [self.data[j].valuation() for j in range(len(self.data))]
+		return min([self.data[j].valuation() for j in range(len(self.data))])
+
+	def normalize(self):
+		v=[]
+		for j in range(0,len(self.data)):
+			v=v+[self.data[j].normalize()]
+		return modsym_dist_fam(self.level,v,self.manin)
+	
+	def change_precision(self,M):
+		v=[]
+		for j in range(0,len(self.data)):
+			v=v+[self.data[j].change_precision(M)]
+		return modsym_dist_fam(self.level,v,self.manin)
+
+	## This procedure tries to find a power series c(w) such that 
+	##      self | T_q = c(w) self
+	## It prints to the screen the self | T_q - c(w) self (so all displayed zeroes
+	## means it worked, and it returns the power series c(w)
+	def is_Tq_eigen(self,q):
+		p = self.p()
+		M = self.num_moments()
+		R = self.data[0].moment(0).parent()
+		T = PowerSeriesRing(QQ,'y')
+
+		Phiq = self.hecke(q)
+		aq = R(T(T(Phiq.data[0].moment(0))/T(self.data[0].moment(0))).padded_list())
+
+		print (self.scale(aq) - Phiq).normalize()
+
+		return ps_normalize(aq,p,M)
+	
