@@ -92,7 +92,7 @@ class measure_on_Zp(SageObject):
 #      return self.act_left(gamma.adjoint())
 
 	def valuation(self):
-		return min([power_of_maxl_ideal(self.Mahler_coef(a)) for a in range(self.num_coefs())])
+		return min([self.Mahler_coef(a).valuation() for a in range(self.num_coefs())])
 
 	def decrease_accuracy(self,M):
 		self.Mahler_coefs = self.Mahler_coefs[0:M]

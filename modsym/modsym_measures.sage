@@ -42,6 +42,18 @@ class modsym_measures(modsym):
 		"""returns the exponent of the highest power of maximal containing all values"""
 		return min([self.data[j].valuation() for j in range(0,len(self.data))])
 
+
+	def clear_powers(self):
+		"""divides by w^valuation and renormalizes"""
+		w = self.data[0].Mahler_coef(0).parent().gen()
+		M = self.data[0].num_coefs()
+		v = self.valuation()
+		for j in range(len(self.data)):
+			for i in range(M):
+				self.data[j].Mahler_coefs[i] = self.data[j].Mahler_coefs[i].quo_rem(w^v)[0]
+		self.decrease_accuracy(M-v)
+
+
 	def pLfunction(self,verbose=False):		
 		R.<T> = PowerSeriesRing(self.data[0].base_ring)
 		p = self.p()
@@ -69,7 +81,9 @@ def vector_to_modsym(N,p,v):
 		except for i with torsion index and one i to satisfy difference equation
 	"""
 	manin = manin_relations(N*p)
-	assert len(manin.twotor)==0 and len(manin.threetor)==0, "level must be torsion-free" 
+	#assert len(manin.twotor)==0 and len(manin.threetor)==0, "level must be torsion-free" 
+	if not (len(manin.twotor)==0 and len(manin.threetor)==0):
+		print "Level not torsion-free!"
 
 #now we compute nu_infty of Prop 5.1 of [PS1] (except we have functions here)
 	t=v[0].zero()

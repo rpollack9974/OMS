@@ -1,3 +1,4 @@
+from sage.geometry.newton_polygon import NewtonPolygon
 
 attach modules/dist.sage
 attach modules/dist_char.sage
@@ -12,4 +13,4 @@ attach modsym/modsym_dist.sage
 #attach modsym/modsym_dist_aws.sage
 #attach modsym/modsym_dist_families.sage
 
-#attach pLfunction/pLfunction.sage
+attach pLfunction/pLfunction.sage
