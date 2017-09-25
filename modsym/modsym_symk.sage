@@ -132,23 +132,144 @@ class modsym_symk(modsym):
 			else:
 				return False
 
-	def MazurTate(self,p,n,acc,verbose=false):
+	def int_against_poly(self,P,a,m):
+		"""returns int_\infty^{-a/m} f(z)P(z) dz --- ignoring pi's, periods and such"""
+		D = Matrix(2,2,[1,-a,0,m])
+		k = self.data[0].weight
+		v = P.padded_list()
+		while len(v) < k+1:
+			v += [0]
+		return sum([v[i] * self.eval(D).coef(i) / binomial(k,i) for i in range(k+1)])
+
+	def lamb(self,P,a,m):
+		"""returns lambda(f,P,a,m) as in MTT"""
+		z = P.parent().gen()
+		P = P.substitute(m*z+a)
+		return self.int_against_poly(P,a,m)
+
+	def MazurTate(self,p,n,acc,h=0,verbose=false):
 		assert p>2,"p=2 not coded"
+		k = self.data[0].weight
 		Qp = pAdicField(p,acc)
 		teich = Qp.teichmuller_system()
+		RR.<z>=PolynomialRing(QQ)
 		gam = 1 + p
+		if ceil(h) == h:
+			h += 1
+		else:
+			h = ceil(h)
 		R.<T> = PolynomialRing(self.base_ring())
-		ans = R(0)
 		oneplusTpower = R(1)
-		for j in range(p^n):			
-			coef = 0
-			for a in range(1,(p+1)/2):
+		LOGS = [1]
+		logp_gam = ZZ(logp_fcn(p,h*p^n+2,gam)) 
+		log_factor = logp(p,T,h*p^n+2) / logp_gam ## log_factor is log_gamma(1+T)
+
+		for c in range(h):
+			LOGS += [LOGS[len(LOGS)-1] * (log_factor - c)]
+
+		oneplusTpower = [1]
+		for j in range(p^n):
+			oneplusTpower += [oneplusTpower[len(oneplusTpower)-1] * (1+T)]  #oneplusTpower[j] = (1+T)^j
+
+		ans = R(0)
+		for i in range(h):
+			for j in range(p^n):
 				if verbose:
-					print (j,a),"out of",(p^n,(p+1)/2)
-				coef += self.eval(Matrix(2,2,[1,ZZ(gam^j*teich[a-1])%(p^(n+1)),0,p^(n+1)])).coef(0)
-			ans += coef * oneplusTpower
-			oneplusTpower *= 1+T
+					print (i,j)
+				for a in range(1,p):
+					b = gam^j * ZZ(teich[a-1])
+					ans += oneplusTpower[j] * LOGS[i] * self.lamb((z-b)^i,b,p^(n+1)) / (b^i * factorial(i))
 		return ans
+
+		# ans = R(0)
+		# for i in range(h):
+		# 	ci = R(0)
+		# 	for j in range(p^n):
+		# 		cj = R(0)
+		# 		for a in range(1,p):
+		# 			print (i,j,a)
+		# 			b = gam^j * ZZ(teich[a-1])
+		# 			cj += self.lamb((z-b)^i,b,p^(n+1)) / b^i
+		# 		ci += cj * oneplusTpower
+		# 		oneplusTpower *= (1+T)
+		# 	ans += ci * p^(i*(n+1)) * LOGS[i] / factorial(i)
+		# return ans
+
+		# ans = R(0)
+		# for i in range(h):
+		# 	ci = R(0)
+		# 	for j in range(p^n):
+		# 		print (i,j)
+		# 		b = gam^j
+		# 		Db = Matrix(2,2,[1,b,0,p^(n+1)])
+		# 		cj = phi.eval(Db).coef(i) / (binomial(k,i) * b^i)
+		# 		ci += cj * oneplusTpower
+		# 		oneplusTpower *= (1+T)
+		# 	ans += ci * p^(i*(n+1)) * LOGS[i] / factorial(i)
+		# return ans
+
+		# ans = R(0)
+		# for i in range(h):
+		# 	ci = R(0)
+		# 	for j in range(p^n):
+		# 		cj = R(0)
+		# 		for a in range(1,p):
+		# 			print (i,j,a)
+		# 			b = gam^j * ZZ(teich[a-1])
+		# 			Db = Matrix(2,2,[1,b,0,p^(n+1)])
+		# 			cj += phi.eval(Db).coef(i) / (binomial(k,i) * b^i)
+		# 		ci += cj * oneplusTpower
+		# 		oneplusTpower *= (1+T)
+		# 	ans += ci * p^(i*(n+1)) * LOGS[i] / factorial(i)
+		# return ans
+		
+
+		# for j in range(p^n):			
+		# 	if verbose:
+		# 		print j,"out of",p^n-1
+		# 	coef = sum([self.eval(Matrix(2,2,[1,ZZ(gam^j*teich[a-1])%(p^(n+1)),0,p^(n+1)])).coef(0) for a in range(1,p)])
+		# 	ans += coef * oneplusTpower
+		# 	oneplusTpower *= 1+T
+		# if h > 0:
+		# 	ans1 = R(0)
+		# 	log_factor = logp(p,T,(h+2)*p^n) / ZZ(logp_fcn(p,(h+2)*p^n,1+p)) 
+		# 	oneplusTpower = R(1)
+		# 	for j in range(p^n):			
+		# 		coef = 0
+		# 		for a in range(1,(p+1)/2):
+		# 			if verbose:
+		# 				print (j,a),"out of",(p^n,(p+1)/2)
+		# 			coef += self.eval(Matrix(2,2,[1,ZZ(gam^j*teich[a-1])%(p^(n+1)),0,p^(n+1)])).coef(1)*p^(n+1) * 1/(ZZ(teich[a-1])*gam^j)
+		# 		ans1 += coef * oneplusTpower 
+		# 		oneplusTpower *= 1+T
+		# 		oneplusTpower = oneplusTpower.truncate((h+1)*p^n)
+		# 	ans += ans1 * log_factor
+		# if h > 1:
+		# 	log_factor2 = log_factor^2
+		# 	log_factor2 = log_factor2.truncate((h+1)*p^n)
+		# 	oneplusTpower = R(1)
+		# 	coef = 0
+		# 	for j in range(p^n):			
+		# 		for a in range(1,(p+1)/2):
+		# 			if verbose:
+		# 				print (j,a),"out of",(p^n,(p+1)/2)
+		# 			coef += self.eval(Matrix(2,2,[1,ZZ(gam^j*teich[a-1])%(p^(n+1)),0,p^(n+1)])).coef(2)*p^(2*(n+1))/2 * 1/(ZZ(teich[a-1])*gam^j)^2
+		# 		coef += coef * oneplusTpower 
+		# 		oneplusTpower *= 1+T
+		# 		oneplusTpower = oneplusTpower.truncate((h+1)*p^n)
+		# 	ans += coef * log_factor2
+		# 	coef = 0
+		# 	for j in range(p^n):			
+		# 		for a in range(1,(p+1)/2):
+		# 			if verbose:
+		# 				print (j,a),"out of",(p^n,(p+1)/2)
+		# 			coef += self.eval(Matrix(2,2,[1,ZZ(gam^j*teich[a-1])%(p^(n+1)),0,p^(n+1)])).coef(2)*p^(2*(n+1))/2 * 1/(ZZ(teich[a-1])*gam^j)^2
+		# 		coef += coef * oneplusTpower 
+		# 		oneplusTpower *= 1+T
+		# 		oneplusTpower = oneplusTpower.truncate((h+1)*p^n)
+		# 	ans += coef * log_factor
+		# 	ans = ans.truncate((h+1)*p^n)
+		# return ans
 
 	def pL_newton(self,p,n,pp):
 		mt = self.MazurTate(p,n,20)
@@ -205,11 +326,12 @@ class modsym_symk(modsym):
 	 
 		return modsym_dist(self.level,v,self.manin)	
 
-	def lift_to_OMS_eigen(self,p,M,verbose=True):
+	def lift_to_OMS_eigen(self,p,M,ap=None,verbose=True):
 		"""returns Hecke-eigensymbol OMS lifting phi -- phi must be a p-ordinary eigensymbol"""
-		v=self.is_Tq_eigen_mod(p,p,M)
-		assert v[0], "not eigen at p!"
-		ap=v[1]
+		if ap == None:
+			v=self.is_Tq_eigen_mod(p,p,M)
+			assert v[0], "not eigen at p!"
+			ap=v[1]
 		k=self.weight()
 		Phi=self.lift_to_OMS(p,M)
 		s=-Phi.valuation()
@@ -469,7 +591,6 @@ def form_modsym_from_decomposition_padic_enhanced(A,p,acc,dual_evector_padic):
 		else:
 			r2=oo
 		for j in range(k-1):
-			print (s,j)
 			t=M.modular_symbol([j,r1,r2]).element()
 			coef=sum([t[a]*w[a] for a in range(len(t))])
 ##			print i

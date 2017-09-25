@@ -3,12 +3,12 @@ def teich(a,p,M):
 	R=pAdicField(p,M)
 	return ZZ(R.teichmuller(a))
 
-@cached_function
+#@cached_function
 def logp(p,z,M):
-	"""returns the truncation sum_{j=1}^{M-1} (-1)^j/j z^j of log_p(1+z)"""
+	"""returns the truncation sum_{j=1}^{M-1} (-1)^(j+1)/j z^j of log_p(1+z)"""
 	ans=0
 	for j in range(1,M):
-		ans=ans+(-1)^j/j*z^j
+		ans=ans+(-1)^(j+1)/j*z^j
 	return ans
 
 @cached_function
@@ -18,7 +18,7 @@ def loggam_binom(p,gam,z,n,M):
 	loggam=L/logpgam
 #	print loggam
 #	print binomial(loggam,n)
-	
+
 	return binomial(loggam,n).list()
 	
 #@cached_function
@@ -97,7 +97,7 @@ Inputs:
 
 	SS.<T>=PowerSeriesRing(QQ)
 	ans=pLfunction_coef(Phi,ap,0,r,D,gam)+0*T
-	S.<z>=PowerSeriesRing(QQ)
+	S.<z>=PolynomialRing(QQ)
 	err=Infinity
 	n=1
 	while (err>0) and (n<M):

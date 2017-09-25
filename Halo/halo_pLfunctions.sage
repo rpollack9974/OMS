@@ -93,7 +93,7 @@ print "Checking",phi1_padic.hecke(5)-phi1_padic.scale(i1(a51))
 L2 = phi1_padic.MazurTate(5,2,10)
 print str(L2.newton_slopes())
 
-p=5
+p=3
 r=2
 N=1
 k=4
@@ -116,9 +116,18 @@ for b in range(len(A)):
 	print "Finding primes over p in",K
 	pp=K.primes_above(p)
 	bool,ap=phi.is_Tq_eigen(p)
-	print "Slopes:",[ap.valuation(pp[j])/pp[j].absolute_ramification_index() for j in range(len(pp))]
+	slopes = [ap.valuation(pp[j])/pp[j].absolute_ramification_index() for j in range(len(pp))]
+	print "Slopes:",slopes
+	h = max(slopes)
+	print "Max slope is",h
+	print "Computing MT"
+	L=phi.MazurTate(p,4,10,h=h,verbose=false)
+	v=L.padded_list()
 	for j in range(len(pp)):
-		L=phi.MazurTate(p,3,10)
-		v=L.padded_list()
 		print "Slope",ap.valuation(pp[j])/pp[j].absolute_ramification_index()
-		print NewtonPolygon([(a,v[a].valuation(pp[0])) for a in range(len(v))]).slopes()
+		NP=NewtonPolygon([(a,v[a].valuation(pp[j])/pp[j].absolute_ramification_index()) for a in range(len(v))]).slopes()
+		ans=[]
+		sNP = Sequence(Set(NP))
+		sNP.sort()
+		print [[NP.count(sNP[a]),-sNP[a]] for a in range(len(sNP))]
+
