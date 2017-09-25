@@ -60,10 +60,11 @@ class modsym_measures(modsym):
 		ans = R(0)
 		M = self.data[0].num_coefs()
 		logp_gam = ZZ(logp_fcn(p,2*M,1+p))
+		mus = [self.eval(Matrix(2,2,[1,a,0,p])) for a in range(p)]
 		for n in range(M):
 			cn = 0
 			for a in range(1,p):
-				mua = self.eval(Matrix(2,2,[1,a,0,p]))
+				mua = mus[a]
 				for m in range(M):
 					if verbose:
 						print (n,a,m),"out of",(M,p,M)
