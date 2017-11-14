@@ -220,7 +220,7 @@ class modsym(SageObject):
 			psi=psi+self.act_right(Matrix(ZZ,[[ell,0],[0,1]]))
 		return psi.normalize()
 
-	def hecke_by_poly(self,ell,f,verbose:=false):
+	def hecke_by_poly(self,ell,f,verbose=false):
 		v=f.padded_list()
 		act = [self]
 		for j in range(len(v)-1):
