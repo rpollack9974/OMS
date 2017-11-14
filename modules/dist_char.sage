@@ -99,7 +99,8 @@ Inputs:
 		return dist_char(self.p,self.weight,self.char,new_moments)
 
 	def solve_diff_eqn(self):
-		assert self.moments[0]==0, "not total measure zero"
+#		assert self.moments[0]==0, "not total measure zero"
+		print "Solving difference equation with total measure",self.moments[0]
 		mu=self.zero()
 		for m in range(1,self.num_moments()):
 			mu=mu+eta_char(m-1,self.p,self.weight,self.char,self.num_moments()).scale(self.moments[m]/m)

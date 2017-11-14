@@ -72,7 +72,7 @@ def form_basis(N,p,k,M,chi,d,sign):
 			Mat = MatrixSpace(Integers(p^M),B.nrows(),B.ncols())
 			B = Mat(B)
 			B,E,r = row_reduce_mod_pn(B,p,M)
-			print B
+			#print B
 			print "free rank: ",r
 
 			if r == B.nrows():
@@ -122,7 +122,7 @@ def form_basis2(N,p,k,M,chi,d,sign):
 		Mat = MatrixSpace(Integers(p^M),B.nrows(),B.ncols())
 		B = Mat(B)
 		B,E,r = row_reduce_mod_pn(B,p,M)
-		print B
+		#print B
 		print "free rank: ",r
 		if r == B.nrows():
 			print "Keeping it"

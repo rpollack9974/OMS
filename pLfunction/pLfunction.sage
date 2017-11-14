@@ -101,6 +101,7 @@ Inputs:
 	err=Infinity
 	n=1
 	while (err>0) and (n<M):
+		print n
 		lb=loggam_binom(p,gam,z,n,2*M)
 		err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
 		if err>0:

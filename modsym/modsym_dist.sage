@@ -199,7 +199,7 @@ class modsym_dist(modsym):
 			Phiq = self.hecke(q)
 			c = Phiq.data[a].moment(m)/self.data[a].moment(m)
 			print Phiq - self.scale(c)
-
+			print M,m,M-m-self.valuation()
 			return c % (p^(M-m-self.valuation()))
 		
 	def vector_of_total_measures(self):
@@ -222,7 +222,8 @@ class modsym_dist(modsym):
 		"""Iterates U_p M+1 times where M is the number of moments"""
 		p = self.p()
 		Phi = self
-		for r in range(self.num_moments()*2+2):
+		for r in range(self.num_moments()+2):
+			print (r,self.num_moments()+2)
 			Phi = Phi.hecke(p)
 
 		return Phi
@@ -303,8 +304,6 @@ def random_OMS_char(N,p,k,chi,M):
 	v=[]
 	for j in range(1,len(manin.gens)):
 		g=manin.gens[j]
-		print g
-		print manin.glue[g][1]
 		gam=manin.glue[g][1]
 		a=gam[0,0]
 		c=gam[1,0]

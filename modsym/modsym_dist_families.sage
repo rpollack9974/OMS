@@ -125,6 +125,7 @@ def random_OMS_fam(p,N,char,M,r,w):
 	T = PowerSeriesRing(QQ,'ww')
 	err = mus.zero()
 
+	k = r
 	if r != 0:
 		## The following code simply computes -t0/(K0-1)
 		temp = T(T(-t0)/T(K[0]-1))
