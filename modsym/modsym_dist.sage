@@ -199,8 +199,7 @@ class modsym_dist(modsym):
 			Phiq = self.hecke(q)
 			c = Phiq.data[a].moment(m)/self.data[a].moment(m)
 			print Phiq - self.scale(c)
-			print M,m,M-m-self.valuation()
-			return c % (p^(M-m-self.valuation()))
+			return c % (p^(M-m-self.valuation())),(Phiq-self.scale(c)).valuation()
 		
 	def vector_of_total_measures(self):
 		"""returns the vector comprising of the total measure of each distribution defining Phi"""
