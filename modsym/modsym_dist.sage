@@ -226,6 +226,50 @@ class modsym_dist(modsym):
 			Phi = Phi.hecke(p)
 
 		return Phi
+
+	def up(self,p,beta):
+		"""For a critical slope symbol, return Phi | U_p / beta without loss of accuracy
+
+		ONLY CODED FOR WEIGHT 2"""
+	
+		ans = self.hecke_wo_normalization(p).scale(1/beta)		
+		for d in range(0,len(self.data)):
+			mu = ans.data[d]
+			mu.change_nth_moment(0,Phi.data[d].moment(0))
+
+		return ans.normalize()
+
+
+	# def up(self,p,beta):
+	# 	"""For a critical slope symbol, return Phi | U_p / beta without loss of accuracy
+
+	# 	ONLY CODED FOR WEIGHT 2"""
+	# 	p = self.p()
+	# 	Phi = self
+	# 	if self.full_data==0:
+	# 		self.compute_full_data_from_gen_data()
+	# 	v=[]
+	# 	for d in range(0,len(self.data)):
+	# 		D=self.manin.mats[d]
+	# 		PhiDas = [Phi.eval(Matrix(2,2,[1,a,0,p])*D) for a in range(p)]
+	# 		mu = Phi.data[0].zero()
+	# 		moments = []
+	# 		t = mu.num_moments()
+	# 		for j in range(1,t):
+	# 			ans = 0
+	# 			for a in range(p):
+	# 				for r in range(0,j):
+	# 					ans = ans + binomial(j,r) * a^(j-r) * p^r / beta * PhiDas[a].moment(r)
+	# 			moments += [ans]
+	# 		moments = [Phi.eval(D).moment(0)] + moments # add back on 0th momment which is preserved by U_p/beta
+	# 		mu.moments = moments
+	# 		v += [mu]
+
+	# 	C=type(self)		
+	# 	return C(self.level,v,self.manin).normalize()
+
+
+
 	
 def random_OMS(N,p,k,M,char=None):
 	"""Returns a random OMS with tame level N, prime p, weight k, and M moments"""

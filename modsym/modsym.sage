@@ -199,6 +199,15 @@ class modsym(SageObject):
 		C=type(self)		
 		return C(self.level,v,self.manin).normalize()
 	
+	def act_right_wo_normalize(self,gamma):
+		v=[]
+		for j in range(0,len(self.data)):
+			rj=self.manin.gens[j]
+			v=v+[self.eval(gamma*self.manin.mats[rj]).act_right(gamma)]
+
+		C=type(self)		
+		return C(self.level,v,self.manin)
+
 	def plus_part(self):
 		return self.act_right(Matrix(2,2,[1,0,0,-1]))+self
 
@@ -220,12 +229,22 @@ class modsym(SageObject):
 			psi=psi+self.act_right(Matrix(ZZ,[[ell,0],[0,1]]))
 		return psi.normalize()
 
+	def hecke_wo_normalization(self,ell):
+		if self.full_data==0:
+			self.compute_full_data_from_gen_data()
+		psi=self.zero()
+		for a in range(0,ell): 
+			psi=psi+self.act_right_wo_normalize(Matrix(ZZ,[[1,a],[0,ell]]))
+		if self.level%ell<>0:
+			psi=psi+self.act_right_wo_normalize(Matrix(ZZ,[[ell,0],[0,1]]))
+		return psi
+
 	def hecke_by_poly(self,ell,f,verbose=false):
 		v=f.padded_list()
 		act = [self]
 		for j in range(len(v)-1):
 			if verbose:
-				print j,"out of",len(v)-1
+				print j,"out of",len(v)-2
 			act += [act[len(act)-1].hecke(ell)]
 		ans = self.zero()
 		for j in range(len(v)):

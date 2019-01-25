@@ -81,11 +81,17 @@ Inputs:
 		X=v[0]
 		Y=v[1]
 		v=[]
+#		print "base_ring",self.base_ring()
+#		print "self",self
+#		print "coef",[self.poly.coefficient(X^j*Y^(k-j)) for j in range(k+1)]
+#		print "parents1",[self.poly.parent() for j in range(k+1)]
+#		print "parents2",[self.poly.coefficient(X^j*Y^(k-j)).parent() for j in range(k+1)]
+#		print "val",[valuation(self.poly.coefficient(X^j*Y^(k-j)),p) for j in range(k+1)]
 		for j in range(k+1):
 			if self.base_ring() == QQ:
-				v=v+[valuation(QQ(self.poly.coefficient(X^j*Y^(k-j))),p)]
+				v=v+[valuation(QQ(self.poly.monomial_coefficient(X^j*Y^(k-j))),p)]
 			else:
-				v=v+[valuation(self.poly.coefficient(X^j*Y^(k-j)),p)]
+				v=v+[valuation(self.poly.monomial_coefficient(X^j*Y^(k-j)),p)]
 		return min(v)
 		
 	def normalize(self):
@@ -162,7 +168,19 @@ Inputs:
 			print "scaling by ",p,"^",-mu.valuation()," to keep things integral"
 			mu=mu.scale(p^(-mu.valuation()))
 		return mu
-						
+
+	def vector_of_coefs(self):
+		return [self.coef(j) for j in range(self.weight+1)]
+
+def matrix_of_gamma_minus_1(k,gam,base_ring=QQ):
+	S.<X,Y>=PolynomialRing(base_ring)
+	ans = []
+	for j in range(0,k+1):
+		P = symk(k,X^j*Y^(k-j),base_ring=base_ring)
+		Q = P.act_right(gam)-P
+		v = Q.vector_of_coefs()
+		ans += [v]
+	return Matrix(ans)
 
 		
 		

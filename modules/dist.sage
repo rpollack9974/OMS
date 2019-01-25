@@ -30,6 +30,12 @@ Inputs:
 		"""Returns the number of moments of the distribution"""
 		return len(self.moments)
 
+	def change_nth_moment(self,n,new_moment):
+		"""Changes the n-th moment to new_moment"""
+		v = self.moments
+		v[n] = new_moment		
+		self.moments = v
+
 	def __add__(self,right):
 		"""Adds the distributions self and right"""
 		assert self.weight==right.weight, "the weights are different"
