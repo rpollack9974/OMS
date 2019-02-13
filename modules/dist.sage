@@ -1,7 +1,7 @@
 from sage.structure.sage_object import SageObject
 
 class dist(SageObject):
-	def __init__(self,p,k,moments,char=None):
+	def __init__(self,p,k,moments,char=trivial_character(1)):
 		"""A distribution is stored as a vector whose j-th entry is the j-th moment of the distribution.  The j-th entry is stored modulo p^(N-j) where N is the total number of moments.  (This is the accuracy that is maintained after acting by Gamma_0(p).)
 
 Inputs: 

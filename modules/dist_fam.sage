@@ -29,7 +29,7 @@ class dist_fam(SageObject):
 		if char != None:
 			self._char = char
 		else:
-			self._char = DirichletGroup(1,QQ).0
+			self._char = trivial_character(1)
 			
 	def __repr__(self):
 		return repr(self.moments)

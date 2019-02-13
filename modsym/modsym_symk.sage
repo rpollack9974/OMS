@@ -122,6 +122,7 @@ class modsym_symk(modsym):
 			r=r+1
 		if r>self.ngens():
 			#all coefficients of Y^k are zero which I think forces it not to be eigen
+			#THIS CANT BE RIGHT MOD P!!!
 			return False
 		else:	
 			c=selfq.data[r].coef(0)/self.data[r].coef(0)

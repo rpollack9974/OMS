@@ -114,6 +114,21 @@ class modsym(SageObject):
 		C=type(self)
 		return C(self.level,v,self.manin,w).normalize()
 
+	def add_wo_normalizing(self,right):
+		assert self.level==right.level, "the levels are different"
+		v=[]
+		for j in range(0,len(self.data)):
+			v=v+[self.data[j]+right.data[j]]
+		if self.full_data<>0 and right.full_data<>0:
+			w=[]
+			for j in range(0,len(self.full_data)):
+				w=w+[self.full_data[j]+right.full_data[j]]
+		else:
+			w=0
+			
+		C=type(self)
+		return C(self.level,v,self.manin,w)
+		
 	def normalize(self):
 		for j in range(len(self.data)):
 			self.data[j]=self.data[j].normalize()

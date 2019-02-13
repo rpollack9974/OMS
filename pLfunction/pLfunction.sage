@@ -41,7 +41,7 @@ def basic_integral(Phi,a,j,ap,D):
 		ans=ans+binomial(j,r)*(a-teich(a,p,M))^(j-r)*p^r*phi_on_Da(Phi,a,D).moment(r)
 	return ans/ap
 
-def pLfunction_coef(Phi,ap,n,r,D,gam,error=None):
+def pLfunction_coef(Phi,ap,n,r,D,gam,base_ring=QQ,error=None):
 	"""Returns the n-th coefficient of the p-adic L-function in the T-variable of a quadratic twist of Phi.  If error is not specified, then the correct error bound is computed and the answer is return modulo that accuracy.
 
 Inputs:
@@ -67,15 +67,28 @@ Inputs:
 		else:
 			err=error
 		lb=[lb[a] for a in range(M)]
+	print "err=",err
 	for j in range(len(lb)):
 		cjn=lb[j]
 		temp=0
 		for a in range(1,p):
 			temp=temp+teich(a,p,M)^(r-j)*basic_integral(Phi,a,j,ap,D)
 		dn=dn+cjn*temp
-	return dn+O(p^err)
+	if base_ring == QQ:
+		return dn+O(p^err)
+	else:
+		v = list(dn)
+		v = [v[a] + O(p^err) for a in range(len(v))]
+		print v
+		t = 0*w
+		for j in range(len(v)):
+			t += v[j] * w^j
+		dn = t
+		print dn
+		return dn
 
-def pLfunction(Phi,ap,r=0,quad_twist=None):
+
+def pLfunction(Phi,ap,r=0,max=Infinity,base_ring=QQ,quad_twist=None):
 	"""Returns the p-adic L-function in the T-variable of a quadratic twist of Phi
 
 Inputs:
@@ -95,18 +108,26 @@ Inputs:
 #		for j in range(M):
 #			basic_integral(Phi,a,j,ap,D)
 
-	SS.<T>=PowerSeriesRing(QQ)
-	ans=pLfunction_coef(Phi,ap,0,r,D,gam)+0*T
+	SS.<T>=PowerSeriesRing(base_ring)
+	ans=pLfunction_coef(Phi,ap,0,r,D,gam,base_ring=base_ring)+0*T
+	print ans
 	S.<z>=PolynomialRing(QQ)
 	err=Infinity
 	n=1
-	while (err>0) and (n<M):
+	while (err>0) and (n<min(M,max)):
 		print n
 		lb=loggam_binom(p,gam,z,n,2*M)
 		err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
+		print "err2",err
 		if err>0:
-			dn=pLfunction_coef(Phi,ap,n,r,D,gam,error=err)
+			dn=pLfunction_coef(Phi,ap,n,r,D,gam,base_ring=base_ring,error=err)
+			print n,dn
+			print
 			ans=ans+dn*T^n
+			print "ans",ans
+			print
+			print
+
 		n=n+1
 
 	return ans

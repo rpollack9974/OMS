@@ -2,7 +2,7 @@ import sage.rings.polynomial.multi_polynomial_element as MPol
 from sage.structure.sage_object import SageObject
 
 class symk(SageObject):
-	def __init__(self,k,poly=None,chi=None,base_ring=QQ):
+	def __init__(self,k,poly=None,chi=trivial_character(1),base_ring=QQ):
 		"""A symk object is stored as a homogeneous polynomial of degree k
 
 Inputs: 

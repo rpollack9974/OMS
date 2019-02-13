@@ -10,7 +10,7 @@ attach modsym/fund_domain.sage
 attach modsym/modsym.sage
 attach modsym/modsym_symk.sage
 attach modsym/modsym_dist.sage
-#attach modsym/modsym_dist_aws.sage
-#attach modsym/modsym_dist_families.sage
+attach modsym/modsym_dist_aws.sage
+attach modsym/modsym_dist_families.sage
 
 attach pLfunction/pLfunction.sage

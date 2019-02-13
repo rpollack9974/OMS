@@ -227,3 +227,50 @@ def row_reduce_mod_pn(B,p,n):
 	return A,E,curr_row
 	
 		
+def row_reduce_mod_pn2(B,p,n):
+	A = copy(B)
+	rows = A.nrows()
+	cols = A.ncols()
+	M = MatrixSpace(Integers(p^n),rows,cols)
+	A = M(A)
+	curr_col = 0
+	curr_row = 0
+	E = Matrix(Integers(p^n),rows,rows,1)
+	while (curr_row < rows) and (curr_col < cols):
+		#print (curr_row,curr_col)
+		v = [A[r][curr_col] for r in range(curr_row,rows)]
+		#print v
+		vals = [ZZ(v[j]).valuation(p)  for j in range(len(v))]
+		#print vals
+		m = min(vals) 
+		print "Out: (r,c,m)=",(curr_row,curr_col,m)
+		if m < Infinity:
+			print "In: (r,c,m)=",(curr_row,curr_col,m)
+			least_ind = curr_row
+			while vals[least_ind-curr_row] > m:
+				least_ind = least_ind + 1
+			#print "least_ind = ",least_ind
+			A.swap_rows(curr_row,least_ind)
+			F = Matrix(Integers(p^n),rows,rows,1)
+			F.swap_rows(curr_row,least_ind)
+			E = F * E	
+			for r in range(rows):
+				if r != curr_row:
+#					print "1",A[curr_row,curr_col]
+#					print "2",ZZ(A[curr_row,curr_col])
+#					print "3",ZZ(A[r,curr_col])
+					c = -ZZ(A[r,curr_col])/ZZ(A[curr_row,curr_col])
+					if c.valuation(p) >= 0:
+						A.add_multiple_of_row(r,curr_row,c)
+						F = Matrix(Integers(p^n),rows,rows,1)
+						F[r,curr_row] = c
+						E = F * E
+			curr_row = curr_row + 1
+		curr_col = curr_col + 1
+		#print A
+		#print "----"
+		#print E*A
+		#print "-------------"
+	return A,E,curr_row
+	
+		

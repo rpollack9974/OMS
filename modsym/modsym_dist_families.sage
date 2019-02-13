@@ -53,14 +53,126 @@ class modsym_dist_fam(modsym):
 		M = self.num_moments()
 		R = self.data[0].moment(0).parent()
 		T = PowerSeriesRing(QQ,'y')
-		manin = manin_relations(N*p)
-
+		
 		Phiq = self.hecke(q)
 		aq = R(T(T(Phiq.data[0].moment(0))/T(self.data[0].moment(0))).padded_list())
 
 		print (self.scale(aq) - Phiq).normalize()
 
 		return ps_normalize(aq,p,M-self.valuation())
+
+	#@cached_function
+	def phi_on_Da(self,a,D):
+		p=self.p()
+		ans=self.zero_elt()
+		for b in range(1,abs(D)+1):
+			if gcd(b,D)==1:	
+				ans=ans+self.eval(Matrix(2,2,[1,b/abs(D),0,1])*Matrix(2,2,[a,1,p,0])).act_right(Matrix(2,2,[1,b/abs(D),0,1])).scale(kronecker(D,b)).normalize()
+		return ans.normalize()
+
+	#@cached_function
+	def basic_integral(self,a,j,ap,D):
+		"""returns int_{a+pZ_p} (z-{a})^j dPhi(0-infty) -- see formula [PS, sec 9.2] """
+		M=self.num_moments()
+		p=self.p()
+		ap=ap*kronecker(D,p)
+		ans=0
+		for r in range(j+1):
+			ans=ans+binomial(j,r)*(a-teich(a,p,M))^(j-r)*p^r*self.phi_on_Da(a,D).moment(r)
+		return ans/ap
+
+	def pLfunction_coef(self,ap,n,r,D,gam,base_ring=QQ,error=None):
+		"""Returns the n-th coefficient of the p-adic L-function in the T-variable of a quadratic twist of self.  If error is not specified, then the correct error bound is computed and the answer is return modulo that accuracy.
+
+	Inputs:
+		self -- overconvergent Hecke-eigensymbol;
+		ap -- eigenvalue of U_p;
+		n -- index of desired coefficient
+		r -- twist by omega^r
+		D -- discriminant of quadratic twist
+		gam -- topological generator of 1+pZ_p"""
+
+
+		S.<z>=PolynomialRing(QQ)
+		p=self.p()
+		M=self.num_moments()
+		R=pAdicField(p,M)
+		lb=loggam_binom(p,gam,S.0,n,2*M)
+		dn=0
+		if n==0:
+			err=M
+		else:
+			if (error==None):
+				err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
+			else:
+				err=error
+			lb=[lb[a] for a in range(M)]
+		print "err=",err
+		for j in range(M):
+			cjn=lb[j]
+			temp=0
+			for a in range(1,p):
+				temp=temp+teich(a,p,M)^(r-j)*self.basic_integral(a,j,ap,D)
+			dn=dn+cjn*temp
+		if base_ring == QQ:
+			return dn+O(p^err)
+		else:
+			v = list(dn)
+			v = [v[a] + O(p^err) for a in range(len(v))]
+			print v
+			t = 0*w
+			for j in range(len(v)):
+				t += v[j] * w^j
+			dn = t
+			print dn
+			return dn
+
+
+	def pLfunction(self,ap,r=0,max=Infinity,base_ring=QQ,quad_twist=None):
+		"""Returns the p-adic L-function in the T-variable of a quadratic twist of self
+
+	Inputs:
+		self -- overconvergent Hecke-eigensymbol;
+		ap -- eigenvalue at p;
+		r -- twist by omega^r
+		quad_twist -- conductor of quadratic character"""
+
+		if quad_twist==None:
+			D=1
+		else:
+			D=quad_twist
+		M=self.num_moments()
+		p=self.p()
+		gam=1+p
+	#	for a in range(1,p):
+	#		for j in range(M):
+	#			basic_integral(self,a,j,ap,D)
+
+		SS.<T>=PowerSeriesRing(base_ring)
+		ans=self.pLfunction_coef(ap,0,r,D,gam,base_ring=base_ring)+0*T
+		print ans
+		S.<z>=PolynomialRing(QQ)
+		err=Infinity
+		n=1
+		while (err>0) and (n<min(M,max)):
+			print n
+			lb=loggam_binom(p,gam,z,n,2*M)
+			err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
+			print "err2",err
+			if err>0:
+				dn=self.pLfunction_coef(ap,n,r,D,gam,base_ring=base_ring,error=err)
+				print n,dn
+				print
+				ans=ans+dn*T^n
+				print "ans",ans
+				print
+				print
+
+			n=n+1
+
+		return ans
+
+
 	
 #######################################################################################################################
 ##  This function produces a random family of OMSs.
@@ -156,3 +268,27 @@ def random_OMS_fam(p,N,char,M,r,w):
 	Phis = modsym_dist_fam(N*p,v,manin)
 
 	return Phis
+
+
+@cached_function
+def teich(a,p,M):
+	R=pAdicField(p,M)
+	return ZZ(R.teichmuller(a))
+
+#@cached_function
+def logp(p,z,M):
+	"""returns the truncation sum_{j=1}^{M-1} (-1)^(j+1)/j z^j of log_p(1+z)"""
+	ans=0
+	for j in range(1,M):
+		ans=ans+(-1)^(j+1)/j*z^j
+	return ans
+
+@cached_function
+def loggam_binom(p,gam,z,n,M):
+	L=logp(p,z,M)
+	logpgam=L.substitute(z=(gam-1))
+	loggam=L/logpgam
+#	print loggam
+#	print binomial(loggam,n)
+
+	return binomial(loggam,n).list()

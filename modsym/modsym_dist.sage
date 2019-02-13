@@ -228,16 +228,37 @@ class modsym_dist(modsym):
 		return Phi
 
 	def up(self,p,beta):
-		"""For a critical slope symbol, return Phi | U_p / beta without loss of accuracy
+		"""For a critical slope symbol with U_p-eigenvalue beta, returns Phi | U_p / beta without loss of accuracy
 
 		ONLY CODED FOR WEIGHT 2"""
-	
-		ans = self.hecke_wo_normalization(p).scale(1/beta)		
-		for d in range(0,len(self.data)):
-			mu = ans.data[d]
-			mu.change_nth_moment(0,Phi.data[d].moment(0))
+		if self.full_data == 0:
+			self.compute_full_data_from_gen_data()
+		psi = self.zero()
 
-		return ans.normalize()
+		# acts by U_p/beta but with no normalizations.  This gives the correct answer for higher moments but not 0th-moments
+		for a in range(0,p): 
+			temp = self.act_right_wo_normalize(Matrix(ZZ,[[1,a],[0,p]]))
+			psi = psi.add_wo_normalizing(temp)
+		psi = psi.scale(1/beta)
+
+		# This code corrects the 0-th moments assuming that the specialization of self is U_p-eigen with eigenvalue beta
+		for d in range(0,len(self.data)):
+			mu = psi.data[d]
+			mu.change_nth_moment(0,self.data[d].moment(0))
+		return psi.normalize()
+
+	def up_by_poly(self,p,beta,f,verbose=false):
+		v=f.padded_list()
+		act = [self]
+		for j in range(len(v)-1):
+			if verbose:
+				print j,"out of",len(v)-2
+			act += [act[len(act)-1].up(p,beta)]
+		ans = self.zero()
+		for j in range(len(v)):
+			ans += act[j].scale(v[j])
+		return ans
+
 
 
 	# def up(self,p,beta):
@@ -271,7 +292,7 @@ class modsym_dist(modsym):
 
 
 	
-def random_OMS(N,p,k,M,char=None):
+def random_OMS(N,p,k,M,char=trivial_character(1)):
 	"""Returns a random OMS with tame level N, prime p, weight k, and M moments"""
 	## There must be a problem here with that +1 -- should be variable depending on a c of some matrix
 	if k != 0:
