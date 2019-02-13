@@ -53,7 +53,7 @@ class modsym_dist_fam(modsym):
 		M = self.num_moments()
 		R = self.data[0].moment(0).parent()
 		T = PowerSeriesRing(QQ,'y')
-		
+
 		Phiq = self.hecke(q)
 		aq = R(T(T(Phiq.data[0].moment(0))/T(self.data[0].moment(0))).padded_list())
 
@@ -108,7 +108,7 @@ class modsym_dist_fam(modsym):
 				err=error
 			lb=[lb[a] for a in range(M)]
 		print "err=",err
-		for j in range(M):
+		for j in range(min(M,len(lb))):
 			cjn=lb[j]
 			temp=0
 			for a in range(1,p):

@@ -96,11 +96,11 @@ print str(L2.newton_slopes())
 p=3
 r=2
 N=1
-k=4
+k=2
 G=DirichletGroup(N*p^r)
 chi=(G.0)^(p-1)
 print "Forming modsym space"
-M=ModularSymbols(chi,k,1).cuspidal_subspace()
+M=ModularSymbols(chi,k,1)
 print M
 print "Hecke poly"
 f=M.hecke_polynomial(p)
@@ -121,7 +121,7 @@ for b in range(len(A)):
 	h = max(slopes)
 	print "Max slope is",h
 	print "Computing MT"
-	L=phi.MazurTate(p,4,10,h=h,verbose=false)
+	L=phi.MazurTate(p,4,20,h=h+1,verbose=false)
 	v=L.padded_list()
 	for j in range(len(pp)):
 		print "Slope",ap.valuation(pp[j])/pp[j].absolute_ramification_index()
@@ -130,4 +130,25 @@ for b in range(len(A)):
 		sNP = Sequence(Set(NP))
 		sNP.sort()
 		print [[NP.count(sNP[a]),-sNP[a]] for a in range(len(sNP))]
+
+
+
+##This codes finds w-adic symbols for p=3 and N=1
+R.<w>=PowerSeriesRing(GF(3),200)
+mu=measure_on_Zp(3,R,[a+1 for a in range(200)],comp=0)
+mu.Mahler_coefs[0]=0
+m=manin_relations(3)
+t=m.gen_rel_mat(1)
+nu=mu.scale(2)-mu.act_right(t)-mu.act_right(t^2)
+nu1=nu.solve_diff_eqn()
+Phi=vector_to_modsym(1,3,[nu1,nu])
+Phi.data=[nu1,nu]
+Phi.check_loop()
+Phi=Phi.hecke(3)-Phi.scale(1)
+P=[Phi]
+for j in range(50):
+	P += [P[len(P)-1].hecke(3)]
+	print j
+
+
 
