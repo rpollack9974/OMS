@@ -1,7 +1,7 @@
 class modsym_symk(modsym):
 	def ms(self):
 		"""demotes to a regular modular symbol"""
-		return modsym(self.level,self.data,self.manin)
+		return modsym(self.level(),self.data,self.manin)
 
 	def weight(self):
 		"""returns the weight of any value of self"""
@@ -28,7 +28,7 @@ class modsym_symk(modsym):
 
 	def p_stabilize(self,p,alpha):
 		"""p-stablizes self to form an eigensymbol for U_p with eigenvalue alpha"""
-		N=self.level
+		N=self.level()
 		assert N%p<>0, "The level isn't prime to p"
 
 		pp=Matrix(ZZ,[[p,0],[0,1]])
@@ -41,7 +41,7 @@ class modsym_symk(modsym):
 
 	def p_stabilize_ordinary(self,p,ap,M):
 		"""returns the unique p-ordinary p-stabilization of self"""
-		N=self.level
+		N=self.level()
 		k=self.data[0].weight
 		assert N%p<>0, "The level isn't prime to p"
 		assert ap%p<>0, "Not ordinary!"
@@ -62,7 +62,7 @@ class modsym_symk(modsym):
 		return self.p_stabilize(p,alpha)
 
 	def p_stabilize_critical(self,p,ap,M):
-		N=self.level
+		N=self.level()
 		assert N%p<>0, "The level isn't prime to p"
 		assert ap%p<>0, "Not ordinary!"
 
@@ -235,7 +235,7 @@ class modsym_symk(modsym):
 
 		v = [mu.scale(-1)] + v
 	 
-		return modsym_dist(self.level,v,self.manin)	
+		return modsym_dist(self.level(),v,self.manin)	
 
 	def lift_to_OMS_eigen(self,p,M,ap=None,verbose=True):
 		"""returns Hecke-eigensymbol OMS lifting phi -- phi must be a p-ordinary eigensymbol"""
@@ -298,14 +298,14 @@ class modsym_symk(modsym):
 	"""self is a modular symbol taking values in Sym^k(K^2), where K is a finite extension of Q, psi is a map from the K to Qp and the below function 'map' applies psi to all polynomial coefficients and then lifts them to QQ"""
 	def map(self,psi):
 		v=[self.data[j].map(psi) for j in range(len(self.data))]
-		return modsym_symk(self.level,v,self.manin)
+		return modsym_symk(self.level(),v,self.manin)
 
 	"""simply apply psi to self"""
 	def map2(self,psi):
 		v=[self.data[j].map2(psi) for j in range(len(self.data))]
 		for j in range(self.ngens()):
 			v[j].chi = compose(psi,v[j].chi)
-		return modsym_symk(self.level,v,self.manin)
+		return modsym_symk(self.level(),v,self.manin)
 
 	def coerce_to_Qp(self,p,M):
 		"""If K is the base_ring of self, this function takes all maps K-->Q_p and applies them to self return a vector of <modular symbol,map:K-->Q_p> as map varies over all such maps.  M is the accuracy"""
@@ -343,7 +343,7 @@ class modsym_symk(modsym):
 				v=v+[phi.data[a].coef(j)]
 			v=dist(p,k,vector(v+[0]))
 			ans=ans+[v]	
-		new=modsym_dist(self.level,ans,self.manin)
+		new=modsym_dist(self.level(),ans,self.manin)
 		return new.hecke(p).scale(1/ap).normalize()
 
 

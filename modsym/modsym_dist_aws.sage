@@ -7,5 +7,5 @@ class modsym_dist_aws(modsym_dist):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].normalize_aws()]
-		return modsym_dist_aws(self.level,v,self.manin)
+		return modsym_dist_aws(self.level(),v,self.manin)
 

@@ -1,7 +1,7 @@
 class modsym_dist(modsym):
 	def ms(self):
 		"""demotes to a regular modular symbol"""
-		return modsym(self.level,self.data,self.manin)
+		return modsym(self.level(),self.data,self.manin)
 
 	def p(self):
 		"""returns the underlying prime"""
@@ -25,7 +25,7 @@ class modsym_dist(modsym):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].specialize()]
-		return modsym_symk(self.level,v,self.manin)
+		return modsym_symk(self.level(),v,self.manin)
 	
 	def valuation(self):
 		"""returns the exponent of the highest power of p which divides all moments of all values of self"""
@@ -37,7 +37,7 @@ class modsym_dist(modsym):
 			v=[]
 			for j in range(0,len(self.data)):
 				v=v+[self.data[j].normalize()]
-			ans=modsym_dist(self.level,v,self.manin,self.full_data)
+			ans=modsym_dist(self.level(),v,self.manin,self.full_data)
 			ans.normalize_full_data()
 			
 			return ans
@@ -50,7 +50,7 @@ class modsym_dist(modsym):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].aws_normalize()]
-		ans=modsym_dist(self.level,v,self.manin,self.full_data)
+		ans=modsym_dist(self.level(),v,self.manin,self.full_data)
 		ans.normalize_full_data()
 		
 		return ans
@@ -60,14 +60,14 @@ class modsym_dist(modsym):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].change_precision(M)]
-		return modsym_dist(self.level,v,self.manin)
+		return modsym_dist(self.level(),v,self.manin)
 
 	def lift(self,phi,ap):
 		"""Greenberg trick of lifting and applying U_p --- phi is the (exact) classical symbol"""
 		v=[]
 		for a in range(self.ngens()):
 			v=v+[self.data[a].lift()]
-		Phi=modsym_dist(self.level,v,self.manin)
+		Phi=modsym_dist(self.level(),v,self.manin)
 		k=self.weight()
 		for a in range(self.ngens()):
 			for j in range(k+1):
@@ -170,7 +170,7 @@ class modsym_dist(modsym):
 
 		v = [mu.scale(-1)] + v
 	
-		Phis = modsym_dist_fam(self.level,v,self.manin)
+		Phis = modsym_dist_fam(self.level(),v,self.manin)
 
 		return Phis
 
@@ -258,6 +258,27 @@ class modsym_dist(modsym):
 		for j in range(len(v)):
 			ans += act[j].scale(v[j])
 		return ans
+
+	#@cached_function
+	def phi_on_Da(self,a,D):
+		p=self.p()
+		ans=self.zero_elt()
+		for b in range(1,abs(D)+1):
+			if gcd(b,D)==1:	
+				ans=ans+self.eval(Matrix(2,2,[1,b/abs(D),0,1])*Matrix(2,2,[a,1,p,0])).act_right(Matrix(2,2,[1,b/abs(D),0,1])).scale(kronecker(D,b)).normalize()
+		return ans.normalize()
+
+	#@cached_function
+	def basic_integral(self,a,j,ap,D):
+		"""returns int_{a+pZ_p} (z-{a})^j dPhi(0-infty) -- see formula [PS, sec 9.2] """
+		M=self.num_moments()
+		p=self.p()
+		ap=ap*kronecker(D,p)
+		ans=0
+		for r in range(j+1):
+			ans=ans+binomial(j,r)*(a-teich(a,p,M))^(j-r)*p^r*self.phi_on_Da(a,D).moment(r)
+		return ans/ap
+
 
 
 

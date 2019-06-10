@@ -85,22 +85,26 @@ def prep_hecke(ell,N,M):
 
 class modsym(SageObject):
 	def __init__(self,level,data,manin,full_data=None):
-		self.level=level
+		self._level = level
 		self.data=data
 		self.manin=manin
 		if full_data<>None:
 			self.full_data=full_data
 		else:
 			self.full_data=0
+		self._pLdata = {}
 			
 	def __repr__(self):
 		return repr(self.data)
+
+	def level(self):
+		return self._level
 
 	def ngens(self):
 		return len(self.manin.gens)
 
 	def __add__(self,right):
-		assert self.level==right.level, "the levels are different"
+		assert self.level()==right.level(), "the levels are different"
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j]+right.data[j]]
@@ -111,11 +115,11 @@ class modsym(SageObject):
 		else:
 			w=0
 			
-		C=type(self)
-		return C(self.level,v,self.manin,w).normalize()
+		C=type(self) 
+		return C(self.level(),v,self.manin,w).normalize()
 
 	def add_wo_normalizing(self,right):
-		assert self.level==right.level, "the levels are different"
+		assert self.level()==right.level(), "the levels are different"
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j]+right.data[j]]
@@ -127,7 +131,7 @@ class modsym(SageObject):
 			w=0
 			
 		C=type(self)
-		return C(self.level,v,self.manin,w)
+		return C(self.level(),v,self.manin,w)
 		
 	def normalize(self):
 		for j in range(len(self.data)):
@@ -146,13 +150,13 @@ class modsym(SageObject):
 			w=0
 
 		C=type(self)
-		return C(self.level,v,self.manin,w)
+		return C(self.level(),v,self.manin,w)
 		
 	def __sub__(self,right):
 		return self+right.scale(-1)
 
 	def __cmp__(self,right):
-		return cmp((self.level,self.data),(right.level,right.data))
+		return cmp((self.level(),self.data),(right.level(),right.data))
 
 	def zero_elt(self):
 		return self.data[0].zero()
@@ -160,7 +164,7 @@ class modsym(SageObject):
 	def zero(self):
 		v=[self.zero_elt() for i in range(0,len(self.data))]
 		C=type(self)
-		return C(self.level,v,self.manin)
+		return C(self.level(),v,self.manin)
 
 	def compute_full_data_from_gen_data(self):
 		ans=[]
@@ -212,7 +216,7 @@ class modsym(SageObject):
 			v=v+[self.eval(gamma*self.manin.mats[rj]).act_right(gamma)]
 
 		C=type(self)		
-		return C(self.level,v,self.manin).normalize()
+		return C(self.level(),v,self.manin).normalize()
 	
 	def act_right_wo_normalize(self,gamma):
 		v=[]
@@ -221,7 +225,7 @@ class modsym(SageObject):
 			v=v+[self.eval(gamma*self.manin.mats[rj]).act_right(gamma)]
 
 		C=type(self)		
-		return C(self.level,v,self.manin)
+		return C(self.level(),v,self.manin)
 
 	def plus_part(self):
 		return self.act_right(Matrix(2,2,[1,0,0,-1]))+self
@@ -240,7 +244,7 @@ class modsym(SageObject):
 		psi=self.zero()
 		for a in range(0,ell): 
 			psi=psi+self.act_right(Matrix(ZZ,[[1,a],[0,ell]]))
-		if self.level%ell<>0:
+		if self.level()%ell<>0:
 			psi=psi+self.act_right(Matrix(ZZ,[[ell,0],[0,1]]))
 		return psi.normalize()
 
@@ -250,7 +254,7 @@ class modsym(SageObject):
 		psi=self.zero()
 		for a in range(0,ell): 
 			psi=psi+self.act_right_wo_normalize(Matrix(ZZ,[[1,a],[0,ell]]))
-		if self.level%ell<>0:
+		if self.level()%ell<>0:
 			psi=psi+self.act_right_wo_normalize(Matrix(ZZ,[[ell,0],[0,1]]))
 		return psi
 
@@ -272,7 +276,7 @@ class modsym(SageObject):
 			self.compute_full_data_from_gen_data()
 			self.normalize_full_data()
 		psi=self.zero()
-		v=prep_hecke(ell,self.level,self.manin)
+		v=prep_hecke(ell,self.level(),self.manin)
 		for m in range(len(self.manin.gens)):
 			for j in range(len(self.manin.mats)):
 				for r in range(len(v[m][j])):

@@ -46,6 +46,9 @@ class dist_fam(SageObject):
 	def num_moments(self):
 		return len(self.moments)
 
+	def base_ring(self):
+		return self.moment(0).parent()
+
 	def change_deg(self,new_deg):
 		assert new_deg<=self.deg, "can only lower degree"
 		v=[self.moments[a].truncate(new_deg) for a in range(self.num_moments())]
