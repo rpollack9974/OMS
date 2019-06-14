@@ -4,7 +4,7 @@ p=3
 N=5
 E=EllipticCurve('15a')
 phi=form_modsym_from_elliptic_curve(E)
-Phi=phi.lift_to_OMS(3,15)
+Phi=phi.lift_to_OMS(3,20)
 #creates an overconvergent lifting of phi accurate module Fil^10
 if Phi.valuation()<0:
 	Phi=Phi.scale(p^(-Phi.valuation()))
@@ -14,7 +14,7 @@ Phi=Phi.hecke(p)
 Phi=Phi.hecke(p)-Phi
 #currently the lifting of classical modular symbols only works up to some Eisenstein error.  Here we apply U_p-1 to  kill off this error
 print "Iterating U_p"
-for j in range(15):
+for j in range(20):
 	print j
 	Phi=Phi.hecke(p); Phi
 #The result after applying U_p should converge to a Hecke-eigensymbol lifting phi
@@ -33,7 +33,7 @@ Phis=Phis.hecke(p)
 Phis=Phis.hecke(p)-Phis
 #Same deal with Eisenstein stuff as before
 print "Iterating U_p in families"
-for j in range(15):
+for j in range(20):
 	print j
 	Phis=Phis.hecke(p); Phi
 #Result should be an eigen-family!

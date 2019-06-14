@@ -1,7 +1,7 @@
 class modsym_dist_fam(modsym):
 	def ms(self):
 		"""demotes to a regular modular symbol"""
-		return modsym(self.level,self.data,self.manin)
+		return modsym(self.level(),self.data,self.manin)
 
 	def num_moments(self):
 		return self.data[0].num_moments()
@@ -20,13 +20,16 @@ class modsym_dist_fam(modsym):
 
 	def change_deg(self,new_deg):
 		v=[self.data[r].change_deg(new_deg) for r in range(self.ngens())]
-		return modsym_dist_fam(self.level,v,self.manin)
+		return modsym_dist_fam(self.level(),v,self.manin)
+
+	def base_ring(self):
+		return self.data[0].base_ring()
 
 	def specialize(self,k):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].specialize(k)]
-		return modsym_dist_aws(self.level,v,self.manin)
+		return modsym_dist_aws(self.level(),v,self.manin)
 	
 	def valuation(self):
 		#print [self.data[j].valuation() for j in range(len(self.data))]
@@ -36,13 +39,13 @@ class modsym_dist_fam(modsym):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].normalize()]
-		return modsym_dist_fam(self.level,v,self.manin)
+		return modsym_dist_fam(self.level(),v,self.manin)
 	
 	def change_precision(self,M):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].change_precision(M)]
-		return modsym_dist_fam(self.level,v,self.manin)
+		return modsym_dist_fam(self.level(),v,self.manin)
 
 	## This procedure tries to find a power series c(w) such that 
 	##      self | T_q = c(w) self
@@ -61,82 +64,97 @@ class modsym_dist_fam(modsym):
 
 		return ps_normalize(aq,p,M-self.valuation())
 
-	#@cached_function
-	def phi_on_Da(self,a,D):
-		p=self.p()
-		ans=self.zero_elt()
-		for b in range(1,abs(D)+1):
-			if gcd(b,D)==1:	
-				ans=ans+self.eval(Matrix(2,2,[1,b/abs(D),0,1])*Matrix(2,2,[a,1,p,0])).act_right(Matrix(2,2,[1,b/abs(D),0,1])).scale(kronecker(D,b)).normalize()
-		return ans.normalize()
+	def pLdata_has_key(self,D):
+		return self._pLdata.has_key(D)
 
-	#@cached_function
-	def basic_integral(self,a,j,ap,D):
-		"""returns int_{a+pZ_p} (z-{a})^j dPhi(0-infty) -- see formula [PS, sec 9.2] """
+	def add_pLdata(self,D,data):
+		self._pLdata[D] = data
+
+	def pLdata(self,D):
+		return self._pLdata[D]
+
+#	@cached_function
+	def phi_on_Da(self,a,D):
+		"""return self_D(D_a) = self_D({infty} - {a/p}) where self_D is the quadratic twist of self;
+		the value is cached in self._pLdata"""
+		if self.pLdata_has_key(a):
+			print "using"
+			return self.pLdata(a)
+		else:
+			print "not using"
+			p=self.p()
+			ans=self.zero_elt()
+			for b in range(1,abs(D)+1):
+				if gcd(b,D)==1:	
+					ans=ans+self.eval(Matrix(2,2,[1,b/abs(D),0,1])*Matrix(2,2,[a,1,p,0])).act_right(Matrix(2,2,[1,b/abs(D),0,1])).scale(kronecker(D,b)).normalize()
+			self.add_pLdata(a,ans.normalize())
+			return ans.normalize()
+
+#	@cached_function
+	def basic_integral(self,a,j,D):
+		"""returns ap int_{a+pZ_p} (z-{a})^j dPhi(0-infty) -- see formula [PS, sec 9.2] """
 		M=self.num_moments()
 		p=self.p()
-		ap=ap*kronecker(D,p)
+#		ap=ap*kronecker(D,p)
 		ans=0
 		for r in range(j+1):
 			ans=ans+binomial(j,r)*(a-teich(a,p,M))^(j-r)*p^r*self.phi_on_Da(a,D).moment(r)
-		return ans/ap
+		return ans
 
-	def pLfunction_coef(self,ap,n,r,D,gam,base_ring=QQ,error=None):
-		"""Returns the n-th coefficient of the p-adic L-function in the T-variable of a quadratic twist of self.  If error is not specified, then the correct error bound is computed and the answer is return modulo that accuracy.
+	def pLfunction_coef(self,n,r,D,gam,error=None):
+		"""Returns the n-th coefficient of the p-adic L-function in the T-variable of a quadratic twist of self.  
+		If error is not specified, then the correct error bound is computed and the answer is return modulo that accuracy.
+
+		actually answer is scaled by a_p but this only changes answer by a unit
 
 	Inputs:
 		self -- overconvergent Hecke-eigensymbol;
-		ap -- eigenvalue of U_p;
 		n -- index of desired coefficient
 		r -- twist by omega^r
 		D -- discriminant of quadratic twist
 		gam -- topological generator of 1+pZ_p"""
 
+		S.<z> = PolynomialRing(QQ)
+		p = self.p()
+		M = self.num_moments()
+#		Rpadic.<wp> = PowerSeriesRing(pAdicField(p,M))
 
-		S.<z>=PolynomialRing(QQ)
-		p=self.p()
-		M=self.num_moments()
-		R=pAdicField(p,M)
-		lb=loggam_binom(p,gam,S.0,n,2*M)
-		dn=0
-		if n==0:
-			err=M
+		lb = loggam_binom(p,gam,S.0,n,2*M)
+		dn = 0
+		if n == 0:
+			err = ceil((p-2)/(p-1) * M)
 		else:
-			if (error==None):
-				err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
+			if (error == None):
+				err = min(ceil((p-2)/(p-1) * (M-n)), min([j + lb[j].valuation(p) for j in range(M,len(lb))]))
 			else:
-				err=error
-			lb=[lb[a] for a in range(M)]
-		print "err=",err
-		for j in range(min(M,len(lb))):
-			cjn=lb[j]
-			temp=0
+				err = error
+			lb = [lb[a] for a in range(M)]
+		for j in range(len(lb)):
+			cjn = lb[j]
+			temp = 0
 			for a in range(1,p):
-				temp=temp+teich(a,p,M)^(r-j)*self.basic_integral(a,j,ap,D)
-			dn=dn+cjn*temp
-		if base_ring == QQ:
-			return dn+O(p^err)
-		else:
-			v = list(dn)
-			v = [v[a] + O(p^err) for a in range(len(v))]
-			print v
-			t = 0*w
-			for j in range(len(v)):
-				t += v[j] * w^j
-			dn = t
-			print dn
-			return dn
+				temp = temp + teich(a,p,M)^(r-j)*(self.basic_integral(a,j,D))
+			dn = dn + cjn*temp
+		v = list(dn)
+		v = [v[a] + O(p^err) for a in range(len(v))]
+		t = 0*w
+		for j in range(len(v)):
+			t += v[j] * w^j
+		dn = t
+		return dn
 
 
-	def pLfunction(self,ap,r=0,max=Infinity,base_ring=QQ,quad_twist=None):
+	def pLfunction(self,r=0,max=Infinity,quad_twist=None):
 		"""Returns the p-adic L-function in the T-variable of a quadratic twist of self
 
+	actually answer is scaled by a_p but this only changes answer by a unit
+	
 	Inputs:
 		self -- overconvergent Hecke-eigensymbol;
-		ap -- eigenvalue at p;
 		r -- twist by omega^r
 		quad_twist -- conductor of quadratic character"""
 
+		self._pLdata = {}
 		if quad_twist==None:
 			D=1
 		else:
@@ -144,29 +162,18 @@ class modsym_dist_fam(modsym):
 		M=self.num_moments()
 		p=self.p()
 		gam=1+p
-	#	for a in range(1,p):
-	#		for j in range(M):
-	#			basic_integral(self,a,j,ap,D)
 
-		SS.<T>=PowerSeriesRing(base_ring)
-		ans=self.pLfunction_coef(ap,0,r,D,gam,base_ring=base_ring)+0*T
-		print ans
+		SS.<T> = PolynomialRing(self.base_ring())
+		ans = self.pLfunction_coef(0,r,D,gam)+0*T
 		S.<z>=PolynomialRing(QQ)
 		err=Infinity
 		n=1
 		while (err>0) and (n<min(M,max)):
-			print n
 			lb=loggam_binom(p,gam,z,n,2*M)
 			err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
-			print "err2",err
 			if err>0:
-				dn=self.pLfunction_coef(ap,n,r,D,gam,base_ring=base_ring,error=err)
-				print n,dn
-				print
+				dn=self.pLfunction_coef(n,r,D,gam,error=err)
 				ans=ans+dn*T^n
-				print "ans",ans
-				print
-				print
 
 			n=n+1
 
@@ -222,9 +229,11 @@ def random_OMS_fam(p,N,char,M,r,w):
 
 	j = 1
 	rj = manin.gens[j]
-	while (j < len(manin.gens)-1) and ((manin.twotor.count(rj) != 0) or (manin.threetor.count(rj) != 0)):
+	gam = manin.gen_rel_mat(j)
+	while (j < len(manin.gens)-1) and ((manin.twotor.count(rj) != 0) or (manin.threetor.count(rj) != 0) or (gam[0,0]^r%p==1)):
 		j = j + 1
 		rj = manin.gens[j]
+		gam = manin.gen_rel_mat(j)
 	assert j < len(manin.gens) - 1, "Everything is 2 or 3 torsion!  NOT YET IMPLEMENTED IN THIS CASE"
 
 	gam = manin.gen_rel_mat(j)
