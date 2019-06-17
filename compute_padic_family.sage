@@ -7,6 +7,7 @@ def padic_family(p,N,r,ap_list,acc,verbose=False):
 	if verbose:
 		print "Forming random symbol"
 	Phis = random_OMS_fam(p,N,one,acc,r,w)
+	Phis = Phis.scale(p^(-Phis.valuation()))
 	if verbose:
 		print "Killing Eisenstein family"
 	Phis = Phis.hecke(p) - Phis

@@ -230,7 +230,7 @@ def random_OMS_fam(p,N,char,M,r,w):
 	j = 1
 	rj = manin.gens[j]
 	gam = manin.gen_rel_mat(j)
-	while (j < len(manin.gens)-1) and ((manin.twotor.count(rj) != 0) or (manin.threetor.count(rj) != 0) or (gam[0,0]^r%p==1)):
+	while (j < len(manin.gens)-1) and ((manin.twotor.count(rj) != 0) or (manin.threetor.count(rj) != 0) or (r!=0 and gam[0,0]^r%p==1)):
 		j = j + 1
 		rj = manin.gens[j]
 		gam = manin.gen_rel_mat(j)
