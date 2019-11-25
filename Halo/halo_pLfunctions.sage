@@ -134,8 +134,8 @@ for b in range(len(A)):
 
 
 ##This codes finds w-adic symbols for p=3 and N=1
-R.<w>=PowerSeriesRing(GF(3),200)
-mu=measure_on_Zp(3,R,[a+1 for a in range(200)],comp=0)
+R.<w>=PowerSeriesRing(GF(3),50)
+mu=measure_on_Zp(3,R,[a+1 for a in range(50)],comp=0)
 mu.Mahler_coefs[0]=0
 m=manin_relations(3)
 t=m.gen_rel_mat(1)

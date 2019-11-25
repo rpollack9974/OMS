@@ -86,6 +86,8 @@ class measure_on_Zp(SageObject):
 			new_coefs = self.Mahler_coefs * form_acting_matrix_in_fixed_weight(self.p,self.k,self.num_coefs(),a,b,c,d)
 		elif self.comp != None:
 			new_coefs = self.Mahler_coefs * form_acting_matrix_on_rim(self.p,self.comp,self.num_coefs(),a,b,c,d)
+		else:
+			print "Yikes"
 			
 		return measure_on_Zp(self.p,self.base_ring,new_coefs.list(),k=self.k,comp=self.comp).normalize()
 

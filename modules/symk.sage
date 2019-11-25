@@ -165,7 +165,7 @@ Inputs:
 		moments=moments[0:N]
 		mu=dist(p,k,vector(moments),char=self.chi)
 		if mu.valuation()<0:
-			print "scaling by ",p,"^",-mu.valuation()," to keep things integral"
+			#print "scaling by ",p,"^",-mu.valuation()," to keep things integral"
 			mu=mu.scale(p^(-mu.valuation()))
 		return mu
 
