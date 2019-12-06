@@ -108,7 +108,7 @@ class modsym(SageObject):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j]+right.data[j]]
-		if self.full_data<>0 and right.full_data<>0:
+		if self.full_data!=0 and right.full_data!=0:
 			w=[]
 			for j in range(0,len(self.full_data)):
 				w=w+[self.full_data[j]+right.full_data[j]]
@@ -123,7 +123,7 @@ class modsym(SageObject):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j]+right.data[j]]
-		if self.full_data<>0 and right.full_data<>0:
+		if self.full_data!=0 and right.full_data!=0:
 			w=[]
 			for j in range(0,len(self.full_data)):
 				w=w+[self.full_data[j]+right.full_data[j]]
