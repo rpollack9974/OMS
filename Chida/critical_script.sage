@@ -2,15 +2,15 @@
 
 E = EllipticCurve('24a1')
 p = 5
-M = 8
+M = 15
 print "Working with the elliptic curve",E,"and the prime",p
 print "Forming classical symbol"
 phiE = form_modsym_from_elliptic_curve(E)
 phiE = phiE.minus_part().scale(1/2)
 print "p-stabilizing"
 phi_beta = phiE.p_stabilize_critical(p,E.ap(p),M+2)
-phi_beta = phi_beta.scale(p^(-phi_beta.valuation(p)))
-scale = p^(phi_beta.valuation(p))
+e = phi_beta.valuation(p)
+phi_beta = phi_beta.scale(p^(-e)) # temporarily scales phi_beta to be integral
 R.<x> = PolynomialRing(pAdicField(p,2*M))
 rs = (x^2-E.ap(p)*x+p).roots()
 if rs[0][0] % p == 0:
@@ -19,6 +19,7 @@ else:
 	beta = ZZ(rs[1][0])
 print "Lifting to OMS"
 Phi = phi_beta.lift_to_OMS(p,M)
+phi_beta = phi_beta.scale(p^e) # returns phi_beta is the original correct form
 print "Smoothing by U_p"
 Phi = Phi.hecke(p)
 q = 2
@@ -35,8 +36,8 @@ for r in range(M+1):
 	print Phi.check_loop().normalize()
 	print "lots of zeros good"
 Psi = Phi.up(p,beta) - Phi
-Psi = Psi.up(p,beta) - Psi ## kill off critical Phi_beta contribution ???
 Psi = Psi.hecke(p) - Psi.scale(p) ## kill of critical Eisenstein contribution
+#Psi = Phi.up(p,beta) - Phi ## kill off critical Phi_beta contribution ???
 if Psi.valuation() > 0:
 	e = Psi.valuation()
 	print "valuation",e
