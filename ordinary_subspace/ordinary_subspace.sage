@@ -121,8 +121,8 @@ def form_basis2(N,p,k,M,chi,d,sign):
 		B = Matrix(v)
 		Mat = MatrixSpace(Integers(p^M),B.nrows(),B.ncols())
 		B = Mat(B)
-		B,E,r = row_reduce_mod_pn(B,p,M)
-		#print B
+		B,E,r = row_reduce_mod_pn2(B,p,M)
+		print B
 		print "free rank: ",r
 		if r == B.nrows():
 			print "Keeping it"
@@ -237,19 +237,21 @@ def row_reduce_mod_pn2(B,p,n):
 	curr_row = 0
 	E = Matrix(Integers(p^n),rows,rows,1)
 	while (curr_row < rows) and (curr_col < cols):
-		#print (curr_row,curr_col)
+#		print A
+#		print E
+#		print "(curr_row,curr_col)",(curr_row,curr_col)
 		v = [A[r][curr_col] for r in range(curr_row,rows)]
-		#print v
+#		print v
 		vals = [ZZ(v[j]).valuation(p)  for j in range(len(v))]
-		#print vals
+#		print vals
 		m = min(vals) 
-		print "Out: (r,c,m)=",(curr_row,curr_col,m)
+#		print "Out: (r,c,m)=",(curr_row,curr_col,m)
 		if m < Infinity:
-			print "In: (r,c,m)=",(curr_row,curr_col,m)
+#			print "In: (r,c,m)=",(curr_row,curr_col,m)
 			least_ind = curr_row
 			while vals[least_ind-curr_row] > m:
 				least_ind = least_ind + 1
-			#print "least_ind = ",least_ind
+#			print "least_ind = ",least_ind
 			A.swap_rows(curr_row,least_ind)
 			F = Matrix(Integers(p^n),rows,rows,1)
 			F.swap_rows(curr_row,least_ind)
