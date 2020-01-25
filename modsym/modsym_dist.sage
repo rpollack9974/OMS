@@ -150,7 +150,7 @@ class modsym_dist(modsym):
 			R = w.parent()
 			temp = R(temp.padded_list())
 
-			print "The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p)
+			print("The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p))
 			err.moments[0] = temp
 		else:
 			## The following code simply computes -t0/(K1)
@@ -158,15 +158,15 @@ class modsym_dist(modsym):
 			temp=temp.truncate(deg)
 			R = w.parent()
 			temp=R(temp.padded_list())
-			print "The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p)
+			print("The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p))
 			err.moments[1] = temp
 
 		v[j-1] = v[j-1] + err
 		t = t + err.act_right(gam)-err
-		print "Checking that t has total measure 0: ",t.normalize().moment(0)
+		print("Checking that t has total measure 0: ",t.normalize().moment(0))
 
 		mu = t.solve_diff_eqn()
-		print (mu.act_right(Matrix(2,2,[1,1,0,1]))-mu-t).normalize()
+		print((mu.act_right(Matrix(2,2,[1,1,0,1]))-mu-t).normalize())
 
 		v = [mu.scale(-1)] + v
 	
@@ -193,12 +193,12 @@ class modsym_dist(modsym):
 				else:
 					done = True
 		if done:
-			print "The symbol is 0"
+			print("The symbol is 0")
 			return 0
 		else:
 			Phiq = self.hecke(q)
 			c = Phiq.data[a].moment(m)/self.data[a].moment(m)
-			print Phiq - self.scale(c)
+			print(Phiq - self.scale(c))
 			return c % (p^(M-m-self.valuation())),(Phiq-self.scale(c)).valuation()
 		
 	def vector_of_total_measures(self):
@@ -222,7 +222,7 @@ class modsym_dist(modsym):
 		p = self.p()
 		Phi = self
 		for r in range(self.num_moments()+2):
-			print (r,self.num_moments()+2)
+			print((r,self.num_moments()+2))
 			Phi = Phi.hecke(p)
 
 		return Phi
@@ -252,7 +252,7 @@ class modsym_dist(modsym):
 		act = [self]
 		for j in range(len(v)-1):
 			if verbose:
-				print j,"out of",len(v)-2
+				print(j,"out of",len(v)-2)
 			act += [act[len(act)-1].up(p,beta)]
 		ans = self.zero()
 		for j in range(len(v)):
@@ -357,7 +357,7 @@ def random_OMS(N,p,k,M,char=trivial_character(1)):
 		while (j < len(manin.gens)-1) and ((manin.twotor.count(rj) != 0) or (manin.threetor.count(rj) != 0)):
 			j = j + 1
 			rj = manin.gens[j]
-			print j
+			print(j)
 		assert j < len(manin.gens) - 1, "Everything is 2 or 3 torsion!  NOT YET IMPLEMENTED IN THIS CASE"
 
 		gam = manin.gen_rel_mat(j)
@@ -410,12 +410,12 @@ def random_OMS_char(N,p,k,chi,M):
 			if R[0][0]==1:
 				rj=manin.gens.index(j)
 				t=t+v[rj-1]
-				print v[rj-1]
+				print(v[rj-1])
 			else:
 				index=R[0][2]
 				rj=manin.gens.index(index)
 				mu=v[rj-1]
-				print mu.act_right(R[0][1]).scale(R[0][0]).normalize()
+				print(mu.act_right(R[0][1]).scale(R[0][0]).normalize())
 				t=t+mu.act_right(R[0][1]).scale(R[0][0])
 	t=t.normalize()
 	mu=t.solve_diff_eqn()
@@ -425,9 +425,9 @@ def random_OMS_char(N,p,k,chi,M):
 
 def random_ordinary_OMS(N,p,k,M,char=None):
 	Phi = random_OMS(N,p,k,M,char)
-#	print "first check",Phi.check_loop().normalize()
+#	print("first check",Phi.check_loop().normalize())
 	Phi = Phi.project_to_ordinary_subspace()
-#	print "second check",Phi.check_loop().normalize()
+#	print("second check",Phi.check_loop().normalize())
 	Phi = Phi.change_precision(M)
 
 	return Phi

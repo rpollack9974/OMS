@@ -106,7 +106,7 @@ class modsym_symk(modsym):
 			selfq = self.hecke(q)
 			r = 0
 			while self.data[r].is_zero():
-				print r,self.data[r],self.data[r].is_zero()
+				print(r,self.data[r],self.data[r].is_zero())
 				r += 1
 			c = 0
 			while self.data[r].coef(c) == 0:
@@ -175,7 +175,7 @@ class modsym_symk(modsym):
 		for i in range(h):
 			for j in range(p^n):
 				if verbose:
-					print (i,j)
+					print((i,j))
 				for a in range(1,p):
 					b = gam^j * ZZ(teich[a-1])
 					ans += oneplusTpower[j] * LOGS[i] * self.lamb((z-b)^i,b,p^(n+1)) / (b^i * factorial(i))
@@ -199,7 +199,7 @@ class modsym_symk(modsym):
 		v=[]
 		## this loop runs through each generator and lifts the value of self on that generator to D
 		for j in range(1,len(self.manin.gens)):
-#			print (j,len(self.manin.gens))
+#			print((j,len(self.manin.gens)))
 			rj = self.manin.gens[j]
 			if (self.manin.twotor.count(rj) == 0) and (self.manin.threetor.count(rj) == 0):
 				v = v + [self.data[j].lift_to_dist(p,M)]
@@ -217,7 +217,7 @@ class modsym_symk(modsym):
 		t = v[0].zero()
 		## This loops adds up around the boundary of fundamental domain except the two verticle lines
 		for j in range(1,len(self.manin.gens)):
-#			print (j,len(self.manin.gens))
+#			print((j,len(self.manin.gens)))
 			rj = self.manin.gens[j]
 			if (self.manin.twotor.count(rj) == 0) and (self.manin.threetor.count(rj) == 0):
 				t = t + v[j-1].act_right(self.manin.gen_rel_mat(j)) - v[j-1]
@@ -228,7 +228,7 @@ class modsym_symk(modsym):
 		## t now should be sum Phi(D_i) | (gamma_i - 1) - sum Phi(D'_i) - sum Phi(D''_i)
 		## (Here I'm using the opposite sign convention of [PS1] regarding D'_i and D''_i)
 
-		print 'Total measure=',t.normalize().moment(0)
+		print('Total measure=',t.normalize().moment(0))
 #		assert t.normalize().moment(0) == 0, "Not total measure 0 in lifting OMS" 
 
 		mu = t.solve_diff_eqn()
@@ -248,20 +248,20 @@ class modsym_symk(modsym):
 		s=-Phi.valuation()
 		if s>0:
 			if verbose:
-				print "Scaling by ",p,"^",s
+				print("Scaling by ",p,"^",s)
 			Phi=Phi.scale(p^(-Phi.valuation()))
 		Phi=Phi.normalize()
 		if verbose:
-			print "Applying Hecke"
+			print("Applying Hecke")
 		Phi=Phi.hecke(p).scale(1/ap)
 		if verbose:
-			print "Killing eisenstein part"
+			print("Killing eisenstein part")
 		if (ap%(p^M))<>1:
 			Phi=(Phi-Phi.hecke(p)).scale(1/(1-ap))
 			e=(1-ap).valuation(p)
 			if e>0:
 				Phi=Phi.change_precision(M-e)
-				print "change precision to",M-e
+				print("change precision to",M-e)
 		else:
 			q=2
 			v=self.is_Tq_eigen(q,p,M)
@@ -276,9 +276,9 @@ class modsym_symk(modsym):
 			e=(q^(k+1)+1-aq).valuation(p)
 			if e>0:
 				Phi=Phi.change_precision(M-e)
-				print "change precision to",M-e
+				print("change precision to",M-e)
 		if verbose:
-			print "Iterating U_p"
+			print("Iterating U_p")
 		Psi=Phi.hecke(p).scale(1/ap)
 		err=(Psi-Phi).valuation()
 		Phi=Psi
@@ -286,12 +286,12 @@ class modsym_symk(modsym):
 			if (Phi.valuation()>=s) and (s>0):
 				Phi=Phi.scale(1/p^s)
 				Phi=Phi.change_precision(Phi.num_moments()-s).normalize()
-				print "unscaling by p^",s
+				print("unscaling by p^",s)
 				s=Infinity
 			Psi=Phi.hecke(p).scale(1/ap)
 			err=(Psi-Phi).valuation()
 			if verbose:
-				print "error is zero modulo p^",err
+				print("error is zero modulo p^",err)
 			Phi=Psi
 		return Phi.normalize()
 
@@ -314,7 +314,7 @@ class modsym_symk(modsym):
 		R.<x>=PolynomialRing(pAdicField(p,M+10))
 		v=R(f).roots()
 		if len(v)==0:
-			print "No coercion possible -- no prime over p has degree 1"
+			print("No coercion possible -- no prime over p has degree 1")
 			return []
 		else:
 			ans=[]
@@ -431,11 +431,11 @@ def form_modsym_from_decomposition_padic(A,p,acc,dual_evector=None,roots=None):
 	if roots==None:
 		roots=RR(f).roots()
 		roots=[roots[a][0] for a in range(len(roots))]			
-	print "---There are ",len(roots)," root(s)."
+	print("---There are ",len(roots)," root(s).")
 
 	answers=[]
 	for root in roots:
-		print "----using ",root
+		print("----using ",root)
 		psi=K.hom([root],Qp)
 		v=[]
 		for s in range(0,len(manin.gens)):
@@ -455,7 +455,7 @@ def form_modsym_from_decomposition_padic(A,p,acc,dual_evector=None,roots=None):
 			else:
 				r2=oo
 			for j in range(k-1):
-				print (s,j)
+				print((s,j))
 				t=M.modular_symbol([j,r1,r2]).element()
 				coef=sum([t[a]*psi(w[a]) for a in range(len(t))])
 	##			print i
@@ -548,19 +548,11 @@ def do_it():
 			r2=b/d
 		else:
 			r2=oo
-		print r1,r2
+		print(r1,r2)
 		for i in range(k-1):
 			t=M.modular_symbol([i,r1,r2]).element()
 			t=[psi(t[a]) for a in range(len(t))]
 			t=V(t)
 			coef=sum([t[a]*w[a] for a in range(len(t))])
-			print i
-			print 'coef=',coef
-			print 'XY=',X^i*Y^(k-2-i)*binomial(k-2,i)
-			print 'ki=',k,i
-			print 'extra=',X^i*Y^(k-2-i)*binomial(k-2,i)*coef
-			print "-----"
 			ans=ans+X^i*Y^(k-2-i)*binomial(k-2,i)*coef
-			print 'ans=',ans
-			print "*****"
 		v=v+[symk(k-2,poly=ans,chi=chi,base_ring=Qp)]

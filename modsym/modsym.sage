@@ -263,7 +263,7 @@ class modsym(SageObject):
 		act = [self]
 		for j in range(len(v)-1):
 			if verbose:
-				print j,"out of",len(v)-2
+				print(j,"out of",len(v)-2)
 			act += [act[len(act)-1].hecke(ell)]
 		ans = self.zero()
 		for j in range(len(v)):

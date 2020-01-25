@@ -11,33 +11,33 @@ def beta_root(E,p,M):
 	return beta
 
 def slope1_lift(E,p,M):
-	print "Working with the elliptic curve",E,"and the prime",p
-	print "Forming classical symbol"
+	print("Working with the elliptic curve",E,"and the prime",p)
+	print("Forming classical symbol")
 	phiE = form_modsym_from_elliptic_curve(E)
 	phiE = phiE.minus_part().scale(1/2)
-	print "p-stabilizing"
+	print("p-stabilizing")
 	phi_beta = phiE.p_stabilize_critical(p,E.ap(p),M+2)
 	e = phi_beta.valuation(p)
 	phi_beta = phi_beta.scale(p^(-e)) # temporarily scales phi_beta to be integral
 	beta = beta_root(E,p,M)
-	print "Lifting to OMS"
+	print("Lifting to OMS")
 	Phi = phi_beta.lift_to_OMS(p,M)
 	phi_beta = phi_beta.scale(p^e) # returns phi_beta to the original correct form
-	print "Smoothing by U_p"
+	print("Smoothing by U_p")
 	Phi = Phi.hecke(p)
 	q = 2
 	while (E.conductor()*p) % q == 0:
 		q = next_prime(q)
-	print "Using T_",q," to kill Eisen part"
+	print("Using T_",q," to kill Eisen part")
 	Phi = Phi.hecke(q) - Phi.scale(q+1)
-	print Phi.check_loop().normalize()
-	print "Using U_",p," to kill critical Eisen part"
+	print(Phi.check_loop().normalize())
+	print("Using U_",p," to kill critical Eisen part")
 	Phi = Phi.hecke(p) - Phi.scale(p)
 	for r in range(M+1):
-		print "Applying Up/beta",(r,M+1)
+		print("Applying Up/beta",(r,M+1))
 		Phi = Phi.up(p,beta)
-		print Phi.check_loop().normalize()
-		print "lots of zeros good"
+		print(Phi.check_loop().normalize())
+		print("lots of zeros good")
 
 	return Phi
 
@@ -51,12 +51,12 @@ def hecke_iterates(Psi,q,M,E):
 	#Psi = Psi.hecke(p) - Psi.scale(p) ## kill of critical Eisenstein contribution
 	if Psi.valuation() > 0:
 		e = Psi.valuation()
-		print "valuation",e
+		print("valuation",e)
 		Psi = Psi.scale(p^(-Psi.valuation()))
 		Psi = Psi.change_precision(Psi.num_moments()-e)
 	Psis = [Psi]
 	for r in range(M):
-		print "Applying hecke at",q,(r,M)
+		print("Applying hecke at",q,(r,M))
 		if q != p:
 			Psis += [Psis[len(Psis)-1].hecke(q)]
 		else:
@@ -107,10 +107,10 @@ def find_eigen_slope1(Phi,f,q,E):
 	return Phi
 
 def did_it_work(Phi):
-	print "Did it work?"
-	print Phi.is_Tq_eigen(2)
-	print Phi.is_Tq_eigen(3)
-	print Phi.is_Tq_eigen(5)		
+	print("Did it work?")
+	print(Phi.is_Tq_eigen(2))
+	print(Phi.is_Tq_eigen(3))
+	print(Phi.is_Tq_eigen(5))		
 
 	return ""
 
@@ -197,18 +197,18 @@ def chida(E,p,M):
 		B1,C1,r1 = row_reduce_mod_pn2(A/p^e,p,d)
 		B2,C2,r2 = row_reduce_mod_pn2(A/p^e,p,d+1)
 	r = r1
-	print B1
-	print C1
-	print "Using row",r
-	print "Should be zero:",B1[r]
+	print(B1)
+	print(C1)
+	print("Using row",r)
+	print("Should be zero:",B1[r])
 	f = extract_poly_relation(C1,r)
 
-	print "Killing off kernel of specialization"
+	print("Killing off kernel of specialization")
 	beta = beta_root(E,p,M)
 	Phi_eigen = find_eigen_slope1(Phi,f,q,E)
 	did_it_work(Phi_eigen)
 	Phi_eigen = renormalize(Phi_eigen,E)
-	print "And here's the value..."
+	print("And here's the value...")
 	val = value_at_0(Phi_eigen,p,beta) 
 	v = val.valuation(p)
 	if v < 0:
