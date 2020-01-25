@@ -71,10 +71,11 @@ class modsym_symk(modsym):
 		y=R.gen()
 		f=y**2-ap*y+p
 		v=f.roots()
-		if Integer(v[0][0])%3==0:
+		if Integer(v[0][0])%p==0:
 			alpha=Integer(v[0][0])
 		else:
 			alpha=Integer(v[1][0])
+		print alpha
 
 		if self.full_data == 0:
 			self.compute_full_data_from_gen_data()
