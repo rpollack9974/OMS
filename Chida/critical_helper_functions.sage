@@ -1,7 +1,8 @@
 def beta_root(E,p,M):
 	"""returns slope 1 root of hecke polynomial"""
 	assert E.ap(p)%p!=0, "supersingular"
-	R.<x> = PolynomialRing(pAdicField(p,2*M))
+	R = PolynomialRing(pAdicField(p,2*M),'x')
+	x = R.gen()
 	rs = (x^2-E.ap(p)*x+p).roots()
 	if rs[0][0] % p == 0:
 		beta = ZZ(rs[0][0])
