@@ -91,7 +91,7 @@ def find_slope1_kernel_relation(E,p,M):
 	return Phi,A,q
 
 def matrix_valuation(A,p):
-	v = A.coefficients()
+	v = A.list()
 	return min([v[a].valuation(p) for a in range(len(v))])
 
 #f is the polynomial such that f(T_q) kills kernel of specialization 
