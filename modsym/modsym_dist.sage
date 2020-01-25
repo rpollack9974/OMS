@@ -239,6 +239,7 @@ class modsym_dist(modsym):
 		for a in range(0,p): 
 			temp = self.act_right_wo_normalize(Matrix(ZZ,[[1,a],[0,p]]))
 			psi = psi.add_wo_normalizing(temp)
+			print psi
 		psi = psi.scale(1/beta)
 
 		# This code corrects the 0-th moments assuming that the specialization of self is U_p-eigen with eigenvalue beta
