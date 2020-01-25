@@ -184,3 +184,35 @@ def row_reduce_mod_pn2(B,p,n):
 		#print E*A
 		#print "-------------"
 	return A,E,curr_row
+
+
+def chida(E,p,M):
+	Phi,A,q = find_slope1_kernel_relation(E,p,M)
+	e = matrix_valuation(A,p)
+	d = floor(M/2)
+	B,C,r1 = row_reduce_mod_pn2(A/p^e,p,d)
+	B,C,r2 = row_reduce_mod_pn2(A/p^e,p,d+1)
+	while r1 == r2:
+		d = d + 1
+		B1,C1,r1 = row_reduce_mod_pn2(A/p^e,p,d)
+		B2,C2,r2 = row_reduce_mod_pn2(A/p^e,p,d+1)
+	r = r1
+	print B1
+	print C1
+	print "Using row",r
+	print "Should be zero:",B1[r]
+	f = extract_poly_relation(C1,r)
+
+	print "Killing off kernel of specialization"
+	beta = beta_root(E,p,M)
+	Phi_eigen = find_eigen_slope1(Phi,f,q,E)
+	did_it_work(Phi_eigen)
+	Phi_eigen = renormalize(Phi_eigen,E)
+	print "And here's the value..."
+	val = value_at_0(Phi_eigen,p,beta) 
+	v = val.valuation(p)
+	if v < 0:
+		val_norm = ((val * p^(-v)) % (p^(Phi_eigen.num_moments()))) * p^v
+	else:
+		val_norm = val % (p^(Phi_eigen.num_moments()))
+	return val_norm
