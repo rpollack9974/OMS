@@ -7,7 +7,7 @@ def invert(a,b,c,d):
 @cached_function
 def unimod_matrices(r,s):
 	"""connects the rational number r/s to 1/0"""
-	if s<>0:
+	if s!=0:
 		v=[]
 		list=convergents(r/s)
 		for j in range(0,len(list)-1):
@@ -26,7 +26,7 @@ def flip(A):
 @cached_function
 def unimod_matrices2(r,s):
 	"""connects the rational number 1/0 to r/s"""
-	if s<>0:
+	if s!=0:
 		v=[]
 		list=convergents(r/s)
 		for j in range(0,len(list)-1):
@@ -60,7 +60,7 @@ def prep_hecke_individual(ell,N,M,m):
 			C=invert(A[0,0],A[0,1],A[1,0],A[1,1])
 			gaminv=B*C
 			ans[j]=ans[j]+[gaminv*gama]
-	if N%ell<>0:
+	if N%ell!=0:
 		gama=basic_hecke_matrix(ell+1,ell)
 		t=gama*M.mats[M.gens[m]]
 		v=unimod_matrices2(t[0,0],t[1,0])+unimod_matrices(t[0,1],t[1,1])
@@ -88,7 +88,7 @@ class modsym(SageObject):
 		self._level = level
 		self.data=data
 		self.manin=manin
-		if full_data<>None:
+		if full_data!=None:
 			self.full_data=full_data
 		else:
 			self.full_data=0
@@ -142,7 +142,7 @@ class modsym(SageObject):
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].scale(left)]
-		if self.full_data<>0:
+		if self.full_data!=0:
 			w=[]
 			for j in range(0,len(self.full_data)):
 				w=w+[self.full_data[j].scale(left)]
@@ -184,7 +184,7 @@ class modsym(SageObject):
 		B=self.manin.mats[j]
 		C=invert(A[0,0],A[0,1],A[1,0],A[1,1])
 		gaminv=B*C
-		if self.full_data<>0:
+		if self.full_data!=0:
 			return self.full_data[j].act_right(gaminv)
 		else:
 			v=self.manin.rels[j]
@@ -244,7 +244,7 @@ class modsym(SageObject):
 		psi=self.zero()
 		for a in range(0,ell): 
 			psi=psi+self.act_right(Matrix(ZZ,[[1,a],[0,ell]]))
-		if self.level()%ell<>0:
+		if self.level()%ell!=0:
 			psi=psi+self.act_right(Matrix(ZZ,[[ell,0],[0,1]]))
 		return psi.normalize()
 
@@ -254,7 +254,7 @@ class modsym(SageObject):
 		psi=self.zero()
 		for a in range(0,ell): 
 			psi=psi+self.act_right_wo_normalize(Matrix(ZZ,[[1,a],[0,ell]]))
-		if self.level()%ell<>0:
+		if self.level()%ell!=0:
 			psi=psi+self.act_right_wo_normalize(Matrix(ZZ,[[ell,0],[0,1]]))
 		return psi
 
@@ -289,7 +289,7 @@ class modsym(SageObject):
 			for j in range(len(self.manin.rels)):
 				R=self.manin.rels[j]
 				if (len(R)==1) and (R[0][2]==self.manin.gens[r]):
-					if R[0][0]<>-1 or R[0][1]<>Id:
+					if R[0][0]!=-1 or R[0][1]!=Id:
 						v=v+[R]
 		return v
 
@@ -330,7 +330,7 @@ def zero_to_ratl(r,p):
 	"""returns a Gamma_0(p) matrix which takes 0 to r"""
 	c=numerator(r)
 	d=denominator(r)
-	assert d%p<>0, "not Gamma_0(p)-equivalent to 0"
+	assert d%p!=0, "not Gamma_0(p)-equivalent to 0"
 	g,x,y=xgcd(d,-p*c)
 	return Matrix(2,2,[x,c,p*y,d])
 	
@@ -346,11 +346,11 @@ def eisen_gamma0p(p,M):
 		c=A[1,0]
 		d=A[1,1]
 		t=M.zero()
-		if d%p<>0:
+		if d%p!=0:
 			gam1=zero_to_ratl(b/d,p)
-			print gam1^(-1)
+			print(gam1^(-1))
 			t=M.act_right(gam1**(-1))
-		if c%p<>0:
+		if c%p!=0:
 			gam2=zero_to_ratl(a/c,p)
 			t=t-M.act_right(gam2**(-1))
 		v=v+[t]

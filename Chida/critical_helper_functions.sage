@@ -95,7 +95,7 @@ def matrix_valuation(A,p):
 	return min([v[a].valuation(p) for a in range(len(v))])
 
 #f is the polynomial such that f(T_q) kills kernel of specialization 
-def find_eigen_slope1(Phi,f,q,E):
+def find_eigen_slope1(Phi,f,q,E,M):
 	p = Phi.p()
 
 	beta = beta_root(E,p,M)
@@ -114,12 +114,12 @@ def did_it_work(Phi):
 
 	return ""
 
-def renormalize(Phi,E):
+def renormalize(Phi,E,p):
 	phiE = form_modsym_from_elliptic_curve(E)
 	phiE = phiE.minus_part().scale(1/2)
 	phi_beta = phiE.p_stabilize_critical(p,E.ap(p),Phi.data[0].num_moments()+2)
 
- 	a = 0
+	a = 0
 	phi = Phi.specialize()
 	while phi.data[a].coef(0) == 0:
 		a = a + 1
@@ -205,9 +205,9 @@ def chida(E,p,M):
 
 	print("Killing off kernel of specialization")
 	beta = beta_root(E,p,M)
-	Phi_eigen = find_eigen_slope1(Phi,f,q,E)
+	Phi_eigen = find_eigen_slope1(Phi,f,q,E,M)
 	did_it_work(Phi_eigen)
-	Phi_eigen = renormalize(Phi_eigen,E)
+	Phi_eigen = renormalize(Phi_eigen,E,p)
 	print("And here's the value...")
 	val = value_at_0(Phi_eigen,p,beta) 
 	v = val.valuation(p)

@@ -29,7 +29,7 @@ class modsym_symk(modsym):
 	def p_stabilize(self,p,alpha):
 		"""p-stablizes self to form an eigensymbol for U_p with eigenvalue alpha"""
 		N=self.level()
-		assert N%p<>0, "The level isn't prime to p"
+		assert N%p!=0, "The level isn't prime to p"
 
 		pp=Matrix(ZZ,[[p,0],[0,1]])
 		manin=manin_relations(N*p)
@@ -43,15 +43,15 @@ class modsym_symk(modsym):
 		"""returns the unique p-ordinary p-stabilization of self"""
 		N=self.level()
 		k=self.data[0].weight
-		assert N%p<>0, "The level isn't prime to p"
-		assert ap%p<>0, "Not ordinary!"
+		assert N%p!=0, "The level isn't prime to p"
+		assert ap%p!=0, "Not ordinary!"
 
 		"""makes alpha the unit root of Hecke poly"""
 		R=PolynomialRing(pAdicField(p,M),'y') 
 		y=R.gen()
 		f=y^2-ap*y+p^(k+1)
 		v=f.roots()
-		if Integer(v[0][0])%p<>0:
+		if Integer(v[0][0])%p!=0:
 			alpha=Integer(v[0][0])
 		else:
 			alpha=Integer(v[1][0])
@@ -63,8 +63,8 @@ class modsym_symk(modsym):
 
 	def p_stabilize_critical(self,p,ap,M):
 		N=self.level()
-		assert N%p<>0, "The level isn't prime to p"
-		assert ap%p<>0, "Not ordinary!"
+		assert N%p!=0, "The level isn't prime to p"
+		assert ap%p!=0, "Not ordinary!"
 
 		"""makes alpha the non-unit root of Hecke poly"""
 		R=PolynomialRing(Qp(p,M),'y') 
@@ -256,7 +256,7 @@ class modsym_symk(modsym):
 		Phi=Phi.hecke(p).scale(1/ap)
 		if verbose:
 			print("Killing eisenstein part")
-		if (ap%(p^M))<>1:
+		if (ap%(p^M))!=1:
 			Phi=(Phi-Phi.hecke(p)).scale(1/(1-ap))
 			e=(1-ap).valuation(p)
 			if e>0:
@@ -267,7 +267,7 @@ class modsym_symk(modsym):
 			v=self.is_Tq_eigen(q,p,M)
 			assert v[0],"not eigen at q"
 			aq=v[1]
-			while (q<>p) and (aq-q^(k+1)-1)%(p^M)==0:
+			while (q!=p) and (aq-q^(k+1)-1)%(p^M)==0:
 				q=next_prime(q)
 				v=self.is_Tq_eigen(q,p,M)
 				assert v[0],"not eigen at q"
@@ -364,11 +364,11 @@ def form_modsym_from_elliptic_curve(E):
 		b=g[0,1]
 		c=g[1,0]
 		d=g[1,1]
-		if c<>0:
+		if c!=0:
 			a1=L.modular_symbol(a/c,1)+L.modular_symbol(a/c,-1)
 		else:
 			a1=L.modular_symbol(oo,1)+L.modular_symbol(oo,-1)
-		if d<>0:
+		if d!=0:
 			a2=L.modular_symbol(b/d,1)+L.modular_symbol(b/d,-1)
 		else:
 			a2=L.modular_symbol(oo,1)+L.modular_symbol(oo,-1)
@@ -395,11 +395,11 @@ def form_modsym_from_decomposition(A):
 		c=g[1,0]
 		d=g[1,1]
 		ans=0
-		if c<>0:
+		if c!=0:
 			r1=a/c
 		else:
 			r1=oo
-		if d<>0:
+		if d!=0:
 			r2=b/d
 		else:
 			r2=oo
@@ -446,11 +446,11 @@ def form_modsym_from_decomposition_padic(A,p,acc,dual_evector=None,roots=None):
 			c=g[1,0]
 			d=g[1,1]
 			ans=0
-			if c<>0:
+			if c!=0:
 				r1=a/c
 			else:
 				r1=oo
-			if d<>0:
+			if d!=0:
 				r2=b/d
 			else:
 				r2=oo
@@ -493,11 +493,11 @@ def form_modsym_from_decomposition_padic_enhanced(A,p,acc,dual_evector_padic):
 		c=g[1,0]
 		d=g[1,1]
 		ans=0
-		if c<>0:
+		if c!=0:
 			r1=a/c
 		else:
 			r1=oo
-		if d<>0:
+		if d!=0:
 			r2=b/d
 		else:
 			r2=oo
@@ -540,11 +540,11 @@ def do_it():
 		c=g[1,0]
 		d=g[1,1]
 		ans=0
-		if c<>0:
+		if c!=0:
 			r1=a/c
 		else:
 			r1=oo
-		if d<>0:
+		if d!=0:
 			r2=b/d
 		else:
 			r2=oo

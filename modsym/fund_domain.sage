@@ -63,13 +63,13 @@ def form_list_of_cusps(N):
 			#or not the adjacent triangle should be added
 
 				pos=P.index(b2,b1)
-                                if v[pos] == 0:
-                                        v[pos]=position
-                                        ans=P.index(b1,-(b1+b2))
-                                        v[ans]=position+1
-                                        ans=P.index(-(b1+b2),b2)
-                                        v[ans]=position+2
-                                        position=position+3
+				if v[pos] == 0:
+					v[pos]=position
+					ans=P.index(b1,-(b1+b2))
+					v[ans]=position+1
+					ans=P.index(-(b1+b2),b2)
+					v[ans]=position+2
+					position=position+3
 					needed=true
 				else:
 					needed = false
