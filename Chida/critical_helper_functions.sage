@@ -4,7 +4,7 @@ def beta_root(E,p,M):
 	R = PolynomialRing(pAdicField(p,2*M),'x')
 	x = R.gen()
 	rs = (x^2-E.ap(p)*x+p).roots()
-	if rs[0][0] % p == 0:
+	if rs[0][0].residue() == 0:
 		beta = ZZ(rs[0][0])
 	else:
 		beta = ZZ(rs[1][0])
