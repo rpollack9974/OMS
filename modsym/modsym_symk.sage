@@ -265,12 +265,12 @@ class modsym_symk(modsym):
 				print("change precision to",M-e)
 		else:
 			q=2
-			v=self.is_Tq_eigen(q,p,M)
+			v=self.is_Tq_eigen_mod(q,p,M)
 			assert v[0],"not eigen at q"
 			aq=v[1]
 			while (q!=p) and (aq-q^(k+1)-1)%(p^M)==0:
 				q=next_prime(q)
-				v=self.is_Tq_eigen(q,p,M)
+				v=self.is_Tq_eigen_mod(q,p,M)
 				assert v[0],"not eigen at q"
 				aq=v[1]
 			Phi=(Phi.scale(q^(k+1)+1)-Phi.hecke(q)).scale(1/(q^(k+1)+1-aq))

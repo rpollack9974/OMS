@@ -7,7 +7,10 @@ def in_span(A,t,p,n):
 	B = A.insert_row(A.nrows(),t)
 	M = MatrixSpace(Integers(mod),B.nrows(),B.ncols())
 	B = M(B)
-	B,E,r = row_reduce_mod_pn(B,p,n)
+	print B
+	print ""
+	B,E,r = row_reduce_mod_pn2(B,p,n)
+	print B,E,r
 #	B = (B.echelon_form())%(mod)
 #	B = (B.echelon_form())%(mod)  ## This is a silly trick to force it to clear out multiples of mod
 	
@@ -21,12 +24,13 @@ def in_span(A,t,p,n):
 def linear_combo(A,t,p,n):
 	mod = p^n	
 #	print "In linear_combo with",A,t,mod
+#	print in_span(A,t,p,n)
 	B = A.insert_row(A.nrows(),t)%(mod)
 	M = MatrixSpace(Integers(mod),B.nrows(),B.ncols())
 	B = M(B)
 	z1,z2,r = row_reduce_mod_pn(B,p,n)
 	rel = z2.row(-1)  ## This is the bottom row which expresses the relation
-
+#	print "HERE",Matrix(rel)*B
 	assert (Matrix(rel)*B)%mod == 0, "relation not holding in linear_combo"
 
 	c = rel[len(rel)-1]^(-1)
@@ -71,7 +75,7 @@ def form_basis(N,p,k,M,chi,d,sign):
 			B = Matrix(v)
 			Mat = MatrixSpace(Integers(p^M),B.nrows(),B.ncols())
 			B = Mat(B)
-			B,E,r = row_reduce_mod_pn(B,p,M)
+			B,E,r = row_reduce_mod_pn2(B,p,M)
 			#print B
 			print "free rank: ",r
 
@@ -121,12 +125,14 @@ def form_basis2(N,p,k,M,chi,d,sign):
 		B = Matrix(v)
 		Mat = MatrixSpace(Integers(p^M),B.nrows(),B.ncols())
 		B = Mat(B)
-		B,E,r = row_reduce_mod_pn2(B,p,M)
-		print B
-		print "free rank: ",r
-		if r == B.nrows():
-			print "Keeping it"
+		B,E,r = row_reduce_mod_pn(B,p,M)
+#		print B
+#		print "free rank: ",r
+		diag = gcd([B[B.nrows()-1][a] for a in range(B.ncols())])
+#		print "diag: ",diag
+		if r == B.nrows() and diag % p != 0:
 			total = total + 1
+			print "Keeping it. Have a total of ",total
 			done = True
 		else:
 			print "Failed"
@@ -148,7 +154,6 @@ def hecke_matrix(Phis,q):
 
 	Tq = []
 	for r in range(len(Phis)):
-		print r
 		t = Phis[r].hecke(q).vector_of_total_measures()
 		Tq = Tq + [linear_combo(A,t,p,M)]
 		

@@ -221,8 +221,8 @@ class modsym_dist(modsym):
 		"""Iterates U_p M+1 times where M is the number of moments"""
 		p = self.p()
 		Phi = self
-		for r in range(self.num_moments()+2):
-			print((r,self.num_moments()+2))
+		for r in range(self.num_moments()*2):
+#			print((r,self.num_moments()*2))
 			Phi = Phi.hecke(p)
 
 		return Phi
