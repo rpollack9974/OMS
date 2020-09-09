@@ -1,4 +1,4 @@
-load "master.sage"
+load("master.sage")
 
 p=11
 E=EllipticCurve('11a')
