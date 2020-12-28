@@ -456,7 +456,7 @@ def form_modsym_from_decomposition_padic(A,p,acc,dual_evector=None,roots=None):
 			else:
 				r2=oo
 			for j in range(k-1):
-				print((s,j))
+#				print((s,j))
 				t=M.modular_symbol([j,r1,r2]).element()
 				coef=sum([t[a]*psi(w[a]) for a in range(len(t))])
 	##			print i
