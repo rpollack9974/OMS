@@ -200,7 +200,6 @@ class modsym_symk(modsym):
 		v=[]
 		## this loop runs through each generator and lifts the value of self on that generator to D
 		for j in range(1,len(self.manin.gens)):
-#			print((j,len(self.manin.gens)))
 			rj = self.manin.gens[j]
 			if (self.manin.twotor.count(rj) == 0) and (self.manin.threetor.count(rj) == 0):
 				v = v + [self.data[j].lift_to_dist(p,M)]
@@ -218,7 +217,6 @@ class modsym_symk(modsym):
 		t = v[0].zero()
 		## This loops adds up around the boundary of fundamental domain except the two verticle lines
 		for j in range(1,len(self.manin.gens)):
-#			print((j,len(self.manin.gens)))
 			rj = self.manin.gens[j]
 			if (self.manin.twotor.count(rj) == 0) and (self.manin.threetor.count(rj) == 0):
 				t = t + v[j-1].act_right(self.manin.gen_rel_mat(j)) - v[j-1]
