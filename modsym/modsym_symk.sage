@@ -381,6 +381,8 @@ def form_modsym_from_decomposition(A):
 	k=A.weight()
 	manin=manin_relations(N)
 	chi=M.character()
+	if chi.order()==1:
+		chi = None
 
 	w=A.dual_eigenvector()
 	K=w.parent().base_field()

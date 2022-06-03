@@ -47,6 +47,20 @@ class modsym_dist_fam(modsym):
 			v=v+[self.data[j].change_precision(M)]
 		return modsym_dist_fam(self.level(),v,self.manin)
 
+	## tries to make the first coefficient 1, but this code is crap because of dividing by p etc
+	def standard_form(self):
+		c = 0
+		i = 0
+		p = self.p()
+		f = self.data[0].moment(0)
+		w = f.parent().gen()
+		M = self.num_moments()
+		f = p^self.valuation()/(f+O(w^M))
+		return self.scale(f).normalize()
+
+
+
+
 	## This procedure tries to find a power series c(w) such that 
 	##      self | T_q = c(w) self
 	## It prints to the screen the self | T_q - c(w) self (so all displayed zeroes
@@ -73,15 +87,25 @@ class modsym_dist_fam(modsym):
 	def pLdata(self,D):
 		return self._pLdata[D]
 
+	## returns a boolean which indicates whether or not the family extends to the whole
+	## unit disc.  in practice, this means that every coefficient of w^i is divisibly by p^i
+	## (since the weight variable is normalizes as w/p)
+	def extends_to_unit_disc(self):
+		p = self.p()
+		for i in range(self.ngens()):
+			for j in range(self.num_moments()):
+				v = self.data[i].moment(j)
+				if not extends_to_unit_disc(v):
+					return false
+		return true
+
 #	@cached_function
 	def phi_on_Da(self,a,D):
 		"""return self_D(D_a) = self_D({infty} - {a/p}) where self_D is the quadratic twist of self;
 		the value is cached in self._pLdata"""
 		if self.pLdata_has_key(a):
-			print "using"
 			return self.pLdata(a)
 		else:
-			print "not using"
 			p=self.p()
 			ans=self.zero_elt()
 			for b in range(1,abs(D)+1):
@@ -120,12 +144,19 @@ class modsym_dist_fam(modsym):
 #		Rpadic.<wp> = PowerSeriesRing(pAdicField(p,M))
 
 		lb = loggam_binom(p,gam,S.0,n,2*M)
+
 		dn = 0
 		if n == 0:
 			err = ceil((p-2)/(p-1) * M)
 		else:
 			if (error == None):
-				err = min(ceil((p-2)/(p-1) * (M-n)), min([j + lb[j].valuation(p) for j in range(M,len(lb))]))
+#				err = min(ceil((p-2)/(p-1) * (M-n)), min([j + lb[j].valuation(p) for j in range(M,len(lb))]))
+#				err = min(ceil((p-2)/(p-1) * (M-n)), 
+#					min([j + lb[j].valuation(p) for j in range(M,len(lb))])) 
+				err1 = min([j + lb[j].valuation(p) for j in range(M,len(lb))])
+				## this is the error from only using an approximation of the integrals
+				err2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
+				err = min(err1,err2)
 			else:
 				err = error
 			lb = [lb[a] for a in range(M)]
@@ -144,7 +175,7 @@ class modsym_dist_fam(modsym):
 		return dn
 
 
-	def pLfunction(self,r=0,max=Infinity,quad_twist=None):
+	def pLfunction(self,r=0,max=Infinity,quad_twist=None,verbose=false):
 		"""Returns the p-adic L-function in the T-variable of a quadratic twist of self
 
 	actually answer is scaled by a_p but this only changes answer by a unit
@@ -169,8 +200,16 @@ class modsym_dist_fam(modsym):
 		err=Infinity
 		n=1
 		while (err>0) and (n<min(M,max)):
+			if verbose:
+				print "working on coefficient:",n
 			lb=loggam_binom(p,gam,z,n,2*M)
-			err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
+			err1 = min([j + lb[j].valuation(p) for j in range(M,len(lb))])
+			## this is the error from only using an approximation of the integrals
+			err2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
+			err = min(err1,err2)
+			if verbose:
+				print "errors",n,err,err1,err2
+#			err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
 			if err>0:
 				dn=self.pLfunction_coef(n,r,D,gam,error=err)
 				ans=ans+dn*T^n
@@ -295,9 +334,79 @@ def logp(p,z,M):
 @cached_function
 def loggam_binom(p,gam,z,n,M):
 	L=logp(p,z,M)
-	logpgam=L.substitute(z=(gam-1))
+	logpgam=L.substitute(gam-1)
 	loggam=L/logpgam
 #	print loggam
 #	print binomial(loggam,n)
 
 	return binomial(loggam,n).list()
+
+def extends_to_unit_disc(P):
+	v = P.padded_list()
+	for a in range(len(v)):
+		if v[a] != 0 and v[a] % p^a != 0:
+			print "Fails at coefficient w^",a
+			print a,v[a],v[a]%p^a
+			return false
+	return true
+
+def extends_to_unit_disc_two_variable(P):
+	v = P.padded_list()
+	for a in range(len(v)):
+		if not extends_to_unit_disc(v[a]):
+			print "Fails at coefficient T^",a
+			return false
+	return true
+
+def temp(Phi,n,r,D,gam,error=None):
+	"""Returns the n-th coefficient of the p-adic L-function in the T-variable of a quadratic twist of self.  
+	If error is not specified, then the correct error bound is computed and the answer is return modulo that accuracy.
+
+	actually answer is scaled by a_p but this only changes answer by a unit
+
+Inputs:
+	self -- overconvergent Hecke-eigensymbol;
+	n -- index of desired coefficient
+	r -- twist by omega^r
+	D -- discriminant of quadratic twist
+	gam -- topological generator of 1+pZ_p"""
+
+	S.<z> = PolynomialRing(QQ)
+	p = Phi.p()
+	M = Phi.num_moments()
+#		Rpadic.<wp> = PowerSeriesRing(pAdicField(p,M))
+
+	lb = loggam_binom(p,gam,S.0,n,2*M)
+
+	dn = 0
+	if n == 0:
+		err = ceil((p-2)/(p-1) * M)
+	else:
+		if (error == None):
+#				err = min(ceil((p-2)/(p-1) * (M-n)), min([j + lb[j].valuation(p) for j in range(M,len(lb))]))
+			## this is the error from truncating the tail
+			err1 = min([j + lb[j].valuation(p) for j in range(M,len(lb))])
+			## this is the error from only using an approximation of the integrals
+			err2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
+			err = min(err1,err2)
+			print "errors",err,err1,err2
+#			err = min(ceil((p-2)/(p-1) * (M-n)), 
+#				min([j + lb[j].valuation(p) for j in range(M,len(lb))])) 
+		else:
+			err = error
+		lb = [lb[a] for a in range(M)]
+	for j in range(len(lb)):
+		cjn = lb[j]
+		temp = 0
+		for a in range(1,p):
+			temp = temp + teich(a,p,M)^(r-j)*(Phi.basic_integral(a,j,D))
+		dn = dn + cjn*temp
+		print dn
+	v = list(dn)
+	v = [v[a] + O(p^err) for a in range(len(v))]
+	t = 0*w
+	for j in range(len(v)):
+		t += v[j] * w^j
+	dn = t
+	return dn
+

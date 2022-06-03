@@ -143,7 +143,7 @@ Inputs:
 			Y=v[1]
 			## should the action have a chi(a) or a chi(d)??
 			if self.chi==None:
-				return symk(self.weight,chi=self.chi,poly=self.poly(d*X-c*Y,-b*X+a*Y))				
+				return symk(self.weight,chi=self.chi,poly=self.poly(d*X-c*Y,-b*X+a*Y))			
 			else:
 				return symk(self.weight,chi=self.chi,poly=self.chi(a)*self.poly(d*X-c*Y,-b*X+a*Y))
 

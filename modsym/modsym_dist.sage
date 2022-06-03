@@ -82,7 +82,7 @@ class modsym_dist(modsym):
 		k = self.weight()
 		r = self.weight() % (p-1)
 		chi = self.data[0].char()
-		deg = M
+		deg = ceil(M*(p-2)/(p-1))
 		v = []
 
 		## this loop runs through each generator and lifts the value of self on that generator to D
