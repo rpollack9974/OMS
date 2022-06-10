@@ -67,7 +67,6 @@ Inputs:
 		else:
 			err=error
 		lb=[lb[a] for a in range(M)]
-	print "err=",err
 	for j in range(len(lb)):
 		cjn=lb[j]
 		temp=0
@@ -79,12 +78,10 @@ Inputs:
 	else:
 		v = list(dn)
 		v = [v[a] + O(p^err) for a in range(len(v))]
-		print v
 		t = 0*w
 		for j in range(len(v)):
 			t += v[j] * w^j
 		dn = t
-		print dn
 		return dn
 
 
@@ -110,30 +107,30 @@ Inputs:
 
 	SS.<T>=PowerSeriesRing(base_ring)
 	ans=pLfunction_coef(Phi,ap,0,r,D,gam,base_ring=base_ring)+0*T
-	print ans
 	S.<z>=PolynomialRing(QQ)
 	err=Infinity
 	n=1
 	while (err>0) and (n<min(M,max)):
-		print n
 		lb=loggam_binom(p,gam,z,n,2*M)
 		err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
-		print "err2",err
 		if err>0:
 			dn=pLfunction_coef(Phi,ap,n,r,D,gam,base_ring=base_ring,error=err)
-			print n,dn
-			print
 			ans=ans+dn*T^n
-			print "ans",ans
-			print
-			print
 
 		n=n+1
 
 	return ans
 
-def lambda_inv(L):
+def lambda_inv(L,p,verbose=false):
 	v=L.list()
-	vals=[v[a].valuation() for a in range(len(v))]
-	print vals
+	vals=[v[a].valuation(p) for a in range(len(v))]
+	if verbose:
+		print(vals)
 	return vals.index(min(vals))
+
+def mu_inv(L,p,verbose=false):
+	v=L.list()
+	vals=[v[a].valuation(p) for a in range(len(v))]
+	if verbose:
+		print(vals)
+	return min(vals)

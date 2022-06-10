@@ -74,12 +74,12 @@ class modsym_dist_fam(modsym):
 		Phiq = self.hecke(q)
 		aq = R(T(T(Phiq.data[0].moment(0))/T(self.data[0].moment(0))).padded_list())
 
-		print (self.scale(aq) - Phiq).normalize()
+		print((self.scale(aq) - Phiq).normalize())
 
 		return ps_normalize(aq,p,M-self.valuation())
 
 	def pLdata_has_key(self,D):
-		return self._pLdata.has_key(D)
+		return D in self._pLdata
 
 	def add_pLdata(self,D,data):
 		self._pLdata[D] = data
@@ -201,14 +201,14 @@ class modsym_dist_fam(modsym):
 		n=1
 		while (err>0) and (n<min(M,max)):
 			if verbose:
-				print "working on coefficient:",n
+				print("working on coefficient:",n)
 			lb=loggam_binom(p,gam,z,n,2*M)
 			err1 = min([j + lb[j].valuation(p) for j in range(M,len(lb))])
 			## this is the error from only using an approximation of the integrals
 			err2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
 			err = min(err1,err2)
 			if verbose:
-				print "errors",n,err,err1,err2
+				print("errors",n,err,err1,err2)
 #			err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
 			if err>0:
 				dn=self.pLfunction_coef(n,r,D,gam,error=err)
@@ -293,7 +293,7 @@ def random_OMS_fam(p,N,char,M,r,w):
 		R = w.parent()
 		temp = R(temp.padded_list())
 
-		print "The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p)
+		print("The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p))
 		err.moments[0] = temp
 	else:
 		## The following code simply computes -t0/(K1)
@@ -301,15 +301,15 @@ def random_OMS_fam(p,N,char,M,r,w):
 		temp=temp.truncate(deg)
 		R = w.parent()
 		temp=R(temp.padded_list())
-		print "The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p)
+		print("The result will be a lifting modulo p^",valuation(temp.substitute(w=((1+p)^k-1)/p),p))
 		err.moments[1] = temp
 
 	v[j-1] = v[j-1] + err
 	t = t + err.act_right(gam)-err
-	print "Checking that t has total measure 0: ",t.normalize().moment(0)
+	print("Checking that t has total measure 0: ",t.normalize().moment(0))
 
 	mus = t.solve_diff_eqn()
-	print (mus.act_right(Matrix(2,2,[1,1,0,1]))-mus-t).normalize()
+	print((mus.act_right(Matrix(2,2,[1,1,0,1]))-mus-t).normalize())
 
 	v = [mus.scale(-1)] + v
 
@@ -345,8 +345,8 @@ def extends_to_unit_disc(P):
 	v = P.padded_list()
 	for a in range(len(v)):
 		if v[a] != 0 and v[a] % p^a != 0:
-			print "Fails at coefficient w^",a
-			print a,v[a],v[a]%p^a
+			print("Fails at coefficient w^",a)
+			print(a,v[a],v[a]%p^a)
 			return false
 	return true
 
@@ -354,7 +354,7 @@ def extends_to_unit_disc_two_variable(P):
 	v = P.padded_list()
 	for a in range(len(v)):
 		if not extends_to_unit_disc(v[a]):
-			print "Fails at coefficient T^",a
+			print("Fails at coefficient T^",a)
 			return false
 	return true
 
@@ -389,7 +389,7 @@ Inputs:
 			## this is the error from only using an approximation of the integrals
 			err2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
 			err = min(err1,err2)
-			print "errors",err,err1,err2
+			print("errors",err,err1,err2)
 #			err = min(ceil((p-2)/(p-1) * (M-n)), 
 #				min([j + lb[j].valuation(p) for j in range(M,len(lb))])) 
 		else:
@@ -401,7 +401,6 @@ Inputs:
 		for a in range(1,p):
 			temp = temp + teich(a,p,M)^(r-j)*(Phi.basic_integral(a,j,D))
 		dn = dn + cjn*temp
-		print dn
 	v = list(dn)
 	v = [v[a] + O(p^err) for a in range(len(v))]
 	t = 0*w

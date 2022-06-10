@@ -75,7 +75,6 @@ class modsym_symk(modsym):
 			alpha=Integer(v[0][0])
 		else:
 			alpha=Integer(v[1][0])
-		print alpha
 
 		if self.full_data == 0:
 			self.compute_full_data_from_gen_data()

@@ -7,7 +7,7 @@ from sage.structure.sage_object import SageObject
 
 class dist_fam(SageObject):
 	def __init__(self,p,deg,r,moments,char=None):
-	        """
+		"""
 		Initializes a familiy of distributions
 
 		INPUT:
@@ -21,7 +21,7 @@ class dist_fam(SageObject):
         
 		A family of distributions with data as specified by the inputs.
 
-        	"""
+		"""
 		self.p=p
 		self.deg=deg
 		self._disc=r     ##  this r is an integer from 0 to p-2 which represents which disc in weight space we are working on

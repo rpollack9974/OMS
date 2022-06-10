@@ -9,7 +9,8 @@ def unimod_matrices(r,s):
 	"""connects the rational number r/s to 1/0"""
 	if s!=0:
 		v=[]
-		list=convergents(r/s)
+		list = QQ(r/s).continued_fraction().convergents()
+#		list=convergents(r/s)
 		for j in range(0,len(list)-1):
 			a=list[j].numerator()
 			c=list[j].denominator()
