@@ -1,3 +1,5 @@
+import sys
+
 S = PolynomialRing(PolynomialRing(QQ,'w'),'T')
 
 def collect_padic_Lfunctions(Phis,D,verbose=false):
@@ -7,6 +9,7 @@ def collect_padic_Lfunctions(Phis,D,verbose=false):
 			print("twist =",D," component =",r)
 		Ls += [Phis.pLfunction(r=r,quad_twist=D)]
 	return Ls
+
 
 def analyze_pLs(D,Phis_list,verbose=true):
 	D = ZZ(D)
@@ -20,7 +23,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 		while num < len(Phis_list) and not done:
 			Phis = Phis_list[num]
 			if verbose:
-				print ("Working with twist ",D,", component ",i,"using",Phis.num_moments(),"moments")
+				print("Working with twist ",D,", component ",i,"using",Phis.num_moments(),"moments")
 			L = Phis.pLfunction(r=i,quad_twist=D)
 			d = S(L).degree()
 			mu = mu_inv(L.substitute(w=1)/p^Phis.valuation(),p)
@@ -83,4 +86,17 @@ def analyze_pLs(D,Phis_list,verbose=true):
 			print("*************************FAILED!!!***************************")
 		print("")
 	return "done"
+
+def run_me(filename,minD,maxD,Phis_list,level,step=1):
+	old_stdout = sys.stdout
+
+	for d in range(minD,maxD,step):
+		if is_fundamental_discriminant(d) and gcd(d,level)==1:
+			print("Working on twist d=",d)
+			log_file = open(filename,"a")
+			sys.stdout = log_file			
+			analyze_pLs(d,Phis_list)
+			print("----------------------------------------")
+			sys.stdout = old_stdout
+			log_file.close()
 
