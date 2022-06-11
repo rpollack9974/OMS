@@ -129,6 +129,7 @@ def lambda_inv(L,p,verbose=false):
 	return vals.index(min(vals))
 
 def mu_inv(L,p,verbose=false):
+	print(L)
 	v=L.list()
 	vals=[v[a].valuation(p) for a in range(len(v))]
 	if verbose:
