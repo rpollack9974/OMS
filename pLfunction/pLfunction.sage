@@ -122,16 +122,21 @@ Inputs:
 	return ans
 
 def lambda_inv(L,p,verbose=false):
-	v=L.list()
-	vals=[v[a].valuation(p) for a in range(len(v))]
-	if verbose:
-		print(vals)
-	return vals.index(min(vals))
+	if L==0:
+		return infinity
+	else:
+		v=L.list()
+		vals=[v[a].valuation(p) for a in range(len(v))]
+		if verbose:
+			print(vals)
+		return vals.index(min(vals))
 
 def mu_inv(L,p,verbose=false):
-	print(L)
-	v=L.list()
-	vals=[v[a].valuation(p) for a in range(len(v))]
-	if verbose:
-		print(vals)
-	return min(vals)
+	if L==0:
+		return infinity
+	else:
+		v=L.list()
+		vals=[v[a].valuation(p) for a in range(len(v))]
+		if verbose:
+			print(vals)
+		return min(vals)
