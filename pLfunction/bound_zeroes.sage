@@ -87,16 +87,18 @@ def analyze_pLs(D,Phis_list,verbose=true):
 		print("")
 	return "done"
 
-def run_me(filename,minD,maxD,Phis_list,level,step=1):
+def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true):
 	old_stdout = sys.stdout
 
 	for d in range(minD,maxD,step):
 		if is_fundamental_discriminant(d) and gcd(d,level)==1:
 			print("Working on twist d=",d)
-			log_file = open(filename,"a")
-			sys.stdout = log_file			
+			if log:
+				log_file = open(filename,"a")
+				sys.stdout = log_file			
 			analyze_pLs(d,Phis_list)
 			print("----------------------------------------")
-			sys.stdout = old_stdout
-			log_file.close()
+			if log:
+				sys.stdout = old_stdout
+				log_file.close()
 
