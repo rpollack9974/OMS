@@ -33,7 +33,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 			else:
 				lam = lambda_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 				if 2*i % (p-1) == comp and lam % 2 == 1:
-					bound = 1 + 1/p
+					bound = p/(p-1)
 				else:
 					bound = 1
 				if lam == 0:
@@ -65,7 +65,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							maxs += [m]
 						m = max(maxs)
 						bnd = d/(p^(n-1)*(p-1))
-						if m < bnd and m < 2:
+						if m < bnd and m < bound:
 							print("Passed! Max valuation is",m,"our bound is",bound)
 							print("PASSED")
 							done = true
