@@ -65,7 +65,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							maxs += [m]
 						m = max(maxs)
 						bnd = d/(p^(n-1)*(p-1))
-						if m < bnd and m < 2:
+						if m < bnd and m < bound:
 							print("Passed! Max valuation is",m,"our bound is",bound)
 							print("PASSED")
 							done = true
