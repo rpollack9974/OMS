@@ -33,9 +33,9 @@ def analyze_pLs(D,Phis_list,verbose=true):
 			else:
 				lam = lambda_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 				if 2*i % (p-1) == comp and lam % 2 == 1:
-					bound = p/(p-1)
+					toric_bound = p/(p-1)
 				else:
-					bound = 1
+					toric_bound = 1
 				if lam == 0:
 					print("--lambda = 0 so nothing to check here")
 					print("PASSED")
@@ -64,16 +64,16 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							m = max(vals)	
 							maxs += [m]
 						m = max(maxs)
-						bnd = d/(p^(n-1)*(p-1))
-						if m < bnd and m < bound:
-							print("Passed! Max valuation is",m,"our bound is",bound)
+						error_bound = d/(p^(n-1)*(p-1))
+						if m < error_bound and m < toric_bound:
+							print("Passed! Max valuation is",m,"toric bound is",toric_bound,"and error bound is",error_bound)
 							print("PASSED")
 							done = true
-						elif m >= bnd:
-							print("Failed: not enough accuracy.  Max valuation is",m,"and error bound is",bnd)
+						elif m >= error_bound:
+							print("Failed: not enough accuracy.  Max valuation is",m,"and error bound is",error_bound)
 							n += 1
 						else:
-							print("Failed: max val too high.  Max valuation is",m)
+							print("Failed: max val too high.  Max valuation is",m," and toric bond is ",toric_bound)
 							n += 1
 						if n > 4:
 							num += 1
@@ -123,4 +123,8 @@ def divide_by_pw(Phis):
 			vv[b] = R(vv[b]/(p*w))
 		data += [dist_fam(d.p,d.deg,d.disc(),vv,d.char())]
 
-	return modsym_dist_fam(Phis.level(),data,Phis.manin)
+	ans = modsym_dist_fam(Phis.level(),data,Phis.manin)
+	ans = ans.change_precision(ans.num_moments()-1)
+	ans = ans.change_deg(ans.deg()-1)
+
+	return ans
