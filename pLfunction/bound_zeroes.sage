@@ -32,10 +32,6 @@ def analyze_pLs(D,Phis_list,verbose=true):
 				num += 1
 			else:
 				lam = lambda_inv(L.substitute(w=1)/p^Phis.valuation(),p)
-				if 2*i % (p-1) == comp and lam % 2 == 1:
-					toric_bound = p/(p-1)
-				else:
-					toric_bound = 1
 				if lam == 0:
 					print("--lambda = 0 so nothing to check here")
 					print("PASSED")
@@ -50,6 +46,10 @@ def analyze_pLs(D,Phis_list,verbose=true):
 					too_high = false
 					n = 1
 					while not done and not too_high:
+						if 2*i % (p-1) == comp and lam % 2 == 1:
+							toric_bound = 1 + 1/((p-1)*p^(n-1))
+						else:
+							toric_bound = 1						
 						print("working at level",p^n)
 						K = CyclotomicField(p^n)
 						z = K.gen()
@@ -64,7 +64,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							m = max(vals)	
 							maxs += [m]
 						m = max(maxs)
-						error_bound = d/(p^(n-1)*(p-1))
+						error_bound = d / (p^(n-1)*(p-1))
 						if m < error_bound and m < toric_bound:
 							print("Passed! Max valuation is",m,", toric bound is",toric_bound,"and error bound is",error_bound)
 							print("PASSED")
