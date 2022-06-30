@@ -58,15 +58,15 @@ def analyze_pLs(D,Phis_list,verbose=true):
 						#pp = K.factor(p)[0][0]
 						vals = []
 						maxs = []
-						for b in range(1,p-1):
-							for a in range(p^n):
-								print(a,b)
-								t = S(L).substitute(T=z-1).substitute(w=(z^a-1+b*p)/p)
-								val = v(t) - Phis.valuation()
-								vals += [val]
-							m = max(vals)	
-							maxs += [m]
-						m = max(maxs)
+#						for b in range(1,p-1):
+						for a in range(p^n):
+							t = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
+							val = v(t) - Phis.valuation()
+							vals += [val]
+#							m = max(vals)	
+#							maxs += [m]
+						m = max(vals)
+#						m = max(maxs)
 						error_bound = d / (p^(n-1)*(p-1))
 						if m < error_bound and m < toric_bound:
 							print("Passed! Max valuation is",m,", toric bound is",toric_bound,"and error bound is",error_bound)
@@ -78,7 +78,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 						else:
 							print("Failed: max val too high.  Max valuation is",m," and toric bond is ",toric_bound)
 							n += 1
-						if n > 4:
+						if n > 3:
 							num += 1
 							if num < len(Phis_list):
 								print("Going to more accurate family.")
