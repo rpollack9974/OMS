@@ -33,7 +33,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 			else:
 				lam = lambda_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 				if 2*i % (p-1) == comp and lam % 2 == 1:
-					bound = 2
+					bound = 1 + 1/p
 				else:
 					bound = 1
 				if lam == 0:
@@ -102,3 +102,24 @@ def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true):
 				sys.stdout = old_stdout
 				log_file.close()
 
+def OMSfamily_extends_to_unit_disc(Phis):
+	for a in range(len(Phis.data)):
+		for b in range(Phis.data[a].num_moments()):
+			f = Phis.data[a].moment(b)
+			if not extends_to_unit_disc(f):
+				return false
+	return true
+
+def divide_by_pw(Phis):
+	data = []
+	R = Phis.data[0].moment(0).parent()
+	w = R.gen()
+	for a in range(len(Phis.data)):
+		d = Phis.data[a]
+		v = Phis.data[a].moments 
+		vv = copy(v)
+		for b in range(len(vv)):
+			vv[b] = R(vv[b]/(p*w))
+		data += [dist_fam(d.p,d.deg,d.disc(),vv,d.char())]
+
+	return modsym_dist_fam(Phis.level(),data,Phis.manin)
