@@ -14,6 +14,7 @@ def collect_padic_Lfunctions(Phis,D,verbose=false):
 def analyze_pLs(D,Phis_list,verbose=true):
 	D = ZZ(D)
 	p = Phis_list[0].p()
+	vp = QQ.valuation(p)
 	comp = Phis_list[0].disc()
 	Ls = []
 	S = PolynomialRing(PolynomialRing(QQ,'w'),'T')
@@ -52,14 +53,16 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							toric_bound = 1						
 						print("working at level",p^n)
 						K = CyclotomicField(p^n)
+						v = vp.extensions(K)[0]
 						z = K.gen()
-						pp = K.factor(p)[0][0]
+						#pp = K.factor(p)[0][0]
 						vals = []
 						maxs = []
 						for b in range(1,p-1):
 							for a in range(p^n):
+								print(a,b)
 								t = S(L).substitute(T=z-1).substitute(w=(z^a-1+b*p)/p)
-								val = t.valuation(pp)/pp.ramification_index() - Phis.valuation()
+								val = v(t) - Phis.valuation()
 								vals += [val]
 							m = max(vals)	
 							maxs += [m]
