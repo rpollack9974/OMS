@@ -99,6 +99,24 @@ class modsym_dist_fam(modsym):
 					return false
 		return true
 
+	def divide_by_pw(self):
+		data = []
+		R = self.data[0].moment(0).parent()
+		w = R.gen()
+		for a in range(len(self.data)):
+			d = self.data[a]
+			v = self.data[a].moments 
+			vv = copy(v)
+			for b in range(len(vv)):
+				vv[b] = R(vv[b]/(p*w))
+			data += [dist_fam(d.p,d.deg,d.disc(),vv,d.char())]
+
+		ans = modsym_dist_fam(self.level(),data,self.manin)
+		ans = ans.change_precision(ans.num_moments()-1)
+		ans = ans.change_deg(ans.deg()-1)
+
+		return ans		
+
 #	@cached_function
 	def phi_on_Da(self,a,D):
 		"""return self_D(D_a) = self_D({infty} - {a/p}) where self_D is the quadratic twist of self;
