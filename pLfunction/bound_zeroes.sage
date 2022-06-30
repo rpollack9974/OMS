@@ -33,7 +33,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 			else:
 				lam = lambda_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 				if 2*i % (p-1) == comp and lam % 2 == 1:
-					bound = 1 + 1/p
+					bound = p/(p-1)
 				else:
 					bound = 1
 				if lam == 0:
@@ -91,6 +91,7 @@ def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true):
 	old_stdout = sys.stdout
 
 	for d in range(minD,maxD,step):
+		print(d)
 		if is_fundamental_discriminant(d) and gcd(d,level)==1:
 			print("Working on twist d=",d)
 			if log:
