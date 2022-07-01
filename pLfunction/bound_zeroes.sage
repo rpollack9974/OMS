@@ -66,7 +66,8 @@ def analyze_pLs(D,Phis_list,verbose=true):
 						while a < p^n and not error_bound_violated:
 							t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
 							val = v(t1) - Phis.valuation()
-							if v(val) >= error_bound:
+							print("*",val,error_bound)
+							if val >= error_bound:
 								error_bound_violated = true
 								bad_val = val
 								print("error bound violated")
@@ -79,7 +80,8 @@ def analyze_pLs(D,Phis_list,verbose=true):
 
 							t2 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
 							val = v(t2) - Phis.valuation()
-							if v(val) >= error_bound:
+							print("*",val,error_bound)
+							if val >= error_bound:
 								error_bound_violated = true
 								print("error bound violated")
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
