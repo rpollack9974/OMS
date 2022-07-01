@@ -60,28 +60,42 @@ def analyze_pLs(D,Phis_list,verbose=true):
 						v = vp.extensions(K)[0]
 						z = K.gen()
 						vals = []
-						maxs = []
-						for a in range(p^n):
+						error_bound = d / (p^(n-1)*(p-1))
+						a = 0
+						error_bound_violated = false
+						while a < p^n and not error_bound_violated:
 							t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
-							t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+p)/p)
 							val = v(t1) - Phis.valuation()
-							if 2*i % (p-1) == comp and lam % 2 == 1:
+							if v(val) >= error_bound:
+								error_bound_violated = true
+								bad_val = val
+								print("error bound violated")
+							elif 2*i % (p-1) == comp and lam % 2 == 1:
 								extra_factor = v(z^a-z^2+p)
-								val = val - extra_factor
-							val = v(t2) - Phis.valuation()
-							if 2*i % (p-1) == comp and lam % 2 == 1:
-								extra_factor = v(z-z^(2*a)+p)
+								print("initial val",val,"extra factor",extra_factor)
 								val = val - extra_factor
 							vals += [val]
+							print("new val:",val)
+
+							t2 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
+							val = v(t2) - Phis.valuation()
+							if v(val) >= error_bound:
+								error_bound_violated = true
+								print("error bound violated")
+							elif 2*i % (p-1) == comp and lam % 2 == 1:
+								extra_factor = v(z^a-z^2+p)
+								print("initial val",val,"extra factor",extra_factor)
+								val = val - extra_factor
+							vals += [val]
+							print("new val:",val)
 						m = max(vals)
-						error_bound = d / (p^(n-1)*(p-1))
-						if m < error_bound and m < toroidal_bound:
-							print("Passed! Max valuation is",m,"and error bound is",error_bound)
+						if error_bound_violated:
+							print("Failed: not enough accuracy.  There was a valuation of",bad_val,"and the error bound is",error_bound)
+							n += 1
+						elif m < toroidal_bound:
+							print("Passed! Max valuation is",m,"(error bound is",error_bound,")")
 							print("PASSED")
 							done = true
-						elif m >= error_bound:
-							print("Failed: not enough accuracy.  Max valuation is",m,"and error bound is",error_bound)
-							n += 1
 						else:
 							print("Failed: max val too high.  Max valuation is",m," (error bound is",error_bound,")")
 							n += 1
