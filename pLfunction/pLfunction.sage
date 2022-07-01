@@ -105,7 +105,7 @@ Inputs:
 #		for j in range(M):
 #			basic_integral(Phi,a,j,ap,D)
 
-	SS.<T>=PowerSeriesRing(base_ring)
+	SS.<T>=PowerSeriesRing(base_ring,default_prec=M)
 	ans=pLfunction_coef(Phi,ap,0,r,D,gam,base_ring=base_ring)+0*T
 	S.<z>=PolynomialRing(QQ)
 	err=Infinity

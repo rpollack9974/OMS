@@ -47,19 +47,6 @@ class modsym_dist_fam(modsym):
 			v=v+[self.data[j].change_precision(M)]
 		return modsym_dist_fam(self.level(),v,self.manin)
 
-	## tries to make the first coefficient 1, but this code is crap because of dividing by p etc
-	def standard_form(self):
-		c = 0
-		i = 0
-		p = self.p()
-		f = self.data[0].moment(0)
-		w = f.parent().gen()
-		M = self.num_moments()
-		f = p^self.valuation()/(f+O(w^M))
-		return self.scale(f).normalize()
-
-
-
 
 	## This procedure tries to find a power series c(w) such that 
 	##      self | T_q = c(w) self
@@ -69,7 +56,7 @@ class modsym_dist_fam(modsym):
 		p = self.p()
 		M = self.num_moments()
 		R = self.data[0].moment(0).parent()
-		T = PowerSeriesRing(QQ,'y')
+		T = PowerSeriesRing(QQ,'y',default_prec=self.deg())
 
 		Phiq = self.hecke(q)
 		aq = R(T(T(Phiq.data[0].moment(0))/T(self.data[0].moment(0))).padded_list())
@@ -300,7 +287,7 @@ def random_OMS_fam(p,N,char,M,r,w):
 	K0 = K[0]  ## K0 is the coefficient of z^0 in K
 	K1 = K[1]  ## K1 is the coefficient of z^1 in K
 	t0 = t.moment(0)
-	T = PowerSeriesRing(QQ,'ww')
+	T = PowerSeriesRing(QQ,'ww',default_prec=deg)
 	err = mus.zero()
 
 	k = r

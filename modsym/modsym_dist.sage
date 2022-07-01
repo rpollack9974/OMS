@@ -140,7 +140,7 @@ class modsym_dist(modsym):
 		K0 = K[0]  ## K0 is the coefficient of z^0 in K
 		K1 = K[1]  ## K1 is the coefficient of z^1 in K
 		t0 = t.moment(0)
-		T = PowerSeriesRing(QQ,'ww')
+		T = PowerSeriesRing(QQ,'ww',default_prec=deg)
 		err = self.zero_elt().lift_to_dist_fam(deg,r,w)
 
 		if r != 0:
