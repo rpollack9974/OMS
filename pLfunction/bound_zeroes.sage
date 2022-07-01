@@ -61,6 +61,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 						z = K.gen()
 						vals = []
 						error_bound = d / (p^(n-1)*(p-1))
+						print("Error bound is",error_bound)
 						a = 0
 						error_bound_violated = false
 						while a < p^n and not error_bound_violated:
@@ -78,14 +79,14 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							vals += [val]
 							print("new val:",val)
 
-							t2 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
+							t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+p)/p)
 							val = v(t2) - Phis.valuation()
 							print("*",val,error_bound)
 							if val >= error_bound:
 								error_bound_violated = true
 								print("error bound violated")
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
-								extra_factor = v(z^a-z^2+p)
+								extra_factor = v(z-z^(2*a)+p)
 								print("initial val",val,"extra factor",extra_factor)
 								val = val - extra_factor
 							vals += [val]
