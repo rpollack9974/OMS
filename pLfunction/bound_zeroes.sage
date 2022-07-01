@@ -88,6 +88,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 								val = val - extra_factor
 							vals += [val]
 							print("new val:",val)
+							a = a + 1
 						m = max(vals)
 						if error_bound_violated:
 							print("Failed: not enough accuracy.  There was a valuation of",bad_val,"and the error bound is",error_bound)
