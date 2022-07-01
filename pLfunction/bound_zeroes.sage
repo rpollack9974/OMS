@@ -62,13 +62,17 @@ def analyze_pLs(D,Phis_list,verbose=true):
 						vals = []
 						maxs = []
 						for a in range(p^n):
-							for j in range(n): ## ranges over mu_{p^n} up to Galois conj
-								t = S(L).substitute(T=z^(p^j)-1).substitute(w=(z^a-1+p)/p)
-								val = v(t) - Phis.valuation()
-								if 2*i % (p-1) == comp and lam % 2 == 1:
-									extra_factor = v(z^a-z^(2*p^j)+p)
-									val = val - extra_factor
-								vals += [val]
+							t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
+							t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+p)/p)
+							val = v(t1) - Phis.valuation()
+							if 2*i % (p-1) == comp and lam % 2 == 1:
+								extra_factor = v(z^a-z^2+p)
+								val = val - extra_factor
+							val = v(t2) - Phis.valuation()
+							if 2*i % (p-1) == comp and lam % 2 == 1:
+								extra_factor = v(z-z^(2*a)+p)
+								val = val - extra_factor
+							vals += [val]
 						m = max(vals)
 						error_bound = d / (p^(n-1)*(p-1))
 						if m < error_bound and m < toroidal_bound:
