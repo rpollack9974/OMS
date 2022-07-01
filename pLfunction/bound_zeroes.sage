@@ -18,6 +18,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 	comp = Phis_list[0].disc()
 	Ls = []
 	S = PolynomialRing(PolynomialRing(QQ,'w'),'T')
+	toroidal_bound = 1
 	for i in range(p-1):
 		num = 0
 		done = false
@@ -25,7 +26,10 @@ def analyze_pLs(D,Phis_list,verbose=true):
 			Phis = Phis_list[num]
 			if verbose:
 				print("Working with twist ",D,", component ",i,"using",Phis.num_moments(),"moments")
+				print("..computing p-adic L-function")
 			L = Phis.pLfunction(r=i,quad_twist=D)
+			if verbose:
+				print("..done")
 			d = S(L).degree()
 			mu = mu_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 			if mu > 0:
@@ -44,39 +48,38 @@ def analyze_pLs(D,Phis_list,verbose=true):
 				else:
 					print("--lambda =",lam)
 					done = false
-					too_high = false
-					n = 1
-					while not done and not too_high:
-						if 2*i % (p-1) == comp and lam % 2 == 1:
-							toric_bound = 1 + 1/((p-1)*p^(n-1))
-						else:
-							toric_bound = 1						
+					giving_up = false
+					n = ceil(log(lam * p/(p-1))/log(p))
+					while not done and not giving_up:
+#						if 2*i % (p-1) == comp and lam % 2 == 1:
+#							toroidal_bound = 1 + 1/((p-1)*p^(n-1))
+#						else:
+#							toroidal_bound = 1						
 						print("working at level",p^n)
 						K = CyclotomicField(p^n)
 						v = vp.extensions(K)[0]
 						z = K.gen()
-						#pp = K.factor(p)[0][0]
 						vals = []
 						maxs = []
-#						for b in range(1,p-1):
 						for a in range(p^n):
-							t = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
-							val = v(t) - Phis.valuation()
-							vals += [val]
-#							m = max(vals)	
-#							maxs += [m]
+							for j in range(n): ## ranges over mu_{p^n} up to Galois conj
+								t = S(L).substitute(T=z^(p^j)-1).substitute(w=(z^a-1+p)/p)
+								val = v(t) - Phis.valuation()
+								if 2*i % (p-1) == comp and lam % 2 == 1:
+									extra_factor = v(z^a-z^(2*p^j)+p)
+									val = val - extra_factor
+								vals += [val]
 						m = max(vals)
-#						m = max(maxs)
 						error_bound = d / (p^(n-1)*(p-1))
-						if m < error_bound and m < toric_bound:
-							print("Passed! Max valuation is",m,", toric bound is",toric_bound,"and error bound is",error_bound)
+						if m < error_bound and m < toroidal_bound:
+							print("Passed! Max valuation is",m,"and error bound is",error_bound)
 							print("PASSED")
 							done = true
 						elif m >= error_bound:
 							print("Failed: not enough accuracy.  Max valuation is",m,"and error bound is",error_bound)
 							n += 1
 						else:
-							print("Failed: max val too high.  Max valuation is",m," and toric bond is ",toric_bound)
+							print("Failed: max val too high.  Max valuation is",m," (error bound is",error_bound,")")
 							n += 1
 						if n > 3:
 							num += 1
@@ -84,7 +87,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 								print("Going to more accurate family.")
 							else:
 								print("giving up!")
-							too_high = true
+							giving_up = true
 		if not done:
 			print("*************************FAILED!!!***************************")
 		print("")
