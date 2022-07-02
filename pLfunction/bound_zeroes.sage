@@ -84,6 +84,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							print("*",val,error_bound)
 							if val >= error_bound:
 								error_bound_violated = true
+								bad_val = val
 								print("error bound violated")
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
 								extra_factor = v(z-z^(2*a)+p)
