@@ -49,7 +49,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 					print("--lambda =",lam)
 					done = false
 					giving_up = false
-					n = ceil(log(lam * p/(p-1))/log(p))
+					n = floor(log(lam * p/(p-1))/log(p))
 					while not done and not giving_up:
 #						if 2*i % (p-1) == comp and lam % 2 == 1:
 #							toroidal_bound = 1 + 1/((p-1)*p^(n-1))
