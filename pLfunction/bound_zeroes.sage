@@ -11,7 +11,7 @@ def collect_padic_Lfunctions(Phis,D,verbose=false):
 	return Ls
 
 
-def analyze_pLs(D,Phis_list,verbose=true):
+def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 	D = ZZ(D)
 	p = Phis_list[0].p()
 	vp = QQ.valuation(p)
@@ -74,33 +74,44 @@ def analyze_pLs(D,Phis_list,verbose=true):
 						print("Error bound is",error_bound)
 						a = 0
 						error_bound_violated = false
+						if full_search:
+							js = range(1,p)
+						else:
+							js = [1]
 						while a < p^n and not error_bound_violated:
-							print("Using a =",a)
-							t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
-							val = v(t1) - Phis.valuation()
-							if val >= error_bound:
-								error_bound_violated = true
-								bad_val = val
-								print("***This is an error bound violation: value is",val,"error bound is",error_bound)
-							elif 2*i % (p-1) == comp and lam % 2 == 1:
-								extra_factor = v(z^a-z^2+p)
-								print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
-								val = val - extra_factor
-							print("-- Value has valuation",val)
-							vals += [val]
+							if not full_search:
+								print("Using a =",a)
+							for j in js:
+								if full_search:
+									print("Using (a,j)=",(a,j))
+								t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+j*p)/p)
+								val = v(t1) - Phis.valuation()
+								if val >= error_bound:
+									error_bound_violated = true
+									bad_val = val
+									print("***This is an error bound violation: value is",val,"error bound is",error_bound)
+								elif 2*i % (p-1) == comp and lam % 2 == 1:
+									extra_factor = v(z^a-z^2+p)
+									print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
+									val = val - extra_factor
+								print("-- Value has valuation",val)
+								vals += [val]
 
-							t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+p)/p)
-							val = v(t2) - Phis.valuation()
-							if val >= error_bound:
-								error_bound_violated = true
-								bad_val = val
-								print("***This is an error bound violation: value is",val,"error bound is",error_bound)
-							elif 2*i % (p-1) == comp and lam % 2 == 1:
-								extra_factor = v(z-z^(2*a)+p)
-								print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
-								val = val - extra_factor
-							print("-- Value has valuation",val)
-							vals += [val]
+							for j in js:
+								if full_search:
+									print("Using (a,j)=",(a,j))
+								t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+j*p)/p)
+								val = v(t2) - Phis.valuation()
+								if val >= error_bound:
+									error_bound_violated = true
+									bad_val = val
+									print("***This is an error bound violation: value is",val,"error bound is",error_bound)
+								elif 2*i % (p-1) == comp and lam % 2 == 1:
+									extra_factor = v(z-z^(2*a)+p)
+									print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
+									val = val - extra_factor
+								print("-- Value has valuation",val)
+								vals += [val]
 							a = a + 1
 						m = max(vals)
 						if error_bound_violated:
