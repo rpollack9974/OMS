@@ -72,9 +72,9 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 						else:
 							error_bound = d
 						print("Error bound is",error_bound)
-						i = 0
-						while ((full_search and i < p-1) or (not full_search and i == 0)) and not done:
-							j = js[i]
+						ji = 0
+						while ((full_search and ji < p-1) or (not full_search and ji == 0)) and not done:
+							j = js[ji]
 							error_bound_violated = false
 							t_error = false
 							a = 0
@@ -125,7 +125,7 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 								done = true
 							else:
 								print("Failed: max val too high.  Max valuation is",m,">= 1")
-							i += 1
+							ji += 1
 						n += 1
 						if n > 3:
 							num += 1
