@@ -29,7 +29,7 @@ def analyze_pLs(D,Phis_list,verbose=true):
 				print("..computing p-adic L-function")
 			L = Phis.pLfunction(r=i,quad_twist=D)
 			if verbose:
-				print("..done")
+				print("done!")
 			d = S(L).degree()
 			mu = mu_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 			if mu > 0:
@@ -49,49 +49,60 @@ def analyze_pLs(D,Phis_list,verbose=true):
 					print("--lambda =",lam)
 					done = false
 					giving_up = false
-					n = floor(log(lam * p/(p-1))/log(p))
+					## removes 1 from the lambda-invariant when sign of FE = -1
+					if 2*i % (p-1) == comp and lam % 2 == 1:
+						lam_mod = lam - 1
+					else:
+						lam_mod = lam 
+
+					n = floor(log(lam_mod * p/(p-1))/log(p))
 					while not done and not giving_up:
 #						if 2*i % (p-1) == comp and lam % 2 == 1:
 #							toroidal_bound = 1 + 1/((p-1)*p^(n-1))
 #						else:
-#							toroidal_bound = 1						
+#							toroidal_bound = 1		
+						print("----------------------------------------")				
 						print("working at level",p^n)
 						K = CyclotomicField(p^n)
 						v = vp.extensions(K)[0]
 						z = K.gen()
 						vals = []
-						error_bound = d / (p^(n-1)*(p-1))
+						if n > 0:
+							error_bound = d / (p^(n-1)*(p-1))
+						else:
+							error_bound = d
 						print("Error bound is",error_bound)
 						a = 0
 						error_bound_violated = false
 						while a < p^n and not error_bound_violated:
+							print("Using a =",a)
 							t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
 							val = v(t1) - Phis.valuation()
-							print("*",val,error_bound)
+							print("-- Value has valuation",val)
 							if val >= error_bound:
 								error_bound_violated = true
 								bad_val = val
-								print("error bound violated")
+								print("***This is an error bound violation: value is",val,"error bound is",error_bound)
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
 								extra_factor = v(z^a-z^2+p)
-								print("initial val",val,"extra factor",extra_factor)
+								print("(FE modification needed; subtracting",extra_factor)
 								val = val - extra_factor
+								print("-- modified valuation is",val,")")
 							vals += [val]
-							print("new val:",val)
 
 							t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+p)/p)
 							val = v(t2) - Phis.valuation()
-							print("*",val,error_bound)
+							print("-- Value has valuation",val)
 							if val >= error_bound:
 								error_bound_violated = true
 								bad_val = val
-								print("error bound violated")
+								print("***This is an error bound violation: value is",val,"error bound is",error_bound)
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
-								extra_factor = v(z-z^(2*a)+p)
-								print("initial val",val,"extra factor",extra_factor)
+								extra_factor = v(z^a-z^2+p)
+								print("FE modification needed; subtracting",extra_factor)
 								val = val - extra_factor
+								print("-- modified valuation is",val)
 							vals += [val]
-							print("new val:",val)
 							a = a + 1
 						m = max(vals)
 						if error_bound_violated:
