@@ -56,11 +56,11 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 						lam_mod = lam 
 
 					n = floor(log(lam_mod * p/(p-1))/log(p))
+					if full_search:
+						js = range(1,p)
+					else:
+						js = [1]
 					while not done and not giving_up:
-#						if 2*i % (p-1) == comp and lam % 2 == 1:
-#							toroidal_bound = 1 + 1/((p-1)*p^(n-1))
-#						else:
-#							toroidal_bound = 1		
 						print("----------------------------------------")				
 						print("working at level",p^n)
 						K = CyclotomicField(p^n)
@@ -72,17 +72,16 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 						else:
 							error_bound = d
 						print("Error bound is",error_bound)
-						a = 0
-						error_bound_violated = false
-						if full_search:
-							js = range(1,p)
-						else:
-							js = [1]
-						while a < p^n and not error_bound_violated:
-							if not full_search:
-								print("Using a =",a)
-							for j in js:
-								if full_search:
+						i = 0
+						while ((full_search and i < p-1) or (not full_search and i == 0)) and not done:
+							j = js[i]
+							error_bound_violated = false
+							t_error = false
+							a = 0
+							while a < p^n and not error_bound_violated and not t_error:
+								if not full_search:
+									print("Using a =",a)
+								else:
 									print("Using (a,j)=",(a,j))
 								t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+j*p)/p)
 								val = v(t1) - Phis.valuation()
@@ -95,11 +94,11 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 									print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
 									val = val - extra_factor
 								print("-- Value has valuation",val)
+								if val >=1:
+									print("***Toroid bound error")
+									t_error = true
 								vals += [val]
 
-							for j in js:
-								if full_search:
-									print("Using (a,j)=",(a,j))
 								t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+j*p)/p)
 								val = v(t2) - Phis.valuation()
 								if val >= error_bound:
@@ -111,19 +110,22 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 									print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
 									val = val - extra_factor
 								print("-- Value has valuation",val)
+								if val >=1:
+									print("***Toroid bound error")
+									t_error = true
 								vals += [val]
-							a = a + 1
-						m = max(vals)
-						if error_bound_violated:
-							print("Failed: not enough accuracy.  There was a valuation of",bad_val,"and the error bound is",error_bound)
-							n += 1
-						elif m < toroidal_bound:
-							print("Passed! Max valuation is",m,"(error bound is",error_bound,")")
-							print("PASSED")
-							done = true
-						else:
-							print("Failed: max val too high.  Max valuation is",m," (error bound is",error_bound,")")
-							n += 1
+								a = a + 1
+							m = max(vals)
+							if error_bound_violated:
+								print("Failed: not enough accuracy.  There was a valuation of",bad_val,"and the error bound is",error_bound)
+							elif m < toroidal_bound:
+								print("Passed! Max valuation is",m,"< 1")
+								print("PASSED")
+								done = true
+							else:
+								print("Failed: max val too high.  Max valuation is",m,">= 1")
+							i += 1
+						n += 1
 						if n > 3:
 							num += 1
 							if num < len(Phis_list):
