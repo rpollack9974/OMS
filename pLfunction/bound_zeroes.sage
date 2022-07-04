@@ -95,7 +95,7 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 									val = val - extra_factor
 								print("-- Value has valuation",val)
 								if val >=1:
-									print("***Toroid bound error")
+									print("***Possible toroidal factor---aborting")
 									t_error = true
 								vals += [val]
 
@@ -111,7 +111,7 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 									val = val - extra_factor
 								print("-- Value has valuation",val)
 								if val >=1:
-									print("***Toroid bound error")
+									print("***Possible toroidal factor---aborting")
 									t_error = true
 								vals += [val]
 								a = a + 1
