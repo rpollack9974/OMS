@@ -78,30 +78,28 @@ def analyze_pLs(D,Phis_list,verbose=true):
 							print("Using a =",a)
 							t1 = S(L).substitute(T=z-1).substitute(w=(z^a-1+p)/p)
 							val = v(t1) - Phis.valuation()
-							print("-- Value has valuation",val)
 							if val >= error_bound:
 								error_bound_violated = true
 								bad_val = val
 								print("***This is an error bound violation: value is",val,"error bound is",error_bound)
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
 								extra_factor = v(z^a-z^2+p)
-								print("(FE modification needed; subtracting",extra_factor)
+								print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
 								val = val - extra_factor
-								print("-- modified valuation is",val,")")
+							print("-- Value has valuation",val)
 							vals += [val]
 
 							t2 = S(L).substitute(T=z^a-1).substitute(w=(z-1+p)/p)
 							val = v(t2) - Phis.valuation()
-							print("-- Value has valuation",val)
 							if val >= error_bound:
 								error_bound_violated = true
 								bad_val = val
 								print("***This is an error bound violation: value is",val,"error bound is",error_bound)
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
 								extra_factor = v(z-z^(2*a)+p)
-								print("(FE modification needed; subtracting",extra_factor)
+								print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
 								val = val - extra_factor
-								print("-- modified valuation is",val,")")
+							print("-- Value has valuation",val)
 							vals += [val]
 							a = a + 1
 						m = max(vals)
