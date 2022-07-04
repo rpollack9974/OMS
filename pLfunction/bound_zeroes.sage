@@ -91,7 +91,7 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 									print("***This is an error bound violation: value is",val,"error bound is",error_bound)
 								elif 2*i % (p-1) == comp and lam % 2 == 1:
 									extra_factor = v(z^a-z^2+p)
-									print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
+									print("---->Modification needed. original value:",val,"extra factor:",extra_factor)
 									val = val - extra_factor
 								print("-- Value has valuation",val)
 								if val >=1:
@@ -107,13 +107,14 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 									print("***This is an error bound violation: value is",val,"error bound is",error_bound)
 								elif 2*i % (p-1) == comp and lam % 2 == 1:
 									extra_factor = v(z-z^(2*a)+p)
-									print("-->Modification needed. original value:",val,"extra factor:",extra_factor)
+									print("---->Modification needed. original value:",val,"extra factor:",extra_factor)
 									val = val - extra_factor
 								print("-- Value has valuation",val)
 								if val >=1:
 									print("***Possible toroidal factor---aborting")
 									t_error = true
 								vals += [val]
+								print("Current list of values:",vals)
 								a = a + 1
 							m = max(vals)
 							if error_bound_violated:
