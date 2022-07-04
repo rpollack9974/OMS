@@ -98,10 +98,10 @@ def analyze_pLs(D,Phis_list,verbose=true):
 								bad_val = val
 								print("***This is an error bound violation: value is",val,"error bound is",error_bound)
 							elif 2*i % (p-1) == comp and lam % 2 == 1:
-								extra_factor = v(z^a-z^2+p)
-								print("FE modification needed; subtracting",extra_factor)
+								extra_factor = v(z-z^(2*a)+p)
+								print("(FE modification needed; subtracting",extra_factor)
 								val = val - extra_factor
-								print("-- modified valuation is",val)
+								print("-- modified valuation is",val,")")
 							vals += [val]
 							a = a + 1
 						m = max(vals)
