@@ -139,7 +139,7 @@ def analyze_pLs(D,Phis_list,full_search=false,verbose=true):
 		print("")
 	return "done"
 
-def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true):
+def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true,full_search=true):
 	old_stdout = sys.stdout
 
 	for d in range(minD,maxD,step):
@@ -149,7 +149,7 @@ def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true):
 			if log:
 				log_file = open(filename,"a")
 				sys.stdout = log_file			
-			analyze_pLs(d,Phis_list)
+			analyze_pLs(d,Phis_list,full_search=full_search)
 			print("----------------------------------------")
 			if log:
 				sys.stdout = old_stdout
