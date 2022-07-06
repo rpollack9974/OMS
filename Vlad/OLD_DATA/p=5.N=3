@@ -1,0 +1,5640 @@
+Working with twist  8 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  8 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  13 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  13 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1
+Failed: max val too high.  Max valuation is 1  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+Working with twist  13 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+----------------------------------------
+Working with twist  17 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 2
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1
+Failed: max val too high.  Max valuation is 1  (error bound is 2 )
+----------------------------------------
+working at level 5
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 1/2
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/4
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 25
+Error bound is 1/10
+Using a = 0
+-- Value has valuation 1/10
+***This is an error bound violation: value is 1/10 error bound is 1/10
+-- Value has valuation 1/20
+Failed: not enough accuracy.  There was a valuation of 1/10 and the error bound is 1/10
+----------------------------------------
+working at level 125
+Error bound is 1/50
+Using a = 0
+-- Value has valuation 1/50
+***This is an error bound violation: value is 1/50 error bound is 1/50
+-- Value has valuation 1/100
+Failed: not enough accuracy.  There was a valuation of 1/50 and the error bound is 1/50
+Going to more accurate family.
+Working with twist  17 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1
+Failed: max val too high.  Max valuation is 1  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/4
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Passed! Max valuation is 1/2 (error bound is 3/2 )
+PASSED
+
+Working with twist  17 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  17 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1
+Failed: max val too high.  Max valuation is 1  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/4
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+----------------------------------------
+Working with twist  28 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  28 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  29 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+Working with twist  29 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 1
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 2
+-- Value has valuation 2
+***This is an error bound violation: value is 2 error bound is 3/2
+-- Value has valuation 1
+FE modification needed; subtracting 1
+-- modified valuation is 0
+Failed: not enough accuracy.  There was a valuation of 2 and the error bound is 3/2
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 1/4
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/5 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 1
+-- Value has valuation 1/5
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/20 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 2
+-- Value has valuation 2/5
+***This is an error bound violation: value is 2/5 error bound is 3/10
+-- Value has valuation 1/5
+FE modification needed; subtracting 1
+-- modified valuation is -4/5
+Failed: not enough accuracy.  There was a valuation of 2/5 and the error bound is 3/10
+----------------------------------------
+working at level 125
+Error bound is 3/50
+Using a = 0
+-- Value has valuation 1/20
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/25 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 1
+-- Value has valuation 1/25
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/100 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 2
+-- Value has valuation 2/25
+***This is an error bound violation: value is 2/25 error bound is 3/50
+-- Value has valuation 1/25
+FE modification needed; subtracting 1
+-- modified valuation is -24/25
+Failed: not enough accuracy.  There was a valuation of 2/25 and the error bound is 3/50
+Going to more accurate family.
+Working with twist  29 , component  2 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 5
+Error bound is 5/2
+Using a = 0
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 1
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 2
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 1
+FE modification needed; subtracting 1
+-- modified valuation is 0
+Using a = 3
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 2
+FE modification needed; subtracting 1/4
+-- modified valuation is 7/4
+Using a = 4
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Failed: max val too high.  Max valuation is 7/4  (error bound is 5/2 )
+----------------------------------------
+working at level 25
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 1/4
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/5 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 1
+-- Value has valuation 1/5
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/20 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 1/2
+-- Value has valuation 1/5
+FE modification needed; subtracting 1
+-- modified valuation is -4/5
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 1/2
+----------------------------------------
+working at level 125
+Error bound is 1/10
+Using a = 0
+-- Value has valuation 1/20
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/25 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 1
+-- Value has valuation 1/25
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/100 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 1/10
+-- Value has valuation 1/25
+FE modification needed; subtracting 1
+-- modified valuation is -24/25
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 1/10
+Going to more accurate family.
+Working with twist  29 , component  2 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 1
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 2
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 1
+FE modification needed; subtracting 1
+-- modified valuation is 0
+Using a = 3
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 2
+FE modification needed; subtracting 1/4
+-- modified valuation is 7/4
+Using a = 4
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Failed: max val too high.  Max valuation is 7/4  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 1/4
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/5 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 1
+-- Value has valuation 1/5
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/20 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 2
+-- Value has valuation 9/10
+***This is an error bound violation: value is 9/10 error bound is 17/20
+-- Value has valuation 1/5
+FE modification needed; subtracting 1
+-- modified valuation is -4/5
+Failed: not enough accuracy.  There was a valuation of 9/10 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 1/20
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/25 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 1
+-- Value has valuation 1/25
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/100 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 2
+-- Value has valuation 9/50
+***This is an error bound violation: value is 9/50 error bound is 17/100
+-- Value has valuation 1/25
+FE modification needed; subtracting 1
+-- modified valuation is -24/25
+Failed: not enough accuracy.  There was a valuation of 9/50 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  29 , component  2 using 40 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 5
+Error bound is 11/2
+Using a = 0
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 1
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 2
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 1
+FE modification needed; subtracting 1
+-- modified valuation is 0
+Using a = 3
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 2
+FE modification needed; subtracting 1/4
+-- modified valuation is 7/4
+Using a = 4
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Failed: max val too high.  Max valuation is 7/4  (error bound is 11/2 )
+----------------------------------------
+working at level 25
+Error bound is 11/10
+Using a = 0
+-- Value has valuation 1/4
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/5 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 1
+-- Value has valuation 1/5
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/20 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 2
+-- Value has valuation 11/10
+***This is an error bound violation: value is 11/10 error bound is 11/10
+-- Value has valuation 1/5
+FE modification needed; subtracting 1
+-- modified valuation is -4/5
+Failed: not enough accuracy.  There was a valuation of 11/10 and the error bound is 11/10
+----------------------------------------
+working at level 125
+Error bound is 11/50
+Using a = 0
+-- Value has valuation 1/20
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/25 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 1
+-- Value has valuation 1/25
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/100 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 2
+-- Value has valuation 11/50
+***This is an error bound violation: value is 11/50 error bound is 11/50
+-- Value has valuation 1/25
+FE modification needed; subtracting 1
+-- modified valuation is -24/25
+Failed: not enough accuracy.  There was a valuation of 11/50 and the error bound is 11/50
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  29 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  37 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  37 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  41 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+Working with twist  41 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  41 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  44 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+Working with twist  44 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  44 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  44 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  53 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  53 , component  2 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 3/2 )
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 7/20
+***This is an error bound violation: value is 7/20 error bound is 3/10
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 7/20 and the error bound is 3/10
+----------------------------------------
+working at level 125
+Error bound is 3/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 7/100
+***This is an error bound violation: value is 7/100 error bound is 3/50
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 7/100 and the error bound is 3/50
+Going to more accurate family.
+Working with twist  53 , component  2 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 11
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 11 )
+----------------------------------------
+working at level 5
+Error bound is 11/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 11/4 )
+----------------------------------------
+working at level 25
+Error bound is 11/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 11/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 11/20
+----------------------------------------
+working at level 125
+Error bound is 11/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 11/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 11/100
+Going to more accurate family.
+Working with twist  53 , component  2 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 17
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 17 )
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 17/20
+***This is an error bound violation: value is 17/20 error bound is 17/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 17/20 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 17/100
+***This is an error bound violation: value is 17/100 error bound is 17/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 17/100 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  53 , component  2 using 40 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 22
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 22 )
+----------------------------------------
+working at level 5
+Error bound is 11/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 11/2 )
+----------------------------------------
+working at level 25
+Error bound is 11/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 21/20
+(FE modification needed; subtracting 1
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Using a = 3
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 4
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 5
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 6
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 7
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 8
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 9
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 10
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 11
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 12
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 13
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 21/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1
+Using a = 14
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 15
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 16
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 17
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 18
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 19
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 20
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 21
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 22
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 23
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 24
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Failed: max val too high.  Max valuation is 1  (error bound is 11/10 )
+----------------------------------------
+working at level 125
+Error bound is 11/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 11/50
+***This is an error bound violation: value is 11/50 error bound is 11/50
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 11/50 and the error bound is 11/50
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  53 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  56 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 2
+-- Value has valuation 1/10
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 1
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 2
+-- Value has valuation 1/50
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  56 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 5
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 5 )
+----------------------------------------
+working at level 5
+Error bound is 5/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 3/4
+Using a = 3
+-- Value has valuation 3/4
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 3/4
+-- Value has valuation 3/4
+Passed! Max valuation is 3/4 (error bound is 5/4 )
+PASSED
+
+Working with twist  56 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  56 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  61 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  61 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  61 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  61 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  73 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  73 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  73 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  73 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  76 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  76 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  76 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  76 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  77 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  77 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  77 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  77 , component  2 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 7/20
+***This is an error bound violation: value is 7/20 error bound is 3/10
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 7/20 and the error bound is 3/10
+----------------------------------------
+working at level 125
+Error bound is 3/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 7/100
+***This is an error bound violation: value is 7/100 error bound is 3/50
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 7/100 and the error bound is 3/50
+Going to more accurate family.
+Working with twist  77 , component  2 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 11
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 11 )
+----------------------------------------
+working at level 5
+Error bound is 11/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 5/4  (error bound is 11/4 )
+----------------------------------------
+working at level 25
+Error bound is 11/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 11/20
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 11/20
+----------------------------------------
+working at level 125
+Error bound is 11/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 11/100
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 11/100
+Going to more accurate family.
+Working with twist  77 , component  2 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 17
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 17 )
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 5/4  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 17/20
+***This is an error bound violation: value is 17/20 error bound is 17/20
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 17/20 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 17/100
+***This is an error bound violation: value is 17/100 error bound is 17/100
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 17/100 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  77 , component  2 using 40 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 22
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 22 )
+----------------------------------------
+working at level 5
+Error bound is 11/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 5/4  (error bound is 11/2 )
+----------------------------------------
+working at level 25
+Error bound is 11/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 11/10
+***This is an error bound violation: value is 11/10 error bound is 11/10
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 11/10 and the error bound is 11/10
+----------------------------------------
+working at level 125
+Error bound is 11/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 11/50
+***This is an error bound violation: value is 11/50 error bound is 11/50
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 11/50 and the error bound is 11/50
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  77 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  88 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  88 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  88 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  88 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  89 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 2
+Using a = 0
+-- Value has valuation 2
+***This is an error bound violation: value is 2 error bound is 2
+-- Value has valuation 2
+***This is an error bound violation: value is 2 error bound is 2
+Failed: not enough accuracy.  There was a valuation of 2 and the error bound is 2
+----------------------------------------
+working at level 5
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 1/2
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+***This is an error bound violation: value is 1/2 error bound is 1/2
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 25
+Error bound is 1/10
+Using a = 0
+-- Value has valuation 1/10
+***This is an error bound violation: value is 1/10 error bound is 1/10
+-- Value has valuation 1/10
+***This is an error bound violation: value is 1/10 error bound is 1/10
+Failed: not enough accuracy.  There was a valuation of 1/10 and the error bound is 1/10
+----------------------------------------
+working at level 125
+Error bound is 1/50
+Using a = 0
+-- Value has valuation 1/50
+***This is an error bound violation: value is 1/50 error bound is 1/50
+-- Value has valuation 1/50
+***This is an error bound violation: value is 1/50 error bound is 1/50
+Failed: not enough accuracy.  There was a valuation of 1/50 and the error bound is 1/50
+Going to more accurate family.
+Working with twist  89 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 5
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 5 )
+----------------------------------------
+working at level 5
+Error bound is 5/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Passed! Max valuation is 1/2 (error bound is 5/4 )
+PASSED
+
+Working with twist  89 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  89 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  89 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  92 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  92 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1
+Failed: max val too high.  Max valuation is 1  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+Working with twist  92 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 3
+***This is an error bound violation: value is 3 error bound is 3
+-- Value has valuation 3
+***This is an error bound violation: value is 3 error bound is 3
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 3
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  92 , component  2 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 3
+(FE modification needed; subtracting 1
+-- modified valuation is 2 )
+-- Value has valuation 3
+FE modification needed; subtracting 1
+-- modified valuation is 2
+Failed: max val too high.  Max valuation is 2  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 2/5
+***This is an error bound violation: value is 2/5 error bound is 3/10
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 2/5 and the error bound is 3/10
+----------------------------------------
+working at level 125
+Error bound is 3/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 2/25
+***This is an error bound violation: value is 2/25 error bound is 3/50
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 2/25 and the error bound is 3/50
+Going to more accurate family.
+Working with twist  92 , component  2 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 10
+Using a = 0
+-- Value has valuation 3
+(FE modification needed; subtracting 1
+-- modified valuation is 2 )
+-- Value has valuation 3
+FE modification needed; subtracting 1
+-- modified valuation is 2
+Failed: max val too high.  Max valuation is 2  (error bound is 10 )
+----------------------------------------
+working at level 5
+Error bound is 5/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 5/4  (error bound is 5/2 )
+----------------------------------------
+working at level 25
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 1/2
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 1/2
+----------------------------------------
+working at level 125
+Error bound is 1/10
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 1/10
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 1/10
+Going to more accurate family.
+Working with twist  92 , component  2 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 17
+Using a = 0
+-- Value has valuation 3
+(FE modification needed; subtracting 1
+-- modified valuation is 2 )
+-- Value has valuation 3
+FE modification needed; subtracting 1
+-- modified valuation is 2
+Failed: max val too high.  Max valuation is 2  (error bound is 17 )
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 5/4  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 17/20
+***This is an error bound violation: value is 17/20 error bound is 17/20
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 17/20 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 17/100
+***This is an error bound violation: value is 17/100 error bound is 17/100
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 17/100 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  92 , component  2 using 40 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 21
+Using a = 0
+-- Value has valuation 3
+(FE modification needed; subtracting 1
+-- modified valuation is 2 )
+-- Value has valuation 3
+FE modification needed; subtracting 1
+-- modified valuation is 2
+Failed: max val too high.  Max valuation is 2  (error bound is 21 )
+----------------------------------------
+working at level 5
+Error bound is 21/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 5/4  (error bound is 21/4 )
+----------------------------------------
+working at level 25
+Error bound is 21/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 11/10
+***This is an error bound violation: value is 11/10 error bound is 21/20
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 11/10 and the error bound is 21/20
+----------------------------------------
+working at level 125
+Error bound is 21/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 23/100
+***This is an error bound violation: value is 23/100 error bound is 21/100
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 23/100 and the error bound is 21/100
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  92 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1
+Failed: max val too high.  Max valuation is 1  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/4
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+----------------------------------------
+Working with twist  97 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  97 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  97 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  97 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  101 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 3
+***This is an error bound violation: value is 3 error bound is 3
+-- Value has valuation 3
+***This is an error bound violation: value is 3 error bound is 3
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 3
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 1/50
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  101 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 5
+Using a = 0
+-- Value has valuation 3
+-- Value has valuation 3
+Failed: max val too high.  Max valuation is 3  (error bound is 5 )
+----------------------------------------
+working at level 5
+Error bound is 5/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 3/4
+Using a = 1
+-- Value has valuation 3/4
+-- Value has valuation 3/4
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Passed! Max valuation is 3/4 (error bound is 5/4 )
+PASSED
+
+Working with twist  101 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  101 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  101 , component  2 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 3/2 )
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 7/20
+***This is an error bound violation: value is 7/20 error bound is 3/10
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 7/20 and the error bound is 3/10
+----------------------------------------
+working at level 125
+Error bound is 3/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 7/100
+***This is an error bound violation: value is 7/100 error bound is 3/50
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 7/100 and the error bound is 3/50
+Going to more accurate family.
+Working with twist  101 , component  2 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 10
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 10 )
+----------------------------------------
+working at level 5
+Error bound is 5/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 5/2 )
+----------------------------------------
+working at level 25
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 1/2
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 1/2
+----------------------------------------
+working at level 125
+Error bound is 1/10
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 1/10
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 1/10
+Going to more accurate family.
+Working with twist  101 , component  2 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 17
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 17 )
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 17/20
+***This is an error bound violation: value is 17/20 error bound is 17/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 17/20 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 17/100
+***This is an error bound violation: value is 17/100 error bound is 17/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 17/100 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  101 , component  2 using 40 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 22
+Using a = 0
+-- Value has valuation 2
+(FE modification needed; subtracting 1
+-- modified valuation is 1 )
+-- Value has valuation 2
+FE modification needed; subtracting 1
+-- modified valuation is 1
+Failed: max val too high.  Max valuation is 1  (error bound is 22 )
+----------------------------------------
+working at level 5
+Error bound is 11/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 11/2 )
+----------------------------------------
+working at level 25
+Error bound is 11/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 21/20
+(FE modification needed; subtracting 1
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Using a = 3
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 4
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 5
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 6
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 7
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 8
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 9
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 10
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 11
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 12
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 13
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 21/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1
+Using a = 14
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 15
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 16
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 17
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 18
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 19
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 20
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 21
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 22
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 23
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 24
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Failed: max val too high.  Max valuation is 1  (error bound is 11/10 )
+----------------------------------------
+working at level 125
+Error bound is 11/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 11/50
+***This is an error bound violation: value is 11/50 error bound is 11/50
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 11/50 and the error bound is 11/50
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  101 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  104 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 2
+-- Value has valuation 1/10
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 1
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 2
+-- Value has valuation 1/50
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  104 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 3/4
+Using a = 3
+-- Value has valuation 3/4
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 3/4
+-- Value has valuation 3/4
+Passed! Max valuation is 3/4 (error bound is 3/2 )
+PASSED
+
+Working with twist  104 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  104 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  104 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  109 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  109 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  109 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Passed! Max valuation is 1/2 (error bound is 3/4 )
+PASSED
+
+Working with twist  109 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  113 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  113 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  113 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  113 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  124 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  124 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  124 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  124 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  133 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 4
+***This is an error bound violation: value is 4 error bound is 3
+-- Value has valuation 4
+***This is an error bound violation: value is 4 error bound is 3
+Failed: not enough accuracy.  There was a valuation of 4 and the error bound is 3
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  133 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 4
+(FE modification needed; subtracting 1
+-- modified valuation is 3 )
+-- Value has valuation 4
+FE modification needed; subtracting 1
+-- modified valuation is 3
+Failed: max val too high.  Max valuation is 3  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 3/2 )
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 2/5
+***This is an error bound violation: value is 2/5 error bound is 3/10
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 2/5 and the error bound is 3/10
+----------------------------------------
+working at level 125
+Error bound is 3/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 2/25
+***This is an error bound violation: value is 2/25 error bound is 3/50
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 2/25 and the error bound is 3/50
+Going to more accurate family.
+Working with twist  133 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 11
+Using a = 0
+-- Value has valuation 4
+(FE modification needed; subtracting 1
+-- modified valuation is 3 )
+-- Value has valuation 4
+FE modification needed; subtracting 1
+-- modified valuation is 3
+Failed: max val too high.  Max valuation is 3  (error bound is 11 )
+----------------------------------------
+working at level 5
+Error bound is 11/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 11/4 )
+----------------------------------------
+working at level 25
+Error bound is 11/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 11/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 11/20
+----------------------------------------
+working at level 125
+Error bound is 11/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 11/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 11/100
+Going to more accurate family.
+Working with twist  133 , component  0 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 17
+Using a = 0
+-- Value has valuation 4
+(FE modification needed; subtracting 1
+-- modified valuation is 3 )
+-- Value has valuation 4
+FE modification needed; subtracting 1
+-- modified valuation is 3
+Failed: max val too high.  Max valuation is 3  (error bound is 17 )
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 17/20
+***This is an error bound violation: value is 17/20 error bound is 17/20
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Failed: not enough accuracy.  There was a valuation of 17/20 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 17/100
+***This is an error bound violation: value is 17/100 error bound is 17/100
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 17/100 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  133 , component  0 using 40 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 22
+Using a = 0
+-- Value has valuation 4
+(FE modification needed; subtracting 1
+-- modified valuation is 3 )
+-- Value has valuation 4
+FE modification needed; subtracting 1
+-- modified valuation is 3
+Failed: max val too high.  Max valuation is 3  (error bound is 22 )
+----------------------------------------
+working at level 5
+Error bound is 11/2
+Using a = 0
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 1
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Using a = 2
+-- Value has valuation 5/4
+(FE modification needed; subtracting 1
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1
+-- modified valuation is -1/2
+Using a = 3
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 5/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1
+Using a = 4
+-- Value has valuation 1/2
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/4 )
+-- Value has valuation 1/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 11/2 )
+----------------------------------------
+working at level 25
+Error bound is 11/10
+Using a = 0
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 1
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 2
+-- Value has valuation 21/20
+(FE modification needed; subtracting 1
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1
+-- modified valuation is -9/10
+Using a = 3
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 4
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 5
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 6
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 7
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 8
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 9
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 10
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 11
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 12
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 13
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 21/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1
+Using a = 14
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 15
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 16
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 17
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 18
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 19
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 20
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 21
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Using a = 22
+-- Value has valuation 3/10
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/4
+-- modified valuation is -3/20
+Using a = 23
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 3/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/4
+Using a = 24
+-- Value has valuation 1/10
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/20 )
+-- Value has valuation 1/10
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/20
+Failed: max val too high.  Max valuation is 1  (error bound is 11/10 )
+----------------------------------------
+working at level 125
+Error bound is 11/50
+Using a = 0
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 1
+-- Value has valuation 1/50
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/100 )
+-- Value has valuation 1/50
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/100
+Using a = 2
+-- Value has valuation 6/25
+***This is an error bound violation: value is 6/25 error bound is 11/50
+-- Value has valuation 1/50
+FE modification needed; subtracting 1
+-- modified valuation is -49/50
+Failed: not enough accuracy.  There was a valuation of 6/25 and the error bound is 11/50
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  133 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  133 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  133 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  136 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  136 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  136 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 7
+----------------------------------------
+working at level 5
+Error bound is 11/4
+Using a = 0
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/2 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 1
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 2
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1
+-- modified valuation is 0
+Using a = 3
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 7/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/2
+Using a = 4
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Failed: max val too high.  Max valuation is 3/2  (error bound is 11/4 )
+----------------------------------------
+working at level 25
+Error bound is 11/20
+Using a = 0
+-- Value has valuation 7/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/10 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 1
+-- Value has valuation 1/5
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/20 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 11/20
+-- Value has valuation 1/5
+FE modification needed; subtracting 1
+-- modified valuation is -4/5
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 11/20
+----------------------------------------
+working at level 125
+Error bound is 11/100
+Using a = 0
+-- Value has valuation 7/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/50 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 1
+-- Value has valuation 1/25
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/100 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 11/100
+-- Value has valuation 1/25
+FE modification needed; subtracting 1
+-- modified valuation is -24/25
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 11/100
+Going to more accurate family.
+Working with twist  136 , component  0 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 7
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/2 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 1
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 2
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1
+-- modified valuation is 0
+Using a = 3
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 7/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/2
+Using a = 4
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Failed: max val too high.  Max valuation is 3/2  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 7/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/10 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 1
+-- Value has valuation 1/5
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/20 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 2
+-- Value has valuation 17/20
+***This is an error bound violation: value is 17/20 error bound is 17/20
+-- Value has valuation 1/5
+FE modification needed; subtracting 1
+-- modified valuation is -4/5
+Failed: not enough accuracy.  There was a valuation of 17/20 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 7/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/50 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 1
+-- Value has valuation 1/25
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/100 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 2
+-- Value has valuation 17/100
+***This is an error bound violation: value is 17/100 error bound is 17/100
+-- Value has valuation 1/25
+FE modification needed; subtracting 1
+-- modified valuation is -24/25
+Failed: not enough accuracy.  There was a valuation of 17/100 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  136 , component  0 using 40 moments
+..computing p-adic L-function
+done!
+--lambda = 7
+----------------------------------------
+working at level 5
+Error bound is 11/2
+Using a = 0
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/2 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 1
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Using a = 2
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1
+-- modified valuation is 0
+Using a = 3
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 7/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/2
+Using a = 4
+-- Value has valuation 1
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/4 )
+-- Value has valuation 1
+FE modification needed; subtracting 1/4
+-- modified valuation is 3/4
+Failed: max val too high.  Max valuation is 3/2  (error bound is 11/2 )
+----------------------------------------
+working at level 25
+Error bound is 11/10
+Using a = 0
+-- Value has valuation 7/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/10 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 1
+-- Value has valuation 1/5
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/20 )
+-- Value has valuation 1/5
+FE modification needed; subtracting 1/20
+-- modified valuation is 3/20
+Using a = 2
+-- Value has valuation 23/20
+***This is an error bound violation: value is 23/20 error bound is 11/10
+-- Value has valuation 1/5
+FE modification needed; subtracting 1
+-- modified valuation is -4/5
+Failed: not enough accuracy.  There was a valuation of 23/20 and the error bound is 11/10
+----------------------------------------
+working at level 125
+Error bound is 11/50
+Using a = 0
+-- Value has valuation 7/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/50 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 1
+-- Value has valuation 1/25
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/100 )
+-- Value has valuation 1/25
+FE modification needed; subtracting 1/100
+-- modified valuation is 3/100
+Using a = 2
+-- Value has valuation 23/100
+***This is an error bound violation: value is 23/100 error bound is 11/50
+-- Value has valuation 1/25
+FE modification needed; subtracting 1
+-- modified valuation is -24/25
+Failed: not enough accuracy.  There was a valuation of 23/100 and the error bound is 11/50
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  136 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  136 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 4
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1/4
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 3/2 )
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 1
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 2
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 3
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 4
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 5
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 6
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 7
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 8
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 9
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 10
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 11
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 12
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 13
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 14
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 15
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 16
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 17
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 18
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 19
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 20
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 21
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 22
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 23
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 24
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Passed! Max valuation is 1/5 (error bound is 3/10 )
+PASSED
+
+Working with twist  136 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  136 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  136 , component  3 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 4
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1/4
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Failed: max val too high.  Max valuation is 1  (error bound is 3/2 )
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 1
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 2
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 3
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 4
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 5
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 6
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 7
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 8
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 9
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 10
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 11
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 12
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 13
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 14
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 15
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 16
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 17
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 18
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 19
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 20
+-- Value has valuation 1/5
+-- Value has valuation 1/20
+Using a = 21
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 22
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 23
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Using a = 24
+-- Value has valuation 1/20
+-- Value has valuation 1/20
+Passed! Max valuation is 1/5 (error bound is 3/10 )
+PASSED
+
+----------------------------------------
+Working with twist  137 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  137 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  137 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  137 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  149 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 3 )
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1
+***This is an error bound violation: value is 1 error bound is 3/4
+-- Value has valuation 1/2
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 2
+-- Value has valuation 1/5
+***This is an error bound violation: value is 1/5 error bound is 3/20
+-- Value has valuation 1/10
+Failed: not enough accuracy.  There was a valuation of 1/5 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 1
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 2
+-- Value has valuation 1/25
+***This is an error bound violation: value is 1/25 error bound is 3/100
+-- Value has valuation 1/50
+Failed: not enough accuracy.  There was a valuation of 1/25 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  149 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 5
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 5 )
+----------------------------------------
+working at level 5
+Error bound is 5/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 3/2
+***This is an error bound violation: value is 3/2 error bound is 5/4
+-- Value has valuation 1/2
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 5/4
+----------------------------------------
+working at level 25
+Error bound is 1/4
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 2
+-- Value has valuation 3/10
+***This is an error bound violation: value is 3/10 error bound is 1/4
+-- Value has valuation 1/10
+Failed: not enough accuracy.  There was a valuation of 3/10 and the error bound is 1/4
+----------------------------------------
+working at level 125
+Error bound is 1/20
+Using a = 0
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 1
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Using a = 2
+-- Value has valuation 3/50
+***This is an error bound violation: value is 3/50 error bound is 1/20
+-- Value has valuation 1/50
+Failed: not enough accuracy.  There was a valuation of 3/50 and the error bound is 1/20
+Going to more accurate family.
+Working with twist  149 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 10
+Using a = 0
+-- Value has valuation 2
+-- Value has valuation 2
+Failed: max val too high.  Max valuation is 2  (error bound is 10 )
+----------------------------------------
+working at level 5
+Error bound is 5/2
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 3/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 3/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Failed: max val too high.  Max valuation is 3/2  (error bound is 5/2 )
+----------------------------------------
+working at level 25
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 2
+-- Value has valuation 3/10
+-- Value has valuation 1/10
+Using a = 3
+-- Value has valuation 1/10
+-- Value has valuation 3/10
+Using a = 4
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 5
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 6
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 7
+-- Value has valuation 3/10
+-- Value has valuation 1/10
+Using a = 8
+-- Value has valuation 1/10
+-- Value has valuation 3/10
+Using a = 9
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 10
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 11
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 12
+-- Value has valuation 3/10
+-- Value has valuation 1/10
+Using a = 13
+-- Value has valuation 1/10
+-- Value has valuation 3/10
+Using a = 14
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 15
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 16
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 17
+-- Value has valuation 3/10
+-- Value has valuation 1/10
+Using a = 18
+-- Value has valuation 1/10
+-- Value has valuation 3/10
+Using a = 19
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 20
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 21
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 22
+-- Value has valuation 3/10
+-- Value has valuation 1/10
+Using a = 23
+-- Value has valuation 1/10
+-- Value has valuation 3/10
+Using a = 24
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Passed! Max valuation is 3/10 (error bound is 1/2 )
+PASSED
+
+Working with twist  149 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  149 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  149 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  152 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  152 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 4
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 1
+-- Value has valuation 1/2
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Failed: max val too high.  Max valuation is 1  (error bound is 3/2 )
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 2
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 3
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 4
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 5
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Using a = 6
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 7
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 8
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 9
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 10
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Using a = 11
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 12
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 13
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 14
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 15
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Using a = 16
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 17
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 18
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 19
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 20
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Using a = 21
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 22
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 23
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Using a = 24
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Passed! Max valuation is 1/5 (error bound is 3/10 )
+PASSED
+
+Working with twist  152 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  152 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  152 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  157 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  157 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  157 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  157 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  161 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 2
+Using a = 0
+-- Value has valuation 3
+***This is an error bound violation: value is 3 error bound is 2
+-- Value has valuation 3
+***This is an error bound violation: value is 3 error bound is 2
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 2
+----------------------------------------
+working at level 5
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 1/2
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 1/2
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 1/2
+----------------------------------------
+working at level 25
+Error bound is 1/10
+Using a = 0
+-- Value has valuation 1/10
+***This is an error bound violation: value is 1/10 error bound is 1/10
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 1/10
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 1/10
+----------------------------------------
+working at level 125
+Error bound is 1/50
+Using a = 0
+-- Value has valuation 1/50
+***This is an error bound violation: value is 1/50 error bound is 1/50
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 1/50
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 1/50
+Going to more accurate family.
+Working with twist  161 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 3
+-- Value has valuation 3
+Failed: max val too high.  Max valuation is 3  (error bound is 6 )
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 3/4
+Using a = 1
+-- Value has valuation 3/4
+-- Value has valuation 3/4
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Passed! Max valuation is 3/4 (error bound is 3/2 )
+PASSED
+
+Working with twist  161 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  161 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  161 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  172 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  172 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  172 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  172 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  173 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  173 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  173 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  173 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  181 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  181 , component  0 using 10 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  181 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 7
+----------------------------------------
+working at level 5
+Error bound is 5/2
+Using a = 0
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 3/2  (error bound is 5/2 )
+----------------------------------------
+working at level 25
+Error bound is 1/2
+Using a = 0
+-- Value has valuation 7/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 3/5
+***This is an error bound violation: value is 3/5 error bound is 1/2
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 3/5 and the error bound is 1/2
+----------------------------------------
+working at level 125
+Error bound is 1/10
+Using a = 0
+-- Value has valuation 7/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 3/25
+***This is an error bound violation: value is 3/25 error bound is 1/10
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 3/25 and the error bound is 1/10
+Going to more accurate family.
+Working with twist  181 , component  0 using 30 moments
+..computing p-adic L-function
+done!
+--lambda = 7
+----------------------------------------
+working at level 5
+Error bound is 17/4
+Using a = 0
+-- Value has valuation 7/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 3/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 1
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Using a = 2
+-- Value has valuation 3/2
+(FE modification needed; subtracting 1
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1
+-- modified valuation is -1/4
+Using a = 3
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/2
+FE modification needed; subtracting 1/4
+-- modified valuation is 5/4
+Using a = 4
+-- Value has valuation 3/4
+(FE modification needed; subtracting 1/4
+-- modified valuation is 1/2 )
+-- Value has valuation 3/4
+FE modification needed; subtracting 1/4
+-- modified valuation is 1/2
+Failed: max val too high.  Max valuation is 3/2  (error bound is 17/4 )
+----------------------------------------
+working at level 25
+Error bound is 17/20
+Using a = 0
+-- Value has valuation 7/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 3/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 1
+-- Value has valuation 3/20
+(FE modification needed; subtracting 1/20
+-- modified valuation is 1/10 )
+-- Value has valuation 3/20
+FE modification needed; subtracting 1/20
+-- modified valuation is 1/10
+Using a = 2
+-- Value has valuation 9/10
+***This is an error bound violation: value is 9/10 error bound is 17/20
+-- Value has valuation 3/20
+FE modification needed; subtracting 1
+-- modified valuation is -17/20
+Failed: not enough accuracy.  There was a valuation of 9/10 and the error bound is 17/20
+----------------------------------------
+working at level 125
+Error bound is 17/100
+Using a = 0
+-- Value has valuation 7/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 3/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 1
+-- Value has valuation 3/100
+(FE modification needed; subtracting 1/100
+-- modified valuation is 1/50 )
+-- Value has valuation 3/100
+FE modification needed; subtracting 1/100
+-- modified valuation is 1/50
+Using a = 2
+-- Value has valuation 9/50
+***This is an error bound violation: value is 9/50 error bound is 17/100
+-- Value has valuation 3/100
+FE modification needed; subtracting 1
+-- modified valuation is -97/100
+Failed: not enough accuracy.  There was a valuation of 9/50 and the error bound is 17/100
+Going to more accurate family.
+Working with twist  181 , component  0 using 40 moments
+..computing p-adic L-function
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mKeyboardInterrupt[0m                         Traceback (most recent call last)
+[0;32m<ipython-input-258-4765867b20bb>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0mrun_me[0m[0;34m([0m[0;34m"Vlad/p=5.N=3"[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m500[0m[0;34m)[0m[0;34m,[0m[0mPhis_list[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m15[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/bound_zeroes.sagef5ry8a_a.py[0m in [0;36mrun_me[0;34m(filename, minD, maxD, Phis_list, level, step, log)[0m
+[1;32m    143[0m                                 [0mlog_file[0m [0;34m=[0m [0mopen[0m[0;34m([0m[0mfilename[0m[0;34m,[0m[0;34m"a"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    144[0m                                 [0msys[0m[0;34m.[0m[0mstdout[0m [0;34m=[0m [0mlog_file[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 145[0;31m                         [0manalyze_pLs[0m[0;34m([0m[0md[0m[0;34m,[0m[0mPhis_list[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    146[0m                         [0mprint[0m[0;34m([0m[0;34m"----------------------------------------"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    147[0m                         [0;32mif[0m [0mlog[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/bound_zeroes.sagef5ry8a_a.py[0m in [0;36manalyze_pLs[0;34m(D, Phis_list, verbose)[0m
+[1;32m     33[0m                                 [0mprint[0m[0;34m([0m[0;34m"Working with twist "[0m[0;34m,[0m[0mD[0m[0;34m,[0m[0;34m", component "[0m[0;34m,[0m[0mi[0m[0;34m,[0m[0;34m"using"[0m[0;34m,[0m[0mPhis[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0;34m"moments"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     34[0m                                 [0mprint[0m[0;34m([0m[0;34m"..computing p-adic L-function"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 35[0;31m                         [0mL[0m [0;34m=[0m [0mPhis[0m[0;34m.[0m[0mpLfunction[0m[0;34m([0m[0mr[0m[0;34m=[0m[0mi[0m[0;34m,[0m[0mquad_twist[0m[0;34m=[0m[0mD[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     36[0m                         [0;32mif[0m [0mverbose[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     37[0m                                 [0mprint[0m[0;34m([0m[0;34m"done!"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/modsym_dist_families.sageufvtsbiu.py[0m in [0;36mpLfunction[0;34m(self, r, max, quad_twist, verbose)[0m
+[1;32m    206[0m [0;34m[0m[0m
+[1;32m    207[0m                 [0mSS[0m [0;34m=[0m [0mPolynomialRing[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mbase_ring[0m[0;34m([0m[0;34m)[0m[0;34m,[0m [0mnames[0m[0;34m=[0m[0;34m([0m[0;34m'T'[0m[0;34m,[0m[0;34m)[0m[0;34m)[0m[0;34m;[0m [0;34m([0m[0mT[0m[0;34m,[0m[0;34m)[0m [0;34m=[0m [0mSS[0m[0;34m.[0m[0m_first_ngens[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 208[0;31m                 [0mans[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mpLfunction_coef[0m[0;34m([0m[0m_sage_const_0[0m [0;34m,[0m[0mr[0m[0;34m,[0m[0mD[0m[0;34m,[0m[0mgam[0m[0;34m)[0m[0;34m+[0m[0m_sage_const_0[0m [0;34m*[0m[0mT[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    209[0m                 [0mS[0m [0;34m=[0m [0mPolynomialRing[0m[0;34m([0m[0mQQ[0m[0;34m,[0m [0mnames[0m[0;34m=[0m[0;34m([0m[0;34m'z'[0m[0;34m,[0m[0;34m)[0m[0;34m)[0m[0;34m;[0m [0;34m([0m[0mz[0m[0;34m,[0m[0;34m)[0m [0;34m=[0m [0mS[0m[0;34m.[0m[0m_first_ngens[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    210[0m                 [0merr[0m[0;34m=[0m[0mInfinity[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/modsym_dist_families.sageufvtsbiu.py[0m in [0;36mpLfunction_coef[0;34m(self, n, r, D, gam, error)[0m
+[1;32m    175[0m                         [0mtemp[0m [0;34m=[0m [0m_sage_const_0[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    176[0m                         [0;32mfor[0m [0ma[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_1[0m [0;34m,[0m[0mp[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 177[0;31m                                 [0mtemp[0m [0;34m=[0m [0mtemp[0m [0;34m+[0m [0mteich[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0mM[0m[0;34m)[0m[0;34m**[0m[0;34m([0m[0mr[0m[0;34m-[0m[0mj[0m[0;34m)[0m[0;34m*[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mbasic_integral[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mj[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    178[0m                         [0mdn[0m [0;34m=[0m [0mdn[0m [0;34m+[0m [0mcjn[0m[0;34m*[0m[0mtemp[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    179[0m                 [0mv[0m [0;34m=[0m [0mlist[0m[0;34m([0m[0mdn[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/modsym_dist_families.sageufvtsbiu.py[0m in [0;36mbasic_integral[0;34m(self, a, j, D)[0m
+[1;32m    133[0m                 [0mans[0m[0;34m=[0m[0m_sage_const_0[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    134[0m                 [0;32mfor[0m [0mr[0m [0;32min[0m [0mrange[0m[0;34m([0m[0mj[0m[0;34m+[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 135[0;31m                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mbinomial[0m[0;34m([0m[0mj[0m[0;34m,[0m[0mr[0m[0;34m)[0m[0;34m*[0m[0;34m([0m[0ma[0m[0;34m-[0m[0mteich[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0mM[0m[0;34m)[0m[0;34m)[0m[0;34m**[0m[0;34m([0m[0mj[0m[0;34m-[0m[0mr[0m[0;34m)[0m[0;34m*[0m[0mp[0m[0;34m**[0m[0mr[0m[0;34m*[0m[0mself[0m[0;34m.[0m[0mphi_on_Da[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m.[0m[0mmoment[0m[0;34m([0m[0mr[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    136[0m                 [0;32mreturn[0m [0mans[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    137[0m [0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/modsym_dist_families.sageufvtsbiu.py[0m in [0;36mphi_on_Da[0;34m(self, a, D)[0m
+[1;32m    121[0m                         [0;32mfor[0m [0mb[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_1[0m [0;34m,[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m+[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    122[0m                                 [0;32mif[0m [0mgcd[0m[0;34m([0m[0mb[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m==[0m[0m_sage_const_1[0m [0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 123[0;31m                                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mself[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0mb[0m[0;34m/[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_1[0m [0;34m][0m[0;34m)[0m[0;34m*[0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0ma[0m[0;34m,[0m[0m_sage_const_1[0m [0;34m,[0m[0mp[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mact_right[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0mb[0m[0;34m/[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_1[0m [0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mscale[0m[0;34m([0m[0mkronecker[0m[0;34m([0m[0mD[0m[0;34m,[0m[0mb[0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    124[0m                         [0mself[0m[0;34m.[0m[0madd_pLdata[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mans[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    125[0m                         [0;32mreturn[0m [0mans[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/modsym.saget2lgzmon.py[0m in [0;36meval[0;34m(self, A)[0m
+[1;32m    212[0m                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mself[0m[0;34m.[0m[0meval_sl2[0m[0;34m([0m[0mv1[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    213[0m                 [0;32mfor[0m [0mj[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_0[0m [0;34m,[0m[0mlen[0m[0;34m([0m[0mv2[0m[0;34m)[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 214[0;31m                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m-[0m[0mself[0m[0;34m.[0m[0meval_sl2[0m[0;34m([0m[0mv2[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    215[0m                 [0;32mreturn[0m [0mans[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    216[0m [0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/modsym.saget2lgzmon.py[0m in [0;36meval_sl2[0;34m(self, A)[0m
+[1;32m    191[0m                 [0mgaminv[0m[0;34m=[0m[0mB[0m[0;34m*[0m[0mC[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    192[0m                 [0;32mif[0m [0mself[0m[0;34m.[0m[0mfull_data[0m[0;34m!=[0m[0m_sage_const_0[0m [0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 193[0;31m                         [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mfull_data[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m.[0m[0mact_right[0m[0;34m([0m[0mgaminv[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    194[0m                 [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    195[0m                         [0mv[0m[0;34m=[0m[0mself[0m[0;34m.[0m[0mmanin[0m[0;34m.[0m[0mrels[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/dist_fam.sage_be9p6zl.py[0m in [0;36mact_right[0;34m(self, gam)[0m
+[1;32m    131[0m                 [0mw[0m[0;34m=[0m[0mself[0m[0;34m.[0m[0mgen[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    132[0m                 [0mK[0m[0;34m=[0m[0maut[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mp[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdeg[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mgam[0m[0;34m[[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m,[0m[0mgam[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdisc[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mchar[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mw[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 133[0;31m                 [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mact_by_ps_fam[0m[0;34m([0m[0mK[0m[0;34m)[0m[0;34m.[0m[0mact_right_weight_zero[0m[0;34m([0m[0mgam[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    134[0m [0;34m[0m[0m
+[1;32m    135[0m         [0;32mdef[0m [0msolve_diff_eqn[0m[0;34m([0m[0mself[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/286949/dist_fam.sage_be9p6zl.py[0m in [0;36mact_by_ps_fam[0;34m(self, F)[0m
+[1;32m    115[0m         [0;32mdef[0m [0mact_by_ps_fam[0m[0;34m([0m[0mself[0m[0;34m,[0m[0mF[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    116[0m                 [0mgam[0m[0;34m=[0m[0mform_acting_matrix_on_dist_fam[0m[0;34m([0m[0mF[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 117[0;31m                 [0mv[0m[0;34m=[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mmoments[0m[0;34m)[0m[0;34m*[0m[0mgam[0m[0;34m)[0m[0;34m[[0m[0m_sage_const_0[0m [0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    118[0m                 [0mw[0m[0;34m=[0m[0;34m[[0m[0mv[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m.[0m[0mtruncate[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mdeg[0m[0;34m)[0m [0;32mfor[0m [0mj[0m [0;32min[0m [0mrange[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[1;32m    119[0m                 [0;32mreturn[0m [0mdist_fam[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mp[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdeg[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdisc[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mvector[0m[0;34m([0m[0mw[0m[0;34m)[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mchar[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/structure/element.pyx[0m in [0;36msage.structure.element.Matrix.__mul__ (build/cythonized/sage/structure/element.c:22674)[0;34m()[0m
+[1;32m   3693[0m [0;34m[0m[0m
+[1;32m   3694[0m         [0;32mif[0m [0mBOTH_ARE_ELEMENT[0m[0;34m([0m[0mcl[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 3695[0;31m             [0;32mreturn[0m [0mcoercion_model[0m[0;34m.[0m[0mbin_op[0m[0;34m([0m[0mleft[0m[0;34m,[0m [0mright[0m[0;34m,[0m [0mmul[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   3696[0m [0;34m[0m[0m
+[1;32m   3697[0m         [0mcdef[0m [0mlong[0m [0mvalue[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/structure/coerce.pyx[0m in [0;36msage.structure.coerce.CoercionModel.bin_op (build/cythonized/sage/structure/coerce.c:10057)[0;34m()[0m
+[1;32m   1199[0m         [0;32mif[0m [0maction[0m [0;32mis[0m [0;32mnot[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1200[0m             [0;32mif[0m [0;34m([0m[0;34m<[0m[0mAction[0m[0;34m>[0m[0maction[0m[0;34m)[0m[0;34m.[0m[0m_is_left[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1201[0;31m                 [0;32mreturn[0m [0;34m([0m[0;34m<[0m[0mAction[0m[0;34m>[0m[0maction[0m[0;34m)[0m[0;34m.[0m[0m_act_[0m[0;34m([0m[0mx[0m[0;34m,[0m [0my[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1202[0m             [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1203[0m                 [0;32mreturn[0m [0;34m([0m[0;34m<[0m[0mAction[0m[0;34m>[0m[0maction[0m[0;34m)[0m[0;34m.[0m[0m_act_[0m[0;34m([0m[0my[0m[0;34m,[0m [0mx[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/matrix/action.pyx[0m in [0;36msage.matrix.action.MatrixMatrixAction._act_ (build/cythonized/sage/matrix/action.c:5002)[0;34m()[0m
+[1;32m    265[0m                 [0mA[0m [0;34m=[0m [0mA[0m[0;34m.[0m[0mdense_matrix[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    266[0m         [0;32massert[0m [0mtype[0m[0;34m([0m[0mA[0m[0;34m)[0m [0;34m==[0m [0mtype[0m[0;34m([0m[0mB[0m[0;34m)[0m[0;34m,[0m [0;34m([0m[0mtype[0m[0;34m([0m[0mA[0m[0;34m)[0m[0;34m,[0m [0mtype[0m[0;34m([0m[0mB[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 267[0;31m         [0mprod[0m [0;34m=[0m [0mA[0m[0;34m.[0m[0m_matrix_times_matrix_[0m[0;34m([0m[0mB[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    268[0m         [0;32mif[0m [0mA[0m[0;34m.[0m[0m_subdivisions[0m [0;32mis[0m [0;32mnot[0m [0;32mNone[0m [0;32mor[0m [0mB[0m[0;34m.[0m[0m_subdivisions[0m [0;32mis[0m [0;32mnot[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    269[0m             [0mAsubs[0m [0;34m=[0m [0mA[0m[0;34m.[0m[0msubdivisions[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/matrix/matrix0.pyx[0m in [0;36msage.matrix.matrix0.Matrix._matrix_times_matrix_ (build/cythonized/sage/matrix/matrix0.c:35235)[0;34m()[0m
+[1;32m   5216[0m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_multiply_strassen[0m[0;34m([0m[0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   5217[0m         [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 5218[0;31m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_multiply_classical[0m[0;34m([0m[0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   5219[0m [0;34m[0m[0m
+[1;32m   5220[0m     [0mcdef[0m [0mbint[0m [0m_will_use_strassen[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mMatrix[0m [0mright[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/matrix/matrix_generic_dense.pyx[0m in [0;36msage.matrix.matrix_generic_dense.Matrix_generic_dense._multiply_classical (build/cythonized/sage/matrix/matrix_generic_dense.c:4326)[0;34m()[0m
+[1;32m    322[0m                 [0mm[0m [0;34m=[0m [0mi[0m[0;34m*[0m[0msnc[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    323[0m                 [0;32mfor[0m [0mk[0m [0;32min[0m [0mrange[0m[0;34m([0m[0msnc[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 324[0;31m                     [0mz[0m [0;34m+=[0m [0mleft[0m[0;34m.[0m[0m_entries[0m[0;34m[[0m[0mm[0m[0;34m+[0m[0mk[0m[0;34m][0m[0;34m.[0m[0m_mul_[0m[0;34m([0m[0mright[0m[0;34m.[0m[0m_entries[0m[0;34m[[0m[0mk[0m[0;34m*[0m[0mnc[0m[0;34m+[0m[0mj[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    325[0m                 [0mv[0m[0;34m[[0m[0mp[0m[0;34m][0m [0;34m=[0m [0mz[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    326[0m                 [0mp[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_rational_flint.pyx[0m in [0;36msage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint._mul_ (build/cythonized/sage/rings/polynomial/polynomial_rational_flint.cpp:10819)[0;34m()[0m
+[1;32m   1011[0m         [0;32mreturn[0m [0md[0m[0;34m,[0m [0ms[0m[0;34m,[0m [0mt[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1012[0m [0;34m[0m[0m
+[0;32m-> 1013[0;31m     [0mcpdef[0m [0m_mul_[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mright[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1014[0m         """
+[1;32m   1015[0m         [0mReturns[0m [0mthe[0m [0mproduct[0m [0mof[0m [0mself[0m [0;32mand[0m [0mright[0m[0;34m.[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_rational_flint.pyx[0m in [0;36msage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint._mul_ (build/cythonized/sage/rings/polynomial/polynomial_rational_flint.cpp:10739)[0;34m()[0m
+[1;32m   1035[0m         [0mcdef[0m [0mbint[0m [0mdo_sig[0m [0;34m=[0m [0m_do_sig[0m[0;34m([0m[0mself[0m[0;34m.[0m[0m__poly[0m[0;34m)[0m [0;32mor[0m [0m_do_sig[0m[0;34m([0m[0mop2[0m[0;34m.[0m[0m__poly[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1036[0m [0;34m[0m[0m
+[0;32m-> 1037[0;31m         [0;32mif[0m [0mdo_sig[0m[0;34m:[0m [0msig_str[0m[0;34m([0m[0;34m"FLINT exception"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1038[0m         [0mfmpq_poly_mul[0m[0;34m([0m[0mres[0m[0;34m.[0m[0m__poly[0m[0;34m,[0m [0mself[0m[0;34m.[0m[0m__poly[0m[0;34m,[0m [0mop2[0m[0;34m.[0m[0m__poly[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1039[0m         [0;32mif[0m [0mdo_sig[0m[0;34m:[0m [0msig_off[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mKeyboardInterrupt[0m: 
+1
+2
+3
+4
+5
+6
+7
+8
+Working on twist d= 8
+9
+10
+11
+12
+13
+Working on twist d= 13
+14
+15
+16
+17
+Working on twist d= 17

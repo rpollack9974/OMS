@@ -1,0 +1,1302 @@
+Working with twist  8 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  8 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  13 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  13 , component  1 using 6 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/4 our bound is 1
+PASSED
+
+Working with twist  13 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  3 using 6 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/4 our bound is 1
+PASSED
+
+----------------------------------------
+Working with twist  17 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  1 using 6 moments
+--lambda = 2
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1/2 and error bound is 1/2
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/10 and error bound is 1/10
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/50 and error bound is 1/50
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/250 and error bound is 1/250
+Going to more accurate family.
+Working with twist  17 , component  1 using 10 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  17 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  17 , component  3 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+----------------------------------------
+Working with twist  28 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  28 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  29 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  29 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  2 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 10 moments
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 20 moments
+--lambda = 5
+working at level 5
+Failed: max val too high.  Max valuation is 5/4
+working at level 25
+Passed! Max valuation is 1/4 our bound is 5/4
+PASSED
+
+Working with twist  29 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  37 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  37 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  41 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  41 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  41 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  44 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  44 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  44 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  44 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  53 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  2 using 6 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  53 , component  2 using 10 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  53 , component  2 using 20 moments
+--lambda = 3
+working at level 5
+Passed! Max valuation is 3/4 our bound is 5/4
+PASSED
+
+Working with twist  53 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  56 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  56 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  56 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  61 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  61 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  61 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  61 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  73 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  73 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  73 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  73 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  76 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  76 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  76 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  76 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  77 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  77 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  77 , component  2 using 6 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  77 , component  2 using 10 moments
+--lambda = 3
+working at level 5
+Passed! Max valuation is 3/4 our bound is 5/4
+PASSED
+
+Working with twist  77 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  88 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  88 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  88 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  88 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  89 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1/2 and error bound is 1/2
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/10 and error bound is 1/10
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/50 and error bound is 1/50
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/250 and error bound is 1/250
+Going to more accurate family.
+Working with twist  89 , component  0 using 10 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  89 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  89 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  89 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  92 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  92 , component  1 using 6 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/4 our bound is 1
+PASSED
+
+Working with twist  92 , component  2 using 6 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  92 , component  2 using 10 moments
+--lambda = 3
+working at level 5
+Passed! Max valuation is 3/4 our bound is 5/4
+PASSED
+
+Working with twist  92 , component  3 using 6 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/4 our bound is 1
+PASSED
+
+----------------------------------------
+Working with twist  97 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  97 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  97 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  97 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  101 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  101 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  101 , component  2 using 6 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  101 , component  2 using 10 moments
+--lambda = 3
+working at level 5
+Passed! Max valuation is 3/4 our bound is 5/4
+PASSED
+
+Working with twist  101 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  104 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  104 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  104 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  104 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  109 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  109 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  109 , component  2 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  109 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  113 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  113 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  113 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  113 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  124 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  124 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  124 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  124 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  133 , component  0 using 6 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  133 , component  0 using 10 moments
+--lambda = 3
+working at level 5
+Passed! Max valuation is 3/4 our bound is 5/4
+PASSED
+
+Working with twist  133 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  133 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  133 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  136 , component  0 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  136 , component  0 using 10 moments
+mu positive so probably not enough accuracy
+Working with twist  136 , component  0 using 20 moments
+--lambda = 7
+working at level 5
+Failed: max val too high.  Max valuation is 7/4
+working at level 25
+Passed! Max valuation is 7/20 our bound is 5/4
+PASSED
+
+Working with twist  136 , component  1 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  136 , component  1 using 10 moments
+--lambda = 4
+working at level 5
+Failed: not enough accuracy.  Max valuation is 5/4 and error bound is 1
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/5 and error bound is 1/5
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/25 and error bound is 1/25
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/125 and error bound is 1/125
+Going to more accurate family.
+Working with twist  136 , component  1 using 20 moments
+--lambda = 4
+working at level 5
+Failed: max val too high.  Max valuation is 5/4
+working at level 25
+Passed! Max valuation is 1/5 our bound is 1
+PASSED
+
+Working with twist  136 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  136 , component  3 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  136 , component  3 using 10 moments
+--lambda = 4
+working at level 5
+Failed: not enough accuracy.  Max valuation is 5/4 and error bound is 1
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/5 and error bound is 1/5
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/25 and error bound is 1/25
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/125 and error bound is 1/125
+Going to more accurate family.
+Working with twist  136 , component  3 using 20 moments
+--lambda = 4
+working at level 5
+Failed: max val too high.  Max valuation is 5/4
+working at level 25
+Passed! Max valuation is 1/5 our bound is 1
+PASSED
+
+----------------------------------------
+Working with twist  137 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  137 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  137 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  137 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  149 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  149 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  149 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  149 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  152 , component  0 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  152 , component  0 using 10 moments
+--lambda = 4
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1 and error bound is 1
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/5 and error bound is 1/5
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/25 and error bound is 1/25
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/125 and error bound is 1/125
+Going to more accurate family.
+Working with twist  152 , component  0 using 20 moments
+--lambda = 4
+working at level 5
+Failed: max val too high.  Max valuation is 1
+working at level 25
+Passed! Max valuation is 1/5 our bound is 1
+PASSED
+
+Working with twist  152 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  152 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  152 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  157 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  157 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  157 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  157 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  161 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1/2 and error bound is 1/2
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/10 and error bound is 1/10
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/50 and error bound is 1/50
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/250 and error bound is 1/250
+Going to more accurate family.
+Working with twist  161 , component  0 using 10 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  161 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  161 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  161 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  172 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  172 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  172 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  172 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  173 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  173 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  173 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  173 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  181 , component  0 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  181 , component  0 using 10 moments
+mu positive so probably not enough accuracy
+Working with twist  181 , component  0 using 20 moments
+--lambda = 7
+working at level 5
+Failed: max val too high.  Max valuation is 7/4
+working at level 25
+Passed! Max valuation is 7/20 our bound is 5/4
+PASSED
+
+Working with twist  181 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  181 , component  2 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  181 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  184 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  184 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  184 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  184 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  188 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  188 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  188 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  188 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  193 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  193 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  193 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  193 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  197 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  197 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  197 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  197 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  209 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  209 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  209 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  209 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  217 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  217 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  217 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  217 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  221 , component  0 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  221 , component  0 using 10 moments
+--lambda = 4
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1 and error bound is 1
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/5 and error bound is 1/5
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/25 and error bound is 1/25
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/125 and error bound is 1/125
+Going to more accurate family.
+Working with twist  221 , component  0 using 20 moments
+--lambda = 4
+working at level 5
+Failed: max val too high.  Max valuation is 1
+working at level 25
+Passed! Max valuation is 1/5 our bound is 1
+PASSED
+
+Working with twist  221 , component  1 using 6 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/4 our bound is 1
+PASSED
+
+Working with twist  221 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  221 , component  3 using 6 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/4 our bound is 1
+PASSED
+
+----------------------------------------
+Working with twist  229 , component  0 using 6 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  229 , component  0 using 10 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  229 , component  0 using 20 moments
+--lambda = 3
+working at level 5
+Passed! Max valuation is 3/4 our bound is 5/4
+PASSED
+
+Working with twist  229 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  229 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  229 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  232 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  232 , component  1 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  232 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  232 , component  3 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+----------------------------------------
+Working with twist  233 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  233 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  233 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  233 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  236 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1/2 and error bound is 1/2
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/10 and error bound is 1/10
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/50 and error bound is 1/50
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/250 and error bound is 1/250
+Going to more accurate family.
+Working with twist  236 , component  0 using 10 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  236 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  236 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  236 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  241 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  241 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  241 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  241 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  248 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  248 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  248 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  248 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  253 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  253 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  253 , component  2 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  253 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  257 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  257 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  257 , component  2 using 6 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 3/20 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 3/100 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 3/500 and error bound is 3/500
+Going to more accurate family.
+Working with twist  257 , component  2 using 10 moments
+--lambda = 3
+working at level 5
+Passed! Max valuation is 3/4 our bound is 5/4
+PASSED
+
+Working with twist  257 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  268 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  268 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  268 , component  2 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  268 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  269 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  269 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  269 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  269 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  277 , component  0 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  277 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  277 , component  2 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  277 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  281 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  281 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  281 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  281 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  284 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  284 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  284 , component  2 using 6 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  284 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  293 , component  0 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  293 , component  1 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 our bound is 1
+PASSED
+
+Working with twist  293 , component  2 using 6 moments
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mKeyboardInterrupt[0m                         Traceback (most recent call last)
+[0;32m<ipython-input-183-4765867b20bb>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0mrun_me[0m[0;34m([0m[0;34m"Vlad/p=5.N=3"[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m500[0m[0;34m)[0m[0;34m,[0m[0mPhis_list[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m15[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/bound_zeroes.sagen4_1f39z.py[0m in [0;36mrun_me[0;34m(filename, minD, maxD, Phis_list, level, step, log)[0m
+[1;32m    103[0m                                 [0mlog_file[0m [0;34m=[0m [0mopen[0m[0;34m([0m[0mfilename[0m[0;34m,[0m[0;34m"a"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    104[0m                                 [0msys[0m[0;34m.[0m[0mstdout[0m [0;34m=[0m [0mlog_file[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 105[0;31m                         [0manalyze_pLs[0m[0;34m([0m[0md[0m[0;34m,[0m[0mPhis_list[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    106[0m                         [0mprint[0m[0;34m([0m[0;34m"----------------------------------------"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    107[0m                         [0;32mif[0m [0mlog[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/bound_zeroes.sagen4_1f39z.py[0m in [0;36manalyze_pLs[0;34m(D, Phis_list, verbose)[0m
+[1;32m     30[0m                         [0;32mif[0m [0mverbose[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     31[0m                                 [0mprint[0m[0;34m([0m[0;34m"Working with twist "[0m[0;34m,[0m[0mD[0m[0;34m,[0m[0;34m", component "[0m[0;34m,[0m[0mi[0m[0;34m,[0m[0;34m"using"[0m[0;34m,[0m[0mPhis[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0;34m"moments"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 32[0;31m                         [0mL[0m [0;34m=[0m [0mPhis[0m[0;34m.[0m[0mpLfunction[0m[0;34m([0m[0mr[0m[0;34m=[0m[0mi[0m[0;34m,[0m[0mquad_twist[0m[0;34m=[0m[0mD[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     33[0m                         [0md[0m [0;34m=[0m [0mS[0m[0;34m([0m[0mL[0m[0;34m)[0m[0;34m.[0m[0mdegree[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     34[0m                         [0mmu[0m [0;34m=[0m [0mmu_inv[0m[0;34m([0m[0mL[0m[0;34m.[0m[0msubstitute[0m[0;34m([0m[0mw[0m[0;34m=[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m/[0m[0mp[0m[0;34m**[0m[0mPhis[0m[0;34m.[0m[0mvaluation[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mp[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mpLfunction[0;34m(self, r, max, quad_twist, verbose)[0m
+[1;32m    201[0m [0;34m[0m[0m
+[1;32m    202[0m                 [0mSS[0m [0;34m=[0m [0mPolynomialRing[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mbase_ring[0m[0;34m([0m[0;34m)[0m[0;34m,[0m [0mnames[0m[0;34m=[0m[0;34m([0m[0;34m'T'[0m[0;34m,[0m[0;34m)[0m[0;34m)[0m[0;34m;[0m [0;34m([0m[0mT[0m[0;34m,[0m[0;34m)[0m [0;34m=[0m [0mSS[0m[0;34m.[0m[0m_first_ngens[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 203[0;31m                 [0mans[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mpLfunction_coef[0m[0;34m([0m[0m_sage_const_0[0m [0;34m,[0m[0mr[0m[0;34m,[0m[0mD[0m[0;34m,[0m[0mgam[0m[0;34m)[0m[0;34m+[0m[0m_sage_const_0[0m [0;34m*[0m[0mT[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    204[0m                 [0mS[0m [0;34m=[0m [0mPolynomialRing[0m[0;34m([0m[0mQQ[0m[0;34m,[0m [0mnames[0m[0;34m=[0m[0;34m([0m[0;34m'z'[0m[0;34m,[0m[0;34m)[0m[0;34m)[0m[0;34m;[0m [0;34m([0m[0mz[0m[0;34m,[0m[0;34m)[0m [0;34m=[0m [0mS[0m[0;34m.[0m[0m_first_ngens[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    205[0m                 [0merr[0m[0;34m=[0m[0mInfinity[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mpLfunction_coef[0;34m(self, n, r, D, gam, error)[0m
+[1;32m    170[0m                         [0mtemp[0m [0;34m=[0m [0m_sage_const_0[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    171[0m                         [0;32mfor[0m [0ma[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_1[0m [0;34m,[0m[0mp[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 172[0;31m                                 [0mtemp[0m [0;34m=[0m [0mtemp[0m [0;34m+[0m [0mteich[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0mM[0m[0;34m)[0m[0;34m**[0m[0;34m([0m[0mr[0m[0;34m-[0m[0mj[0m[0;34m)[0m[0;34m*[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mbasic_integral[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mj[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    173[0m                         [0mdn[0m [0;34m=[0m [0mdn[0m [0;34m+[0m [0mcjn[0m[0;34m*[0m[0mtemp[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    174[0m                 [0mv[0m [0;34m=[0m [0mlist[0m[0;34m([0m[0mdn[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mbasic_integral[0;34m(self, a, j, D)[0m
+[1;32m    128[0m                 [0mans[0m[0;34m=[0m[0m_sage_const_0[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    129[0m                 [0;32mfor[0m [0mr[0m [0;32min[0m [0mrange[0m[0;34m([0m[0mj[0m[0;34m+[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 130[0;31m                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mbinomial[0m[0;34m([0m[0mj[0m[0;34m,[0m[0mr[0m[0;34m)[0m[0;34m*[0m[0;34m([0m[0ma[0m[0;34m-[0m[0mteich[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0mM[0m[0;34m)[0m[0;34m)[0m[0;34m**[0m[0;34m([0m[0mj[0m[0;34m-[0m[0mr[0m[0;34m)[0m[0;34m*[0m[0mp[0m[0;34m**[0m[0mr[0m[0;34m*[0m[0mself[0m[0;34m.[0m[0mphi_on_Da[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m.[0m[0mmoment[0m[0;34m([0m[0mr[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    131[0m                 [0;32mreturn[0m [0mans[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    132[0m [0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mphi_on_Da[0;34m(self, a, D)[0m
+[1;32m    116[0m                         [0;32mfor[0m [0mb[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_1[0m [0;34m,[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m+[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    117[0m                                 [0;32mif[0m [0mgcd[0m[0;34m([0m[0mb[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m==[0m[0m_sage_const_1[0m [0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 118[0;31m                                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mself[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0mb[0m[0;34m/[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_1[0m [0;34m][0m[0;34m)[0m[0;34m*[0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0ma[0m[0;34m,[0m[0m_sage_const_1[0m [0;34m,[0m[0mp[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mact_right[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0mb[0m[0;34m/[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_1[0m [0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mscale[0m[0;34m([0m[0mkronecker[0m[0;34m([0m[0mD[0m[0;34m,[0m[0mb[0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    119[0m                         [0mself[0m[0;34m.[0m[0madd_pLdata[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mans[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    120[0m                         [0;32mreturn[0m [0mans[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/dist_fam.sage6fhfqfru.py[0m in [0;36mact_right[0;34m(self, gam)[0m
+[1;32m    131[0m                 [0mw[0m[0;34m=[0m[0mself[0m[0;34m.[0m[0mgen[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    132[0m                 [0mK[0m[0;34m=[0m[0maut[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mp[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdeg[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mgam[0m[0;34m[[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m,[0m[0mgam[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdisc[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mchar[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mw[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 133[0;31m                 [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mact_by_ps_fam[0m[0;34m([0m[0mK[0m[0;34m)[0m[0;34m.[0m[0mact_right_weight_zero[0m[0;34m([0m[0mgam[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    134[0m [0;34m[0m[0m
+[1;32m    135[0m         [0;32mdef[0m [0msolve_diff_eqn[0m[0;34m([0m[0mself[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/dist_fam.sage6fhfqfru.py[0m in [0;36mact_right_weight_zero[0;34m(self, gam)[0m
+[1;32m    126[0m                 [0mG[0m[0;34m=[0m[0mform_acting_matrix_on_dist[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mp[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m,[0m[0ma[0m[0;34m,[0m[0mb[0m[0;34m,[0m[0mc[0m[0;34m,[0m[0md[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    127[0m [0;34m[0m[0m
+[0;32m--> 128[0;31m                 [0;32mreturn[0m [0mdist_fam[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mp[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdeg[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdisc[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mmoments[0m[0;34m)[0m[0;34m*[0m[0mG[0m[0;34m)[0m[0;34m[[0m[0m_sage_const_0[0m [0;34m][0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mchar[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    129[0m [0;34m[0m[0m
+[1;32m    130[0m         [0;32mdef[0m [0mact_right[0m[0;34m([0m[0mself[0m[0;34m,[0m[0mgam[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32msrc/cysignals/signals.pyx[0m in [0;36mcysignals.signals.python_check_interrupt[0;34m()[0m
+
+[0;31mKeyboardInterrupt[0m: 
+1
+2
+3
+4
+5
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mKeyboardInterrupt[0m                         Traceback (most recent call last)
+[0;32m<ipython-input-184-4765867b20bb>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0mrun_me[0m[0;34m([0m[0;34m"Vlad/p=5.N=3"[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m500[0m[0;34m)[0m[0;34m,[0m[0mPhis_list[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m15[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/bound_zeroes.sagev0qecut8.py[0m in [0;36mrun_me[0;34m(filename, minD, maxD, Phis_list, level, step, log)[0m
+[1;32m     98[0m         [0;32mfor[0m [0md[0m [0;32min[0m [0mrange[0m[0;34m([0m[0mminD[0m[0;34m,[0m[0mmaxD[0m[0;34m,[0m[0mstep[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     99[0m                 [0mprint[0m[0;34m([0m[0md[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 100[0;31m                 [0;32mif[0m [0mis_fundamental_discriminant[0m[0;34m([0m[0md[0m[0;34m)[0m [0;32mand[0m [0mgcd[0m[0;34m([0m[0md[0m[0;34m,[0m[0mlevel[0m[0;34m)[0m[0;34m==[0m[0m_sage_const_1[0m [0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    101[0m                         [0mprint[0m[0;34m([0m[0;34m"Working on twist d="[0m[0;34m,[0m[0md[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    102[0m                         [0;32mif[0m [0mlog[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32msrc/cysignals/signals.pyx[0m in [0;36mcysignals.signals.python_check_interrupt[0;34m()[0m
+
+[0;31mKeyboardInterrupt[0m: 
+1

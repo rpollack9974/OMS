@@ -1,0 +1,466 @@
+Working with twist  8 , component  0 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  1 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  2 using 5 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  8 , component  3 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  13 , component  0 using 5 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  13 , component  1 using 5 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 3/4
+PASSED
+
+Working with twist  13 , component  2 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  3 using 5 moments
+--lambda = 1
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 3/4
+PASSED
+
+----------------------------------------
+Working with twist  17 , component  0 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  1 using 5 moments
+--lambda = 2
+working at level 5
+Failed: not enough accuracy.  Max valuation is 1/2 and error bound is 1/2
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/10 and error bound is 1/10
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/50 and error bound is 1/50
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/250 and error bound is 1/250
+Going to more accurate family.
+Working with twist  17 , component  1 using 9 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 1
+PASSED
+
+Working with twist  17 , component  2 using 5 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  17 , component  3 using 5 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 3/4
+PASSED
+
+----------------------------------------
+Working with twist  28 , component  0 using 5 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  28 , component  1 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  2 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  3 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  29 , component  0 using 5 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 3/4
+PASSED
+
+Working with twist  29 , component  1 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  2 using 5 moments
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 9 moments
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 19 moments
+--lambda = 5
+working at level 5
+Failed: max val too high.  Max valuation is 2  and toric bond is  5/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 11/20 and error bound is 1/2
+working at level 125
+Failed: not enough accuracy.  Max valuation is 11/100 and error bound is 1/10
+working at level 625
+Failed: not enough accuracy.  Max valuation is 11/500 and error bound is 1/50
+giving up!
+*************************FAILED!!!***************************
+
+Working with twist  29 , component  3 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  37 , component  0 using 5 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  37 , component  1 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  2 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  3 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  41 , component  0 using 5 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 3/4
+PASSED
+
+Working with twist  41 , component  1 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  2 using 5 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  41 , component  3 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  44 , component  0 using 5 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 3/4
+PASSED
+
+Working with twist  44 , component  1 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  44 , component  2 using 5 moments
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  44 , component  3 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  53 , component  0 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  1 using 5 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  2 using 5 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 7/4 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/4 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/20 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/100 and error bound is 3/500
+Going to more accurate family.
+Working with twist  53 , component  2 using 9 moments
+--lambda = 3
+working at level 5
+Failed: not enough accuracy.  Max valuation is 3/2 and error bound is 3/4
+working at level 25
+Failed: not enough accuracy.  Max valuation is 1/4 and error bound is 3/20
+working at level 125
+Failed: not enough accuracy.  Max valuation is 1/20 and error bound is 3/100
+working at level 625
+Failed: not enough accuracy.  Max valuation is 1/100 and error bound is 3/500
+Going to more accurate family.
+Working with twist  53 , component  2 using 19 moments
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mKeyError[0m                                  Traceback (most recent call last)
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/misc/cachefunc.pyx[0m in [0;36msage.misc.cachefunc.CachedFunction.__call__ (build/cythonized/sage/misc/cachefunc.c:5891)[0;34m()[0m
+[1;32m    995[0m             [0;32mtry[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 996[0;31m                 [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mcache[0m[0;34m[[0m[0mk[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    997[0m             [0;32mexcept[0m [0mTypeError[0m[0;34m:[0m  [0;31m# k is not hashable[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mKeyError[0m: ((5, 14, 19, 8, 75, 0, Dirichlet character modulo 1 of conductor 1, w), ())
+
+During handling of the above exception, another exception occurred:
+
+[0;31mKeyboardInterrupt[0m                         Traceback (most recent call last)
+[0;32m<ipython-input-188-7d8f75d8a748>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0mrun_me[0m[0;34m([0m[0;34m"Vlad/p=5.N=3"[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m500[0m[0;34m)[0m[0;34m,[0m[0mPhis_list2[0m[0;34m,[0m[0mInteger[0m[0;34m([0m[0;36m15[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/bound_zeroes.sagev0qecut8.py[0m in [0;36mrun_me[0;34m(filename, minD, maxD, Phis_list, level, step, log)[0m
+[1;32m    103[0m                                 [0mlog_file[0m [0;34m=[0m [0mopen[0m[0;34m([0m[0mfilename[0m[0;34m,[0m[0;34m"a"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    104[0m                                 [0msys[0m[0;34m.[0m[0mstdout[0m [0;34m=[0m [0mlog_file[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 105[0;31m                         [0manalyze_pLs[0m[0;34m([0m[0md[0m[0;34m,[0m[0mPhis_list[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    106[0m                         [0mprint[0m[0;34m([0m[0;34m"----------------------------------------"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    107[0m                         [0;32mif[0m [0mlog[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/bound_zeroes.sagev0qecut8.py[0m in [0;36manalyze_pLs[0;34m(D, Phis_list, verbose)[0m
+[1;32m     30[0m                         [0;32mif[0m [0mverbose[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     31[0m                                 [0mprint[0m[0;34m([0m[0;34m"Working with twist "[0m[0;34m,[0m[0mD[0m[0;34m,[0m[0;34m", component "[0m[0;34m,[0m[0mi[0m[0;34m,[0m[0;34m"using"[0m[0;34m,[0m[0mPhis[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0;34m"moments"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 32[0;31m                         [0mL[0m [0;34m=[0m [0mPhis[0m[0;34m.[0m[0mpLfunction[0m[0;34m([0m[0mr[0m[0;34m=[0m[0mi[0m[0;34m,[0m[0mquad_twist[0m[0;34m=[0m[0mD[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     33[0m                         [0md[0m [0;34m=[0m [0mS[0m[0;34m([0m[0mL[0m[0;34m)[0m[0;34m.[0m[0mdegree[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     34[0m                         [0mmu[0m [0;34m=[0m [0mmu_inv[0m[0;34m([0m[0mL[0m[0;34m.[0m[0msubstitute[0m[0;34m([0m[0mw[0m[0;34m=[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m/[0m[0mp[0m[0;34m**[0m[0mPhis[0m[0;34m.[0m[0mvaluation[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mp[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mpLfunction[0;34m(self, r, max, quad_twist, verbose)[0m
+[1;32m    201[0m [0;34m[0m[0m
+[1;32m    202[0m                 [0mSS[0m [0;34m=[0m [0mPolynomialRing[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mbase_ring[0m[0;34m([0m[0;34m)[0m[0;34m,[0m [0mnames[0m[0;34m=[0m[0;34m([0m[0;34m'T'[0m[0;34m,[0m[0;34m)[0m[0;34m)[0m[0;34m;[0m [0;34m([0m[0mT[0m[0;34m,[0m[0;34m)[0m [0;34m=[0m [0mSS[0m[0;34m.[0m[0m_first_ngens[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 203[0;31m                 [0mans[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mpLfunction_coef[0m[0;34m([0m[0m_sage_const_0[0m [0;34m,[0m[0mr[0m[0;34m,[0m[0mD[0m[0;34m,[0m[0mgam[0m[0;34m)[0m[0;34m+[0m[0m_sage_const_0[0m [0;34m*[0m[0mT[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    204[0m                 [0mS[0m [0;34m=[0m [0mPolynomialRing[0m[0;34m([0m[0mQQ[0m[0;34m,[0m [0mnames[0m[0;34m=[0m[0;34m([0m[0;34m'z'[0m[0;34m,[0m[0;34m)[0m[0;34m)[0m[0;34m;[0m [0;34m([0m[0mz[0m[0;34m,[0m[0;34m)[0m [0;34m=[0m [0mS[0m[0;34m.[0m[0m_first_ngens[0m[0;34m([0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    205[0m                 [0merr[0m[0;34m=[0m[0mInfinity[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mpLfunction_coef[0;34m(self, n, r, D, gam, error)[0m
+[1;32m    170[0m                         [0mtemp[0m [0;34m=[0m [0m_sage_const_0[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    171[0m                         [0;32mfor[0m [0ma[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_1[0m [0;34m,[0m[0mp[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 172[0;31m                                 [0mtemp[0m [0;34m=[0m [0mtemp[0m [0;34m+[0m [0mteich[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0mM[0m[0;34m)[0m[0;34m**[0m[0;34m([0m[0mr[0m[0;34m-[0m[0mj[0m[0;34m)[0m[0;34m*[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mbasic_integral[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mj[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    173[0m                         [0mdn[0m [0;34m=[0m [0mdn[0m [0;34m+[0m [0mcjn[0m[0;34m*[0m[0mtemp[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    174[0m                 [0mv[0m [0;34m=[0m [0mlist[0m[0;34m([0m[0mdn[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mbasic_integral[0;34m(self, a, j, D)[0m
+[1;32m    128[0m                 [0mans[0m[0;34m=[0m[0m_sage_const_0[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    129[0m                 [0;32mfor[0m [0mr[0m [0;32min[0m [0mrange[0m[0;34m([0m[0mj[0m[0;34m+[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 130[0;31m                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mbinomial[0m[0;34m([0m[0mj[0m[0;34m,[0m[0mr[0m[0;34m)[0m[0;34m*[0m[0;34m([0m[0ma[0m[0;34m-[0m[0mteich[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0mM[0m[0;34m)[0m[0;34m)[0m[0;34m**[0m[0;34m([0m[0mj[0m[0;34m-[0m[0mr[0m[0;34m)[0m[0;34m*[0m[0mp[0m[0;34m**[0m[0mr[0m[0;34m*[0m[0mself[0m[0;34m.[0m[0mphi_on_Da[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m.[0m[0mmoment[0m[0;34m([0m[0mr[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    131[0m                 [0;32mreturn[0m [0mans[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    132[0m [0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym_dist_families.sagepovw5wb6.py[0m in [0;36mphi_on_Da[0;34m(self, a, D)[0m
+[1;32m    116[0m                         [0;32mfor[0m [0mb[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_1[0m [0;34m,[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m+[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    117[0m                                 [0;32mif[0m [0mgcd[0m[0;34m([0m[0mb[0m[0;34m,[0m[0mD[0m[0;34m)[0m[0;34m==[0m[0m_sage_const_1[0m [0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 118[0;31m                                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mself[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0mb[0m[0;34m/[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_1[0m [0;34m][0m[0;34m)[0m[0;34m*[0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0ma[0m[0;34m,[0m[0m_sage_const_1[0m [0;34m,[0m[0mp[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mact_right[0m[0;34m([0m[0mMatrix[0m[0;34m([0m[0m_sage_const_2[0m [0;34m,[0m[0m_sage_const_2[0m [0;34m,[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0mb[0m[0;34m/[0m[0mabs[0m[0;34m([0m[0mD[0m[0;34m)[0m[0;34m,[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_1[0m [0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mscale[0m[0;34m([0m[0mkronecker[0m[0;34m([0m[0mD[0m[0;34m,[0m[0mb[0m[0;34m)[0m[0;34m)[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    119[0m                         [0mself[0m[0;34m.[0m[0madd_pLdata[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mans[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    120[0m                         [0;32mreturn[0m [0mans[0m[0;34m.[0m[0mnormalize[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym.sagedqkvtu34.py[0m in [0;36meval[0;34m(self, A)[0m
+[1;32m    212[0m                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mself[0m[0;34m.[0m[0meval_sl2[0m[0;34m([0m[0mv1[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    213[0m                 [0;32mfor[0m [0mj[0m [0;32min[0m [0mrange[0m[0;34m([0m[0m_sage_const_0[0m [0;34m,[0m[0mlen[0m[0;34m([0m[0mv2[0m[0;34m)[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 214[0;31m                         [0mans[0m[0;34m=[0m[0mans[0m[0;34m-[0m[0mself[0m[0;34m.[0m[0meval_sl2[0m[0;34m([0m[0mv2[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    215[0m                 [0;32mreturn[0m [0mans[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    216[0m [0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/modsym.sagedqkvtu34.py[0m in [0;36meval_sl2[0;34m(self, A)[0m
+[1;32m    191[0m                 [0mgaminv[0m[0;34m=[0m[0mB[0m[0;34m*[0m[0mC[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    192[0m                 [0;32mif[0m [0mself[0m[0;34m.[0m[0mfull_data[0m[0;34m!=[0m[0m_sage_const_0[0m [0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 193[0;31m                         [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mfull_data[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m.[0m[0mact_right[0m[0;34m([0m[0mgaminv[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    194[0m                 [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    195[0m                         [0mv[0m[0;34m=[0m[0mself[0m[0;34m.[0m[0mmanin[0m[0;34m.[0m[0mrels[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/dist_fam.sage6fhfqfru.py[0m in [0;36mact_right[0;34m(self, gam)[0m
+[1;32m    130[0m         [0;32mdef[0m [0mact_right[0m[0;34m([0m[0mself[0m[0;34m,[0m[0mgam[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    131[0m                 [0mw[0m[0;34m=[0m[0mself[0m[0;34m.[0m[0mgen[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 132[0;31m                 [0mK[0m[0;34m=[0m[0maut[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mp[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdeg[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mnum_moments[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mgam[0m[0;34m[[0m[0m_sage_const_0[0m [0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m,[0m[0mgam[0m[0;34m[[0m[0m_sage_const_1[0m [0;34m,[0m[0m_sage_const_0[0m [0;34m][0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mdisc[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mself[0m[0;34m.[0m[0mchar[0m[0;34m([0m[0;34m)[0m[0;34m,[0m[0mw[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    133[0m                 [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mact_by_ps_fam[0m[0;34m([0m[0mK[0m[0;34m)[0m[0;34m.[0m[0mact_right_weight_zero[0m[0;34m([0m[0mgam[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    134[0m [0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/misc/cachefunc.pyx[0m in [0;36msage.misc.cachefunc.CachedFunction.__call__ (build/cythonized/sage/misc/cachefunc.c:6017)[0;34m()[0m
+[1;32m    999[0m                 [0;32mreturn[0m [0mself[0m[0;34m.[0m[0mcache[0m[0;34m[[0m[0mk[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1000[0m         [0;32mexcept[0m [0mKeyError[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1001[0;31m             [0mw[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mf[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwds[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1002[0m             [0mself[0m[0;34m.[0m[0mcache[0m[0;34m[[0m[0mk[0m[0;34m][0m [0;34m=[0m [0mw[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1003[0m             [0;32mreturn[0m [0mw[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/storage/home/rpollack/.sage/temp/math/111874/ps_fam.sage_3fub201.py[0m in [0;36maut[0;34m(p, Mw, Mm, a, c, r, chi, w)[0m
+[1;32m     64[0m                 [0mta[0m[0;34m=[0m[0mteich[0m[0;34m([0m[0ma[0m[0;34m,[0m[0mp[0m[0;34m,[0m[0m_sage_const_2[0m [0;34m*[0m[0mmax[0m[0;34m([0m[0mMw[0m[0;34m,[0m[0mMm[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     65[0m                 [0mv[0m[0;34m=[0m[0;34m([0m[0ma[0m[0;34m/[0m[0mta[0m[0;34m-[0m[0m_sage_const_1[0m [0;34m)[0m[0;34m/[0m[0mp[0m[0;34m+[0m[0mc[0m[0;34m/[0m[0;34m([0m[0mp[0m[0;34m*[0m[0mta[0m[0;34m)[0m[0;34m*[0m[0mzz[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 66[0;31m                 [0mans[0m[0;34m=[0m[0mans[0m[0;34m+[0m[0mw[0m[0;34m**[0m[0mn[0m[0;34m*[0m[0mLB[0m[0;34m([0m[0mv[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     67[0m [0;34m[0m[0m
+[1;32m     68[0m         [0mans[0m [0;34m=[0m [0mans[0m [0;34m*[0m [0mta[0m[0;34m**[0m[0mr[0m [0;34m*[0m [0mchi[0m[0;34m([0m[0ma[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_rational_flint.pyx[0m in [0;36msage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint.__call__ (build/cythonized/sage/rings/polynomial/polynomial_rational_flint.cpp:7800)[0;34m()[0m
+[1;32m    512[0m                 [0;32mreturn[0m [0mr[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    513[0m [0;34m[0m[0m
+[0;32m--> 514[0;31m         [0;32mreturn[0m [0mPolynomial[0m[0;34m.[0m[0m__call__[0m[0;34m([0m[0mself[0m[0;34m,[0m [0;34m*[0m[0mx[0m[0;34m,[0m [0;34m**[0m[0mkwds[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    515[0m [0;34m[0m[0m
+[1;32m    516[0m     [0mcpdef[0m [0mPolynomial[0m [0mtruncate[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mlong[0m [0mn[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_element.pyx[0m in [0;36msage.rings.polynomial.polynomial_element.Polynomial.__call__ (build/cythonized/sage/rings/polynomial/polynomial_element.c:9940)[0;34m()[0m
+[1;32m    799[0m                 [0;32mreturn[0m [0mresult[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    800[0m             [0mpol[0m[0;34m.[0m[0m_compiled[0m [0;34m=[0m [0mCompiledPolynomialFunction[0m[0;34m([0m[0mpol[0m[0;34m.[0m[0mlist[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 801[0;31m         [0;32mreturn[0m [0mpol[0m[0;34m.[0m[0m_compiled[0m[0;34m.[0m[0meval[0m[0;34m([0m[0ma[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    802[0m [0;34m[0m[0m
+[1;32m    803[0m     [0;32mdef[0m [0mcompose_trunc[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mPolynomial[0m [0mother[0m[0;34m,[0m [0mlong[0m [0mn[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.CompiledPolynomialFunction.eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:2389)[0;34m()[0m
+[1;32m    123[0m         [0mcdef[0m [0mobject[0m [0mtemp[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    124[0m         [0;32mtry[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 125[0;31m             [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0m_dag[0m[0;34m,[0m [0mx[0m[0;34m,[0m [0mself[0m[0;34m.[0m[0m_coeffs[0m[0;34m)[0m  [0;31m#see further down[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    126[0m             [0mtemp[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0m_dag[0m[0;34m.[0m[0mvalue[0m               [0;31m#for an explanation[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    127[0m             [0mpd_clean[0m[0;34m([0m[0mself[0m[0;34m.[0m[0m_dag[0m[0;34m)[0m                  [0;31m#of these 3 lines[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.pd_eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:3656)[0;34m()[0m
+[1;32m    351[0m [0mcdef[0m [0minline[0m [0mint[0m [0mpd_eval[0m[0;34m([0m[0mgeneric_pd[0m [0mpd[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    352[0m     [0;32mif[0m [0mpd[0m[0;34m.[0m[0mvalue[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 353[0;31m         [0mpd[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    354[0m     [0mpd[0m[0;34m.[0m[0mhits[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    355[0m [0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.mul_pd.eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:6085)[0;34m()[0m
+[1;32m    488[0m [0mcdef[0m [0;32mclass[0m [0mmul_pd[0m[0;34m([0m[0mbinary_pd[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    489[0m     [0mcdef[0m [0mint[0m [0meval[0m[0;34m([0m[0mmul_pd[0m [0mself[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 490[0;31m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mleft[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    491[0m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mright[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    492[0m         [0mself[0m[0;34m.[0m[0mvalue[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mleft[0m[0;34m.[0m[0mvalue[0m [0;34m*[0m [0mself[0m[0;34m.[0m[0mright[0m[0;34m.[0m[0mvalue[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.pd_eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:3656)[0;34m()[0m
+[1;32m    351[0m [0mcdef[0m [0minline[0m [0mint[0m [0mpd_eval[0m[0;34m([0m[0mgeneric_pd[0m [0mpd[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    352[0m     [0;32mif[0m [0mpd[0m[0;34m.[0m[0mvalue[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 353[0;31m         [0mpd[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    354[0m     [0mpd[0m[0;34m.[0m[0mhits[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    355[0m [0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.abc_pd.eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:6531)[0;34m()[0m
+[1;32m    505[0m [0;34m[0m[0m
+[1;32m    506[0m     [0mcdef[0m [0mint[0m [0meval[0m[0;34m([0m[0mabc_pd[0m [0mself[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 507[0;31m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mleft[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    508[0m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mright[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    509[0m         [0mself[0m[0;34m.[0m[0mvalue[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mleft[0m[0;34m.[0m[0mvalue[0m [0;34m*[0m [0mself[0m[0;34m.[0m[0mright[0m[0;34m.[0m[0mvalue[0m [0;34m+[0m [0mcoeffs[0m[0;34m[[0m[0mself[0m[0;34m.[0m[0mindex[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.pd_eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:3656)[0;34m()[0m
+[1;32m    351[0m [0mcdef[0m [0minline[0m [0mint[0m [0mpd_eval[0m[0;34m([0m[0mgeneric_pd[0m [0mpd[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    352[0m     [0;32mif[0m [0mpd[0m[0;34m.[0m[0mvalue[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 353[0;31m         [0mpd[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    354[0m     [0mpd[0m[0;34m.[0m[0mhits[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    355[0m [0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.abc_pd.eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:6531)[0;34m()[0m
+[1;32m    505[0m [0;34m[0m[0m
+[1;32m    506[0m     [0mcdef[0m [0mint[0m [0meval[0m[0;34m([0m[0mabc_pd[0m [0mself[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 507[0;31m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mleft[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    508[0m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mright[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    509[0m         [0mself[0m[0;34m.[0m[0mvalue[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mleft[0m[0;34m.[0m[0mvalue[0m [0;34m*[0m [0mself[0m[0;34m.[0m[0mright[0m[0;34m.[0m[0mvalue[0m [0;34m+[0m [0mcoeffs[0m[0;34m[[0m[0mself[0m[0;34m.[0m[0mindex[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.pd_eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:3656)[0;34m()[0m
+[1;32m    351[0m [0mcdef[0m [0minline[0m [0mint[0m [0mpd_eval[0m[0;34m([0m[0mgeneric_pd[0m [0mpd[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    352[0m     [0;32mif[0m [0mpd[0m[0;34m.[0m[0mvalue[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 353[0;31m         [0mpd[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    354[0m     [0mpd[0m[0;34m.[0m[0mhits[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    355[0m [0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.abc_pd.eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:6531)[0;34m()[0m
+[1;32m    505[0m [0;34m[0m[0m
+[1;32m    506[0m     [0mcdef[0m [0mint[0m [0meval[0m[0;34m([0m[0mabc_pd[0m [0mself[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 507[0;31m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mleft[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    508[0m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mright[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    509[0m         [0mself[0m[0;34m.[0m[0mvalue[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mleft[0m[0;34m.[0m[0mvalue[0m [0;34m*[0m [0mself[0m[0;34m.[0m[0mright[0m[0;34m.[0m[0mvalue[0m [0;34m+[0m [0mcoeffs[0m[0;34m[[0m[0mself[0m[0;34m.[0m[0mindex[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.pd_eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:3656)[0;34m()[0m
+[1;32m    351[0m [0mcdef[0m [0minline[0m [0mint[0m [0mpd_eval[0m[0;34m([0m[0mgeneric_pd[0m [0mpd[0m[0;34m,[0m [0mobject[0m [0mvars[0m[0;34m,[0m [0mobject[0m [0mcoeffs[0m[0;34m)[0m [0;32mexcept[0m [0;34m-[0m[0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    352[0m     [0;32mif[0m [0mpd[0m[0;34m.[0m[0mvalue[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 353[0;31m         [0mpd[0m[0;34m.[0m[0meval[0m[0;34m([0m[0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    354[0m     [0mpd[0m[0;34m.[0m[0mhits[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    355[0m [0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_compiled.pyx[0m in [0;36msage.rings.polynomial.polynomial_compiled.abc_pd.eval (build/cythonized/sage/rings/polynomial/polynomial_compiled.c:6553)[0;34m()[0m
+[1;32m    507[0m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mleft[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    508[0m         [0mpd_eval[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mright[0m[0;34m,[0m [0mvars[0m[0;34m,[0m [0mcoeffs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 509[0;31m         [0mself[0m[0;34m.[0m[0mvalue[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mleft[0m[0;34m.[0m[0mvalue[0m [0;34m*[0m [0mself[0m[0;34m.[0m[0mright[0m[0;34m.[0m[0mvalue[0m [0;34m+[0m [0mcoeffs[0m[0;34m[[0m[0mself[0m[0;34m.[0m[0mindex[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    510[0m         [0mpd_clean[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mleft[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    511[0m         [0mpd_clean[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/structure/element.pyx[0m in [0;36msage.structure.element.Element.__mul__ (build/cythonized/sage/structure/element.c:11994)[0;34m()[0m
+[1;32m   1513[0m         [0mcdef[0m [0mint[0m [0mcl[0m [0;34m=[0m [0mclassify_elements[0m[0;34m([0m[0mleft[0m[0;34m,[0m [0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1514[0m         [0;32mif[0m [0mHAVE_SAME_PARENT[0m[0;34m([0m[0mcl[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1515[0;31m             [0;32mreturn[0m [0;34m([0m[0;34m<[0m[0mElement[0m[0;34m>[0m[0mleft[0m[0;34m)[0m[0;34m.[0m[0m_mul_[0m[0;34m([0m[0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1516[0m         [0;32mif[0m [0mBOTH_ARE_ELEMENT[0m[0;34m([0m[0mcl[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1517[0m             [0;32mreturn[0m [0mcoercion_model[0m[0;34m.[0m[0mbin_op[0m[0;34m([0m[0mleft[0m[0;34m,[0m [0mright[0m[0;34m,[0m [0mmul[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_element.pyx[0m in [0;36msage.rings.polynomial.polynomial_element.Polynomial._mul_ (build/cythonized/sage/rings/polynomial/polynomial_element.c:17358)[0;34m()[0m
+[1;32m   1703[0m [0;34m[0m[0m
+[1;32m   1704[0m         [0;32melif[0m [0mself[0m[0;34m.[0m[0m_parent[0m[0;34m.[0m[0mis_exact[0m[0;34m([0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1705[0;31m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_mul_karatsuba[0m[0;34m([0m[0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1706[0m         [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1707[0m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_mul_generic[0m[0;34m([0m[0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_element.pyx[0m in [0;36msage.rings.polynomial.polynomial_element.Polynomial._mul_karatsuba (build/cythonized/sage/rings/polynomial/polynomial_element.c:30459)[0;34m()[0m
+[1;32m   3141[0m         [0;32mif[0m [0mn[0m [0;34m==[0m [0mm[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   3142[0m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_new_generic[0m[0;34m([0m[0mdo_karatsuba[0m[0;34m([0m[0mf[0m[0;34m,[0m[0mg[0m[0;34m,[0m [0mK_threshold[0m[0;34m,[0m [0;36m0[0m[0;34m,[0m [0;36m0[0m[0;34m,[0m [0mn[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 3143[0;31m         [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_new_generic[0m[0;34m([0m[0mdo_karatsuba_different_size[0m[0;34m([0m[0mf[0m[0;34m,[0m[0mg[0m[0;34m,[0m [0mK_threshold[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   3144[0m [0;34m[0m[0m
+[1;32m   3145[0m     [0;34m@[0m[0mcython[0m[0;34m.[0m[0mboundscheck[0m[0;34m([0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_element.pyx[0m in [0;36msage.rings.polynomial.polynomial_element.do_karatsuba_different_size (build/cythonized/sage/rings/polynomial/polynomial_element.c:83436)[0;34m()[0m
+[1;32m  10468[0m         [0;32mfor[0m [0mi[0m [0;32mfrom[0m [0;36m1[0m [0;34m<=[0m [0mi[0m [0;34m<[0m [0mq[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m  10469[0m             [0mmi[0m [0;34m=[0m [0mm[0m[0;34m*[0m[0mi[0m[0;34m[0m[0;34m[0m[0m
+[0;32m> 10470[0;31m             [0mcarry[0m [0;34m=[0m [0mdo_karatsuba[0m[0;34m([0m[0mleft[0m[0;34m,[0m [0mright[0m[0;34m,[0m [0mK_threshold[0m[0;34m,[0m [0mmi[0m[0;34m,[0m [0;36m0[0m[0;34m,[0m [0mm[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m  10471[0m             [0;32mfor[0m [0mj[0m [0;32mfrom[0m [0;36m0[0m [0;34m<=[0m [0mj[0m [0;34m<[0m [0mm[0m[0;34m-[0m[0;36m1[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m  10472[0m                 [0moutput[0m[0;34m[[0m[0mmi[0m[0;34m+[0m[0mj[0m[0;34m][0m [0;34m=[0m [0moutput[0m[0;34m[[0m[0mmi[0m[0;34m+[0m[0mj[0m[0;34m][0m [0;34m+[0m [0mcarry[0m[0;34m[[0m[0mj[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_element.pyx[0m in [0;36msage.rings.polynomial.polynomial_element.do_karatsuba (build/cythonized/sage/rings/polynomial/polynomial_element.c:84302)[0;34m()[0m
+[1;32m  10567[0m         [0mac[0m [0;34m=[0m [0ma[0m[0;34m*[0m[0mc[0m[0;34m[0m[0;34m[0m[0m
+[1;32m  10568[0m         [0mbd[0m [0;34m=[0m [0mb[0m[0;34m*[0m[0md[0m[0;34m[0m[0;34m[0m[0m
+[0;32m> 10569[0;31m         [0;32mreturn[0m [0;34m[[0m[0mbd[0m[0;34m,[0m [0;34m([0m[0ma[0m[0;34m+[0m[0mb[0m[0;34m)[0m[0;34m*[0m[0;34m([0m[0mc[0m[0;34m+[0m[0md[0m[0;34m)[0m[0;34m-[0m[0mac[0m[0;34m-[0m[0mbd[0m[0;34m,[0m [0mac[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m  10570[0m     [0me[0m [0;34m=[0m [0mnum_elts[0m[0;34m//[0m[0;36m2[0m[0;34m[0m[0;34m[0m[0m
+[1;32m  10571[0m     [0mne[0m [0;34m=[0m [0mnum_elts[0m[0;34m-[0m[0me[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/structure/element.pyx[0m in [0;36msage.structure.element.Element.__sub__ (build/cythonized/sage/structure/element.c:11356)[0;34m()[0m
+[1;32m   1355[0m         [0mcdef[0m [0mint[0m [0mcl[0m [0;34m=[0m [0mclassify_elements[0m[0;34m([0m[0mleft[0m[0;34m,[0m [0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1356[0m         [0;32mif[0m [0mHAVE_SAME_PARENT[0m[0;34m([0m[0mcl[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1357[0;31m             [0;32mreturn[0m [0;34m([0m[0;34m<[0m[0mElement[0m[0;34m>[0m[0mleft[0m[0;34m)[0m[0;34m.[0m[0m_sub_[0m[0;34m([0m[0mright[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1358[0m         [0;32mif[0m [0mBOTH_ARE_ELEMENT[0m[0;34m([0m[0mcl[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1359[0m             [0;32mreturn[0m [0mcoercion_model[0m[0;34m.[0m[0mbin_op[0m[0;34m([0m[0mleft[0m[0;34m,[0m [0mright[0m[0;34m,[0m [0msub[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/local/build/sage-9.0/local/lib/python3.7/site-packages/sage/rings/polynomial/polynomial_rational_flint.pyx[0m in [0;36msage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint._sub_ (build/cythonized/sage/rings/polynomial/polynomial_rational_flint.cpp:9758)[0;34m()[0m
+[1;32m    852[0m         [0mcdef[0m [0mbint[0m [0mdo_sig[0m [0;34m=[0m [0m_do_sig[0m[0;34m([0m[0mself[0m[0;34m.[0m[0m__poly[0m[0;34m)[0m [0;32mor[0m [0m_do_sig[0m[0;34m([0m[0mop2[0m[0;34m.[0m[0m__poly[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    853[0m [0;34m[0m[0m
+[0;32m--> 854[0;31m         [0;32mif[0m [0mdo_sig[0m[0;34m:[0m [0msig_str[0m[0;34m([0m[0;34m"FLINT exception"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    855[0m         [0mfmpq_poly_sub[0m[0;34m([0m[0mres[0m[0;34m.[0m[0m__poly[0m[0;34m,[0m [0mself[0m[0;34m.[0m[0m__poly[0m[0;34m,[0m [0mop2[0m[0;34m.[0m[0m__poly[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    856[0m         [0;32mif[0m [0mdo_sig[0m[0;34m:[0m [0msig_off[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mKeyboardInterrupt[0m: 
+1
+Working with twist  29 , component  0 using 6 moments
+--lambda = 2
+working at level 5
+Passed! Max valuation is 1/2 toric bound is 1 and error bound is 3/4
+PASSED
+
+Working with twist  29 , component  1 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  2 using 6 moments
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 10 moments
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 20 moments
+--lambda = 5
+working at level 5
+Failed: max val too high.  Max valuation is 5/4  and toric bond is  5/4
+working at level 25
+Passed! Max valuation is 1/4 toric bound is 5/4 and error bound is 9/20
+PASSED
+
+Working with twist  29 , component  3 using 6 moments
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------

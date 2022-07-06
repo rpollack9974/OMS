@@ -1,0 +1,1344 @@
+Working with twist  5 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  5 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  5 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  8 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  8 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  12 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  12 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  12 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  13 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  13 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 11
+Error bound is 2/5
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5]
+Using a = 1
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5]
+Using a = 2
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 3
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 4
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 5
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 6
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 7
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 8
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 9
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 10
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Passed! Max valuation is 1/5 < 1
+PASSED
+
+Working with twist  13 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  17 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  17 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  21 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  21 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  21 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  24 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  24 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  24 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  28 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  28 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 11
+Error bound is 2/5
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10]
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10]
+Using a = 2
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 3
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 4
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 5
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 6
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 7
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 8
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 9
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 10
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Passed! Max valuation is 1/5 < 1
+PASSED
+
+Working with twist  28 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 11
+Error bound is 2/5
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10]
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10]
+Using a = 2
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 3
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 4
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 5
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 6
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 7
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 8
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 9
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 10
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Passed! Max valuation is 1/5 < 1
+PASSED
+
+Working with twist  28 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  29 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  29 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 11
+Error bound is 2/5
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10]
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10]
+Using a = 2
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 3
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 4
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 5
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 6
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 7
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 8
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 9
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 10
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Passed! Max valuation is 1/5 < 1
+PASSED
+
+Working with twist  29 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 11
+Error bound is 2/5
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5]
+Using a = 1
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5]
+Using a = 2
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5]
+Using a = 3
+-- Value has valuation 3/10
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5]
+Using a = 4
+-- Value has valuation 1/5
+-- Value has valuation 3/10
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10]
+Using a = 5
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5]
+Using a = 6
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5, 1/5, 1/5]
+Using a = 7
+-- Value has valuation 3/10
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5]
+Using a = 8
+-- Value has valuation 1/5
+-- Value has valuation 3/10
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10]
+Using a = 9
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5]
+Using a = 10
+-- Value has valuation 1/5
+-- Value has valuation 1/5
+Current list of values: [1/5, 1/5, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5, 1/5, 1/5, 3/10, 1/5, 1/5, 3/10, 1/5, 1/5, 1/5, 1/5]
+Passed! Max valuation is 3/10 < 1
+PASSED
+
+Working with twist  29 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 11
+Error bound is 2/5
+Using a = 0
+-- Value has valuation 1/5
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10]
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10]
+Using a = 2
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 3
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 4
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 5
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 6
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 7
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 8
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 9
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Using a = 10
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/5, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10, 1/10]
+Passed! Max valuation is 1/5 < 1
+PASSED
+
+----------------------------------------
+Working with twist  37 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  37 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  40 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  40 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  40 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  41 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  41 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  53 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  53 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+Current list of values: [0, 0]
+Passed! Max valuation is 0 < 1
+PASSED
+
+Working with twist  53 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 4
+Using a = 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+Current list of values: [0, 0]
+Passed! Max valuation is 0 < 1
+PASSED
+
+Working with twist  53 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  56 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  56 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  57 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  57 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  57 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  60 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  60 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  4 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  5 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  6 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  7 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  8 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  60 , component  9 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------

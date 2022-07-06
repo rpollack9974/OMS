@@ -1,0 +1,1332 @@
+Working with twist  8 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  8 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  8 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  13 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  13 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+Current list of values: [0, 0]
+Passed! Max valuation is 0 < 1
+PASSED
+
+Working with twist  13 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  13 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+Current list of values: [0, 0]
+Using a = 1
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+Current list of values: [0, 0, 0, 0]
+Using a = 2
+---->Modification needed. original value: 1/2 extra factor: 1
+-- Value has valuation -1/2
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+Current list of values: [0, 0, 0, 0, -1/2, 0]
+Using a = 3
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+---->Modification needed. original value: 1/2 extra factor: 1
+-- Value has valuation -1/2
+Current list of values: [0, 0, 0, 0, -1/2, 0, 0, -1/2]
+Using a = 4
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+---->Modification needed. original value: 1/4 extra factor: 1/4
+-- Value has valuation 0
+Current list of values: [0, 0, 0, 0, -1/2, 0, 0, -1/2, 0, 0]
+Passed! Max valuation is 0 < 1
+PASSED
+
+----------------------------------------
+Working with twist  17 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  17 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 2
+Using a = 0
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 5
+Error bound is 1/2
+Using a = 0
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 25
+Error bound is 1/10
+Using a = 0
+***This is an error bound violation: value is 1/10 error bound is 1/10
+-- Value has valuation 1/10
+-- Value has valuation 1/20
+Current list of values: [1/10, 1/20]
+Failed: not enough accuracy.  There was a valuation of 1/10 and the error bound is 1/10
+----------------------------------------
+working at level 125
+Error bound is 1/50
+Using a = 0
+***This is an error bound violation: value is 1/50 error bound is 1/50
+-- Value has valuation 1/50
+-- Value has valuation 1/100
+Current list of values: [1/50, 1/100]
+Failed: not enough accuracy.  There was a valuation of 1/50 and the error bound is 1/50
+Going to more accurate family.
+Working with twist  17 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4]
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4]
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4, 1/4, 1/4]
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4]
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4]
+Passed! Max valuation is 1/2 < 1
+PASSED
+
+Working with twist  17 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  17 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4]
+Using a = 1
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4]
+Using a = 2
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4, 1/4, 1/4]
+Using a = 3
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4]
+Using a = 4
+-- Value has valuation 1/4
+-- Value has valuation 1/4
+Current list of values: [1/2, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4, 1/4]
+Passed! Max valuation is 1/2 < 1
+PASSED
+
+----------------------------------------
+Working with twist  28 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  28 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  28 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  29 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2]
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2]
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Passed! Max valuation is 1/2 < 1
+PASSED
+
+Working with twist  29 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  29 , component  2 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 5
+Error bound is 3/2
+Using a = 0
+---->Modification needed. original value: 5/4 extra factor: 1/4
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/4
+-- Value has valuation 3/4
+Current list of values: [1, 3/4]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 25
+Error bound is 3/10
+Using a = 0
+---->Modification needed. original value: 1/4 extra factor: 1/20
+-- Value has valuation 1/5
+---->Modification needed. original value: 1/5 extra factor: 1/20
+-- Value has valuation 3/20
+Current list of values: [1/5, 3/20]
+Using a = 1
+---->Modification needed. original value: 1/5 extra factor: 1/20
+-- Value has valuation 3/20
+---->Modification needed. original value: 1/5 extra factor: 1/20
+-- Value has valuation 3/20
+Current list of values: [1/5, 3/20, 3/20, 3/20]
+Using a = 2
+***This is an error bound violation: value is 2/5 error bound is 3/10
+-- Value has valuation 2/5
+---->Modification needed. original value: 1/5 extra factor: 1/20
+-- Value has valuation 3/20
+Current list of values: [1/5, 3/20, 3/20, 3/20, 2/5, 3/20]
+Failed: not enough accuracy.  There was a valuation of 2/5 and the error bound is 3/10
+----------------------------------------
+working at level 125
+Error bound is 3/50
+Using a = 0
+---->Modification needed. original value: 1/20 extra factor: 1/100
+-- Value has valuation 1/25
+---->Modification needed. original value: 1/25 extra factor: 1/100
+-- Value has valuation 3/100
+Current list of values: [1/25, 3/100]
+Using a = 1
+---->Modification needed. original value: 1/25 extra factor: 1/100
+-- Value has valuation 3/100
+---->Modification needed. original value: 1/25 extra factor: 1/100
+-- Value has valuation 3/100
+Current list of values: [1/25, 3/100, 3/100, 3/100]
+Using a = 2
+***This is an error bound violation: value is 2/25 error bound is 3/50
+-- Value has valuation 2/25
+---->Modification needed. original value: 1/25 extra factor: 1/100
+-- Value has valuation 3/100
+Current list of values: [1/25, 3/100, 3/100, 3/100, 2/25, 3/100]
+Failed: not enough accuracy.  There was a valuation of 2/25 and the error bound is 3/50
+Going to more accurate family.
+Working with twist  29 , component  1 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  29 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  37 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  37 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  37 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  41 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2]
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2]
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Passed! Max valuation is 1/2 < 1
+PASSED
+
+Working with twist  41 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  41 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  41 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  44 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2]
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2]
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Passed! Max valuation is 1/2 < 1
+PASSED
+
+Working with twist  44 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  44 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  44 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  53 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+---->Modification needed. original value: 1/2 extra factor: 1/4
+-- Value has valuation 1/4
+Current list of values: [3/4, 1/4]
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+---->Modification needed. original value: 1/10 extra factor: 1/20
+-- Value has valuation 1/20
+Current list of values: [3/20, 1/20]
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+---->Modification needed. original value: 1/50 extra factor: 1/100
+-- Value has valuation 1/100
+Current list of values: [3/100, 1/100]
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  53 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  53 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  56 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2]
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2]
+Using a = 2
+-- Value has valuation 1/2
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 3/4]
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/10, 1/10]
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/10, 1/10, 1/10, 1/10]
+Using a = 2
+-- Value has valuation 1/10
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+Current list of values: [1/10, 1/10, 1/10, 1/10, 1/10, 3/20]
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Current list of values: [1/50, 1/50]
+Using a = 1
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Current list of values: [1/50, 1/50, 1/50, 1/50]
+Using a = 2
+-- Value has valuation 1/50
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+Current list of values: [1/50, 1/50, 1/50, 1/50, 1/50, 3/100]
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  56 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  56 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  56 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  61 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  61 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  61 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  61 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  73 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  73 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  73 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  73 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  76 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  76 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  76 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  76 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  77 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  77 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  77 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+Current list of values: [3/4, 3/4]
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+Current list of values: [3/20, 3/20]
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+Current list of values: [3/100, 3/100]
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  77 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  77 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  88 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  88 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  88 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  88 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  89 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 2
+Using a = 0
+***This is an error bound violation: value is 2 error bound is 2
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 2 error bound is 2
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: not enough accuracy.  There was a valuation of 2 and the error bound is 2
+----------------------------------------
+working at level 5
+Error bound is 1/2
+Using a = 0
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 25
+Error bound is 1/10
+Using a = 0
+***This is an error bound violation: value is 1/10 error bound is 1/10
+-- Value has valuation 1/10
+***This is an error bound violation: value is 1/10 error bound is 1/10
+-- Value has valuation 1/10
+Current list of values: [1/10, 1/10]
+Failed: not enough accuracy.  There was a valuation of 1/10 and the error bound is 1/10
+----------------------------------------
+working at level 125
+Error bound is 1/50
+Using a = 0
+***This is an error bound violation: value is 1/50 error bound is 1/50
+-- Value has valuation 1/50
+***This is an error bound violation: value is 1/50 error bound is 1/50
+-- Value has valuation 1/50
+Current list of values: [1/50, 1/50]
+Failed: not enough accuracy.  There was a valuation of 1/50 and the error bound is 1/50
+Going to more accurate family.
+Working with twist  89 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  89 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  89 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  89 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  92 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  92 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+Current list of values: [0, 0]
+Passed! Max valuation is 0 < 1
+PASSED
+
+Working with twist  92 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+***This is an error bound violation: value is 3 error bound is 3
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 3 error bound is 3
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+Current list of values: [3, 3]
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 3
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+Current list of values: [3/4, 3/4]
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+Current list of values: [3/20, 3/20]
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+Current list of values: [3/100, 3/100]
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  92 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 6
+Using a = 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+Current list of values: [0, 0]
+Passed! Max valuation is 0 < 1
+PASSED
+
+Working with twist  92 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+---->Modification needed. original value: 1 extra factor: 1
+-- Value has valuation 0
+Current list of values: [0, 0]
+Passed! Max valuation is 0 < 1
+PASSED
+
+----------------------------------------
+Working with twist  97 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  97 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  97 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  97 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  101 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+***This is an error bound violation: value is 3 error bound is 3
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 3 error bound is 3
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+Current list of values: [3, 3]
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 3
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+Current list of values: [1/2, 3/4]
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 1/10
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+Current list of values: [1/10, 3/20]
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 1/50
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+Current list of values: [1/50, 3/100]
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  101 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  101 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  101 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2 extra factor: 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+---->Modification needed. original value: 1/2 extra factor: 1/4
+-- Value has valuation 1/4
+Current list of values: [3/4, 1/4]
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+---->Modification needed. original value: 1/10 extra factor: 1/20
+-- Value has valuation 1/20
+Current list of values: [3/20, 1/20]
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+---->Modification needed. original value: 1/50 extra factor: 1/100
+-- Value has valuation 1/100
+Current list of values: [3/100, 1/100]
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  101 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  101 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  104 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2]
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2]
+Using a = 2
+-- Value has valuation 1/2
+***This is an error bound violation: value is 3/4 error bound is 3/4
+-- Value has valuation 3/4
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 3/4]
+Failed: not enough accuracy.  There was a valuation of 3/4 and the error bound is 3/4
+----------------------------------------
+working at level 25
+Error bound is 3/20
+Using a = 0
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/10, 1/10]
+Using a = 1
+-- Value has valuation 1/10
+-- Value has valuation 1/10
+Current list of values: [1/10, 1/10, 1/10, 1/10]
+Using a = 2
+-- Value has valuation 1/10
+***This is an error bound violation: value is 3/20 error bound is 3/20
+-- Value has valuation 3/20
+Current list of values: [1/10, 1/10, 1/10, 1/10, 1/10, 3/20]
+Failed: not enough accuracy.  There was a valuation of 3/20 and the error bound is 3/20
+----------------------------------------
+working at level 125
+Error bound is 3/100
+Using a = 0
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Current list of values: [1/50, 1/50]
+Using a = 1
+-- Value has valuation 1/50
+-- Value has valuation 1/50
+Current list of values: [1/50, 1/50, 1/50, 1/50]
+Using a = 2
+-- Value has valuation 1/50
+***This is an error bound violation: value is 3/100 error bound is 3/100
+-- Value has valuation 3/100
+Current list of values: [1/50, 1/50, 1/50, 1/50, 1/50, 3/100]
+Failed: not enough accuracy.  There was a valuation of 3/100 and the error bound is 3/100
+Going to more accurate family.
+Working with twist  104 , component  1 using 10 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  104 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  104 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  104 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  109 , component  0 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  109 , component  1 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  109 , component  2 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 1
+Error bound is 3
+Using a = 0
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+Current list of values: [2, 2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 5
+Error bound is 3/4
+Using a = 0
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2]
+Using a = 1
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2]
+Using a = 2
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 3
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Using a = 4
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2]
+Passed! Max valuation is 1/2 < 1
+PASSED
+
+Working with twist  109 , component  3 using 5 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
