@@ -11,7 +11,7 @@ def collect_padic_Lfunctions(Phis,D,verbose=false):
 	return Ls
 
 
-def analyze_pLs(D,Phis_list,L=none,comp=None,full_search=false,verbose=true):
+def analyze_pLs(D,Phis_list,L=None,comp=None,full_search=false,verbose=true):
 	D = ZZ(D)
 	p = Phis_list[0].p()
 	vp = QQ.valuation(p)
