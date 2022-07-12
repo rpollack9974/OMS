@@ -138,7 +138,6 @@ def analyze_pLs(D,Phis_list,comp=None,full_search=false,verbose=true):
 							else:
 								print("giving up!")
 							giving_up = true
-						L = None
 		if not done:
 			print("*************************FAILED!!!***************************")
 		print("")
