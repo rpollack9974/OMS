@@ -31,7 +31,7 @@ def analyze_pLs(D,Phis_list,L=none,comp=None,full_search=false,verbose=true):
 			if verbose:
 				print("Working with twist ",D,", component ",i,"using",Phis.num_moments(),"moments")
 			if L == None:
-				if verbose
+				if verbose:
 					print("..computing p-adic L-function")
 				L = Phis.pLfunction(r=i,quad_twist=D)
 				if verbose:
