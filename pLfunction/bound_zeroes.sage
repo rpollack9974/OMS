@@ -11,7 +11,7 @@ def collect_padic_Lfunctions(Phis,D,verbose=false):
 	return Ls
 
 
-def analyze_pLs(D,Phis_list,L=None,comp=None,full_search=false,verbose=true):
+def analyze_pLs(D,Phis_list,comp=None,full_search=false,verbose=true):
 	D = ZZ(D)
 	p = Phis_list[0].p()
 	vp = QQ.valuation(p)
@@ -30,12 +30,10 @@ def analyze_pLs(D,Phis_list,L=None,comp=None,full_search=false,verbose=true):
 			Phis = Phis_list[num]
 			if verbose:
 				print("Working with twist ",D,", component ",i,"using",Phis.num_moments(),"moments")
-			if L == None:
-				if verbose:
-					print("..computing p-adic L-function")
-				L = Phis.pLfunction(r=i,quad_twist=D)
-				if verbose:
-					print("done!")
+				print("..computing p-adic L-function")
+			L = Phis.pLfunction(r=i,quad_twist=D)
+			if verbose:
+				print("done!")
 			d = S(L).degree()
 			mu = mu_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 			if mu > 0:
@@ -140,6 +138,7 @@ def analyze_pLs(D,Phis_list,L=None,comp=None,full_search=false,verbose=true):
 							else:
 								print("giving up!")
 							giving_up = true
+						L = None
 		if not done:
 			print("*************************FAILED!!!***************************")
 		print("")
