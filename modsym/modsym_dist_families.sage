@@ -130,7 +130,7 @@ class modsym_dist_fam(modsym):
 			ans=ans+binomial(j,r)*(a-teich(a,p,M))^(j-r)*p^r*self.phi_on_Da(a,D).moment(r)
 		return ans
 
-	def pLfunction_coef(self,n,r,D,gam,error=None):
+	def pLfunction_coef(self,n,r,D,gam,terms=None,error=None):
 		"""Returns the n-th coefficient of the p-adic L-function in the T-variable of a quadratic twist of self.  
 		If error is not specified, then the correct error bound is computed and the answer is return modulo that accuracy.
 
@@ -165,7 +165,11 @@ class modsym_dist_fam(modsym):
 			else:
 				err = error
 			lb = [lb[a] for a in range(M)]
-		for j in range(len(lb)):
+		if terms == None:
+			ran = range(len(lb)) 
+		else:
+			ran = range(terms)
+		for j in ran:
 			cjn = lb[j]
 			temp = 0
 			for a in range(1,p):
@@ -180,7 +184,7 @@ class modsym_dist_fam(modsym):
 		return dn
 
 
-	def pLfunction(self,r=0,max=Infinity,quad_twist=None,verbose=false):
+	def pLfunction(self,r=0,mx=Infinity,quad_twist=None,verbose=false):
 		"""Returns the p-adic L-function in the T-variable of a quadratic twist of self
 
 	actually answer is scaled by a_p but this only changes answer by a unit
@@ -204,22 +208,33 @@ class modsym_dist_fam(modsym):
 		S.<z>=PolynomialRing(QQ)
 		err=Infinity
 		n=1
-		while (err>0) and (n<min(M,max)):
+		while (err>0) and (n<min(M,mx)):
 			if verbose:
 				print("working on coefficient:",n)
 			lb=loggam_binom(p,gam,z,n,2*M)
-			err1 = min([j + lb[j].valuation(p) for j in range(M,len(lb))])
-			## this is the error from only using an approximation of the integrals
-			err2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
-			err = min(err1,err2)
-			if verbose:
-				print("errors",n,err,err1,err2)
+			es = []
+			for f in range(M):
+				e1 = min([j + lb[j].valuation(p) for j in range(f+1,len(lb))])
+				e2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(f+1)])
+				es += [min(e1,e2)]
+			err = max(es)
+			terms = es.index(err) + 1
+#			err1 = min([j + lb[j].valuation(p) for j in range(M,len(lb))])
+#			print("n=",n)
+#			print("err1",[j + lb[j].valuation(p) for j in range(0,len(lb))])
+#			## this is the error from only using an approximation of the integrals
+#			err2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
+#			print("err2",[ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(M)])
+
+#			err = min(err1,err2)
+#			if verbose:
+#				print("errors",n,err,err1,err2)
 #			err=min([j+lb[j].valuation(p) for j in range(M,len(lb))])
 			if err>0:
-				dn=self.pLfunction_coef(n,r,D,gam,error=err)
+				dn=self.pLfunction_coef(n,r,D,gam,error=err,terms=terms)
 				ans=ans+dn*T^n
 
-			n=n+1
+			n = n + 1
 
 		return ans
 
