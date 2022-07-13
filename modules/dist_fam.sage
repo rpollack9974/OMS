@@ -67,6 +67,13 @@ class dist_fam(SageObject):
 	def scale(self,left):
 		return dist_fam(self.p,self.deg,self.disc(),(left*self.moments),self.char()).truncate()
 
+	def divide(self,left):
+		R = self.moment(0).parent()
+		y = R.gen()
+		d = self.deg
+		c = R(1/(left + O(y^d)))
+		return self.scale(c)
+
 	def __sub__(self,right):
 		return self+right.scale(-1)
 

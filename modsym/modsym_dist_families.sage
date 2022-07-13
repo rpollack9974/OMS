@@ -40,7 +40,13 @@ class modsym_dist_fam(modsym):
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].normalize()]
 		return modsym_dist_fam(self.level(),v,self.manin)
-	
+
+	def divide(self,left):
+		v=[]
+		for j in range(0,len(self.data)):
+			v=v+[self.data[j].divide(left)]
+		return modsym_dist_fam(self.level(),v,self.manin)
+
 	def change_precision(self,M):
 		v=[]
 		for j in range(0,len(self.data)):
@@ -65,14 +71,14 @@ class modsym_dist_fam(modsym):
 
 		return ps_normalize(aq,p,M-self.valuation())
 
-	def pLdata_has_key(self,D):
-		return D in self._pLdata
+	def pLdata_has_key(self,D,a):
+		return (D,a) in self._pLdata
 
-	def add_pLdata(self,D,data):
-		self._pLdata[D] = data
+	def add_pLdata(self,D,a,data):
+		self._pLdata[(D,a)] = data
 
-	def pLdata(self,D):
-		return self._pLdata[D]
+	def pLdata(self,D,a):
+		return self._pLdata[(D,a)]
 
 	## returns a boolean which indicates whether or not the family extends to the whole
 	## unit disc.  in practice, this means that every coefficient of w^i is divisibly by p^i
@@ -108,15 +114,15 @@ class modsym_dist_fam(modsym):
 	def phi_on_Da(self,a,D):
 		"""return self_D(D_a) = self_D({infty} - {a/p}) where self_D is the quadratic twist of self;
 		the value is cached in self._pLdata"""
-		if self.pLdata_has_key(a):
-			return self.pLdata(a)
+		if self.pLdata_has_key(D,a):
+			return self._pLdata[(D,a)]
 		else:
 			p=self.p()
 			ans=self.zero_elt()
 			for b in range(1,abs(D)+1):
 				if gcd(b,D)==1:	
 					ans=ans+self.eval(Matrix(2,2,[1,b/abs(D),0,1])*Matrix(2,2,[a,1,p,0])).act_right(Matrix(2,2,[1,b/abs(D),0,1])).scale(kronecker(D,b)).normalize()
-			self.add_pLdata(a,ans.normalize())
+			self.add_pLdata(D,a,ans.normalize())
 			return ans.normalize()
 
 #	@cached_function
@@ -126,8 +132,9 @@ class modsym_dist_fam(modsym):
 		p=self.p()
 #		ap=ap*kronecker(D,p)
 		ans=0
+		muaD = self.phi_on_Da(a,D)
 		for r in range(j+1):
-			ans=ans+binomial(j,r)*(a-teich(a,p,M))^(j-r)*p^r*self.phi_on_Da(a,D).moment(r)
+			ans=ans+binomial(j,r)*(a-teich(a,p,M))^(j-r)*p^r*muaD.moment(r)
 		return ans
 
 	def pLfunction_coef(self,n,r,D,gam,terms=None,error=None):
@@ -430,4 +437,28 @@ Inputs:
 	return dn
 
 
-	
+def errors(p,M):
+	"""Returns the p-adic L-function in the T-variable of a quadratic twist of self
+
+actually answer is scaled by a_p but this only changes answer by a unit
+
+Inputs:
+	self -- overconvergent Hecke-eigensymbol;
+	r -- twist by omega^r
+	quad_twist -- conductor of quadratic character"""
+
+	gam=1+p
+
+	S.<z>=PolynomialRing(QQ)
+	for n in range(1,M):
+		lb=loggam_binom(p,gam,z,n,2*M)
+		es = []
+		for f in range(M):
+			e1 = min([j + lb[j].valuation(p) for j in range(f+1,len(lb))])
+			e2 = min([ceil((p-2)/(p-1) * M) + lb[j].valuation(p) for j in range(f+1)])
+			es += [min(e1,e2)]
+		err = max(es)
+		terms = es.index(err) + 1
+		print("n=",n,"error=",err,"terms=",terms)
+	return ans
+
