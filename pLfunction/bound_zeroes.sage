@@ -11,7 +11,7 @@ def collect_padic_Lfunctions(Phis,D,verbose=false):
 	return Ls
 
 
-def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true):
+def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true,write_to_file=False,filename=None):
 	D = ZZ(D)
 	p = Phis_list[0].p()
 	vp = QQ.valuation(p)
@@ -44,10 +44,18 @@ def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true):
 				if lam == 0:
 					print("--lambda = 0 so nothing to check here")
 					print("PASSED")
+					if write_to_file:
+						o = open(filename,'a')
+						o.write(str(D)+": component="+str(i)+" PASSED (nothing to check)\n")
+						o.close()
 					done = true
 				elif lam == 1 and 2*i % (p-1) == comp:
 					print("--lambda = 1 because of FE so nothing to check here")
 					print("PASSED")
+					if write_to_file:
+						o = open(filename,'a')
+						o.write(str(D)+": component="+str(i)+" PASSED (nothing to check)\n")
+						o.close()
 					done = true
 				else:
 					print("--lambda =",lam)
@@ -126,6 +134,11 @@ def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true):
 							elif m < toroidal_bound:
 								print("Passed! Max valuation is",m,"< 1")
 								print("PASSED")
+								if write_to_file:
+									o = open(filename,'a')
+									o.write(str(D)+": component="+str(i)+" PASSED (lambda ="+str(lam)+")\n")
+									o.close()	
+
 								done = true
 							else:
 								print("Failed: max val too high.  Max valuation is",m,">= 1")
@@ -141,6 +154,10 @@ def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true):
 							giving_up = true
 		if not done:
 			print("*************************FAILED!!!***************************")
+			if write_to_file:
+				o = open(filename,'a')
+				o.write(str(D)+": component="+str(i)+" FAILED\n")
+				o.close()
 		print("")
 	return "done"
 
@@ -152,9 +169,9 @@ def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true,full_search=true):
 		if is_fundamental_discriminant(d) and gcd(d,level)==1:
 			print("Working on twist d=",d)
 			if log:
-				log_file = open(filename,"a")
+				log_file = open(filename+".details","a")
 				sys.stdout = log_file			
-			analyze_pLs(d,Phis_list,full_search=full_search)
+			analyze_pLs(d,Phis_list,full_search=full_search,write_to_file=True,filename=filename)
 			print("----------------------------------------")
 			if log:
 				sys.stdout = old_stdout
