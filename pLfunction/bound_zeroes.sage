@@ -11,7 +11,7 @@ def collect_padic_Lfunctions(Phis,D,verbose=false):
 	return Ls
 
 
-def analyze_pLs(D,Phis_list,comp=None,full_search=false,verbose=true):
+def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true):
 	D = ZZ(D)
 	p = Phis_list[0].p()
 	vp = QQ.valuation(p)
@@ -19,10 +19,10 @@ def analyze_pLs(D,Phis_list,comp=None,full_search=false,verbose=true):
 	Ls = []
 	S = PolynomialRing(PolynomialRing(QQ,'w'),'T')
 	toroidal_bound = 1
-	if comp == None:
+	if cyc_comp == None:
 		R = range(p-1)
 	else:
-		R = [comp]
+		R = [cyc_comp]
 	for i in R:
 		num = 0
 		done = false
