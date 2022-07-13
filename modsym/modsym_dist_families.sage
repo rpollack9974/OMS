@@ -201,7 +201,6 @@ class modsym_dist_fam(modsym):
 		r -- twist by omega^r
 		quad_twist -- conductor of quadratic character"""
 
-		self._pLdata = {}
 		if quad_twist==None:
 			D=1
 		else:
