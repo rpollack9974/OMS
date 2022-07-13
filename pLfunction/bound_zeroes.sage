@@ -135,7 +135,8 @@ def analyze_pLs(D,Phis_list,comp=None,full_search=false,verbose=true):
 							num += 1
 							if num < len(Phis_list):
 								print("Going to more accurate family.")
-							else:
+								print("------------------------------------------------------------------------")
+							elif not done:
 								print("giving up!")
 							giving_up = true
 		if not done:
