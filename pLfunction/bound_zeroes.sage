@@ -133,7 +133,7 @@ def analyze_pLs(D,Phis_list,comp=None,full_search=false,verbose=true):
 						n += 1
 						if n > 3:
 							num += 1
-							if num < len(Phis_list):
+							if num < len(Phis_list) and not done:
 								print("Going to more accurate family.")
 								print("------------------------------------------------------------------------")
 							elif not done:
