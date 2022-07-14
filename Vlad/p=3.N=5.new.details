@@ -1,0 +1,2775 @@
+Working with twist  8 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  8 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  8 , component  1 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 3
+Error bound is 5/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 5/2 error bound is 5/2
+-- Value has valuation 5/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 5/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 5/2 and the error bound is 5/2
+----------------------------------------
+working at level 9
+Error bound is 5/6
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 5/6 error bound is 5/6
+-- Value has valuation 5/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [5/6, 1/6]
+Failed: not enough accuracy.  There was a valuation of 5/6 and the error bound is 5/6
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 5/6 error bound is 5/6
+-- Value has valuation 5/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [5/6, 1/6, 5/6, 1/6]
+Failed: not enough accuracy.  There was a valuation of 5/6 and the error bound is 5/6
+----------------------------------------
+working at level 27
+Error bound is 5/18
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 5/18 error bound is 5/18
+-- Value has valuation 5/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [5/18, 1/18]
+Failed: not enough accuracy.  There was a valuation of 5/18 and the error bound is 5/18
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 5/18 error bound is 5/18
+-- Value has valuation 5/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [5/18, 1/18, 5/18, 1/18]
+Failed: not enough accuracy.  There was a valuation of 5/18 and the error bound is 5/18
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  8 , component  1 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 3
+Error bound is 4
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 5/2 extra factor: 1/2
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 2, 1/2]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 4/3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 5/6 extra factor: 1/6
+-- Value has valuation 2/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (3, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/6
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6]
+Using (a,j)= (4, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6]
+Using (a,j)= (5, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (6, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/6
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6]
+Using (a,j)= (7, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6]
+Using (a,j)= (8, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6]
+Passed! Max valuation is 2/3 < 1
+PASSED
+
+----------------------------------------
+Working with twist  13 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  13 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 2 error bound is 3/2
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 2 and the error bound is 3/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [2, 1/2, 3/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6, 1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18, 1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  13 , component  1 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 2 extra factor: 1/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+----------------------------------------
+working at level 27
+Error bound is 1/3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  13 , component  1 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 9/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 2 extra factor: 1/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 3/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (3, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (4, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (5, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (6, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (7, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (8, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+----------------------------------------
+Working with twist  17 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  17 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  28 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 3 error bound is 3/2
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 3/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3, 1/2, 3/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6, 1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18, 1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  28 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 2 extra factor: 1/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+----------------------------------------
+working at level 27
+Error bound is 1/3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  28 , component  0 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 4
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 2 extra factor: 1/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 4/3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (3, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (4, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (5, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (6, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (7, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (8, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+Working with twist  28 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  29 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 5/2 error bound is 3/2
+-- Value has valuation 5/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 5/2]
+Failed: not enough accuracy.  There was a valuation of 5/2 and the error bound is 3/2
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 5/2 error bound is 3/2
+-- Value has valuation 5/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 5/2, 1, 5/2]
+Failed: not enough accuracy.  There was a valuation of 5/2 and the error bound is 3/2
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+***This is an error bound violation: value is 2/3 error bound is 1/2
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3]
+Failed: not enough accuracy.  There was a valuation of 2/3 and the error bound is 1/2
+Using (a,j)= (0, 2)
+-- Value has valuation 1/3
+***This is an error bound violation: value is 2/3 error bound is 1/2
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3, 1/3, 2/3]
+Failed: not enough accuracy.  There was a valuation of 2/3 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+-- Value has valuation 1/9
+***This is an error bound violation: value is 2/9 error bound is 1/6
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9]
+Failed: not enough accuracy.  There was a valuation of 2/9 and the error bound is 1/6
+Using (a,j)= (0, 2)
+-- Value has valuation 1/9
+***This is an error bound violation: value is 2/9 error bound is 1/6
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 1/9, 2/9]
+Failed: not enough accuracy.  There was a valuation of 2/9 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  29 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 5/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 5/2 error bound is 5/2
+-- Value has valuation 5/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 5/2]
+Failed: not enough accuracy.  There was a valuation of 5/2 and the error bound is 5/2
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 5/2 error bound is 5/2
+-- Value has valuation 5/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 5/2, 1, 5/2]
+Failed: not enough accuracy.  There was a valuation of 5/2 and the error bound is 5/2
+----------------------------------------
+working at level 9
+Error bound is 5/6
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 2/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3, 2/3, 2/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/3
+***This is an error bound violation: value is 7/6 error bound is 5/6
+-- Value has valuation 7/6
+***Possible toroidal factor---aborting
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6]
+Failed: not enough accuracy.  There was a valuation of 7/6 and the error bound is 5/6
+Using (a,j)= (0, 2)
+-- Value has valuation 1/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3]
+Using (a,j)= (1, 2)
+-- Value has valuation 2/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3, 2/3, 2/3]
+Using (a,j)= (2, 2)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3, 2/3, 2/3, 1/3, 1/3]
+Using (a,j)= (3, 2)
+-- Value has valuation 1/3
+***This is an error bound violation: value is 7/6 error bound is 5/6
+-- Value has valuation 7/6
+***Possible toroidal factor---aborting
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6]
+Failed: not enough accuracy.  There was a valuation of 7/6 and the error bound is 5/6
+----------------------------------------
+working at level 27
+Error bound is 5/18
+Using (a,j)= (0, 1)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9]
+Using (a,j)= (1, 1)
+-- Value has valuation 2/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/9
+***This is an error bound violation: value is 7/18 error bound is 5/18
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18]
+Failed: not enough accuracy.  There was a valuation of 7/18 and the error bound is 5/18
+Using (a,j)= (0, 2)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 1/9, 2/9]
+Using (a,j)= (1, 2)
+-- Value has valuation 2/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 1/9, 2/9, 2/9, 2/9]
+Using (a,j)= (2, 2)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9]
+Using (a,j)= (3, 2)
+-- Value has valuation 1/9
+***This is an error bound violation: value is 7/18 error bound is 5/18
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18]
+Failed: not enough accuracy.  There was a valuation of 7/18 and the error bound is 5/18
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  29 , component  0 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 4
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 5/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 5/2]
+Failed: max val too high.  Max valuation is 5/2 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 5/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 5/2, 1, 5/2]
+Failed: max val too high.  Max valuation is 5/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 4/3
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 2/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3, 2/3, 2/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/3
+-- Value has valuation 7/6
+***Possible toroidal factor---aborting
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6]
+Failed: max val too high.  Max valuation is 7/6 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3]
+Using (a,j)= (1, 2)
+-- Value has valuation 2/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3, 2/3, 2/3]
+Using (a,j)= (2, 2)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3, 2/3, 2/3, 1/3, 1/3]
+Using (a,j)= (3, 2)
+-- Value has valuation 1/3
+-- Value has valuation 7/6
+***Possible toroidal factor---aborting
+Current list of values: [1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6, 1/3, 2/3, 2/3, 2/3, 1/3, 1/3, 1/3, 7/6]
+Failed: max val too high.  Max valuation is 7/6 >= 1
+----------------------------------------
+working at level 27
+Error bound is 4/9
+Using (a,j)= (0, 1)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9]
+Using (a,j)= (1, 1)
+-- Value has valuation 2/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/9
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18]
+Using (a,j)= (4, 1)
+-- Value has valuation 7/18
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9]
+Using (a,j)= (6, 1)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9]
+Using (a,j)= (7, 1)
+-- Value has valuation 2/9
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9]
+Using (a,j)= (9, 1)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9]
+Using (a,j)= (10, 1)
+-- Value has valuation 2/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9]
+Using (a,j)= (11, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9]
+Using (a,j)= (12, 1)
+-- Value has valuation 1/9
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18]
+Using (a,j)= (13, 1)
+-- Value has valuation 7/18
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9]
+Using (a,j)= (14, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9]
+Using (a,j)= (15, 1)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9]
+Using (a,j)= (16, 1)
+-- Value has valuation 2/9
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18]
+Using (a,j)= (17, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9]
+Using (a,j)= (18, 1)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9]
+Using (a,j)= (19, 1)
+-- Value has valuation 2/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9]
+Using (a,j)= (20, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9]
+Using (a,j)= (21, 1)
+-- Value has valuation 1/9
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18]
+Using (a,j)= (22, 1)
+-- Value has valuation 7/18
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9]
+Using (a,j)= (23, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9]
+Using (a,j)= (24, 1)
+-- Value has valuation 1/9
+-- Value has valuation 2/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9]
+Using (a,j)= (25, 1)
+-- Value has valuation 2/9
+-- Value has valuation 7/18
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18]
+Using (a,j)= (26, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9, 1/9, 2/9, 2/9, 2/9, 1/9, 1/9, 1/9, 7/18, 7/18, 2/9, 1/9, 1/9, 1/9, 2/9, 2/9, 7/18, 1/9, 1/9]
+Passed! Max valuation is 7/18 < 1
+PASSED
+
+Working with twist  29 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  37 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  37 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 3
+Error bound is 5/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 5/6
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 5/6 error bound is 5/6
+-- Value has valuation 5/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [5/6, 1/6]
+Failed: not enough accuracy.  There was a valuation of 5/6 and the error bound is 5/6
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 5/6 error bound is 5/6
+-- Value has valuation 5/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [5/6, 1/6, 5/6, 1/6]
+Failed: not enough accuracy.  There was a valuation of 5/6 and the error bound is 5/6
+----------------------------------------
+working at level 27
+Error bound is 5/18
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 5/18 error bound is 5/18
+-- Value has valuation 5/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [5/18, 1/18]
+Failed: not enough accuracy.  There was a valuation of 5/18 and the error bound is 5/18
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 5/18 error bound is 5/18
+-- Value has valuation 5/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [5/18, 1/18, 5/18, 1/18]
+Failed: not enough accuracy.  There was a valuation of 5/18 and the error bound is 5/18
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  37 , component  0 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 5
+----------------------------------------
+working at level 3
+Error bound is 9/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 3/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 5/6 extra factor: 1/6
+-- Value has valuation 2/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (3, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/6
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6]
+Using (a,j)= (4, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6]
+Using (a,j)= (5, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (6, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/6
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6]
+Using (a,j)= (7, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6]
+Using (a,j)= (8, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [2/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6, 1/2, 1/6, 1/6, 1/6, 1/6, 1/6]
+Passed! Max valuation is 2/3 < 1
+PASSED
+
+Working with twist  37 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 2 error bound is 3/2
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2, 2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 2 and the error bound is 3/2
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6, 1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18, 1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  37 , component  1 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 5/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 2 extra factor: 1/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 3/2, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 5/6
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1 error bound is 5/6
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 5/6
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1 error bound is 5/6
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 5/6
+----------------------------------------
+working at level 27
+Error bound is 5/18
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1/3 error bound is 5/18
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 5/18
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1/3 error bound is 5/18
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 5/18
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  37 , component  1 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 9/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 2 extra factor: 1/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 3/2, 1/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 3/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (3, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (4, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (5, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (6, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (7, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (8, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+----------------------------------------
+Working with twist  41 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  41 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 4
+----------------------------------------
+working at level 3
+Error bound is 3
+Using (a,j)= (0, 1)
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [2, 1]
+Failed: max val too high.  Max valuation is 2 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [2, 1, 2, 1]
+Failed: max val too high.  Max valuation is 2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1
+Using (a,j)= (0, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Passed! Max valuation is 2/3 < 1
+PASSED
+
+Working with twist  41 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  44 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 3/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 3/2, 1, 3/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+Using (a,j)= (0, 2)
+-- Value has valuation 1/3
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2, 1/3, 1/2]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+-- Value has valuation 1/9
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+Current list of values: [1/9, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Using (a,j)= (0, 2)
+-- Value has valuation 1/9
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+Current list of values: [1/9, 1/6, 1/9, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  44 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 3/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+Current list of values: [1, 3/2, 1, 3/2]
+Failed: max val too high.  Max valuation is 3/2 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2, 1/2, 1/2]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/2, 1/2, 1/2, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2, 1/2, 1/2]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2, 1/2, 1/2, 1/3, 1/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/2
+-- Value has valuation 1/2
+Current list of values: [1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2, 1/2, 1/2]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2, 1/2, 1/2, 1/3, 1/3, 1/3, 1/2, 1/2, 1/2, 1/3, 1/3]
+Passed! Max valuation is 1/2 < 1
+PASSED
+
+Working with twist  44 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  53 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  53 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  56 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1, 1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+Working with twist  56 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  61 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  61 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1, 1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+----------------------------------------
+Working with twist  73 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2, 3/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6, 1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18, 1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  73 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+----------------------------------------
+working at level 27
+Error bound is 1/3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  73 , component  0 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 9/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 3/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (3, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (4, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (5, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (6, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (7, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (8, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+Working with twist  73 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  76 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  76 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  77 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  77 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  88 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 3/2 error bound is 3/2
+-- Value has valuation 3/2
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [3/2, 1/2, 3/2, 1/2]
+Failed: not enough accuracy.  There was a valuation of 3/2 and the error bound is 3/2
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/2 error bound is 1/2
+-- Value has valuation 1/2
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/2, 1/6, 1/2, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1/2 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 1/6 error bound is 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/6, 1/18, 1/6, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/6 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  88 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1 error bound is 1
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1, 1/6, 1/3, 1/6, 1/6, 1/6, 1, 1/6]
+Failed: not enough accuracy.  There was a valuation of 1 and the error bound is 1
+----------------------------------------
+working at level 27
+Error bound is 1/3
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 1/6 extra factor: 1/18
+-- Value has valuation 1/9
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18]
+Using (a,j)= (1, 2)
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+---->Modification needed. original value: 1/9 extra factor: 1/18
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 1/3 error bound is 1/3
+-- Value has valuation 1/3
+---->Modification needed. original value: 2/9 extra factor: 1/6
+-- Value has valuation 1/18
+Current list of values: [1/9, 1/18, 1/18, 1/18, 1/3, 1/18, 1/9, 1/18, 1/18, 1/18, 1/3, 1/18]
+Failed: not enough accuracy.  There was a valuation of 1/3 and the error bound is 1/3
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  88 , component  0 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 3
+----------------------------------------
+working at level 3
+Error bound is 9/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+---->Modification needed. original value: 3/2 extra factor: 1/2
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+---->Modification needed. original value: 1 extra factor: 1/2
+-- Value has valuation 1/2
+Current list of values: [1, 1/2, 1, 1/2]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 3/2
+Using (a,j)= (0, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6]
+Using (a,j)= (1, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (2, 1)
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (3, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (4, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (5, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 7/6 extra factor: 1
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Using (a,j)= (6, 1)
+---->Modification needed. original value: 1/2 extra factor: 1/6
+-- Value has valuation 1/3
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6]
+Using (a,j)= (7, 1)
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+---->Modification needed. original value: 1/3 extra factor: 1/6
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6]
+Using (a,j)= (8, 1)
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+---->Modification needed. original value: 2/3 extra factor: 1/2
+-- Value has valuation 1/6
+Current list of values: [1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6, 1/3, 1/6, 1/6, 1/6, 1/6, 1/6]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+Working with twist  88 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  89 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1, 1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 5/6 error bound is 1/2
+-- Value has valuation 5/6
+***This is an error bound violation: value is 5/6 error bound is 1/2
+-- Value has valuation 5/6
+Current list of values: [1/3, 1/3, 1/3, 1/3, 5/6, 5/6]
+Failed: not enough accuracy.  There was a valuation of 5/6 and the error bound is 1/2
+Using (a,j)= (0, 2)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 5/6, 5/6, 1/3, 1/3]
+Using (a,j)= (1, 2)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 5/6, 5/6, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 5/6 error bound is 1/2
+-- Value has valuation 5/6
+***This is an error bound violation: value is 5/6 error bound is 1/2
+-- Value has valuation 5/6
+Current list of values: [1/3, 1/3, 1/3, 1/3, 5/6, 5/6, 1/3, 1/3, 1/3, 1/3, 5/6, 5/6]
+Failed: not enough accuracy.  There was a valuation of 5/6 and the error bound is 1/2
+----------------------------------------
+working at level 27
+Error bound is 1/6
+Using (a,j)= (0, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 1/9]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 1/9, 1/9, 1/9]
+Using (a,j)= (2, 1)
+***This is an error bound violation: value is 5/18 error bound is 1/6
+-- Value has valuation 5/18
+***This is an error bound violation: value is 5/18 error bound is 1/6
+-- Value has valuation 5/18
+Current list of values: [1/9, 1/9, 1/9, 1/9, 5/18, 5/18]
+Failed: not enough accuracy.  There was a valuation of 5/18 and the error bound is 1/6
+Using (a,j)= (0, 2)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 1/9, 1/9, 1/9, 5/18, 5/18, 1/9, 1/9]
+Using (a,j)= (1, 2)
+-- Value has valuation 1/9
+-- Value has valuation 1/9
+Current list of values: [1/9, 1/9, 1/9, 1/9, 5/18, 5/18, 1/9, 1/9, 1/9, 1/9]
+Using (a,j)= (2, 2)
+***This is an error bound violation: value is 5/18 error bound is 1/6
+-- Value has valuation 5/18
+***This is an error bound violation: value is 5/18 error bound is 1/6
+-- Value has valuation 5/18
+Current list of values: [1/9, 1/9, 1/9, 1/9, 5/18, 5/18, 1/9, 1/9, 1/9, 1/9, 5/18, 5/18]
+Failed: not enough accuracy.  There was a valuation of 5/18 and the error bound is 1/6
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  89 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1, 1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 2/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 2/3, 2/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (5, 1)
+-- Value has valuation 2/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3, 1/3, 1/3, 2/3, 2/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (8, 1)
+-- Value has valuation 2/3
+-- Value has valuation 2/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3, 1/3, 1/3, 2/3, 2/3, 1/3, 1/3, 1/3, 1/3, 2/3, 2/3]
+Passed! Max valuation is 2/3 < 1
+PASSED
+
+Working with twist  89 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 2
+----------------------------------------
+working at level 3
+Error bound is 3/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [1, 1, 1, 1]
+Failed: max val too high.  Max valuation is 1 >= 1
+----------------------------------------
+working at level 9
+Error bound is 1/2
+Using (a,j)= (0, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Passed! Max valuation is 1/3 < 1
+PASSED
+
+----------------------------------------
+Working with twist  92 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  92 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  97 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+Working with twist  97 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 1 because of FE so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  101 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  101 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 4
+----------------------------------------
+working at level 3
+Error bound is 2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 2 error bound is 2
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [2, 1]
+Failed: not enough accuracy.  There was a valuation of 2 and the error bound is 2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 3 error bound is 2
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [2, 1, 3, 1]
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 2
+----------------------------------------
+working at level 9
+Error bound is 2/3
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 2/3 error bound is 2/3
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3]
+Failed: not enough accuracy.  There was a valuation of 2/3 and the error bound is 2/3
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 2/3 error bound is 2/3
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 2/3, 1/3]
+Failed: not enough accuracy.  There was a valuation of 2/3 and the error bound is 2/3
+----------------------------------------
+working at level 27
+Error bound is 2/9
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 2/9 error bound is 2/9
+-- Value has valuation 2/9
+-- Value has valuation 1/9
+Current list of values: [2/9, 1/9]
+Failed: not enough accuracy.  There was a valuation of 2/9 and the error bound is 2/9
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 2/9 error bound is 2/9
+-- Value has valuation 2/9
+-- Value has valuation 1/9
+Current list of values: [2/9, 1/9, 2/9, 1/9]
+Failed: not enough accuracy.  There was a valuation of 2/9 and the error bound is 2/9
+Going to more accurate family.
+------------------------------------------------------------------------
+Working with twist  101 , component  0 using 31 moments
+..computing p-adic L-function
+done!
+--lambda = 4
+----------------------------------------
+working at level 3
+Error bound is 9/2
+Using (a,j)= (0, 1)
+-- Value has valuation 2
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [2, 1]
+Failed: max val too high.  Max valuation is 2 >= 1
+Using (a,j)= (0, 2)
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [2, 1, 3, 1]
+Failed: max val too high.  Max valuation is 3 >= 1
+----------------------------------------
+working at level 9
+Error bound is 3/2
+Using (a,j)= (0, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Passed! Max valuation is 2/3 < 1
+PASSED
+
+Working with twist  101 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  104 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+mu positive so probably not enough accuracy
+Working with twist  104 , component  0 using 20 moments
+..computing p-adic L-function
+done!
+--lambda = 4
+----------------------------------------
+working at level 3
+Error bound is 5/2
+Using (a,j)= (0, 1)
+***This is an error bound violation: value is 3 error bound is 5/2
+-- Value has valuation 3
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [3, 1]
+Failed: not enough accuracy.  There was a valuation of 3 and the error bound is 5/2
+Using (a,j)= (0, 2)
+***This is an error bound violation: value is 7/2 error bound is 5/2
+-- Value has valuation 7/2
+***Possible toroidal factor---aborting
+-- Value has valuation 1
+***Possible toroidal factor---aborting
+Current list of values: [3, 1, 7/2, 1]
+Failed: not enough accuracy.  There was a valuation of 7/2 and the error bound is 5/2
+----------------------------------------
+working at level 9
+Error bound is 5/6
+Using (a,j)= (0, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3]
+Using (a,j)= (1, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (2, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (3, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3]
+Using (a,j)= (4, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (5, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Using (a,j)= (6, 1)
+-- Value has valuation 2/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3]
+Using (a,j)= (7, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3]
+Using (a,j)= (8, 1)
+-- Value has valuation 1/3
+-- Value has valuation 1/3
+Current list of values: [2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3, 2/3, 1/3, 1/3, 1/3, 1/3, 1/3]
+Passed! Max valuation is 2/3 < 1
+PASSED
+
+Working with twist  104 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
+Working with twist  109 , component  0 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+Working with twist  109 , component  1 using 11 moments
+..computing p-adic L-function
+done!
+--lambda = 0 so nothing to check here
+PASSED
+
+----------------------------------------
