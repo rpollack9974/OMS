@@ -34,10 +34,11 @@ def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true,write_t
 			L = Phis.pLfunction(r=i,quad_twist=D)
 			if verbose:
 				print("done!")
-			d = S(L).degree()
+			d = true_degree(L,S)
 			mu = mu_inv(L.substitute(w=1)/p^Phis.valuation(),p)
 			if mu > 0:
 				print("mu positive so probably not enough accuracy")
+				print("------------------------------------------------------------------------")
 				num += 1
 			else:
 				lam = lambda_inv(L.substitute(w=1)/p^Phis.valuation(),p)
@@ -136,7 +137,7 @@ def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true,write_t
 								print("PASSED")
 								if write_to_file:
 									o = open(filename,'a')
-									o.write(str(D)+": component="+str(i)+" PASSED (lambda ="+str(lam)+")\n")
+									o.write(str(D)+": component="+str(i)+" PASSED (lambda="+str(lam)+")\n")
 									o.close()	
 
 								done = true
@@ -160,6 +161,13 @@ def analyze_pLs(D,Phis_list,cyc_comp=None,full_search=false,verbose=true,write_t
 				o.close()
 		print("")
 	return "done"
+
+def true_degree(F,S):
+	for b in range(S(F).degree()+1):
+		v = [F[a][b-a].precision_absolute()-(b-a) for a in range(b+1)]
+		if min(v) == 0 or max(v) == Infinity:
+			return b
+	return F.degree()+1
 
 def run_me(filename,minD,maxD,Phis_list,level,step=1,log=true,full_search=true):
 	old_stdout = sys.stdout
