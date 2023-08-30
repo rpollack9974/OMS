@@ -139,13 +139,23 @@ class modsym_symk(modsym):
 		v = P.padded_list()
 		while len(v) < k+1:
 			v += [0]
-		return sum([v[i] * self.eval(D).coef(i) / binomial(k,i) for i in range(k+1)])
+		phiD = self.eval(D)
+		return sum([v[i] * phiD.coef(i) / binomial(k,i) for i in range(k+1)])
 
 	def lamb(self,P,a,m):
 		"""returns lambda(f,P,a,m) as in MTT"""
 		z = P.parent().gen()
 		P = P.substitute(m*z+a)
 		return self.int_against_poly(P,a,m)
+
+	def lamb_twist(self,r,b,n,twist):
+		"""returns lambda(f_chi,(mz)^r,b,n) as in MTT where f_chi is quad twist by twist"""
+		R.<z>=PolynomialRing(QQ)
+		ans = 0 
+		for a in range(abs(twist)):
+			if gcd(a,twist)==1:
+				ans += kronecker_symbol(twist,a) * self.lamb(z^r,twist*b-n*a,twist*n)
+		return ans
 
 	def MazurTate(self,p,n,acc,h=0,verbose=false):
 		assert p>2,"p=2 not coded"
