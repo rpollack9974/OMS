@@ -78,10 +78,19 @@ def delta(f,n,r,p,M,twist):
 	ans = 0
 	for a in range(n):
 		if gcd(a,n)==1:
-			print(a,n)
+			#print(a,n)
 			ans += f.lamb_twist(r-1,a,n,twist) * prod([L[ell][a%ell] for ell in ells])
 
 	return ans % (p^m)
+
+def form_symbol():
+	M = ModularSymbols(5,4).cuspidal_subspace()
+	Mp = M.plus_submodule()
+	Mm = M.minus_submodule()
+	phip = form_modsym_from_decomposition(Mp)
+	phim = form_modsym_from_decomposition(Mm)
+	phi = phip + phim
+	return phi,Mm
 
 def do_it(M,p,twist):
 	Mp = M.plus_submodule()
@@ -99,3 +108,17 @@ def do_it(M,p,twist):
 	n = ell1 * ell2
 	print("Using the primes",ell1,ell2)
 	print("delta_",n,":",delta(phi,n,k/2,p,Mp,twist))
+
+def compute_deltas(Q):
+	phi,M = form_symbol()
+	qs = []
+	q = -1
+	while q < Q:
+		q = next_good_prime(M,3,1,q=q)
+		qs += [q]
+	for ell1 in qs:
+		for ell2 in qs:
+			if ell1 != ell2:
+				d = delta(phi,ell1*ell2,2,3,M,61)
+				print((ell1,ell2),d)
+	return "Done"
