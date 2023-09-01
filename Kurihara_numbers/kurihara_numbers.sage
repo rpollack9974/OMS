@@ -116,9 +116,11 @@ def compute_deltas(Q):
 	while q < Q:
 		q = next_good_prime(M,3,1,q=q)
 		qs += [q]
+	print("Good primes:",qs)
 	for ell1 in qs:
 		for ell2 in qs:
 			if ell1 != ell2:
+				print("Working on",(ell1,ell2))
 				d = delta(phi,ell1*ell2,2,3,M,61)
 				print((ell1,ell2),d)
 	return "Done"
