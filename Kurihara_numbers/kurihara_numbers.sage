@@ -1,14 +1,14 @@
-#f is a 1-dimensional subspace of ModularSymbols (so defined over Q)
-def ev(f,ell):
-	S = f.q_eigenform(ell+1)
+#A is a 1-dimensional subspace of ModularSymbols (so defined over Q)
+def ev(A,ell):
+	S = A.q_eigenform(ell+1)
 	return S[ell]
 
-def next_good_prime(f,p,m,q=-1):
+def next_good_prime(A,p,m,q=-1):
 	q = next_prime(q)
-	aq = ev(f,q)
-	while q % (p^m) != 1 or (aq - 2) % (p^m) != 0:
+	aq = ev(A,q)
+	while q % (p^m) != 1 or (aq - 2) % (p^m) != 0 or A.level()%q == 0:
 		q = next_prime(q)
-		aq = ev(f,q)
+		aq = ev(A,q)
 
 	return q
 
@@ -58,7 +58,7 @@ def precompute(A,m):
 	return modsym_symk(N,v,manin)
 
 
-def delta(f,n,r,p,M,twist):
+def delta(phi,n,r,p,A,twist):
 	assert is_squarefree(n), "need square-free n"
 #	assert is_fundamental_discriminant(twist) or twist==1, "need fund disc"
 
@@ -66,7 +66,7 @@ def delta(f,n,r,p,M,twist):
 	ells = [t[0] for t in ells]
 
 	m_prime = min([(ell-1).valuation(p) for ell in ells])
-	m_FC = min([(kronecker_symbol(twist,ell)*ev(M,ell)-2).valuation(p) for ell in ells])
+	m_FC = min([(kronecker_symbol(twist,ell)*ev(A,ell)-2).valuation(p) for ell in ells])
 
 	m = min(m_prime,m_FC)
 
@@ -79,7 +79,7 @@ def delta(f,n,r,p,M,twist):
 	for a in range(n):
 		if gcd(a,n)==1:
 			#print(a,n)
-			ans += f.lamb_twist(r-1,a,n,twist) * prod([L[ell][a%ell] for ell in ells])
+			ans += phi.lamb_twist(r-1,a,n,twist) * prod([L[ell][a%ell] for ell in ells])
 
 	return ans % (p^m)
 
@@ -109,14 +109,19 @@ def do_it(M,p,twist):
 	print("Using the primes",ell1,ell2)
 	print("delta_",n,":",delta(phi,n,k/2,p,Mp,twist))
 
-def compute_deltas(Q):
-	phi,M = form_symbol()
+def compute_deltas(M,Q):
+	phi = form_modsym_from_decomposition(M)
 	qs = []
 	q = -1
 	while q < Q:
 		q = next_good_prime(M,3,1,q=q)
 		qs += [q]
 	print("Good primes:",qs)
+	for ell in qs:
+		print("Working on",ell)
+		d = delta(phi,ell,2,3,M,61)
+		print(ell1,":",d)
+
 	for ell1 in qs:
 		for ell2 in qs:
 			if ell1 != ell2:
