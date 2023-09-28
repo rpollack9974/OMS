@@ -13,10 +13,10 @@ class modsym_symk(modsym):
 	def chi(self):
 		return self.data[0].chi
 
-	def valuation(self,p):
+	def valuation(self,p,remove_binom=false):
 		"""returns the valuation of self at p -- i.e. the exponent of the largest power of p which divides all of the coefficients of all values of self"""
 		v=self.data
-		return min([v[j].valuation(p) for j in range(0,len(v))])
+		return min([v[j].valuation(p,remove_binom=remove_binom) for j in range(0,len(v))])
 
 	def is_zero(self):
 		j = 0
@@ -106,7 +106,7 @@ class modsym_symk(modsym):
 			selfq = self.hecke(q)
 			r = 0
 			while self.data[r].is_zero():
-				print(r,self.data[r],self.data[r].is_zero())
+				#print(r,self.data[r],self.data[r].is_zero())
 				r += 1
 			c = 0
 			while self.data[r].coef(c) == 0:
@@ -354,6 +354,30 @@ class modsym_symk(modsym):
 		new=modsym_dist(self.level(),ans,self.manin)
 		return new.hecke(p).scale(1/ap).normalize()
 
+	#returns mu_f(a+p^nZp) with accuracy p^M
+	def measure(self,a,p,n,ap,M,alpha=None):
+		"""returns the value of the measure mu_f(a+p^nZp)"""
+#		assert ap.valuation(p)==0,"Only coded in ordinary case"
+
+		if alpha == None:
+			R.<x>=PolynomialRing(pAdicField(p,M))
+			rs = (x^2-ap*x+p).roots()
+			if rs[0][0].valuation() == 0:
+				alpha = QQ(rs[0][0])
+			else:
+				alpha = QQ(rs[1][0])
+
+		return 1/alpha^n * self.eval(Matrix(2,2,[a,1,p^n,0])).coef(0) - 1/alpha^(n+1) * self.eval(Matrix(2,2,[a,1,p^(n-1),0])).coef(0)
+
+	def pLfunc_val(self,c,val,p,ap,n,M,alpha=None):
+		"""returns the value of L_p(omega^c,T) at T=val aroudn mod p^n"""
+		ans = 0
+		for a in range(1,p):
+			for j in range(p^(n-1)):
+				ans += teich(a,p,M)^c * (val+1)^j * self.measure(teich(a,p,M)*(1+p)^j,p,n,ap,M,alpha=alpha)
+
+		return ans
+
 
 def form_modsym_from_elliptic_curve(E):
 	"""returns the modular symbol (in the sense of Stevens) associated to E"""
@@ -566,3 +590,5 @@ def do_it():
 			coef=sum([t[a]*w[a] for a in range(len(t))])
 			ans=ans+X^i*Y^(k-2-i)*binomial(k-2,i)*coef
 		v=v+[symk(k-2,poly=ans,chi=chi,base_ring=Qp)]
+
+

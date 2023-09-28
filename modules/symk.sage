@@ -73,25 +73,31 @@ Inputs:
 			j = j + 1
 		return ans
 
-	def valuation(self,p):
+	def valuation(self,p,remove_binom=false):
 		"""returns the exponent of the highest power of p which divides all coefficients of self"""
-		#assert self.base_ring==QQ, "need to be working over Q in valuation"
 		k=self.weight
 		v=self.vars()
 		X=v[0]
 		Y=v[1]
 		v=[]
-#		print "base_ring",self.base_ring()
-#		print "self",self
-#		print "coef",[self.poly.coefficient(X^j*Y^(k-j)) for j in range(k+1)]
-#		print "parents1",[self.poly.parent() for j in range(k+1)]
-#		print "parents2",[self.poly.coefficient(X^j*Y^(k-j)).parent() for j in range(k+1)]
-#		print "val",[valuation(self.poly.coefficient(X^j*Y^(k-j)),p) for j in range(k+1)]
+#		for j in range(k+1):
+#			if self.base_ring() == QQ:
+#				v=v+[valuation(QQ(self.poly.monomial_coefficient(X^j*Y^(k-j))),p)]
+#			else:
+#				v=v+[valuation(self.poly.monomial_coefficient(X^j*Y^(k-j)),p)]
 		for j in range(k+1):
-			if self.base_ring() == QQ:
-				v=v+[valuation(QQ(self.poly.monomial_coefficient(X^j*Y^(k-j))),p)]
-			else:
-				v=v+[valuation(self.poly.monomial_coefficient(X^j*Y^(k-j)),p)]
+			if type(p) == sage.rings.integer.Integer:
+				if remove_binom:
+					dif = binomial(k,j).valuation(p)
+				else:
+					dif = 0
+				v=v+[valuation(QQ(self.poly.monomial_coefficient(X^j*Y^(k-j))),p)-dif]
+			else: #should be a valuation 
+				if remove_binom:
+					dif = binomial(k,j).valuation(p.p())
+				else:
+					dif = 0
+				v=v+[p(self.poly.monomial_coefficient(X^j*Y^(k-j)))-dif]
 		return min(v)
 		
 	def normalize(self):
