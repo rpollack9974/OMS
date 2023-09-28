@@ -6,7 +6,7 @@ def ev(A,ell):
 
 # A is a simple space of modular symbols
 # w is a valuation (over some p) defined over the field of defn of form cutting out A
-def good_primes(A,w,m,max):
+def good_primes(A,w,m,max,D):
 	"""returns the primes ell< max such that w(ell - 1) >= m and w(a_ell(A)-2)>=m"""
 	N = A.level()
 	p = w.p()
@@ -18,7 +18,7 @@ def good_primes(A,w,m,max):
 
 	while q < max:
 		if w(q - 1) >= m/e and N*p % q != 0:
-			aq = ev(A,q)
+			aq = ev(A,q) * kronecker_symbol(D,q)
 #			print(q,aq,w(q-1),w(aq-1-q^(k-1)))
 			if w(aq-1-q^(k-1)) >= m/e:
 				ans += [q]
@@ -51,17 +51,17 @@ def log_table(ell):
 		d[a] = e
 	return d
 
-# Computes int_{a/m}^\infty z^j f(z) dz (normalized) for all 1 <= a < m and 0<=j<=r
-def precompute_integrals(A,m,r,magic=-1,ints={}):
-	k = A.weight()
-	M = A.ambient_module()
-	if magic == -1:
-		magic = A.dual_eigenvector()
+# # Computes int_{a/m}^\infty z^j f(z) dz (normalized) for all 1 <= a < m and 0<=j<=r
+# def precompute_integrals(A,m,r,magic=-1):
+# 	k = A.weight()
+# 	M = A.ambient_module()
+# 	if magic == -1:
+# 		magic = A.dual_eigenvector()
 
-	for j in range(r+1):
-		for a in range(m):
-			if not (a,m,j) in ints.keys():
-				ints[(a,m,j)] = magic.dot_product(M.modular_symbol([j,oo,-a/m]).element())
+# 	for j in range(r+1):
+# 		for a in range(m):
+# 			if not (a,m,j) in ints.keys():
+# 				ints[(a,m,j)] = magic.dot_product(M.modular_symbol([j,oo,-a/m]).element())
 
 def Phi(A,j,r,magic=-1):
 	if magic==-1:
@@ -75,21 +75,21 @@ def lamb_slow(A,j,b,n):
 	return sum([binomial(j,i) * n^i * b^(j-i) * Phi(A,i,-b/n) for i in range(j+1)])
 
 ##returns int_infty^{b/n} f(z) z^i dz
-def period_integral(A,b,n,i,magic,ints={}):
-	if not (b,n,i) in ints.keys():
-		M = A.ambient_module()
-		ints[(b,n,i)] = magic.dot_product(M.modular_symbol([i,oo,-b/n]).element())	
-	
-	return ints[(b,n,i)]
+def period_integral(A,b,n,i,magic):
+	# if not (b,n,i) in ints.keys():
+	# 	M = A.ambient_module()
+	# 	ints[(b,n,i)] = magic.dot_product(M.modular_symbol([i,oo,-b/n]).element())	
+	M = A.ambient_module()
+
+	return magic.dot_product(M.modular_symbol([i,oo,-b/n]).element())	
 
 def lamb(A,j,b,n,magic=-1):
-	b = b % n
 	if magic == -1:
 		magic = A.dual_eigenvector()
 
 	return sum([binomial(j,i) * n^i * b^(j-i) * period_integral(A,b,n,i,magic) for i in range(j+1)])
 
-def lamb_twist(A,j,b,n,D,magic=-1,ints={}):
+def lamb_twist(A,j,b,n,D,magic=-1):
 	assert is_fundamental_discriminant(D) or D==1,"Not a good twist"
 
 	if magic == -1:
@@ -98,11 +98,11 @@ def lamb_twist(A,j,b,n,D,magic=-1,ints={}):
 	ans = 0
 	for a in range(D):
 		c = (D*b - n*a) % (n*D)
-		ans += kronecker_symbol(D,a) * sum([binomial(j,i) * (n*D)^i * c^(j-i) * period_integral(A,c,n*D,i,magic,ints=ints) for i in range(j+1)])
+		ans += kronecker_symbol(D,a) * sum([binomial(j,i) * (n*D)^i * c^(j-i) * period_integral(A,c,n*D,i,magic) for i in range(j+1)])
 
 	return ans
 
-def delta(A,n,D,magic=-1,ints={}):
+def delta(A,n,D,magic=-1):
 	assert is_squarefree(n), "need square-free n"
 	assert is_fundamental_discriminant(D) or D==1, "need fund disc"
 
@@ -125,11 +125,11 @@ def delta(A,n,D,magic=-1,ints={}):
 		if gcd(a,n)==1:
 #			print(a,n)
 			log_term = prod([L[ell][a%ell] for ell in ells])
-			ans += lamb_twist(A,r-1,a,n,D,magic=magic,ints=ints) * log_term
+			ans += lamb_twist(A,r-1,a,n,D,magic=magic) * log_term
 
 	return ans
 
-def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,vLval="",ints={}):
+def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,vLval=""):
 	if magic == -1:
 		magic = A.dual_eigenvector()
 
@@ -149,7 +149,7 @@ def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,
 
 
 
-	qs = good_primes(A,w,depth,max_ell)
+	qs = good_primes(A,w,depth,max_ell,D)
 	if filename != -1:
 		printwritelist(filename,["Good primes:",qs])	
 	print("Good primes:",qs)
@@ -173,7 +173,7 @@ def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,
 		for ell2 in qs:
 			if ell1 < ell2:
 				#print("Working on",(ell1,ell2))
-				dn = delta(A,ell1*ell2,D,magic=magic,ints=ints) * pi^period_correction
+				dn = delta(A,ell1*ell2,D,magic=magic) * pi^period_correction
 				vdn = w(dn)
 				m = In(A,w,ell1*ell2,D)
 				if vdn > m:
@@ -205,10 +205,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=
 	M = ModularSymbols(N,k,sign).cuspidal_subspace()
 	As = M.decomposition()
 	print("-there are",len(As),"Galois conjugacy classes of forms")
-	del_ints = false
 	for A in As:
-		ints = {}
-		del_ints = true
 		print("Working on GC class",As.index(A)+1,"out of",len(As))
 		print(A)
 		magic = A.dual_eigenvector()
@@ -216,7 +213,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=
 		phi = form_modsym_from_decomposition(A)
 		for D in Ds:
 			print("    Twisting by",D)
-			Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic,ints=ints)
+			Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic)
 			if Lval !=0 or not skip_odd_rank:
 				for p in ps:
 					if N % p != 0 and D % p != 0:
@@ -237,7 +234,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=
 								print("       --The central L-value has valuation:",(w(Lval)-phi.valuation(w,remove_binom=true))*e)
 								if Lval != 0 or not skip_odd_rank:
 									if w(Lval) - phi.valuation(w,remove_binom=true) > 0 or not skip_unit_Lval:
-										compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename,ints=ints)
+										compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
 									else:
 										print("       --Skipping because L-value is a unit")
 							else:
@@ -248,8 +245,6 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=
 			print()	
 
 	del M
-	if del_ints:
-		del ints 
 
 def eisenstein(A,w,max_check=50):
 	N = A.level()
