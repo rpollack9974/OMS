@@ -39,6 +39,7 @@ def In(A,w,n,D):
 	m_FC = min([w(kronecker_symbol(D,ell) * ev(A,ell)-1-ell^(k-1)) * e for ell in ells])
 
 	m = min(m_prime,m_FC)
+	assert m>0,"Not a good prime being used!"
 
 	return m
 
@@ -176,7 +177,7 @@ def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,
 				dn = delta(A,ell1*ell2,D,magic=magic) * pi^period_correction
 				vdn = w(dn)
 				m = In(A,w,ell1*ell2,D)
-				if vdn > m:
+				if vdn >= m:
 					print((ell1,ell2),": vanish")
 					if filename != -1:
 						printwritelist(filename,[(ell1,ell2),": vanish"])
