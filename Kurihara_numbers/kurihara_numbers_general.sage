@@ -2,7 +2,12 @@
 def ev(A,ell):
 	M = A.ambient_module()
 	vec = A.dual_eigenvector()
-	return (M.hecke_matrix(ell)*vec)[0]
+	v = M.hecke_matrix(ell)*vec
+
+	a = 0
+	while vec[a] == 0:
+		a += 1
+	return v[a]/vec[a]
 
 # A is a simple space of modular symbols
 # w is a valuation (over some p) defined over the field of defn of form cutting out A
@@ -25,6 +30,30 @@ def good_primes(A,w,m,max,D):
 		q = next_prime(q)
 
 	return ans
+
+def next_prime_1_mod_pr(q,p,r):
+	q = next_prime(q)
+	while (q-1).valuation(p) < r:
+		q = next_prime(q)
+
+	return q
+
+def next_good_prime(q,A,w,m,D):
+	"""returns the next good prime ell< max such that w(ell - 1) >= m and w(a_ell(A)-2)>=m"""
+	N = A.level()
+	p = w.p()
+	pi = w.uniformizer()
+	e = 1/w(pi)
+	ans = []
+	k = A.weight()
+	q = next_prime_1_mod_pr(q,p,m/e)
+
+	aq = ev(A,q) * kronecker_symbol(D,q)
+	while w(aq-1-q^(k-1)) < m/e or N*p % q == 0:
+		q = next_prime_1_mod_pr(q,p,m/e)
+		aq = ev(A,q) * kronecker_symbol(D,q)
+
+	return q
 
 def In(A,w,n,D):
 	p = w.p()
@@ -149,8 +178,8 @@ def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,
 		printwritelist(filename,["Valuation of central L-value:",vLval])
 
 
-
 	qs = good_primes(A,w,depth,max_ell,D)
+
 	if filename != -1:
 		printwritelist(filename,["Good primes:",qs])	
 	print("Good primes:",qs)
@@ -198,12 +227,71 @@ def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,
 
 	return "Done"
 
-def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=true,skip_unit_Lval=true,skip_Eisen=true,filename=-1):
+def find_nonzero_delta(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,vLval=""):
+	if magic == -1:
+		magic = A.dual_eigenvector()
+
+	pi = w.uniformizer()
+	kpi = w.residue_field()
+
+	e = 1/w(pi)
+	f = kpi.degree()
+	if filename != -1:
+		printwritelist(filename,[A])
+		printwritelist(filename,["p =",w.p(),"valuation =",w])
+		printwritelist(filename,["e =",e,"f =",f])
+		if D > 1:
+			printwritelist(filename,["Twisting by quadratic character of conductor",D])
+	if vLval != "" and filename != -1:
+		printwritelist(filename,["Valuation of central L-value:",vLval])
+
+
+	ell1 = next_good_prime(1,A,w,depth,D)
+	ell2 = next_good_prime(ell1,A,w,depth,D)
+
+	ells = [ell1,ell2]
+
+	while ells[-1] < max_ell:
+		for a in range(len(ells)-1):
+			dn = delta(A,ells[a]*ells[-1],D,magic=magic) * pi^period_correction
+			vdn = w(dn)
+			m = In(A,w,ells[a]*ells[-1],D)
+			if vdn >= m:
+				print((ells[a],ells[-1]),": vanish")
+				if filename != -1:
+					printwritelist(filename,[(ells[a],ells[-1]),": vanish"])
+			else:
+				print((ells[a],ells[-1]),": non-vanishing")
+				if filename != -1:
+					printwritelist(filename,[(ells[a],ells[-1]),": non-vanish"])
+					printwritelist(filename,[""])
+				return "Done"
+		ell_new = next_good_prime(ells[-1],A,w,depth,D)
+		ells = ells + [ell_new]
+
+
+	# for ell in qs:
+	# 	#print("Working on",ell)
+	# 	dn = delta(A,ell,D,magic=magic) * pi^period_correction
+	# 	vdn = w(dn)
+	# 	m = In(A,w,D)
+	# 	if vdn > m:
+	# 		print(ell,": vanish")
+	# 	else:
+	# 		print(ell,": non-vanishing")
+
+	if filename != -1:
+		printwritelist(filename,["**********************Failed to find non-zero delta**********************"])
+		printwritelist(filename,[""])
+
+	return "Done"
+
+def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=true,skip_unit_Lval=true,skip_Eisen=true,filename=-1,just_nonzero=true,newforms=true):
 	if isinstance(Ds,sage.rings.integer.Integer):
 		Ds = [Ds]
 	print("Working on level",N,"and weight",k)
 	sign = (-1)^((k+2)/2)
-	M = ModularSymbols(N,k,sign).cuspidal_subspace()
+	M = ModularSymbols(N,k,sign).cuspidal_subspace().new_subspace()
 	As = M.decomposition()
 	print("-there are",len(As),"Galois conjugacy classes of forms")
 	for A in As:
@@ -235,7 +323,10 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=
 								print("       --The central L-value has valuation:",(w(Lval)-phi.valuation(w,remove_binom=true))*e)
 								if Lval != 0 or not skip_odd_rank:
 									if w(Lval) - phi.valuation(w,remove_binom=true) > 0 or not skip_unit_Lval:
-										compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+										if not just_nonzero:
+											compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+										else:
+											find_nonzero_delta(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
 									else:
 										print("       --Skipping because L-value is a unit")
 							else:
