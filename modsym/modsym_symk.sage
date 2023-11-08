@@ -119,6 +119,7 @@ class modsym_symk(modsym):
 		selfq=self.hecke(q)
 		r=0
 		while ((self.data[r].coef(0))%(p)==0) and (r<=self.ngens()):
+			print(r)
 			r=r+1
 		if r>self.ngens():
 			#all coefficients of Y^k are zero which I think forces it not to be eigen
@@ -236,8 +237,8 @@ class modsym_symk(modsym):
 		## t now should be sum Phi(D_i) | (gamma_i - 1) - sum Phi(D'_i) - sum Phi(D''_i)
 		## (Here I'm using the opposite sign convention of [PS1] regarding D'_i and D''_i)
 
-		print('Total measure=',t.normalize().moment(0))
-#		assert t.normalize().moment(0) == 0, "Not total measure 0 in lifting OMS" 
+#		print('Total measure=',t.normalize().moment(0))
+		assert t.normalize().moment(0) == 0, "Not total measure 0 in lifting OMS" 
 
 		mu = t.solve_diff_eqn()
 
@@ -269,7 +270,8 @@ class modsym_symk(modsym):
 			e=(1-ap).valuation(p)
 			if e>0:
 				Phi=Phi.change_precision(M-e)
-				print("change precision to",M-e)
+				if verbose:
+					print("change precision to",M-e)
 		else:
 			q=2
 			v=self.is_Tq_eigen_mod(q,p,M)
@@ -369,12 +371,31 @@ class modsym_symk(modsym):
 
 		return 1/alpha^n * self.eval(Matrix(2,2,[a,1,p^n,0])).coef(0) - 1/alpha^(n+1) * self.eval(Matrix(2,2,[a,1,p^(n-1),0])).coef(0)
 
-	def pLfunc_val(self,c,val,p,ap,n,M,alpha=None):
-		"""returns the value of L_p(omega^c,T) at T=val aroudn mod p^n"""
+	def measure_twist(self,a,p,n,ap,M,D,alpha=None):
+		"""returns the value of the measure mu_f(a+p^nZp)"""
+#		assert ap.valuation(p)==0,"Only coded in ordinary case"
+
+		if alpha == None:
+			R.<x>=PolynomialRing(pAdicField(p,M))
+			rs = (x^2-ap*x+p).roots()
+			if rs[0][0].valuation() == 0:
+				alpha = QQ(rs[0][0])
+			else:
+				alpha = QQ(rs[1][0])
+
+		ans = 0
+
+		for b in range(abs(D)):
+			ans += kronecker_symbol(D,b) * 1/alpha^n * self.eval(Matrix(2,2,[1,b/abs(D),0,1])*Matrix(2,2,[a,1,p^n,0])).coef(0) - 1/alpha^(n+1) * self.eval(Matrix(2,2,[1,b/abs(D),0,1])*Matrix(2,2,[a,1,p^(n-1),0])).coef(0)
+
+		return ans
+
+	def pLfunc_val(self,c,val,p,ap,n,M,D=1,alpha=None):
+		"""returns the value of L_p(omega^c,T) at T=val around mod p^n"""
 		ans = 0
 		for a in range(1,p):
 			for j in range(p^(n-1)):
-				ans += teich(a,p,M)^c * (val+1)^j * self.measure(teich(a,p,M)*(1+p)^j,p,n,ap,M,alpha=alpha)
+				ans += teich(a,p,M)^c * (val+1)^j * self.measure_twist(teich(a,p,M)*(1+p)^j,p,n,ap,M,D,alpha=alpha)
 
 		return ans
 

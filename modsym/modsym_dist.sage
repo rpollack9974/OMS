@@ -21,7 +21,7 @@ class modsym_dist(modsym):
 		return ans.normalize()
 
 	def specialize(self):
-		"""returns the underlying classical symbol of weight k -- i.e. applies the canonical map D_k --> Sym^k to all values of self"""
+		"""returns the underlying classical symbol of weight k -- i.e. apfies the canonical map D_k --> Sym^k to all values of self"""
 		v=[]
 		for j in range(0,len(self.data)):
 			v=v+[self.data[j].specialize()]
@@ -177,7 +177,7 @@ class modsym_dist(modsym):
 #	def check_loop(self):
 #		return self.ms().check_loop().normalize()
 
-	def is_Tq_eigen(self,q):
+	def is_Tq_eigen(self,q,verbose=false):
 		p = self.data[0].p
 		M = self.data[0].num_moments()
 
@@ -193,12 +193,14 @@ class modsym_dist(modsym):
 				else:
 					done = True
 		if done:
-			print("The symbol is 0")
+			if verbose:
+				print("The symbol is 0")
 			return 0
 		else:
 			Phiq = self.hecke(q)
 			c = Phiq.data[a].moment(m)/self.data[a].moment(m)
-			print(Phiq - self.scale(c))
+			if verbose:
+				print(Phiq - self.scale(c))
 			return c % (p^(M-m-self.valuation())),(Phiq-self.scale(c)).valuation()
 		
 	def vector_of_total_measures(self):
