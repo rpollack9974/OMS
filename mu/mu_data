@@ -1,0 +1,219 @@
+Trying (N,p,k) = 11 5 2
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1]
+lambdas = [0, 0]
+Passed
+
+
+Trying (N,p,k) = 23 11 2
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1]
+lambdas = [0, 1, 0, 0, 1]
+Passed
+
+
+Trying (N,p,k) = 23 11 4
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1]
+lambdas = [0, 0, 1, 0, 1]
+Passed
+
+
+Trying (N,p,k) = 23 11 6
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 1, 1]
+Passed
+
+
+Trying (N,p,k) = 23 11 8
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 0, 2]
+Passed
+
+
+Trying (N,p,k) = 29 7 2
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1]
+lambdas = [0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 29 7 4
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1]
+lambdas = [0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 31 5 2
+THIS IS A NON-GORENSTEIN EXAMPLE!!!
+Goren : False
+Rank 1 : False
+U_p-1 gen : False
+Regular : True
+FAILED --- no eisenstein symbols found
+
+
+Trying (N,p,k) = 41 5 2
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1]
+lambdas = [0, 0]
+Passed
+
+
+Trying (N,p,k) = 43 7 2
+THIS IS A NON-GORENSTEIN EXAMPLE!!!
+Goren : False
+Rank 1 : True
+U_p-1 gen : False
+Regular : True
+v_p(a_p-1) : 2
+FAILED!!!!!!!!!!!!!!!!!!!!!!!!! for j = 2
+FAILED!!!!!!!!!!!!!!!!!!!!!!!!! for j = 4
+mus = [1, 0, 0]
+lambdas = [0, 0, 0]
+FAILED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+Trying (N,p,k) = 43 7 4
+Goren : True
+Rank 1 : True
+U_p-1 gen : False
+Regular : True
+v_p(a_p-1) : 2
+mus = [1, 1, 1]
+lambdas = [1, 1, 0]
+Passed
+
+
+Trying (N,p,k) = 47 23 2
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 47 23 4
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 47 23 6
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 47 23 8
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 47 23 10
+Goren : True
+Rank 1 : False
+U_p-1 gen : True
+Regular : True
+FAILED --- no eisenstein symbols found
+
+
+Trying (N,p,k) = 47 23 12
+Goren : True
+Rank 1 : False
+U_p-1 gen : True
+Regular : True
+FAILED --- no eisenstein symbols found
+
+
+Trying (N,p,k) = 47 23 14
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 47 23 16
+Goren : True
+Rank 1 : False
+U_p-1 gen : True
+Regular : True
+FAILED --- no eisenstein symbols found
+
+
+Trying (N,p,k) = 47 23 18
+Goren : True
+Rank 1 : True
+U_p-1 gen : True
+Regular : True
+v_p(a_p-1) : 1
+mus = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+lambdas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Passed
+
+
+Trying (N,p,k) = 47 23 20
+Goren : True
+Rank 1 : False
+U_p-1 gen : True
+Regular : True
+FAILED --- no eisenstein symbols found
+
