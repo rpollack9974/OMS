@@ -317,22 +317,27 @@ class modsym_symk(modsym):
 			v[j].chi = compose(psi,v[j].chi)
 		return modsym_symk(self.level(),v,self.manin)
 
-	def coerce_to_Qp(self,p,M):
+	def coerce_to_Qp(self,p,M,verbose=false):
 		"""If K is the base_ring of self, this function takes all maps K-->Q_p and applies them to self return a vector of <modular symbol,map:K-->Q_p> as map varies over all such maps.  M is the accuracy"""
 		K=self.base_ring()
-		f=K.defining_polynomial()	
-		R.<x>=PolynomialRing(pAdicField(p,M+10))
-		v=R(f).roots()
-		if len(v)==0:
-			print("No coercion possible -- no prime over p has degree 1")
-			return []
+		if K == QQ:
+			i = QQ.hom(pAdicField(p,M))
+			return [[self.map(i),i]]
 		else:
-			ans=[]
-			for j in range(len(v)):
-				root=v[j][0]
-				psi=K.hom([root],pAdicField(p,M))
-				ans=ans+[[self.map(psi),psi]]
-		return ans
+			f=K.defining_polynomial()	
+			R.<x>=PolynomialRing(pAdicField(p,M+10))
+			v=R(f).roots()
+			if len(v)==0:
+				if verbose:
+					print("No coercion possible -- no prime over p has degree 1")
+				return []
+			else:
+				ans=[]
+				for j in range(len(v)):
+					root=v[j][0]
+					psi=K.hom([root],pAdicField(p,M))
+					ans=ans+[[self.map(psi),psi]]
+			return ans
 
 	def coerce_via_map(self,psi):
 		"""If K is the base_ring of self, this function takes all maps K--> L and applies them to self return a vector of <modular symbol,map:K-->Q_p> as map varies over all such maps.  M is the accuracy"""
