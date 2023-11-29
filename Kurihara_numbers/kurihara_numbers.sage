@@ -1,16 +1,46 @@
 #A is a 1-dimensional subspace of ModularSymbols (so defined over Q)
 def ev(A,ell):
-	S = A.q_eigenform(ell+1)
-	return S[ell]
+	M = A.ambient_module()
+	vec = A.dual_eigenvector()
+	return (M.hecke_matrix(ell)*vec)[0]
 
-def next_good_prime(A,p,m,q=-1):
-	q = next_prime(q)
-	aq = ev(A,q)
-	while q % (p^m) != 1 or (aq - 2) % (p^m) != 0 or A.level()%q == 0:
+# A is a simple space of modular symbols
+# w is a valuation (over some p) defined over the field of defn of form cutting out A
+def good_primes(A,w,m,max):
+	"""returns the primes ell< max such that w(ell - 1) >= m and w(a_ell(A)-2)>=m"""
+	N = A.level()
+	p = w.p()
+	pi = w.uniformizer()
+	e = 1/w(pi)
+	q = 2
+	ans = []
+	k = A.weight()
+
+	while q < max:
+		if w(q - 1) >= m/e and N*p % q != 0:
+			aq = ev(A,q)
+#			print(q,aq,w(q-1),w(aq-1-q^(k-1)))
+			if w(aq-1-q^(k-1)) >= m/e:
+				ans += [q]
 		q = next_prime(q)
-		aq = ev(A,q)
 
-	return q
+	return ans
+
+def In(A,w,n,D):
+	p = w.p()
+	pi = w.uniformizer()
+	e = 1/w(pi)
+	k = A.weight()
+
+	ells = factor(n)
+	ells = [t[0] for t in ells]
+
+	m_prime = min([w(ell-1)*e for ell in ells])
+	m_FC = min([w(kronecker_symbol(D,ell) * ev(A,ell)-1-ell^(k-1)) * e for ell in ells])
+
+	m = min(m_prime,m_FC)
+
+	return m
 
 def log_table(ell):
 	F = Integers(ell)
@@ -21,67 +51,232 @@ def log_table(ell):
 		d[a] = e
 	return d
 
-def precompute(A,m):
-	"""A is a piece of the result from a command like ModularSymbols(---).decomposition()"""
-	M=A.ambient_module()
-	N=A.level()
-	k=A.weight()
-	manin=manin_relations(N)
-	chi=M.character()
-	if chi.order()==1:
-		chi = None
+# Computes int_{a/m}^\infty z^j f(z) dz (normalized) for all 1 <= a < m and 0<=j<=r
+def precompute_integrals(A,m,r,magic=-1,ints={}):
+	k = A.weight()
+	M = A.ambient_module()
+	if magic == -1:
+		magic = A.dual_eigenvector()
 
-	w=A.dual_eigenvector()
-	K=w.parent().base_field()
-	v=[]
-	R.<X,Y>=PolynomialRing(K,2)
-	for s in range(0,len(manin.gens)):
-		rs=manin.gens[s]
-		g=manin.mats[rs]
-		a=g[0,0]
-		b=g[0,1]
-		c=g[1,0]
-		d=g[1,1]
-		ans=0
-		if c!=0:
-			r1=a/c
-		else:
-			r1=oo
-		if d!=0:
-			r2=b/d
-		else:
-			r2=oo
-		for j in range(k-1):
-			coef=w.dot_product(M.modular_symbol([j,r1,r2]).element())
-			ans=ans+X^j*Y^(k-2-j)*binomial(k-2,j)*coef
-		v=v+[symk(k-2,poly=ans,base_ring=K,chi=chi)]
-	return modsym_symk(N,v,manin)
+	for j in range(r+1):
+		for a in range(m):
+			if not (a,m,j) in ints.keys():
+				ints[(a,m,j)] = magic.dot_product(M.modular_symbol([j,oo,-a/m]).element())
 
+def Phi(A,j,r,magic=-1):
+	if magic==-1:
+		magic = A.dual_eigenvector()
 
-def delta(phi,n,r,p,A,twist):
+	M = A.ambient_module()
+
+	return magic.dot_product(M.modular_symbol([j,oo,r]).element())	
+
+def lamb_slow(A,j,b,n):
+	return sum([binomial(j,i) * n^i * b^(j-i) * Phi(A,i,-b/n) for i in range(j+1)])
+
+##returns int_infty^{b/n} f(z) z^i dz
+def period_integral(A,b,n,i,magic,ints={}):
+	if not (b,n,i) in ints.keys():
+		M = A.ambient_module()
+		ints[(b,n,i)] = magic.dot_product(M.modular_symbol([i,oo,-b/n]).element())	
+	
+	return ints[(b,n,i)]
+
+def lamb(A,j,b,n,magic=-1):
+	b = b % n
+	if magic == -1:
+		magic = A.dual_eigenvector()
+
+	return sum([binomial(j,i) * n^i * b^(j-i) * period_integral(A,b,n,i,magic) for i in range(j+1)])
+
+def lamb_twist(A,j,b,n,D,magic=-1,ints={}):
+	assert is_fundamental_discriminant(D) or D==1,"Not a good twist"
+
+	if magic == -1:
+		magic = A.dual_eigenvector()
+
+	ans = 0
+	for a in range(D):
+		c = (D*b - n*a) % (n*D)
+		ans += kronecker_symbol(D,a) * sum([binomial(j,i) * (n*D)^i * c^(j-i) * period_integral(A,c,n*D,i,magic,ints=ints) for i in range(j+1)])
+
+	return ans
+
+def delta(A,n,D,magic=-1,ints={}):
 	assert is_squarefree(n), "need square-free n"
-#	assert is_fundamental_discriminant(twist) or twist==1, "need fund disc"
+	assert is_fundamental_discriminant(D) or D==1, "need fund disc"
+
+	k = A.weight() 
+	r = k/2 
 
 	ells = factor(n)
 	ells = [t[0] for t in ells]
-
-	m_prime = min([(ell-1).valuation(p) for ell in ells])
-	m_FC = min([(kronecker_symbol(twist,ell)*ev(A,ell)-2).valuation(p) for ell in ells])
-
-	m = min(m_prime,m_FC)
 
 	L = {}
 	for ell in ells:
 		L[ell] = log_table(ell)
 
+	if magic == -1:
+		magic = A.dual_eigenvector()
+
 	R.<z> = PolynomialRing(QQ)
 	ans = 0
 	for a in range(n):
 		if gcd(a,n)==1:
-			#print(a,n)
-			ans += phi.lamb_twist(r-1,a,n,twist) * prod([L[ell][a%ell] for ell in ells])
+#			print(a,n)
+			log_term = prod([L[ell][a%ell] for ell in ells])
+			ans += lamb_twist(A,r-1,a,n,D,magic=magic,ints=ints) * log_term
 
-	return ans % (p^m)
+	return ans
+
+def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,vLval="",ints={}):
+	if magic == -1:
+		magic = A.dual_eigenvector()
+
+	pi = w.uniformizer()
+	kpi = w.residue_field()
+
+	e = 1/w(pi)
+	f = kpi.degree()
+	if filename != -1:
+		printwritelist(filename,[A])
+		printwritelist(filename,["p =",w.p(),"valuation =",w])
+		printwritelist(filename,["e =",e,"f =",f])
+		if D > 1:
+			printwritelist(filename,["Twisting by quadratic character of conductor",D])
+	if vLval != "" and filename != -1:
+		printwritelist(filename,["Valuation of central L-value:",vLval])
+
+
+
+	qs = good_primes(A,w,depth,max_ell)
+	if filename != -1:
+		printwritelist(filename,["Good primes:",qs])	
+	print("Good primes:",qs)
+	# for ell in qs:
+	# 	#print("Working on",ell)
+	# 	dn = delta(A,ell,D,magic=magic) * pi^period_correction
+	# 	vdn = w(dn)
+	# 	m = In(A,w,D)
+	# 	if vdn > m:
+	# 		print(ell,": vanish")
+	# 	else:
+	# 		print(ell,": non-vanishing")
+
+	if len(qs) < 2:
+		print("Not enough good primes to compute anything")
+		if filename != -1:
+			printwritelist(filename,["Not enough good primes to compute anything"])
+	van = 0 
+	nvan = 0
+	for ell1 in qs:
+		for ell2 in qs:
+			if ell1 < ell2:
+				#print("Working on",(ell1,ell2))
+				dn = delta(A,ell1*ell2,D,magic=magic,ints=ints) * pi^period_correction
+				vdn = w(dn)
+				m = In(A,w,ell1*ell2,D)
+				if vdn > m:
+					print((ell1,ell2),": vanish")
+					if filename != -1:
+						printwritelist(filename,[(ell1,ell2),": vanish"])
+					van += 1
+				else:
+					print((ell1,ell2),": non-vanishing")
+					if filename != -1:
+						printwritelist(filename,[(ell1,ell2),": non-vanish"])
+					nvan += 1
+
+	if van + nvan > 0:
+		print("Total vanishing:non-vanishing",van,":",nvan,"=",round(nvan/(van+nvan)*100.0,4),"% non-vanishing")				
+		if filename != -1:
+			printwritelist(filename,["Total vanishing:non-vanishing,",van,":",nvan,"=",round(nvan/(van+nvan)*100.0,4),"% non-vanishing"])
+
+	if filename != -1:
+		printwritelist(filename,[""])
+
+	return "Done"
+
+def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=true,skip_unit_Lval=true,skip_Eisen=true,filename=-1):
+	if isinstance(Ds,sage.rings.integer.Integer):
+		Ds = [Ds]
+	print("Working on level",N,"and weight",k)
+	sign = (-1)^((k+2)/2)
+	M = ModularSymbols(N,k,sign).cuspidal_subspace().new_subspace()
+	As = M.decomposition()
+	print("-there are",len(As),"Galois conjugacy classes of forms")
+	LMFDB_label = LMFDB_labels_fixed_level(As)
+	del_ints = false
+	for A in As:
+		ints = {}
+		del_ints = true
+		e = As.index(A)
+		print("Working on GC class",LMFDB_label[e],":",As.index(A)+1,"out of",len(As))
+		print(A)
+		magic = A.dual_eigenvector()
+		K = magic.parent().base_ring()
+		phi = form_modsym_from_decomposition(A)
+		for D in Ds:
+			print("    Twisting by",D)
+			Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic,ints=ints)
+			if Lval !=0 or not skip_odd_rank:
+				for p in ps:
+					if N % p != 0 and D % p != 0:
+						print("    Taking p =",p)
+						v = QQ.valuation(p)
+						ws = v.extensions(K)
+						print("       -there are",len(ws),"prime(s) over",p)
+						print()
+						for w in ws:
+							pi = w.uniformizer()
+							e = 1/w(pi)
+							print("       --Working with valuation",ws.index(w)+1,"/",len(ws),"with e =",e,"and f =",w.residue_field().degree())
+							ap = ev(A,p)
+							if w(ap)==0:
+								print("       --ordinary at this prime")
+							else:
+								print("       --non-ordinary at this prime with slope",w(ap)/e)
+							if N % p == 0:
+								print("       --good reduction")
+							elif N.valuation(p) == 1:
+								print("       --Steinberg")
+							else:
+								print("       --supercuspdial")
+							eis = eisenstein(A,w)
+							print("       --Is this case Eisenstein?:",eis)
+							if not skip_Eisen or not eis:
+	#							print("       --Valuation of modular symbol:",phi.valuation(w,remove_binom=true))	
+								period_correction = -phi.valuation(w,remove_binom=true)*e 	
+								print("       --The central L-value has valuation:",(w(Lval)-phi.valuation(w,remove_binom=true))*e)
+								if Lval != 0 or not skip_odd_rank:
+									if w(Lval) - phi.valuation(w,remove_binom=true) > 0 or not skip_unit_Lval:
+#										compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename,ints=ints)
+									else:
+										print("       --Skipping because L-value is a unit")
+							else:
+								print("       --Skipping because it is Eisenstein")
+							print()
+			else:
+				print("       --Skipping because L-value is 0")
+			print()	
+
+	del M
+	if del_ints:
+		del ints 
+
+def eisenstein(A,w,max_check=50):
+	N = A.level()
+	k = A.weight()
+	p = w.p()
+
+	bool = true
+	q = 2
+	while q < max_check and bool:
+		if N*p % q != 0:
+			bool = bool and w(ev(A,q)-1-q^(k-1)) > 0
+		q = next_prime(q)
+
+	return bool
 
 def form_symbol():
 	M = ModularSymbols(5,4).cuspidal_subspace()
@@ -95,9 +290,6 @@ def form_symbol():
 def do_it(M,p,twist):
 	Mp = M.plus_submodule()
 	Mm = M.minus_submodule()
-	phip = form_modsym_from_decomposition(Mp)
-	phim = form_modsym_from_decomposition(Mm)
-	phi = phip + phim
 	k = phi.weight()+2
 	r = k/2
 	print("delta_1 has valuation:",phi.lamb_twist(r-1,0,1,twist).valuation(p))
@@ -109,23 +301,53 @@ def do_it(M,p,twist):
 	print("Using the primes",ell1,ell2)
 	print("delta_",n,":",delta(phi,n,k/2,p,Mp,twist))
 
-def compute_deltas(M,Q):
-	phi = form_modsym_from_decomposition(M)
-	qs = []
-	q = -1
-	while q < Q:
-		q = next_good_prime(M,3,1,q=q)
-		qs += [q]
-	print("Good primes:",qs)
-	for ell in qs:
-		print("Working on",ell)
-		d = delta(phi,ell,2,3,M,61)
-		print(ell1,":",d)
 
-	for ell1 in qs:
-		for ell2 in qs:
-			if ell1 != ell2:
-				print("Working on",(ell1,ell2))
-				d = delta(phi,ell1*ell2,2,3,M,61)
-				print((ell1,ell2),d)
-	return "Done"
+
+def clearfile(filename):
+	f = open(filename, 'w')
+	f.close()
+
+def writethingtofile(filename, thing, pre = "", post=""):
+	f = open(filename, 'a')
+	f.write(pre+str(thing)+post)
+	f.close()
+
+def writenewlinetofile(filename): 
+	f = open(filename, 'a')
+	f.write("\n")
+	f.close()
+
+def printwritelist(filename, listy, separator = " "):
+	#print(liststring(listy))
+	if filename != "": 
+		writelisttofile(filename, listy, separator)
+
+def printwritestring(filename, stringy):
+	print( stringy)
+	writelisttofile(filename, [stringy])
+
+
+def printliststring(listy, separator = " "):
+	s = ""
+	for thing in listy: 
+		s = s + str(thing) + separator
+	print(s)
+
+
+def writelisttofile(filename, listy, separator = " "):
+#
+# copies entries of a list into a file and moves to the next line. 
+#
+	f = open(filename, 'a')
+	for thing in listy:
+		f.write(str(thing)+separator)
+	f.write("\n")
+	f.close()
+
+
+
+def makefilename(fileprefix, mod, accuracy):
+#
+# filename will look like "deltapowersmod3at10mil"
+#
+	return fileprefix+"mod"+str(mod)+"at"+makeaccuracystring(accuracy)
