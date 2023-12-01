@@ -38,7 +38,7 @@ def next_prime_1_mod_pr(q,p,r):
 
 	return q
 
-def next_good_prime(q,A,w,m,D):
+def next_good_prime(q,A,w,m,D,max):
 	"""returns the next good prime ell< max such that w(ell - 1) >= m and w(a_ell(A)-2)>=m"""
 	N = A.level()
 	p = w.p()
@@ -49,11 +49,14 @@ def next_good_prime(q,A,w,m,D):
 	q = next_prime_1_mod_pr(q,p,m/e)
 
 	aq = ev(A,q) * kronecker_symbol(D,q)
-	while w(aq-1-q^(k-1)) < m/e or N*p % q == 0:
+	while (w(aq-1-q^(k-1)) < m/e or N*p % q == 0) and q <= max:
 		q = next_prime_1_mod_pr(q,p,m/e)
 		aq = ev(A,q) * kronecker_symbol(D,q)
 
-	return q
+	if q > max:
+		return -1
+	else:
+		return q
 
 def In(A,w,n,D):
 	p = w.p()
@@ -236,119 +239,293 @@ def find_nonzero_delta(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename
 
 	e = 1/w(pi)
 	f = kpi.degree()
-	if filename != -1:
-		printwritelist(filename,[A])
-		printwritelist(filename,["p =",w.p(),"valuation =",w])
-		printwritelist(filename,["e =",e,"f =",f])
-		if D > 1:
-			printwritelist(filename,["Twisting by quadratic character of conductor",D])
-	if vLval != "" and filename != -1:
-		printwritelist(filename,["Valuation of central L-value:",vLval])
+#	if filename != -1:
+#		printwritelist(filename,[A])
+#		printwritelist(filename,["p =",w.p(),"valuation =",w])
+#		printwritelist(filename,["e =",e,"f =",f])
+#		if D > 1:
+#			printwritelist(filename,["Twisting by quadratic character of conductor",D])
+#	if vLval != "" and filename != -1:
+#		printwritelist(filename,["Valuation of central L-value:",vLval])
 
 
-	ell1 = next_good_prime(1,A,w,depth,D)
-	ell2 = next_good_prime(ell1,A,w,depth,D)
+	ell1 = next_good_prime(1,A,w,depth,D,max_ell)
+	if ell1 != -1:
+		ell2 = next_good_prime(ell1,A,w,depth,D,max_ell)
+	else:
+		ell2 = -1
 
 	ells = [ell1,ell2]
 
-	while ells[-1] < max_ell:
-		for a in range(len(ells)-1):
-			dn = delta(A,ells[a]*ells[-1],D,magic=magic) * pi^period_correction
-			vdn = w(dn)
-			m = In(A,w,ells[a]*ells[-1],D)
-			if vdn >= m:
-				print((ells[a],ells[-1]),": vanish")
-				if filename != -1:
-					printwritelist(filename,[(ells[a],ells[-1]),": vanish"])
-			else:
-				print((ells[a],ells[-1]),": non-vanishing")
-				if filename != -1:
-					printwritelist(filename,[(ells[a],ells[-1]),": non-vanish"])
-					printwritelist(filename,[""])
-				return "Done"
-		ell_new = next_good_prime(ells[-1],A,w,depth,D)
-		ells = ells + [ell_new]
+	if ell1 != -1 and ell2 != -1:
+#		if filename != -1:
+#			printwritelist(filename,["Trying:",(ell1,ell2)])
+		while ells[-1] < max_ell:
+			for a in range(len(ells)-1):
+				print("Trying",(ells[a],ells[-1]))
+				dn = delta(A,ells[a]*ells[-1],D,magic=magic) * pi^period_correction
+				vdn = w(dn)
+				m = In(A,w,ells[a]*ells[-1],D)
+				if vdn >= m:
+					print((ells[a],ells[-1]),": vanish")
+					if filename != -1:
+						printwritelist(filename,[(ells[a],ells[-1]),": vanish"])
+				else:
+					print((ells[a],ells[-1]),": non-vanishing")
+					if filename != -1:
+						printwritelist(filename,[(ells[a],ells[-1]),": non-vanish"])
+#						printwritelist(filename,[""])
+					return "Done"
+			ell_new = next_good_prime(ells[-1],A,w,depth,D,max_ell)
+			ells = ells + [ell_new]
 
-
-	# for ell in qs:
-	# 	#print("Working on",ell)
-	# 	dn = delta(A,ell,D,magic=magic) * pi^period_correction
-	# 	vdn = w(dn)
-	# 	m = In(A,w,D)
-	# 	if vdn > m:
-	# 		print(ell,": vanish")
-	# 	else:
-	# 		print(ell,": non-vanishing")
 
 	if filename != -1:
-		printwritelist(filename,["**********************Failed to find non-zero delta**********************"])
-		printwritelist(filename,[""])
-
+		if ell1 == -1 or ell2 == -1:
+			printwritelist(filename,["**********************Failed to find non-zero delta**********************"])
+			printwritelist(filename,["did not find two good primes <",max_ell])
+		else:
+			printwritelist(filename,["**********************Failed to find non-zero delta**********************"])
+			printwritelist(filename,[""])
 	return "Done"
 
-def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,skip_odd_rank=true,skip_unit_Lval=true,skip_Eisen=true,filename=-1,just_nonzero=true,newforms=true):
+
+def prove_large_image(A,w,max=100):
+	N = A.level()
+	p = w.p()
+	k = A.weight()
+	prime_divs = N.prime_factors()
+	min_exp = min([N.valuation(q) for q in prime_divs])
+	if min_exp > 1:
+		return false 
+	q = 2 
+	while q < max:
+		if N * p % q != 0:
+			aq = ev(A,q)
+			R.<x> = PolynomialRing(w.residue_field())
+			g = x^2 - w.reduce(aq)*x + q^(k-1)
+			if g.is_irreducible():
+				return true
+		q = next_prime(q)
+
+	return false
+
+def sign_of_FE(A):
+	N = A.level()
+	k = A.weight()
+	r = (k-2)/2
+	Ds = [D for D in range(1,100) if is_fundamental_discriminant(D) and kronecker_symbol(D,N) == -1];
+	Lval = lamb_twist(A,r,0,1,Ds[0])
+	if Lval != 0:
+		return -1 
+	else:
+		Ds = [D for D in range(1,100) if is_fundamental_discriminant(D) and kronecker_symbol(D,N) == 1];
+		Lval = lamb_twist(A,r,0,1,Ds[0])
+		if Lval != 0:
+			assert Lval==0,"failed to determine sign of FE"
+			return 1 
+
+def lower_bound_from_modsym(phi,w):
+	if type(w) == sage.rings.integer.Integer:
+		w = QQ.valuation(w)
+	e = 1/w(w.uniformizer())
+	val = phi.valuation(w)
+	k = phi.weight()+2
+	r = (k-2)/2
+
+	M1 = min([ min([ (w(P.coef(j))-w(binomial(k-2,j))-val)*e for P in phi.data ]) for j in range(r+1) ])
+
+	M2 = min([ min([ (w(P.coef(j))-w(binomial(k-2,j))-val)*e+(j-r) for P in phi.data ]) for j in range(r+1,k-1) ])
+
+	return min(M1,M2)
+
+
+
+
+def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_image=true,skip_odd_rank=true,skip_unit_Lval=true,skip_Eisen=true,skip_CM=true,filename=-1,just_nonzero=true,skip_ll=false,level_lowering={}):
 	if isinstance(Ds,sage.rings.integer.Integer):
 		Ds = [Ds]
-	print("Working on level",N,"and weight",k)
+	print("Working with newforms of level",N,"and weight",k)
+	if require_large_image:
+		prime_divs = N.prime_factors()
+		if N > 1:
+			min_exp = min([N.valuation(q) for q in prime_divs])
+		else:
+			min_exp = 0
+		if min_exp > 1:
+			print("Level has no prime factor with multiplicity 1 and so can't prove large image: skipping")
+			return 
 	sign = (-1)^((k+2)/2)
 	M = ModularSymbols(N,k,sign).cuspidal_subspace().new_subspace()
 	As = M.decomposition()
+	print("-forming LMFDB labels")
+	LMFDB_labels = LMFDB_labels_fixed_level(As)
 	print("-there are",len(As),"Galois conjugacy classes of forms")
 	for A in As:
-		print("Working on GC class",As.index(A)+1,"out of",len(As))
+		j = As.index(A)
+		print("Working on GC class",LMFDB_labels[j],":",As.index(A)+1,"out of",len(As))
 		print(A)
+
+		print(" (forming reductions data to determine level-lowering)")
+		for p in ps:
+			if not p in level_lowering.keys():
+				level_lowering[p] = {}
+			if not N in level_lowering[p].keys():
+				level_lowering[p][N] = []
+			level_lowering[p][N] += reduce(A,p)
 		magic = A.dual_eigenvector()
 		K = magic.parent().base_ring()
+		print(K)
 		phi = form_modsym_from_decomposition(A)
-		for D in Ds:
-			print("    Twisting by",D)
-			Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic)
-			if Lval !=0 or not skip_odd_rank:
-				for p in ps:
-					if N % p != 0 and D % p != 0:
-						print("    Taking p =",p)
-						v = QQ.valuation(p)
-						ws = v.extensions(K)
-						print("       -there are",len(ws),"prime(s) over",p)
-						print()
-						for w in ws:
-							pi = w.uniformizer()
-							e = 1/w(pi)
-							print("       --Working with valuation",ws.index(w)+1,"/",len(ws),"with e =",e,"and f =",w.residue_field().degree())
-							eis = eisenstein(A,w)
-							print("       --Is this case Eisenstein?:",eis)
-							if not skip_Eisen or not eis:
-	#							print("       --Valuation of modular symbol:",phi.valuation(w,remove_binom=true))	
-								period_correction = -phi.valuation(w,remove_binom=true)*e 	
-								print("       --The central L-value has valuation:",(w(Lval)-phi.valuation(w,remove_binom=true))*e)
-								if Lval != 0 or not skip_odd_rank:
-									if w(Lval) - phi.valuation(w,remove_binom=true) > 0 or not skip_unit_Lval:
-										if not just_nonzero:
-											compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
-										else:
-											find_nonzero_delta(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+		Lval = lamb_twist(A,(k-2)/2,0,1,1,magic=magic)
+		if Lval != 0:
+			sFE = 1 
+		else:
+			sFE = sign_of_FE(A)
+		print("   sign of FE =",sFE)
+		for p in ps:
+			print("    Taking p =",p)
+			v = QQ.valuation(p)
+			ws = v.extensions(K)
+			print("       -there are",len(ws),"prime(s) over",p)
+			for w in ws:
+				pi = w.uniformizer()
+				kpi = w.residue_field()
+				e = 1/w(pi)
+				print("       --Working with valuation",ws.index(w)+1,"/",len(ws),"with e =",e,"and f =",w.residue_field().degree())
+				eis = eisenstein(A,w)
+				print("       --Is this case Eisenstein?:",eis)
+				cm = CM(A,w)
+				print("       --Is this case CM?:",cm)
+				large_image = prove_large_image(A,w)
+				print("       --Large image?:",large_image)
+				ll = is_level_lowerable(A,w,30,level_lowering=level_lowering)
+				print("       --Can the form be level-lowered?",ll)
+				ap = ev(A,p)
+				if N % p != 0:
+					if w(ap)==0:
+						print("       --good ordinary at this prime")
+					else:
+						print("       --good non-ordinary at this prime with slope",w(ap)/e)
+				elif N.valuation(p) == 1:
+					print("       --Steinberg")
+				else:
+					print("       --supercuspdial")
+			header_written = false
+			if (not skip_Eisen or not eis) and (not skip_ll or not ll) \
+				and (not require_large_image or large_image):
+				for D in Ds:
+					if (not skip_odd_rank or sFE * kronecker_symbol(D,-N) == 1):
+						if D % p != 0:
+							Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic)
+							print("    Twisting by",D)
+							period_correction = -lower_bound_from_modsym(phi,w) - phi.valuation(w,remove_binom=true)*e 	
+	#						print("period correction is",phi.valuation(w,remove_binom=true)*e)
+	#						print("lower bound is",lower_bound_from_modsym(phi,w))
+							print("       --The central L-value has valuation:",(w(Lval)-phi.valuation(w,remove_binom=true))*e)
+							if w(Lval) - phi.valuation(w,remove_binom=true) > 0 or not skip_unit_Lval:
+								if filename != -1 and not header_written:
+									printwritelist(filename,[LMFDB_labels[j],"// p =",w.p()])
+									if K.degree() > 1:
+										printwritelist(filename,["Defined over number field with defining polynomial:",K.defining_polynomial()])
 									else:
-										print("       --Skipping because L-value is a unit")
+										printwritelist(filename,["Defined over QQ"])
+									printwritelist(filename,["  choosing prime P over p with e =",e,"and f =",kpi.degree(),"\n  namely:",w])
+									printwritelist(filename,["    (which in Sage's ordering is",ws.index(w)+1,"/",len(ws),")"])
+									if N.valuation(p) == 0:
+										if w(ap)==0:
+											printwritelist(filename,["  good ordinary reduction at P"])
+										else:
+											printwritelist(filename,["  good non-ordinary reduction at P with slope",w(ap)])
+									elif N.valuation(p) == 1:
+										printwritelist(filename,["  Steinberg at P"])
+									else:
+										printwritelist(filename,["  supercuspidal at P"])
+									if ll:
+										printwritelist(filename,["CAN BE LEVEL-LOWERED!"])
+									header_written = true									
+								if not just_nonzero:
+									compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+									printwritelist(filename,[])
+								else:
+									if filename != -1:
+										if Ds != [1]:
+											printwritelist(filename,["***Twisting by quadratic character of conductor",D,"***"])
+										printwritelist(filename,["The central L-value has valuation:",(w(Lval)-phi.valuation(w,remove_binom=true))*e])
+										if Lval == 0:
+											printwritelist(filename,["Note: central L-value vanishes, but sign of FE = 1"])
+									if not ll:
+										find_nonzero_delta(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+									else:
+										find_nonzero_delta(A,w,max_ell/10,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+									printwritelist(filename,[])
 							else:
-								print("       --Skipping because it is Eisenstein")
-							print()
+								print("       --Skipping because L-value is a unit")
+				if header_written and filename != -1:
+					printwritelist(filename,[""])
+
 			else:
-				print("       --Skipping because L-value is 0")
+				if skip_odd_rank and sFE == -1:
+					print("       --Skipping because sign of FE = -1")					
+				if skip_Eisen and eis:
+					print("       --Skipping because it is Eisenstein")
+				if skip_ll and ll:
+					print("       --Skipping because of level-lowering")
+				if require_large_image and not large_image:
+					print("       --Skipping because we can't prove large image")
 			print()	
 
 	del M
+	return 
 
 def eisenstein(A,w,max_check=50):
 	N = A.level()
 	k = A.weight()
 	p = w.p()
 
+	#checks congruence with E_k
 	bool = true
 	q = 2
 	while q < max_check and bool:
 		if N*p % q != 0:
 			bool = bool and w(ev(A,q)-1-q^(k-1)) > 0
 		q = next_prime(q)
+
+	if bool:
+		return bool
+
+	#checks congruence with E_k(chi,chi) for chi quadratic
+	for d in N.divisors():
+		Gd = DirichletGroup(d,QQ)
+		for chi in Gd.gens():
+			bool = true
+			q = 2
+			while q < max_check and bool:
+				if N*p % q != 0:
+					bool = bool and w(ev(A,q)-chi(q)-chi(q)*q^(k-1)) > 0
+				q = next_prime(q)
+			if bool:
+				return bool
+
+	return bool
+
+def CM(A,w,max_check=50):
+	N = A.level()
+	k = A.weight()
+	p = w.p()
+
+	#checks if f otimes chi = f (mod p)
+	for d in N.divisors():
+		Gd = DirichletGroup(d,QQ)
+		for chi in Gd.gens():
+			bool = true
+			q = 2
+			while q < max_check and bool:
+				if N*p % q != 0:
+					bool = bool and w(ev(A,q)-chi(q)*ev(A,q))>0
+				q = next_prime(q)
+			if bool:
+				return bool
 
 	return bool
 
