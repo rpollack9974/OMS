@@ -1,3 +1,7 @@
+load("master.sage")
+load("Kurihara_numbers/reductions.sage")
+load("Kurihara_numbers/LMFDB.sage")
+
 #A is a 1-dimensional subspace of ModularSymbols (so defined over Q)
 def ev(A,ell):
 	M = A.ambient_module()
