@@ -9,7 +9,7 @@ def ev(A,ell):
 	return v[a]/vec[a]
 
 #max: reduces a_q for q <= max
-def reduce(A,p,max=30):
+def reduce(A,p,max=30,include_p=false):
 	N = A.level()
 	vec = A.dual_eigenvector()
 	K = vec.parent().base_field()
@@ -18,14 +18,14 @@ def reduce(A,p,max=30):
 
 	evs = {}
 	for q in primes(max+1):
-		if N*p % q != 0:		
+		if N*p % q != 0 or (q == p and include_p):		
 			evs[q] = ev(A,q)
 
 	rhobars = []
 	for w in ws:
 		evs_modp = {}
 		for q in primes(max+1):
-			if N*p % q != 0:		
+			if N*p % q != 0 or (q == p and include_p):		
 				evs_modp[q] = w.reduce(evs[q])
 		rhobars += [evs_modp]
 
@@ -73,6 +73,36 @@ def is_level_lowerable(A,w,max,level_lowering={}):
 	for q in primes(max+1):
 		if N*p % q != 0:
 			evs_modp[q] = w.reduce(ev(A,q))
+
+	bool = false
+	for d in N.divisors():
+		if d < N:
+			if not p in level_lowering.keys():
+				level_lowering[p] = {}
+			if not d in level_lowering[p].keys():
+				level_lowering[p][d] = []
+				M = ModularSymbols(d,k,1).cuspidal_subspace().new_subspace()
+				As = M.decomposition()
+				for A in As:
+					level_lowering[p][d] += reduce(A,p)
+			bool = bool or is_dict_in_list(level_lowering[p][d],evs_modp)
+			if bool:
+				return bool
+
+	return bool
+
+
+def is_level_lowerable_quad_twist(A,w,max,level_lowering={}):
+	p = w.p()
+	N = A.level()
+	assert N % p == 0,"Level not divisible by p"
+	k = A.weight()
+	evs_modp = {}
+	G = DirichletGroup(p,QQ)
+	chip = G.0
+	for q in primes(max+1):
+		if N*p % q != 0:
+			evs_modp[q] = w.reduce(ev(A,q))*GF(p)(chip(q))
 
 	bool = false
 	for d in N.divisors():
