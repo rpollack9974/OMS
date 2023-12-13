@@ -163,7 +163,7 @@ def delta(A,n,D,magic=-1):
 #			print(a,n)
 			log_term = prod([L[ell][a%ell] for ell in ells])
 			ans += lamb_twist(A,r-1,a,n,D,magic=magic) * log_term
-#			print(a,n,ans%3,lamb_twist(A,r-1,a,n,D,magic=magic)%3,log_term%3)
+			#print(a,n,ans%3,lamb_twist(A,r-1,a,n,D,magic=magic)%3,log_term%3)
 
 	return ans
 
@@ -300,7 +300,7 @@ def find_nonzero_delta(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename
 	return "Done"
 
 
-def prove_large_image(A,w,max=100):
+def prove_large_image(A,w,evs={},max=50):
 	N = A.level()
 	p = w.p()
 	k = A.weight()
@@ -311,7 +311,10 @@ def prove_large_image(A,w,max=100):
 	q = 2 
 	while q < max:
 		if N * p % q != 0:
-			aq = ev(A,q)
+			if q in evs.keys():
+				aq = evs[q]
+			else:
+				aq = ev(A,q)
 			R.<x> = PolynomialRing(w.residue_field())
 			g = x^2 - w.reduce(aq)*x + q^(k-1)
 			if g.is_irreducible():
@@ -370,31 +373,38 @@ def central_period_correction(phi,w):
 
 	return min(v)-w(binomial(k-2,r))*e
 
-def lower_bound_from_modsym(phi,w):
+def adjust_period(phi,w):
+	p = w.p()
+	N = phi.level()
+	t = N.valuation(p)
 	if type(w) == sage.rings.integer.Integer:
 		w = QQ.valuation(w)
 	e = 1/w(w.uniformizer())
 	val = phi.valuation(w)
-	k = phi.weight()+2
-	r = (k-2)/2
-
-	M1 = min([ min([ (w(P.coef(j))-w(binomial(k-2,j))-val)*e for P in phi.data ]) for j in range(r+1) ])
-
-	if k>2:
-		M2 = min([ min([ (w(P.coef(j))-w(binomial(k-2,j))-val)*e+(j-r)*e for P in phi.data ]) for j in range(r+1,k-1) ])
+	if N % p != 0:
+		return val*e
 	else:
-		M2 = 10^10
+		k = phi.weight()+2
+		r = (k-2)/2
 
-	M3 = min([ (w(P.coef(r))-w(binomial(k-2,r))-val)*e for P in phi.data ]) 
+		M1 = min([ min([ (w(P.coef(j))-w(binomial(k-2,j))-val)*e for P in phi.data ]) for j in range(r+1) ])
 
-	assert M3 == min(M1,M2), "problem with central coh period vs coh period. aborting: "+str((M1,M2,M3))
+		if k>2:
+			M2 = min([ min([ (w(P.coef(j))-w(binomial(k-2,j))-val)*e+(j-r)*t*e for P in phi.data ]) for j in range(r+1,k-1) ])
+		else:
+			M2 = 10^10
 
-	return min(M1,M2)
+		M3 = min([ (w(P.coef(r))-w(binomial(k-2,r))-val)*e for P in phi.data ]) 
+
+		assert M3 == min(M1,M2), "problem with central coh period vs coh period. aborting: "+str((M1,M2,M3))
+
+		return min(M1,M2)+val
 
 
 
 
-def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_image=true,skip_odd_rank=true,skip_unit_Lval=true,skip_Eisen=true,skip_CM=true,filename=-1,just_nonzero=true,skip_ll=true,level_lowering={},skip_odd_val=true):
+def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_image=true,skip_odd_rank=true,skip_unit_Lval=true,skip_Eisen=true,skip_CM=true,filename=-1,just_nonzero=true,skip_ll=true,skip_odd_val=true,max_check=50):
+	level_lowering = {}
 	if isinstance(Ds,sage.rings.integer.Integer):
 		Ds = [Ds]
 	print("Working with newforms of level",N,"and weight",k)
@@ -435,6 +445,9 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 		else:
 			sFE = sign_of_FE(A)
 		print("   sign of FE =",sFE)
+		evs = {}
+		for q in primes(max_check):
+			evs[q] = ev(A,q)
 		for p in ps:
 			print("    Taking p =",p)
 			v = QQ.valuation(p)
@@ -445,43 +458,46 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 				kpi = w.residue_field()
 				e = 1/w(pi)
 				print("       --Working with valuation",ws.index(w)+1,"/",len(ws),"with e =",e,"and f =",w.residue_field().degree())
-				eis = eisenstein(A,w)
+				eis = eisenstein(A,w,evs=evs)
 				print("       --Is this case Eisenstein?:",eis)
-				cm = CM(A,w)
+				cm = CM(A,w,evs=evs)
 				print("       --Is this case CM?:",cm)
-				large_image = prove_large_image(A,w)
+				large_image = prove_large_image(A,w,evs=evs)
 				print("       --Large image?:",large_image)
-				ll = is_level_lowerable(A,w,30,level_lowering=level_lowering)
+				ll = is_level_lowerable(A,w,30,)
 				print("       --Can the form be level-lowered?",ll)
 				if N % p == 0:
-					llt = is_level_lowerable_quad_twist(A,w,30,level_lowering=level_lowering)
+					llt = is_level_lowerable_quad_twist(A,w,30)
 					print("       --Can the form be twist-level-lowered?",llt)
+				else:
+					llt = false
 				ap = ev(A,p)
 				if N % p != 0:
 					if w(ap)==0:
 						print("       --good ordinary at this prime")
 					else:
-						print("       --good non-ordinary at this prime with slope",w(ap)/e)
+						print("       --good non-ordinary at this prime with slope",w(ap)*e)
 				elif N.valuation(p) == 1:
 					print("       --Steinberg")
 				else:
-					print("       --supercuspdial")
+					print("       --supercuspidal")
 				header_written = false
-				if (not skip_Eisen or not eis) and (not skip_ll or not ll) \
+				if (not skip_Eisen or not eis) and (not skip_ll or (not ll and not llt)) \
 					and (not require_large_image or large_image):
 					for D in Ds:
-						print("    Twisting by",D)
+						if D % p != 0:
+							print("    Twisting by",D)
 						if (not skip_odd_rank or sFE * kronecker_symbol(D,-N) == 1):
 							if D % p != 0:
 								Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic)
-								period_correction = -central_period_correction(phi,w)
+								period_correction = -adjust_period(phi,w)
 								#-lower_bound_from_modsym(phi,w) - phi.valuation(w,remove_binom=true)*e 	
 	#							print("modsym valuation",phi.valuation(w,remove_binom=true))
 	#							print("lower bound is",lower_bound_from_modsym(phi,w))
 								print("       --period correction is",period_correction)
 	#							print("L-val valuation",w(Lval))
 								print("       --The central L-value has valuation:",w(Lval)*e+period_correction)
-								if w(Lval)*e + period_correction > 0 or not skip_unit_Lval:
+								if w(Lval)*e + period_correction != 0 or not skip_unit_Lval:
 									if filename != -1 and not header_written:
 										printwritelist(filename,[LMFDB_labels[j],"// p =",w.p()])
 										printwritelist(filename,[ "(This is block #",As.index(A)+1,"out of",len(As),"in Sage's ordering)"])
@@ -536,7 +552,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 										printwritelist(filename,[])
 								else:
 									print("       --Skipping because L-value is a unit")
-						else:
+						elif D % p != 0:
 							print("       --Skipping because sign of FE = -1")
 					if header_written and filename != -1:
 						printwritelist(filename,[""])
@@ -554,7 +570,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 	del M
 	return 
 
-def eisenstein(A,w,max_check=50):
+def eisenstein(A,w,evs={},max_check=50):
 	N = A.level()
 	k = A.weight()
 	p = w.p()
@@ -564,7 +580,7 @@ def eisenstein(A,w,max_check=50):
 	q = 2
 	while q < max_check and bool:
 		if N*p % q != 0:
-			bool = bool and w(ev(A,q)-1-q^(k-1)) > 0
+			bool = bool and w(evs[q]-1-q^(k-1)) > 0
 		q = next_prime(q)
 
 	if bool:
@@ -578,14 +594,14 @@ def eisenstein(A,w,max_check=50):
 			q = 2
 			while q < max_check and bool:
 				if N*p % q != 0:
-					bool = bool and w(ev(A,q)-chi(q)-chi(q)*q^(k-1)) > 0
+					bool = bool and w(evs[q]-chi(q)-chi(q)*q^(k-1)) > 0
 				q = next_prime(q)
 			if bool:
 				return bool
 
 	return bool
 
-def CM(A,w,max_check=50):
+def CM(A,w,evs={},max_check=50):
 	N = A.level()
 	k = A.weight()
 	p = w.p()
@@ -600,7 +616,7 @@ def CM(A,w,max_check=50):
 			q = 2
 			while q < max_check and bool:
 				if N*p % q != 0:
-					bool = bool and w(ev(A,q)-chi(q)*ev(A,q))>0
+					bool = bool and w(evs[q]-chi(q)*evs[q])>0
 				q = next_prime(q)
 			if bool:
 				return bool
