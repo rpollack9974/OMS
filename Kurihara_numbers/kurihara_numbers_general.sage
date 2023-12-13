@@ -462,7 +462,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 							if w(Lval)*e + period_correction > 0 or not skip_unit_Lval:
 								if filename != -1 and not header_written:
 									printwritelist(filename,[LMFDB_labels[j],"// p =",w.p()])
-									printwritelist(filename,[ "This is block #",As.count(A),"out of ",len(As),"in Sage's ordering"])
+									printwritelist(filename,[ "(This is block #",As.count(A),"out of",len(As),"in Sage's ordering)"])
 									if K.degree() > 1:
 										printwritelist(filename,["Defined over number field with defining polynomial:",K.defining_polynomial()])
 									else:
@@ -472,7 +472,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 									if len(ws)>1:
 										printwritelist(filename,["       All primes over p:"])
 										for ww in ws:
-											printwritelist(filename,["         ",w,"e =",1/ww(ww.uniformizer()),"f =",ww.residue_field().degree()])
+											printwritelist(filename,["         ",w,", e =",1/ww(ww.uniformizer()),", f =",ww.residue_field().degree()])
 									if N.valuation(p) == 0:
 										if w(ap)==0:
 											printwritelist(filename,["  good ordinary reduction at P"])
