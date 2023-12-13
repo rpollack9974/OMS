@@ -484,7 +484,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 								if w(Lval)*e + period_correction > 0 or not skip_unit_Lval:
 									if filename != -1 and not header_written:
 										printwritelist(filename,[LMFDB_labels[j],"// p =",w.p()])
-										printwritelist(filename,[ "(This is block #",As.count(A),"out of",len(As),"in Sage's ordering)"])
+										printwritelist(filename,[ "(This is block #",As.index(A),"out of",len(As),"in Sage's ordering)"])
 										if K.degree() > 1:
 											printwritelist(filename,["Defined over number field with defining polynomial:",K.defining_polynomial()])
 										else:
