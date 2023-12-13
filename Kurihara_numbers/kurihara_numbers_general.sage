@@ -137,7 +137,7 @@ def lamb_twist(A,j,b,n,D,magic=-1):
 		c = (D*b - n*a) % (n*D)
 		ans += kronecker_symbol(D,a) * sum([binomial(j,i) * (n*D)^i * c^(j-i) * period_integral(A,c,n*D,i,magic) for i in range(j+1)])
 
-	return ans
+	return n^j * ans
 
 def delta(A,n,D,magic=-1):
 	assert is_squarefree(n), "need square-free n"
@@ -286,6 +286,8 @@ def find_nonzero_delta(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename
 				break
 			else:
 				ells = ells + [ell_new]
+	
+	print("**********************Failed to find non-zero delta**********************")
 
 
 	if filename != -1:
@@ -348,6 +350,25 @@ def sign_of_FE(A):
 			# 		else:
 			# 			assert Lval!=0,"failed to determine sign of FE"
 
+def ram(w):
+	pi = w.uniformizer()
+	return 1/w(pi)
+
+def inertia(w):
+	kw = w.residue_field()
+	return kw.degree()
+
+def central_period_correction(phi,w):
+	if type(w) == sage.rings.integer.Integer:
+		w = QQ.valuation(w)
+	e = ram(w)
+	k = phi.weight()+2
+	r = (k-2)/2
+	v = []
+	for B in phi.manin.mats:
+		v += [w(phi.eval(B).coef(r))*e]
+
+	return min(v)-w(binomial(k-2,r))*e
 
 def lower_bound_from_modsym(phi,w):
 	if type(w) == sage.rings.integer.Integer:
@@ -366,7 +387,7 @@ def lower_bound_from_modsym(phi,w):
 
 	M3 = min([ (w(P.coef(r))-w(binomial(k-2,r))-val)*e for P in phi.data ]) 
 
-	assert M3 == min(M1,M2), "problem with central coh period vs coh period. aborting"
+	assert M3 == min(M1,M2), "problem with central coh period vs coh period. aborting: "+str((M1,M2,M3))
 
 	return min(M1,M2)
 
@@ -398,12 +419,12 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 		print(A)
 
 		print(" (forming reductions data to determine level-lowering)")
-		for p in ps:
-			if not p in level_lowering.keys():
-				level_lowering[p] = {}
-			if not N in level_lowering[p].keys():
-				level_lowering[p][N] = []
-			level_lowering[p][N] += reduce(A,p)
+#		for p in ps:
+#			if not p in level_lowering.keys():
+#				level_lowering[p] = {}
+#			if not N in level_lowering[p].keys():
+#				level_lowering[p][N] = []
+#			level_lowering[p][N] += reduce(A,p)
 		magic = A.dual_eigenvector()
 		K = magic.parent().base_ring()
 		print(K)
@@ -445,88 +466,90 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 					print("       --Steinberg")
 				else:
 					print("       --supercuspdial")
-			header_written = false
-			if (not skip_Eisen or not eis) and (not skip_ll or not ll) \
-				and (not require_large_image or large_image):
-				for D in Ds:
-					if (not skip_odd_rank or sFE * kronecker_symbol(D,-N) == 1):
-						if D % p != 0:
-							print("    Twisting by",D)
-							Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic)
-							period_correction = -lower_bound_from_modsym(phi,w) - phi.valuation(w,remove_binom=true)*e 	
-							print("modsym valuation",phi.valuation(w,remove_binom=true))
-							print("lower bound is",lower_bound_from_modsym(phi,w))
-							print("period correction is",period_correction)
-							print("L-val valuation",w(Lval))
-							print("       --The central L-value has valuation:",w(Lval)*e+period_correction)
-							if w(Lval)*e + period_correction > 0 or not skip_unit_Lval:
-								if filename != -1 and not header_written:
-									printwritelist(filename,[LMFDB_labels[j],"// p =",w.p()])
-									printwritelist(filename,[ "(This is block #",As.count(A),"out of",len(As),"in Sage's ordering)"])
-									if K.degree() > 1:
-										printwritelist(filename,["Defined over number field with defining polynomial:",K.defining_polynomial()])
-									else:
-										printwritelist(filename,["Defined over QQ"])
-									printwritelist(filename,["  choosing prime P over p with e =",e,"and f =",kpi.degree(),"\n  namely:",w])
-									printwritelist(filename,["    (which in Sage's ordering is",ws.index(w)+1,"/",len(ws),")"])
-									if len(ws)>1:
-										printwritelist(filename,["       All primes over p:"])
-										for ww in ws:
-											printwritelist(filename,["         ",w,", e =",1/ww(ww.uniformizer()),", f =",ww.residue_field().degree()])
-									if N.valuation(p) == 0:
-										if w(ap)==0:
-											printwritelist(filename,["  good ordinary reduction at P"])
+				header_written = false
+				if (not skip_Eisen or not eis) and (not skip_ll or not ll) \
+					and (not require_large_image or large_image):
+					for D in Ds:
+						print("    Twisting by",D)
+						if (not skip_odd_rank or sFE * kronecker_symbol(D,-N) == 1):
+							if D % p != 0:
+								Lval = lamb_twist(A,(k-2)/2,0,1,D,magic=magic)
+								period_correction = -central_period_correction(phi,w)
+								#-lower_bound_from_modsym(phi,w) - phi.valuation(w,remove_binom=true)*e 	
+	#							print("modsym valuation",phi.valuation(w,remove_binom=true))
+	#							print("lower bound is",lower_bound_from_modsym(phi,w))
+								print("       --period correction is",period_correction)
+	#							print("L-val valuation",w(Lval))
+								print("       --The central L-value has valuation:",w(Lval)*e+period_correction)
+								if w(Lval)*e + period_correction > 0 or not skip_unit_Lval:
+									if filename != -1 and not header_written:
+										printwritelist(filename,[LMFDB_labels[j],"// p =",w.p()])
+										printwritelist(filename,[ "(This is block #",As.count(A),"out of",len(As),"in Sage's ordering)"])
+										if K.degree() > 1:
+											printwritelist(filename,["Defined over number field with defining polynomial:",K.defining_polynomial()])
 										else:
-											printwritelist(filename,["  good non-ordinary reduction at P with slope",w(ap)])
-									elif N.valuation(p) == 1:
-										printwritelist(filename,["  Steinberg at P"])
+											printwritelist(filename,["Defined over QQ"])
+										printwritelist(filename,["  choosing prime P over p with e =",e,"and f =",kpi.degree(),"\n  namely:",w])
+										printwritelist(filename,["    (which in Sage's ordering is",ws.index(w)+1,"/",len(ws),")"])
+										if len(ws)>1:
+											printwritelist(filename,["       All primes over p:"])
+											for ww in ws:
+												printwritelist(filename,["         ",w,", e =",1/ww(ww.uniformizer()),", f =",ww.residue_field().degree()])
+										if N.valuation(p) == 0:
+											if w(ap)==0:
+												printwritelist(filename,["  good ordinary reduction at P"])
+											else:
+												printwritelist(filename,["  good non-ordinary reduction at P with slope",w(ap)])
+										elif N.valuation(p) == 1:
+											printwritelist(filename,["  Steinberg at P"])
+										else:
+											printwritelist(filename,["  supercuspidal at P"])
+										if ll:
+											printwritelist(filename,["CAN BE LEVEL-LOWERED!"])
+										header_written = true									
+									if not just_nonzero:
+										#this is probably wrong with the periods an valuations and such
+										compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+										printwritelist(filename,[])
 									else:
-										printwritelist(filename,["  supercuspidal at P"])
-									if ll:
-										printwritelist(filename,["CAN BE LEVEL-LOWERED!"])
-									header_written = true									
-								if not just_nonzero:
-									#this is probably wrong with the periods an valuations and such
-									compute_deltas(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
-									printwritelist(filename,[])
+										if filename != -1:
+											if Ds != [1]:
+												printwritelist(filename,["***Twisting by quadratic character of conductor",D,"***"])
+											printwritelist(filename,["The central L-value has valuation:",w(Lval)*e+period_correction])
+											if Lval == 0:
+												printwritelist(filename,["Note: central L-value vanishes, but sign of FE = 1"])
+										if not ll:
+											if not skip_odd_val or Lval==0 or (w(Lval)*e+period_correction) % 2 != 1:
+												find_nonzero_delta(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+											else:
+												print("Skipping odd valuation L-value: ",end="")
+												if llt:
+													print("can be level-lowered after twist at p")
+												else:
+													print("CANNOT be level-lowered after twist at p")
+												if llt:
+													printwritelist(filename,["Skipping odd valuation L-value: can be level-lowered after twist at p"])
+												else:
+													printwritelist(filename,["Skipping odd valuation L-value: CANNOT be level-lowered after twist at p"])
+										else:
+											find_nonzero_delta(A,w,max_ell/10,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
+										printwritelist(filename,[])
 								else:
-									if filename != -1:
-										if Ds != [1]:
-											printwritelist(filename,["***Twisting by quadratic character of conductor",D,"***"])
-										printwritelist(filename,["The central L-value has valuation:",w(Lval)*e+period_correction])
-										if Lval == 0:
-											printwritelist(filename,["Note: central L-value vanishes, but sign of FE = 1"])
-									if not ll:
-										if not skip_odd_val or Lval==0 or (w(Lval)*e+period_correction) % 2 != 1:
-											find_nonzero_delta(A,w,max_ell,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
-										else:
-											print("Skipping odd valuation L-value: ",end="")
-											if llt:
-												print("can be level-lowered after twist at p")
-											else:
-												print("CANNOT be level-lowered after twist at p")
-											if llt:
-												printwritelist(filename,["Skipping odd valuation L-value: can be level-lowered after twist at p"])
-											else:
-												printwritelist(filename,["Skipping odd valuation L-value: CANNOT be level-lowered after twist at p"])
-									else:
-										find_nonzero_delta(A,w,max_ell/10,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
-									printwritelist(filename,[])
-							else:
-								print("       --Skipping because L-value is a unit")
-				if header_written and filename != -1:
-					printwritelist(filename,[""])
-
-			else:
-				if skip_odd_rank and sFE == -1:
-					print("       --Skipping because sign of FE = -1")					
-				if skip_Eisen and eis:
-					print("       --Skipping because it is Eisenstein")
-				if skip_ll and ll:
-					print("       --Skipping because of level-lowering")
-				if require_large_image and not large_image:
-					print("       --Skipping because we can't prove large image")
-			print()	
+									print("       --Skipping because L-value is a unit")
+						else:
+							print("       --Skipping because sign of FE = -1")
+					if header_written and filename != -1:
+						printwritelist(filename,[""])
+				else:
+					if skip_odd_rank and sFE == -1:
+						print("       --Skipping because sign of FE = -1")					
+					if skip_Eisen and eis:
+						print("       --Skipping because it is Eisenstein")
+					if skip_ll and ll:
+						print("       --Skipping because of level-lowering")
+					if require_large_image and not large_image:
+						print("       --Skipping because we can't prove large image")
+				print()	
 
 	del M
 	return 
@@ -566,6 +589,8 @@ def CM(A,w,max_check=50):
 	N = A.level()
 	k = A.weight()
 	p = w.p()
+
+	bool = false #possibly there are no characters to twist by
 
 	#checks if f otimes chi = f (mod p)
 	for d in N.divisors():
