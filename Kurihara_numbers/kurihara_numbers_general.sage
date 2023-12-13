@@ -163,6 +163,7 @@ def delta(A,n,D,magic=-1):
 #			print(a,n)
 			log_term = prod([L[ell][a%ell] for ell in ells])
 			ans += lamb_twist(A,r-1,a,n,D,magic=magic) * log_term
+#			print(a,n,ans%3,lamb_twist(A,r-1,a,n,D,magic=magic)%3,log_term%3)
 
 	return ans
 
@@ -461,12 +462,17 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 							if w(Lval)*e + period_correction > 0 or not skip_unit_Lval:
 								if filename != -1 and not header_written:
 									printwritelist(filename,[LMFDB_labels[j],"// p =",w.p()])
+									printwritelist(filename,[ "This is block #",As.count(A),"out of ",len(As),"in Sage's ordering"])
 									if K.degree() > 1:
 										printwritelist(filename,["Defined over number field with defining polynomial:",K.defining_polynomial()])
 									else:
 										printwritelist(filename,["Defined over QQ"])
 									printwritelist(filename,["  choosing prime P over p with e =",e,"and f =",kpi.degree(),"\n  namely:",w])
 									printwritelist(filename,["    (which in Sage's ordering is",ws.index(w)+1,"/",len(ws),")"])
+									if len(ws)>1:
+										printwritelist(filename,["       All primes over p:"])
+										for ww in ws:
+											printwritelist(filename,["         ",w,"e =",1/ww(ww.uniformizer()),"f =",ww.residue_field().degree()])
 									if N.valuation(p) == 0:
 										if w(ap)==0:
 											printwritelist(filename,["  good ordinary reduction at P"])
