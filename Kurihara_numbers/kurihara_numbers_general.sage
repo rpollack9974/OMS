@@ -365,8 +365,8 @@ def central_period_correction(phi,w):
 	k = phi.weight()+2
 	r = (k-2)/2
 	v = []
-	for B in phi.manin.mats:
-		v += [w(phi.eval(B).coef(r))*e]
+	for j in range(len(phi.data)):
+		v += [w(phi.data[j].coef(r))*e]
 
 	return min(v)-w(binomial(k-2,r))*e
 
