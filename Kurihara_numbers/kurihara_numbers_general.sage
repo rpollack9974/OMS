@@ -541,12 +541,13 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 												print("Skipping odd valuation L-value: ",end="")
 												if llt:
 													print("can be level-lowered after twist at p")
-												else:
-													print("CANNOT be level-lowered after twist at p")
-												if llt:
 													printwritelist(filename,["Skipping odd valuation L-value: can be level-lowered after twist at p"])
 												else:
+													print("CANNOT be level-lowered after twist at p")
 													printwritelist(filename,["Skipping odd valuation L-value: CANNOT be level-lowered after twist at p"])
+													if inertia(w) > 1:
+														print("--> f > 1 so level-lowering might not be working!")
+														printwritelist(filename,["--> f > 1 so level-lowering might not be working!"])
 										else:
 											find_nonzero_delta(A,w,max_ell/10,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
 										printwritelist(filename,[])
@@ -563,6 +564,8 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 						print("       --Skipping because it is Eisenstein")
 					if skip_ll and ll:
 						print("       --Skipping because of level-lowering")
+					if skip_ll and llt:
+						print("       --Skipping because of level-lowering up to twist")
 					if require_large_image and not large_image:
 						print("       --Skipping because we can't prove large image")
 				print()	
