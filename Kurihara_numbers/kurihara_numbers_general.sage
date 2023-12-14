@@ -398,7 +398,7 @@ def adjust_period(phi,w):
 
 		assert M3 == min(M1,M2), "problem with central coh period vs coh period. aborting: "+str((M1,M2,M3))
 
-		return min(M1,M2)+val
+		return min(M1,M2)+val*e
 
 
 
