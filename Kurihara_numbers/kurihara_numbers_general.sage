@@ -457,7 +457,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 				pi = w.uniformizer()
 				kpi = w.residue_field()
 				e = 1/w(pi)
-				print("       --Working with valuation",ws.index(w)+1,"/",len(ws),"with e =",e,"and f =",w.residue_field().degree())
+				print("       -Working with valuation",ws.index(w)+1,"/",len(ws),"with e =",e,"and f =",w.residue_field().degree())
 				eis = eisenstein(A,w,evs=evs)
 				print("       --Is this case Eisenstein?:",eis)
 				cm = CM(A,w,evs=evs)
@@ -510,7 +510,7 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 										if len(ws)>1:
 											printwritelist(filename,["       All primes over p:"])
 											for ww in ws:
-												printwritelist(filename,["         ",w,", e =",1/ww(ww.uniformizer()),", f =",ww.residue_field().degree()])
+												printwritelist(filename,["         ",ww,", e =",1/ww(ww.uniformizer()),", f =",ww.residue_field().degree()])
 										if N.valuation(p) == 0:
 											if w(ap)==0:
 												printwritelist(filename,["  good ordinary reduction at P"])
