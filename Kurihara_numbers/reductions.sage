@@ -1,3 +1,11 @@
+def ram(w):
+	pi = w.uniformizer()
+	return 1/w(pi)
+
+def inertia(w):
+	kw = w.residue_field()
+	return kw.degree()
+
 def ev(A,ell):
 	M = A.ambient_module()
 	vec = A.dual_eigenvector()
@@ -27,6 +35,7 @@ def reduce(A,p,max=30,include_p=false):
 		for q in primes(max+1):
 			if N*p % q != 0 or (q == p and include_p):		
 				evs_modp[q] = w.reduce(evs[q])
+#		rhobars += [(evs_modp,ram(w),inertia(w))]
 		rhobars += [evs_modp]
 
 		## adds galois conjugates of reduction
@@ -36,6 +45,7 @@ def reduce(A,p,max=30,include_p=false):
 			for q in primes(max+1):
 				if N*p % q != 0:		
 					evs_frob[q] = evs_modp[q]^(p^a)
+#			rhobars += [(evs_frob,ram(w),inertia(w))]
 			rhobars += [evs_frob]
 
 	return rhobars
@@ -65,7 +75,8 @@ def is_dict_in_list(dict_list, target_dict):
     return False
 
 
-def is_level_lowerable(A,w,max,level_lowering={}):
+def is_level_lowerable(A,w,max):
+	level_lowering = {}
 	p = w.p()
 	N = A.level()
 	k = A.weight()

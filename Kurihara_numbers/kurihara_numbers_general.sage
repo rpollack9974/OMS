@@ -71,8 +71,12 @@ def In(A,w,n,D):
 	ells = factor(n)
 	ells = [t[0] for t in ells]
 
+
 	m_prime = min([w(ell-1)*e for ell in ells])
+	
+
 	m_FC = min([w(kronecker_symbol(D,ell) * ev(A,ell)-1-ell^(k-1)) * e for ell in ells])
+
 
 	m = min(m_prime,m_FC)
 	assert m>0,"Not a good prime being used!"
@@ -163,6 +167,7 @@ def delta(A,n,D,magic=-1):
 #			print(a,n)
 			log_term = prod([L[ell][a%ell] for ell in ells])
 			ans += lamb_twist(A,r-1,a,n,D,magic=magic) * log_term
+#			print(lamb_twist(A,r-1,a,n,D,magic=magic).valuation(3))
 			#print(a,n,ans%3,lamb_twist(A,r-1,a,n,D,magic=magic)%3,log_term%3)
 
 	return ans
@@ -211,8 +216,10 @@ def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,
 		for ell2 in qs:
 			if ell1 < ell2:
 				#print("Working on",(ell1,ell2))
-				dn = delta(A,ell1*ell2,D,magic=magic) * pi^period_correction
-				vdn = w(dn)
+				dn_pre = delta(A,ell1*ell2,D,magic=magic)
+				print(dn_pre,dn_pre.valuation(3))
+				dn = dn_pre * pi^period_correction
+				vdn = w(dn) * e
 				m = In(A,w,ell1*ell2,D)
 				if vdn >= m:
 					print((ell1,ell2),": vanish")
@@ -220,9 +227,9 @@ def compute_deltas(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename=-1,
 						printwritelist(filename,[(ell1,ell2),": vanish"])
 					van += 1
 				else:
-					print((ell1,ell2),": non-vanishing")
+					print((ell1,ell2),": non-vanishing with valuation",vdn,"and In is",m)
 					if filename != -1:
-						printwritelist(filename,[(ell1,ell2),": non-vanish"])
+						printwritelist(filename,[(ell1,ell2),": non-vanishing with valuation",vdn,"and In is",m])
 					nvan += 1
 
 	if van + nvan > 0:
@@ -269,16 +276,17 @@ def find_nonzero_delta(A,w,max_ell,depth,D,magic=-1,period_correction=0,filename
 			for a in range(len(ells)-1):
 				print("Trying",(ells[a],ells[-1]))
 				dn = delta(A,ells[a]*ells[-1],D,magic=magic) * pi^period_correction
-				vdn = w(dn)
+				vdn = w(dn) * e
 				m = In(A,w,ells[a]*ells[-1],D)
+				print("valuation of delta",vdn,"In",m)
 				if vdn >= m:
 					print((ells[a],ells[-1]),": vanish")
 					if filename != -1:
 						printwritelist(filename,[(ells[a],ells[-1]),": vanish"])
 				else:
-					print((ells[a],ells[-1]),": non-vanishing")
+					print((ells[a],ells[-1]),": non-vanishing with valuation",vdn,"and In is",m)
 					if filename != -1:
-						printwritelist(filename,[(ells[a],ells[-1]),": non-vanish"])
+						printwritelist(filename,[(ells[a],ells[-1]),": non-vanishing with valuation",vdn,"and In is",m])
 #						printwritelist(filename,[""])
 					return "Done"
 			ell_new = next_good_prime(ells[-1],A,w,depth,D,max_ell)
@@ -352,14 +360,6 @@ def sign_of_FE(A):
 			# 			return 1
 			# 		else:
 			# 			assert Lval!=0,"failed to determine sign of FE"
-
-def ram(w):
-	pi = w.uniformizer()
-	return 1/w(pi)
-
-def inertia(w):
-	kw = w.residue_field()
-	return kw.degree()
 
 def central_period_correction(phi,w):
 	if type(w) == sage.rings.integer.Integer:
@@ -541,16 +541,19 @@ def form_deltas_in_fixed_weight_and_level(N,k,ps,max_ell,depth,Ds,require_large_
 												print("Skipping odd valuation L-value: ",end="")
 												if llt:
 													print("can be level-lowered after twist at p")
-													printwritelist(filename,["Skipping odd valuation L-value: can be level-lowered after twist at p"])
+													if filename != -1:
+														printwritelist(filename,["Skipping odd valuation L-value: can be level-lowered after twist at p"])
 												else:
 													print("CANNOT be level-lowered after twist at p")
-													printwritelist(filename,["Skipping odd valuation L-value: CANNOT be level-lowered after twist at p"])
+													if filename != -1:
+														printwritelist(filename,["Skipping odd valuation L-value: CANNOT be level-lowered after twist at p"])
 													if inertia(w) > 1:
 														print("--> f > 1 so level-lowering might not be working!")
 														printwritelist(filename,["--> f > 1 so level-lowering might not be working!"])
 										else:
 											find_nonzero_delta(A,w,max_ell/10,depth,D,magic=magic,period_correction=period_correction,vLval=(w(Lval)-phi.valuation(w,remove_binom=true))*e,filename=filename)
-										printwritelist(filename,[])
+										if filename != -1:	
+											printwritelist(filename,[])
 								else:
 									print("       --Skipping because L-value is a unit")
 						elif D % p != 0:
